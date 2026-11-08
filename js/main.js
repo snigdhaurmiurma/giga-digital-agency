@@ -133,6 +133,28 @@ document.addEventListener('DOMContentLoaded', () => {
   startSlideTimer();
 
   // =========================================================================
+  // 4B. ABOUT US SUB-PORTIONS TABS (Story, Profile, Founder, Team, Gallery, Clients)
+  // =========================================================================
+  const aboutTabBtns = document.querySelectorAll('.about-tab-btn');
+  const aboutPanels = document.querySelectorAll('.about-panel');
+
+  aboutTabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetPanel = btn.getAttribute('data-tab');
+      aboutTabBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      aboutPanels.forEach(panel => {
+        if (panel.getAttribute('data-panel') === targetPanel) {
+          panel.classList.add('active');
+        } else {
+          panel.classList.remove('active');
+        }
+      });
+    });
+  });
+
+  // =========================================================================
   // 5. SERVICES CATEGORY FILTER (Creative, Growth, Tech)
   // =========================================================================
   const serviceTabs = document.querySelectorAll('.service-cat-tab');

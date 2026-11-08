@@ -9,7 +9,7 @@ $current_page = 'home';
 $is_subpage = false;
 require_once __DIR__ . '/includes/header.php';
 ?>
-  <section class="hero-banner" id="home">
+<section class="hero-banner" id="home">
     <div class="container">
       <div class="hero-grid">
         
@@ -17,7 +17,7 @@ require_once __DIR__ . '/includes/header.php';
         <div>
           <span class="section-tag">
             <span class="pulsing-dot"></span>
-            Established 2014 &bull; Lalmatia, Dhaka
+            Established 2014 &bull; Full-Service Digital Agency
           </span>
           <h1 class="hero-title">
             We Turn Ideas Into High-ROI <span class="gradient-text">Digital Impact</span>.
@@ -35,16 +35,16 @@ require_once __DIR__ . '/includes/header.php';
               Get Instant Quote
             </a>
             <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-              ðŸ’¬ WhatsApp
+              💬 WhatsApp
             </a>
           </div>
 
           <div class="hero-pills-row">
-            <span class="hero-pill-badge">ðŸŽ¨ UI/UX & Graphics</span>
-            <span class="hero-pill-badge">ðŸ’» Web & E-Commerce</span>
-            <span class="hero-pill-badge">ðŸš€ Facebook Boosting</span>
-            <span class="hero-pill-badge">â–¶ï¸ YouTube Video Ads</span>
-            <span class="hero-pill-badge">ðŸ“ˆ Google SEO Ranking</span>
+            <span class="hero-pill-badge">🎨 UI/UX & Graphics</span>
+            <span class="hero-pill-badge">💻 Web & E-Commerce</span>
+            <span class="hero-pill-badge">🚀 Facebook Boosting</span>
+            <span class="hero-pill-badge">▶️ YouTube Video Ads</span>
+            <span class="hero-pill-badge">📈 Google SEO Ranking</span>
           </div>
         </div>
 
@@ -54,7 +54,7 @@ require_once __DIR__ . '/includes/header.php';
           
           <!-- Floating Chip 1: ROAS Metric -->
           <div class="hero-float-chip hero-chip-top">
-            <span style="font-size:1.6rem;">ðŸŽ¯</span>
+            <span style="font-size:1.6rem;">🎯</span>
             <div>
               <div style="font-size:1.15rem; font-weight:900; color:var(--text-heading); line-height:1.1;">4.8x Average ROAS</div>
               <div style="font-size:0.75rem; color:var(--accent-primary); font-weight:700;">Meta & YouTube Ad Boosting</div>
@@ -63,10 +63,10 @@ require_once __DIR__ . '/includes/header.php';
 
           <!-- Floating Chip 2: Verified Deliverables -->
           <div class="hero-float-chip hero-chip-bottom">
-            <span style="font-size:1.6rem;">ðŸ†</span>
+            <span style="font-size:1.6rem;">🏆</span>
             <div>
               <div style="font-size:1.15rem; font-weight:900; color:var(--text-heading); line-height:1.1;">7,000+ Completed Projects</div>
-              <div style="font-size:0.75rem; color:var(--accent-green); font-weight:700;">â˜… 98.4% Client Satisfaction</div>
+              <div style="font-size:0.75rem; color:var(--accent-green); font-weight:700;">★ 98.4% Client Satisfaction</div>
             </div>
           </div>
         </div>
@@ -76,92 +76,290 @@ require_once __DIR__ . '/includes/header.php';
   </section>
 
   <!-- =========================================================================
-       4. COLORFUL TRUSTED BY BRANDS
+       4. TRUSTED BY OUR CLIENTS (Official Brand Partners from gigadigitalagency.com)
        ========================================================================= -->
-  <section class="brands-section">
+  <section class="brands-section" aria-label="Trusted Clients">
     <div class="container">
       <div class="brands-title-tag">
         Trusted by Leading Enterprises, Startups & Retail Brands in Bangladesh and Abroad
       </div>
-      <div class="brands-colorful-grid">
-        <div class="colorful-brand-card">
-          <span class="brand-dot" style="background:#3b82f6; box-shadow:0 0 8px #3b82f6;"></span>
-          <span class="brand-name">Shadhin Tech</span>
+      <div class="brands-logo-row">
+        <div class="brand-item-box" title="Giga Digital Agency Client Partner">
+          <img src="images/brand/brand-1-1.png" alt="Client Brand 1">
         </div>
-        <div class="colorful-brand-card">
-          <span class="brand-dot" style="background:#e11d48; box-shadow:0 0 8px #e11d48;"></span>
-          <span class="brand-name">Apex Retail BD</span>
+        <div class="brand-item-box" title="Giga Digital Agency Client Partner">
+          <img src="images/brand/brand-1-2.png" alt="Client Brand 2">
         </div>
-        <div class="colorful-brand-card">
-          <span class="brand-dot" style="background:#ef4444; box-shadow:0 0 8px #ef4444;"></span>
-          <span class="brand-name">Pathao Logistics</span>
+        <div class="brand-item-box" title="Giga Digital Agency Client Partner">
+          <img src="images/brand/brand-1-3.png" alt="Client Brand 3">
         </div>
-        <div class="colorful-brand-card">
-          <span class="brand-dot" style="background:#e11d48; box-shadow:0 0 8px #e11d48;"></span>
-          <span class="brand-name">bKash Merchant</span>
+        <div class="brand-item-box" title="Giga Digital Agency Client Partner">
+          <img src="images/brand/brand-1-4.png" alt="Client Brand 4">
         </div>
-        <div class="colorful-brand-card">
-          <span class="brand-dot" style="background:#10b981; box-shadow:0 0 8px #10b981;"></span>
-          <span class="brand-name">Walton E-Com</span>
-        </div>
-        <div class="colorful-brand-card">
-          <span class="brand-dot" style="background:#f59e0b; box-shadow:0 0 8px #f59e0b;"></span>
-          <span class="brand-name">Aarong Artisan</span>
-        </div>
-        <div class="colorful-brand-card">
-          <span class="brand-dot" style="background:#8b5cf6; box-shadow:0 0 8px #8b5cf6;"></span>
-          <span class="brand-name">Global SaaS Group</span>
+        <div class="brand-item-box" title="Giga Digital Agency Client Partner">
+          <img src="images/brand/brand-1-5.png" alt="Client Brand 5">
         </div>
       </div>
     </div>
   </section>
 
   <!-- =========================================================================
-       5. ABOUT US & 2016 NATIONAL ICT RECOGNITION
+       5. ABOUT US (Structured Sub-Portions: Story, Profile, Founder, Team, Gallery, Clients)
        ========================================================================= -->
   <section class="section" id="about">
     <div class="container">
       
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center;">
-        <div>
-          <span class="section-tag">About Giga Digital Agency</span>
-          <h2 class="section-title">
-            MORE THAN AN AGENCY. <span class="gradient-text">YOUR DIGITAL PARTNER</span>.
-          </h2>
-          <p class="section-desc" style="margin-bottom:18px;">
-            Established in 2014 in Lalmatia, Dhaka, Giga Digital Agency was built to eliminate the gap between creative visual design, robust web engineering, and profitable performance marketing.
-          </p>
-          <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.7; margin-bottom:24px;">
-            Over the last decade, we have completed more than 7,000 project deliverables for corporate brands, e-commerce stores, manufacturing companies, and technology scale-ups across Bangladesh, North America, and Europe.
-          </p>
-          
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-            <div style="background:var(--bg-card); border:1px solid var(--border-subtle); padding:16px; border-radius:var(--radius-sm);">
-              <div style="font-size:1.05rem; font-weight:800; color:var(--accent-primary); margin-bottom:4px;">ðŸŽ¯ Precision Focus</div>
-              <p style="font-size:0.84rem; color:var(--text-muted);">Every campaign and line of code is measured against client revenue and conversion.</p>
+      <div class="section-header text-center">
+        <span class="section-tag">About Giga Digital Agency</span>
+        <h2 class="section-title">
+          MORE THAN AN AGENCY. <span class="gradient-text">YOUR DIGITAL PARTNER</span>.
+        </h2>
+        <p class="section-desc">
+          Established in 2014 in Lalmatia, Dhaka, we unite creative UI/UX design, custom web engineering, and data-driven ad performance into measurable revenue.
+        </p>
+      </div>
+
+      <!-- About Us Sub-Portion Navigation Tabs -->
+      <div class="about-nav-tabs">
+        <button class="about-tab-btn active" data-tab="story">📖 Our Story</button>
+        <button class="about-tab-btn" data-tab="profile">🏢 Company Profile</button>
+        <button class="about-tab-btn" data-tab="founder">👤 Founder & CEO</button>
+        <button class="about-tab-btn" data-tab="team">👥 Our Team</button>
+        <button class="about-tab-btn" data-tab="gallery">📸 Photo Galleries</button>
+        <button class="about-tab-btn" data-tab="clients">🤝 Our Clients & Recognition</button>
+      </div>
+
+      <!-- PANEL 1: Our Story -->
+      <div class="about-panel active" data-panel="story">
+        <div class="about-grid-two">
+          <div>
+            <span class="section-tag" style="background:rgba(18,115,207,0.15); color:var(--accent-primary); border-color:var(--border-glow);">Since 2014</span>
+            <h3 style="font-size:1.85rem; font-weight:800; color:var(--text-heading); margin:10px 0 16px;">
+              A Decade of Turning Digital Ambitions Into Market Realities
+            </h3>
+            <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:16px;">
+              Giga Digital Agency was founded in Lalmatia, Dhaka by practicing software and marketing engineers who recognized a critical flaw in traditional agencies: creative designers didn't understand conversion science, and developers rarely cared about user experience or sales funnels.
+            </p>
+            <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7; margin-bottom:24px;">
+              We set out to build a unified studio where world-class Figma UI/UX, ultra-clean web code, and aggressive Facebook & YouTube ad boosting live under one roof. Today, with over 7,000 project deliverables completed across Bangladesh and global markets, we stand as one of the most trusted digital execution teams in the nation.
+            </p>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+              <div style="background:var(--bg-card); border:1px solid var(--border-subtle); padding:16px; border-radius:var(--radius-sm);">
+                <div style="font-size:1.25rem; font-weight:900; color:var(--accent-green); margin-bottom:4px;">7,000+</div>
+                <div style="font-size:0.82rem; color:var(--text-muted);">Completed Client Deliverables</div>
+              </div>
+              <div style="background:var(--bg-card); border:1px solid var(--border-subtle); padding:16px; border-radius:var(--radius-sm);">
+                <div style="font-size:1.25rem; font-weight:900; color:var(--accent-primary); margin-bottom:4px;">10+ Years</div>
+                <div style="font-size:0.82rem; color:var(--text-muted);">Proven Industry Longevity</div>
+              </div>
             </div>
-            <div style="background:var(--bg-card); border:1px solid var(--border-subtle); padding:16px; border-radius:var(--radius-sm);">
-              <div style="font-size:1.05rem; font-weight:800; color:var(--accent-violet); margin-bottom:4px;">ðŸ¤ Real Human Support</div>
-              <p style="font-size:0.84rem; color:var(--text-muted);">Direct consultation with senior strategists, not automated robots or ticket delays.</p>
+          </div>
+          <div class="about-photo-wrap">
+            <img src="images/resource/about-one-img-1.jpg" alt="Giga Digital Agency Team Workspace">
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 2: Company Profile -->
+      <div class="about-panel" data-panel="profile">
+        <div class="about-grid-two">
+          <div class="about-photo-wrap">
+            <img src="images/resource/why-choose-one-img.jpg" alt="Company Profile and Technology Lab">
+          </div>
+          <div>
+            <span class="section-tag" style="background:rgba(14,165,233,0.15); color:var(--accent-cyan); border-color:var(--border-subtle);">Corporate Profile</span>
+            <h3 style="font-size:1.85rem; font-weight:800; color:var(--text-heading); margin:10px 0 16px;">
+              Engineered For Modern Business Scale
+            </h3>
+            <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:14px;">
+              <strong>Giga Digital Agency</strong> is a formally registered digital agency and technology consultancy (Trade Registry: GDA-ICT-BD-2016), headquartered in Lalmatia, Dhaka.
+            </p>
+            <ul class="service-features-list" style="margin-bottom:22px;">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Full-Stack Architecture:</strong> Clean PHP, Node.js, Next.js, and WordPress solutions built without bloated page builders.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Fintech Integrations:</strong> Official API integration for bKash Merchant, Nagad, SSLCommerz, and Pathao Courier.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Performance Marketing:</strong> Server-side Meta CAPI tracking, YouTube in-stream ad setups, and Google Search top rankings.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Enterprise SLAs:</strong> 99.9% uptime monitoring, automated cloud backups, and dedicated account managers.</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Request Corporate Profile PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 3: Founder & CEO -->
+      <div class="about-panel" data-panel="founder">
+        <div class="about-grid-two">
+          <div class="about-photo-wrap" style="text-align:center;">
+            <img src="images/team/team-1-1.jpg" alt="Engr. Md. Ashikur Rahman — Founder & CEO" style="height:420px; object-fit:cover; object-position:top;">
+          </div>
+          <div>
+            <span class="section-tag" style="background:rgba(251,191,36,0.15); color:#fbbf24; border-color:rgba(251,191,36,0.3);">Executive Leadership</span>
+            <h3 style="font-size:1.85rem; font-weight:900; color:var(--text-heading); margin:10px 0 6px;">
+              Engr. Md. Ashikur Rahman
+            </h3>
+            <p style="font-size:1rem; color:var(--accent-primary); font-weight:800; margin-bottom:18px;">Founder & Chief Executive Officer</p>
+            <blockquote style="border-left:3px solid var(--accent-primary); padding-left:18px; margin:0 0 20px; font-style:italic; color:var(--text-main); font-size:1.02rem; line-height:1.7;">
+              "In today's hyper-competitive digital landscape, a website cannot merely be an online brochure, and digital advertising cannot simply burn cash on impressions without sales. At Giga Digital Agency, every pixel, every line of code, and every boosted campaign is engineered with commercial accountability to generate verifiable revenue for our clients."
+            </blockquote>
+            <p style="color:var(--text-muted); font-size:0.90rem; line-height:1.65; margin-bottom:24px;">
+              With over a decade of engineering leadership in Bangladesh's ICT ecosystem, Engr. Md. Ashikur Rahman has steered Giga Digital Agency from its early inception to a nationally accredited partner servicing retail giants, healthcare providers, and high-growth digital ventures.
+            </p>
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <a href="#contact" class="btn btn-primary">Schedule Consultation With CEO</a>
+              <a href="https://wa.me/8801860422185" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">💬 WhatsApp Direct</a>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- 2016 National ICT Ecosystem Recognition Card -->
-        <div style="background:linear-gradient(135deg, rgba(15,23,42,0.9), rgba(30,41,59,0.8)); border:1px solid var(--border-glow); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow-lg), var(--shadow-glow);">
-          <div style="display:flex; align-items:center; gap:14px; margin-bottom:18px;">
-            <div style="font-size:2.4rem;">ðŸ†</div>
-            <div>
-              <span style="font-size:0.75rem; font-weight:800; color:#fbbf24; text-transform:uppercase; letter-spacing:0.08em;">Official Accreditation</span>
-              <h3 style="font-size:1.35rem; font-weight:900; color:#ffffff;">2016 National ICT Recognition</h3>
+      <!-- PANEL 4: Our Team -->
+      <div class="about-panel" data-panel="team">
+        <div style="text-align:center; max-width:680px; margin:0 auto 30px;">
+          <h3 style="font-size:1.8rem; font-weight:800; color:var(--text-heading); margin-bottom:8px;">
+            The Specialists Driving Your Success
+          </h3>
+          <p style="font-size:0.92rem; color:var(--text-muted);">
+            Direct access to dedicated engineering leads, marketing specialists, and designers — verified real professionals with proven track records.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- 1: Founder & CEO -->
+          <div class="team-card">
+            <div class="team-img-wrap"><img src="images/team/team-1-1.jpg" alt="Engr. Md. Ashikur Rahman"></div>
+            <div class="team-info">
+              <h4 class="team-name">Engr. Md. Ashikur Rahman</h4>
+              <div class="team-role">Founder & CEO</div>
             </div>
           </div>
-          <p style="font-size:0.92rem; color:#cbd5e1; line-height:1.65; margin-bottom:20px;">
-            Recognized as <strong>Site of the Day & Digital Innovation Partner</strong> within the Bangladesh ICT ecosystem for pioneering responsive web design and digital growth architectures.
+          <!-- 2: CTO -->
+          <div class="team-card">
+            <div class="team-img-wrap"><img src="images/team/team-1-2.jpg" alt="Engr. Md. Hasinur Rahman"></div>
+            <div class="team-info">
+              <h4 class="team-name">Engr. Md. Hasinur Rahman</h4>
+              <div class="team-role">Chief Technology Officer</div>
+            </div>
+          </div>
+          <!-- 3: Senior Software Engineer -->
+          <div class="team-card">
+            <div class="team-img-wrap"><img src="images/team/team-1-3.jpg" alt="Engr. Md. Al Amin"></div>
+            <div class="team-info">
+              <h4 class="team-name">Engr. Md. Al Amin</h4>
+              <div class="team-role">Senior Software Engineer</div>
+            </div>
+          </div>
+          <!-- 4: Digital Marketing Specialist -->
+          <div class="team-card">
+            <div class="team-img-wrap"><img src="images/team/team-1-4.jpg" alt="Jannatul Nayem"></div>
+            <div class="team-info">
+              <h4 class="team-name">Jannatul Nayem</h4>
+              <div class="team-role">Digital Marketing Specialist</div>
+            </div>
+          </div>
+          <!-- 5: Senior Graphics Designer -->
+          <div class="team-card">
+            <div class="team-img-wrap"><img src="images/team/team-1-5.jpg" alt="Engr. Md. Mehedi Hasan"></div>
+            <div class="team-info">
+              <h4 class="team-name">Engr. Md. Mehedi Hasan</h4>
+              <div class="team-role">Senior Graphics Designer</div>
+            </div>
+          </div>
+          <!-- 6: Deputy General Manager -->
+          <div class="team-card">
+            <div class="team-img-wrap"><img src="images/team/team-1-6.jpg" alt="Md. Rezaul Karim"></div>
+            <div class="team-info">
+              <h4 class="team-name">Md. Rezaul Karim</h4>
+              <div class="team-role">Deputy General Manager</div>
+            </div>
+          </div>
+          <!-- 7: Digital Marketing Specialist -->
+          <div class="team-card">
+            <div class="team-img-wrap"><img src="images/team/team-1-7.jpg" alt="Md. Nazmus Sakib"></div>
+            <div class="team-info">
+              <h4 class="team-name">Md. Nazmus Sakib</h4>
+              <div class="team-role">Digital Marketing Specialist</div>
+            </div>
+          </div>
+          <!-- 8: App Developer -->
+          <div class="team-card">
+            <div class="team-img-wrap"><img src="images/team/team-1-8.jpg" alt="Kobir Hossen"></div>
+            <div class="team-info">
+              <h4 class="team-name">Kobir Hossen</h4>
+              <div class="team-role">App Developer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 5: Photo Galleries -->
+      <div class="about-panel" data-panel="gallery">
+        <div style="text-align:center; max-width:680px; margin:0 auto 30px;">
+          <h3 style="font-size:1.8rem; font-weight:800; color:var(--text-heading); margin-bottom:8px;">
+            Inside Giga Digital Agency
+          </h3>
+          <p style="font-size:0.92rem; color:var(--text-muted);">
+            An authentic glimpse into our daily engineering sprints, design critique workshops, and strategy sessions at our Lalmatia headquarters.
           </p>
-          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-top:1px solid rgba(255,255,255,0.1); padding-top:18px;">
-            <span style="font-size:0.85rem; color:#94a3b8;"><strong>Accreditation Registry:</strong> GDA-ICT-BD-2016</span>
-            <span class="section-tag" style="margin-bottom:0; background:rgba(251,191,36,0.15); color:#fef08a; border-color:rgba(251,191,36,0.4);">Verified Partner</span>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" title="Agile Sprint & Strategy Planning">
+            <img src="images/resource/about-one-img-1.jpg" alt="Team Sprint Session">
+          </div>
+          <div class="gallery-item" title="UI/UX & Brand Identity Lab">
+            <img src="images/resource/about-one-img-2.jpg" alt="Design Lab">
+          </div>
+          <div class="gallery-item" title="Software Architecture & Engineering">
+            <img src="images/resource/why-choose-one-img.jpg" alt="Engineering Hub">
+          </div>
+          <div class="gallery-item" title="Digital Marketing & Ad Optimization">
+            <img src="images/resource/why-choose-one-img-2.jpg" alt="Performance Marketing Desk">
+          </div>
+          <div class="gallery-item" title="Client Discovery & Consultation">
+            <img src="images/resource/why-choose-one-img-3.jpg" alt="Client Strategy">
+          </div>
+          <div class="gallery-item" title="Creative Workshop & Prototyping">
+            <img src="images/resource/faq-one-img.jpg" alt="Creative Workshop">
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 6: Our Clients & Recognition -->
+      <div class="about-panel" data-panel="clients">
+        <div class="about-grid-two">
+          <div>
+            <span class="section-tag" style="background:rgba(34,180,85,0.15); color:var(--accent-green); border-color:var(--border-green);">Validated Impact</span>
+            <h3 style="font-size:1.85rem; font-weight:800; color:var(--text-heading); margin:10px 0 16px;">
+              Trusted By Growing Brands & Recognized Nationally
+            </h3>
+            <p style="color:var(--text-main); font-size:0.95rem; line-height:1.7; margin-bottom:18px;">
+              From local retail powerhouses in Bangladesh to venture-backed tech startups, our clients rely on Giga Digital Agency for stable digital execution and compounding ROI.
+            </p>
+            <div class="brands-logo-row" style="justify-content:flex-start; margin-bottom:24px;">
+              <div class="brand-item-box"><img src="images/brand/brand-1-1.png" alt="Client 1"></div>
+              <div class="brand-item-box"><img src="images/brand/brand-1-2.png" alt="Client 2"></div>
+              <div class="brand-item-box"><img src="images/brand/brand-1-3.png" alt="Client 3"></div>
+              <div class="brand-item-box"><img src="images/brand/brand-1-4.png" alt="Client 4"></div>
+              <div class="brand-item-box"><img src="images/brand/brand-1-5.png" alt="Client 5"></div>
+            </div>
+            <a href="#reviews" class="btn btn-secondary">Read 98.4% Verified Client Reviews</a>
+          </div>
+
+          <!-- 2016 National ICT Ecosystem Recognition Card -->
+          <div style="background:linear-gradient(135deg, rgba(15,28,50,0.95), rgba(12,35,64,0.9)); border:1px solid var(--border-glow); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow-lg);">
+            <div style="display:flex; align-items:center; gap:14px; margin-bottom:18px;">
+              <div style="font-size:2.4rem;">🏆</div>
+              <div>
+                <span style="font-size:0.75rem; font-weight:800; color:#fbbf24; text-transform:uppercase; letter-spacing:0.08em;">Official Accreditation</span>
+                <h3 style="font-size:1.35rem; font-weight:900; color:#ffffff;">2016 National ICT Recognition</h3>
+              </div>
+            </div>
+            <p style="font-size:0.92rem; color:#cbd5e1; line-height:1.65; margin-bottom:20px;">
+              Recognized as <strong>Site of the Day & Digital Innovation Partner</strong> within the Bangladesh ICT ecosystem for pioneering responsive web design, robust e-commerce architecture, and data-driven marketing.
+            </p>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-top:1px solid rgba(255,255,255,0.1); padding-top:18px;">
+              <span style="font-size:0.85rem; color:#94a3b8;"><strong>Accreditation Registry:</strong> GDA-ICT-BD-2016</span>
+              <span class="section-tag" style="margin-bottom:0; background:rgba(251,191,36,0.15); color:#fef08a; border-color:rgba(251,191,36,0.4);">Verified Partner</span>
+            </div>
           </div>
         </div>
       </div>
@@ -181,16 +379,16 @@ require_once __DIR__ . '/includes/header.php';
           WHAT WE DO AT <span class="gradient-text">GIGA DIGITAL AGENCY</span>
         </h2>
         <p class="section-desc">
-          Structured into three core divisions â€” <strong>Creative</strong>, <strong>Growth & Ad Boosting</strong>, and <strong>Technology</strong> â€” to elevate your brand from concept to measurable revenue.
+          Structured into three core divisions — <strong>Creative</strong>, <strong>Growth & Ad Boosting</strong>, and <strong>Technology</strong> — to elevate your brand from concept to measurable revenue.
         </p>
       </div>
 
       <!-- Category Filter Tabs -->
       <div class="services-tabs-row">
         <button class="service-cat-tab active" data-category="all">All Services (9)</button>
-        <button class="service-cat-tab" data-category="creative">ðŸŽ¨ Creative (Design & YouTube)</button>
-        <button class="service-cat-tab" data-category="growth">ðŸš€ Growth (Marketing, SEO & Ads)</button>
-        <button class="service-cat-tab" data-category="tech">ðŸ’» Tech & Web Development</button>
+        <button class="service-cat-tab" data-category="creative">🎨 Creative (Design & YouTube)</button>
+        <button class="service-cat-tab" data-category="growth">🚀 Growth (Marketing, SEO & Ads)</button>
+        <button class="service-cat-tab" data-category="tech">💻 Tech & Web Development</button>
       </div>
 
       <!-- Services Cards Grid -->
@@ -200,7 +398,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="creative">
           <div>
             <span class="service-cat-pill">Creative Division</span>
-            <div class="service-icon-wrap">ðŸŽ¨</div>
+            <div class="service-icon-wrap">🎨</div>
             <h3 class="service-title">Graphic Design & Brand Identity</h3>
             <p class="service-desc">
               Custom corporate logos, brand guidelines, marketing banners, packaging design, and social media creative toolkits that command immediate visual authority.
@@ -218,7 +416,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="creative">
           <div>
             <span class="service-cat-pill">Creative Division</span>
-            <div class="service-icon-wrap">ðŸ“±</div>
+            <div class="service-icon-wrap">📱</div>
             <h3 class="service-title">UI/UX Design & Prototyping</h3>
             <p class="service-desc">
               Interactive Figma prototypes, wireframing, user persona mapping, and conversion-optimized mobile app and web design systems tested for effortless usability.
@@ -236,7 +434,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="creative">
           <div>
             <span class="service-cat-pill">Creative Division</span>
-            <div class="service-icon-wrap">â–¶ï¸</div>
+            <div class="service-icon-wrap">▶️</div>
             <h3 class="service-title">YouTube Creative & Channel Services</h3>
             <p class="service-desc">
               Custom high-CTR YouTube thumbnails, channel branding, video intros/outros, engaging motion graphics, and video editing to maximize audience retention.
@@ -254,7 +452,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="growth">
           <div>
             <span class="service-cat-pill" style="background:rgba(244,63,94,0.15); color:#fb7185; border-color:rgba(244,63,94,0.3);">Growth Division</span>
-            <div class="service-icon-wrap" style="color:#f43f5e;">ðŸš€</div>
+            <div class="service-icon-wrap" style="color:#f43f5e;">🚀</div>
             <h3 class="service-title">Facebook & Instagram Ad Boosting</h3>
             <p class="service-desc">
               Precision Meta ad management, pixel setup with Conversions API, custom & lookalike audiences, reel video boosting, and high-ROAS e-commerce scaling.
@@ -272,7 +470,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="growth">
           <div>
             <span class="service-cat-pill" style="background:rgba(239,68,68,0.15); color:#f87171; border-color:rgba(239,68,68,0.3);">Growth Division</span>
-            <div class="service-icon-wrap" style="color:#ef4444;">ðŸŽ¯</div>
+            <div class="service-icon-wrap" style="color:#ef4444;">🎯</div>
             <h3 class="service-title">YouTube Ad Boosting & Video Marketing</h3>
             <p class="service-desc">
               Skippable in-stream ads, non-skippable 6-second bumper ads, in-feed discovery ads, subscriber growth campaigns, and demographic video marketing.
@@ -290,7 +488,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="growth">
           <div>
             <span class="service-cat-pill" style="background:rgba(16,185,129,0.15); color:#6ee7b7; border-color:rgba(16,185,129,0.3);">Growth Division</span>
-            <div class="service-icon-wrap" style="color:#10b981;">ðŸ“ˆ</div>
+            <div class="service-icon-wrap" style="color:#10b981;">📈</div>
             <h3 class="service-title">Search Engine Optimization (SEO)</h3>
             <p class="service-desc">
               Dominate page 1 of Google Search. Complete technical audits, keyword mapping, high-authority backlink building, and Google Maps Local 3-Pack ranking.
@@ -308,7 +506,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="tech">
           <div>
             <span class="service-cat-pill" style="background:rgba(56,189,248,0.15); color:#7dd3fc; border-color:rgba(56,189,248,0.3);">Tech Division</span>
-            <div class="service-icon-wrap" style="color:#38bdf8;">ðŸ’»</div>
+            <div class="service-icon-wrap" style="color:#38bdf8;">💻</div>
             <h3 class="service-title">Corporate Website Design & Development</h3>
             <p class="service-desc">
               Custom-coded, lightning-fast corporate websites. Mobile responsive, easy-to-manage dynamic CMS, SSL encryption, and Google Core Web Vitals optimization.
@@ -326,7 +524,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="tech">
           <div>
             <span class="service-cat-pill" style="background:rgba(56,189,248,0.15); color:#7dd3fc; border-color:rgba(56,189,248,0.3);">Tech Division</span>
-            <div class="service-icon-wrap" style="color:#38bdf8;">ðŸ›’</div>
+            <div class="service-icon-wrap" style="color:#38bdf8;">🛒</div>
             <h3 class="service-title">E-Commerce Store (bKash/Nagad/Cards)</h3>
             <p class="service-desc">
               Feature-rich online store with automated bKash, Nagad, Rocket, SSLCommerz, and Visa/Mastercard payments plus Pathao/Steadfast Courier API delivery tracking.
@@ -344,7 +542,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="tech">
           <div>
             <span class="service-cat-pill" style="background:rgba(56,189,248,0.15); color:#7dd3fc; border-color:rgba(56,189,248,0.3);">Tech Division</span>
-            <div class="service-icon-wrap" style="color:#38bdf8;">âš™ï¸</div>
+            <div class="service-icon-wrap" style="color:#38bdf8;">⚙️</div>
             <h3 class="service-title">Custom Software, POS & ERP Systems</h3>
             <p class="service-desc">
               Bespoke business automation systems: inventory tracking, multi-branch POS, billing, automated invoicing, customer CRM, and employee management portals.
@@ -384,7 +582,7 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Step 1 -->
         <div class="process-step-card">
           <div class="step-num-badge">01</div>
-          <div class="step-icon">ðŸ“‹</div>
+          <div class="step-icon">📋</div>
           <h3 class="step-title">Requirement Consultation & Strategy</h3>
           <p class="step-desc">
             We meet with your team to analyze your business goals, competitors, and target audience, formulating a comprehensive technical and marketing roadmap.
@@ -394,7 +592,7 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Step 2 -->
         <div class="process-step-card">
           <div class="step-num-badge">02</div>
-          <div class="step-icon">ðŸŽ¨</div>
+          <div class="step-icon">🎨</div>
           <h3 class="step-title">UI/UX Design & Client Approval</h3>
           <p class="step-desc">
             Our creative team crafts interactive Figma prototypes, ad creatives, and high-fidelity layouts for your review and explicit sign-off before coding begins.
@@ -404,7 +602,7 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Step 3 -->
         <div class="process-step-card">
           <div class="step-num-badge">03</div>
-          <div class="step-icon">ðŸ’»</div>
+          <div class="step-icon">💻</div>
           <h3 class="step-title">Development & Coding</h3>
           <p class="step-desc">
             Our software engineers develop clean, high-performance code, integrate bKash/Nagad gateways, configure tracking pixels, and deploy SEO architecture.
@@ -414,7 +612,7 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Step 4 -->
         <div class="process-step-card">
           <div class="step-num-badge">04</div>
-          <div class="step-icon">ðŸš€</div>
+          <div class="step-icon">🚀</div>
           <h3 class="step-title">Launch, Ad Boosting & Optimization</h3>
           <p class="step-desc">
             We deploy your platform live, ignite high-conversion Facebook and YouTube ad boost campaigns, monitor ROAS metrics, and continuously scale results.
@@ -521,7 +719,7 @@ require_once __DIR__ . '/includes/header.php';
             <p class="price-subtitle">Ideal for startups, clinics, schools & corporate portfolios</p>
             
             <div class="price-tag-wrap">
-              <span class="price-currency">à§³</span>
+              <span class="price-currency">৳</span>
               <span class="price-amount">15,000</span>
               <div class="price-approx">Estimated Price (approx $140 USD)</div>
             </div>
@@ -532,7 +730,7 @@ require_once __DIR__ . '/includes/header.php';
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Contact Form with Instant Email Alert</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Floating WhatsApp Click-to-Chat Button</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Free .com Domain & NVMe Hosting (1 Year)</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Delivery: 5â€“7 Working Days</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Delivery: 5–7 Working Days</li>
             </ul>
           </div>
           <a href="#contact" class="btn btn-secondary" style="width:100%;">Select Starter Package</a>
@@ -546,7 +744,7 @@ require_once __DIR__ . '/includes/header.php';
             <p class="price-subtitle">For established firms demanding prestige, SEO & dynamic CMS</p>
             
             <div class="price-tag-wrap">
-              <span class="price-currency">à§³</span>
+              <span class="price-currency">৳</span>
               <span class="price-amount">28,000</span>
               <div class="price-approx">Estimated Price (approx $260 USD)</div>
             </div>
@@ -558,7 +756,7 @@ require_once __DIR__ . '/includes/header.php';
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Meta Pixel & Google Analytics 4 Setup</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> High-Speed NVMe cPanel Hosting (1 Year)</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 3 Months Free Priority Maintenance</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Delivery: 10â€“14 Working Days</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Delivery: 10–14 Working Days</li>
             </ul>
           </div>
           <a href="#contact" class="btn btn-primary" style="width:100%;">Select Professional Package</a>
@@ -571,7 +769,7 @@ require_once __DIR__ . '/includes/header.php';
             <p class="price-subtitle">Full online store with instant payment & courier dispatch</p>
             
             <div class="price-tag-wrap">
-              <span class="price-currency">à§³</span>
+              <span class="price-currency">৳</span>
               <span class="price-amount">45,000</span>
               <div class="price-approx">Estimated Price (approx $420 USD)</div>
             </div>
@@ -582,7 +780,7 @@ require_once __DIR__ . '/includes/header.php';
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Pathao & Steadfast Courier API Integration</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Inventory Control, Automated Invoices & SMS Alerts</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 6 Months Free Maintenance & Security SLA</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Delivery: 14â€“20 Working Days</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Delivery: 14–20 Working Days</li>
             </ul>
           </div>
           <a href="#contact" class="btn btn-secondary" style="width:100%;">Select E-Commerce Store</a>
@@ -606,27 +804,27 @@ require_once __DIR__ . '/includes/header.php';
         <div class="customizer-grid">
           <label class="custom-check-item">
             <input type="checkbox" class="custom-pkg-checkbox" data-label="Corporate Website Design" data-price="15000">
-            <span>Corporate Website (à§³15k+)</span>
+            <span>Corporate Website (৳15k+)</span>
           </label>
           <label class="custom-check-item">
             <input type="checkbox" class="custom-pkg-checkbox" data-label="E-Commerce Store with bKash" data-price="45000">
-            <span>E-Commerce with bKash (à§³45k+)</span>
+            <span>E-Commerce with bKash (৳45k+)</span>
           </label>
           <label class="custom-check-item">
             <input type="checkbox" class="custom-pkg-checkbox" data-label="UI/UX Design in Figma" data-price="10000">
-            <span>UI/UX Figma Design (à§³10k+)</span>
+            <span>UI/UX Figma Design (৳10k+)</span>
           </label>
           <label class="custom-check-item">
             <input type="checkbox" class="custom-pkg-checkbox" data-label="Facebook & Instagram Ad Boosting" data-price="12000">
-            <span>Facebook Ad Boosting (à§³12k+/mo)</span>
+            <span>Facebook Ad Boosting (৳12k+/mo)</span>
           </label>
           <label class="custom-check-item">
             <input type="checkbox" class="custom-pkg-checkbox" data-label="YouTube Video Ad Boosting" data-price="15000">
-            <span>YouTube Ad Boosting (à§³15k+/mo)</span>
+            <span>YouTube Ad Boosting (৳15k+/mo)</span>
           </label>
           <label class="custom-check-item">
             <input type="checkbox" class="custom-pkg-checkbox" data-label="Search Engine Optimization (SEO)" data-price="15000">
-            <span>Google SEO & Maps (à§³15k+/mo)</span>
+            <span>Google SEO & Maps (৳15k+/mo)</span>
           </label>
         </div>
 
@@ -689,7 +887,7 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Member 1: Founder & CEO -->
         <div class="team-card">
           <div class="team-img-wrap">
-            <img src="images/team/team-1-1.jpg" alt="Engr. Md. Ashikur Rahman â€” Founder & CEO">
+            <img src="images/team/team-1-1.jpg" alt="Engr. Md. Ashikur Rahman — Founder & CEO">
           </div>
           <div class="team-info">
             <h3 class="team-name">Engr. Md. Ashikur Rahman</h3>
@@ -704,7 +902,7 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Member 2: CTO -->
         <div class="team-card">
           <div class="team-img-wrap">
-            <img src="images/team/team-1-2.jpg" alt="Engr. Md. Hasinur Rahman â€” CTO">
+            <img src="images/team/team-1-2.jpg" alt="Engr. Md. Hasinur Rahman — CTO">
           </div>
           <div class="team-info">
             <h3 class="team-name">Engr. Md. Hasinur Rahman</h3>
@@ -719,7 +917,7 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Member 3: Senior Software Engineer -->
         <div class="team-card">
           <div class="team-img-wrap">
-            <img src="images/team/team-1-3.jpg" alt="Engr. Md. Al Amin â€” Senior Software Engineer">
+            <img src="images/team/team-1-3.jpg" alt="Engr. Md. Al Amin — Senior Software Engineer">
           </div>
           <div class="team-info">
             <h3 class="team-name">Engr. Md. Al Amin</h3>
@@ -734,7 +932,7 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Member 4: Digital Marketing Specialist -->
         <div class="team-card">
           <div class="team-img-wrap">
-            <img src="images/team/team-1-4.jpg" alt="Jannatul Nayem â€” Digital Marketing Specialist">
+            <img src="images/team/team-1-4.jpg" alt="Jannatul Nayem — Digital Marketing Specialist">
           </div>
           <div class="team-info">
             <h3 class="team-name">Jannatul Nayem</h3>
@@ -749,14 +947,14 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Member 5: Senior Graphics Designer -->
         <div class="team-card">
           <div class="team-img-wrap">
-            <img src="images/team/team-1-5.jpg" alt="Engr. Md. Mehedi Hasan â€” Senior Graphics Designer">
+            <img src="images/team/team-1-5.jpg" alt="Engr. Md. Mehedi Hasan — Senior Graphics Designer">
           </div>
           <div class="team-info">
             <h3 class="team-name">Engr. Md. Mehedi Hasan</h3>
             <div class="team-role">Senior Graphics Designer</div>
             <div class="team-socials">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="LinkedIn">in</a>
-              <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Behance">bÄ“</a>
+              <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Behance">bē</a>
             </div>
           </div>
         </div>
@@ -764,7 +962,7 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Member 6: Deputy General Manager -->
         <div class="team-card">
           <div class="team-img-wrap">
-            <img src="images/team/team-1-6.jpg" alt="Md. Rezaul Karim â€” Deputy General Manager">
+            <img src="images/team/team-1-6.jpg" alt="Md. Rezaul Karim — Deputy General Manager">
           </div>
           <div class="team-info">
             <h3 class="team-name">Md. Rezaul Karim</h3>
@@ -779,7 +977,7 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Member 7: Digital Marketing Specialist -->
         <div class="team-card">
           <div class="team-img-wrap">
-            <img src="images/team/team-1-7.jpg" alt="Md. Nazmus Sakib â€” Digital Marketing Specialist">
+            <img src="images/team/team-1-7.jpg" alt="Md. Nazmus Sakib — Digital Marketing Specialist">
           </div>
           <div class="team-info">
             <h3 class="team-name">Md. Nazmus Sakib</h3>
@@ -794,7 +992,7 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Member 8: App Developer -->
         <div class="team-card">
           <div class="team-img-wrap">
-            <img src="images/team/team-1-8.jpg" alt="Kobir Hossen â€” App Developer">
+            <img src="images/team/team-1-8.jpg" alt="Kobir Hossen — App Developer">
           </div>
           <div class="team-info">
             <h3 class="team-name">Kobir Hossen</h3>
@@ -843,7 +1041,7 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Slide 1: M Kamruzzaman Shadhin -->
           <div class="testimonial-slide">
             <div class="testimonial-card">
-              <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+              <div class="review-stars">★★★★★</div>
               <p class="review-quote">
                 "We are extremely impressed with the services provided by Giga Digital Agency. Their team's expertise in digital marketing, creative design, and strategic guidance has significantly boosted our online presence and business growth. Highly recommended!"
               </p>
@@ -860,7 +1058,7 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Slide 2: Retail Founder -->
           <div class="testimonial-slide">
             <div class="testimonial-card">
-              <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+              <div class="review-stars">★★★★★</div>
               <p class="review-quote">
                 "Their Facebook and YouTube ad boosting strategies tripled our e-commerce sales within 60 days. The automated bKash and Pathao courier integrations work without a single hitch. Exceptional engineering."
               </p>
@@ -877,7 +1075,7 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Slide 3: SaaS Executive -->
           <div class="testimonial-slide">
             <div class="testimonial-card">
-              <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+              <div class="review-stars">★★★★★</div>
               <p class="review-quote">
                 "Giga Digital Agency designed our entire web application and UI/UX in Figma, followed by flawless front-end development. Our user activation rate jumped by 48% within two weeks of launch."
               </p>
@@ -894,7 +1092,7 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Slide 4: Corporate Logistics CEO -->
           <div class="testimonial-slide">
             <div class="testimonial-card">
-              <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+              <div class="review-stars">★★★★★</div>
               <p class="review-quote">
                 "Best SEO and web development firm in Dhaka. We are now ranking #1 on Google for all of our primary commercial keywords, bringing in qualified B2B leads every single morning."
               </p>
@@ -1058,7 +1256,7 @@ require_once __DIR__ . '/includes/header.php';
           </div>
 
           <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%;">
-            ðŸ’¬ Instant WhatsApp Chat (+880 1860-422185)
+            💬 Instant WhatsApp Chat (+880 1860-422185)
           </a>
         </div>
 
@@ -1090,9 +1288,9 @@ require_once __DIR__ . '/includes/header.php';
                 <label class="input-label" for="custService">Service Required *</label>
                 <select id="custService" name="service" class="form-input" required>
                   <option value="" disabled selected>Select service category...</option>
-                  <option value="Starter Business Web (à§³15,000)">Starter Business Web Design (à§³15,000)</option>
-                  <option value="Corporate Web Design (à§³28,000)">Professional Corporate Web Design (à§³28,000)</option>
-                  <option value="E-Commerce Store (à§³45,000)">E-Commerce Store with bKash (à§³45,000)</option>
+                  <option value="Starter Business Web (৳15,000)">Starter Business Web Design (৳15,000)</option>
+                  <option value="Corporate Web Design (৳28,000)">Professional Corporate Web Design (৳28,000)</option>
+                  <option value="E-Commerce Store (৳45,000)">E-Commerce Store with bKash (৳45,000)</option>
                   <option value="Facebook & YouTube Ad Boosting">Facebook & YouTube Ad Boosting</option>
                   <option value="UI/UX Design in Figma">UI/UX Design in Figma</option>
                   <option value="Search Engine Optimization (SEO)">Search Engine Optimization (SEO)</option>
@@ -1117,10 +1315,6 @@ require_once __DIR__ . '/includes/header.php';
 
     </div>
   </section>
-
-  <!-- =========================================================================
-       15. CORPORATE FOOTER
-       ========================================================================= -->
 <?php
 require_once __DIR__ . '/includes/footer.php';
 ?>

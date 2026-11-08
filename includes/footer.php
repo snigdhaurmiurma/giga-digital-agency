@@ -6,6 +6,59 @@
 $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
 ?>
   <!-- =========================================================================
+       ZAMAN-IT STYLE 4-PILLAR GROWTH IMPACT BANNER
+       ========================================================================= -->
+  <section class="impact-banner-section" aria-label="Our Core Agency Execution Pillars">
+    <div class="container">
+      <div style="text-align:center; max-width:680px; margin:0 auto 36px;">
+        <span class="section-tag" style="background:rgba(34,180,85,0.15); color:var(--accent-green); border-color:var(--border-green);">Execution Philosophy</span>
+        <h2 style="font-size:2rem; font-weight:900; color:var(--text-heading); margin-top:8px;">How We Turn Ideas Into Digital Leadership</h2>
+        <p style="font-size:0.95rem; color:var(--text-muted);">A proven four-stage agency lifecycle built for commercial longevity and rapid market adoption.</p>
+      </div>
+
+      <div class="impact-pillars-grid">
+        
+        <!-- Pillar 1 -->
+        <div class="impact-pillar-card">
+          <div class="pillar-icon">💡</div>
+          <div class="pillar-title" style="color:var(--accent-cyan);">1. IDEATE</div>
+          <p class="pillar-desc">
+            Deep requirement workshops, user research, competitor gap mapping, and clear project milestones.
+          </p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="impact-pillar-card">
+          <div class="pillar-icon">🎨</div>
+          <div class="pillar-title" style="color:var(--accent-primary);">2. CREATE</div>
+          <p class="pillar-desc">
+            Human-centered UI/UX prototypes, modern visual systems, interactive Figma flows, and brand assets.
+          </p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="impact-pillar-card">
+          <div class="pillar-icon">💻</div>
+          <div class="pillar-title" style="color:#a855f7;">3. DEVELOP</div>
+          <p class="pillar-desc">
+            Ultra-fast responsive code, bKash/Nagad checkout integrations, secure databases, and custom CMS.
+          </p>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="impact-pillar-card">
+          <div class="pillar-icon">🚀</div>
+          <div class="pillar-title" style="color:var(--accent-green);">4. BOOST</div>
+          <p class="pillar-desc">
+            Meta CAPI pixel tracking, targeted Facebook & YouTube ad boosting, Google SEO, and sustained ROAS.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
        CORPORATE FOOTER
        ========================================================================= -->
   <footer class="corporate-footer" id="footer">
