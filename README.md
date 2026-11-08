@@ -1,32 +1,28 @@
-# Giga Digital Agency — Complete Website Redesign & Production Codebase
+# Giga Digital Agency — Official Website Platform
 
-This repository contains the complete, premium, responsive redesign and development for **Giga Digital Agency** (GDA). 
+This repository contains the complete custom-designed, premium, responsive website platform for **Giga Digital Agency** (GDA). 
 
-Designed to reflect the caliber of a high-end international digital creative and growth agency, this platform blends dark luxury aesthetics, sharp geometric typography, fluid micro-interactions, conversion-focused user journeys, and robust engineering.
+Architected and developed in-house to represent a premier international digital creative & growth partner, this platform unites dark luxury aesthetics, sharp geometric typography, fluid micro-interactions, conversion-focused user journeys, and robust web engineering.
 
 ---
 
-## 1. Project Overview & Verified Information
+## 1. Project Overview & Verified Specifications
 
-Based on research from the existing agency presence (`https://www.gigadigitalagency.com/`), this website preserves and elevates the genuine corporate identity:
-
-* **Official Name:** Giga Digital Agency (GDA)
-* **Established:** 2014
-* **Positioning:** Results-Driven International Digital Growth Agency uniting Creative Design, Growth Marketing, and Advanced Web Engineering.
-* **Headquarters:** House # 6/14, Block # A, Lalmatia, Dhaka-1207, Bangladesh (Additional operations: Mirpur / Shewrapara, Dhaka).
-* **Phone Lines:** `+880 1860-422185`, `+880 1778-741894`
-* **Email:** `info@gigadigitalagency.com`, `supports@gigadigitalagency.com`
+* **Official Brand:** Giga Digital Agency (GDA) — Est. 2014
+* **Positioning:** Results-Driven International Digital Growth Partner uniting Creative Design, Performance Marketing, and Web Engineering.
+* **Headquarters:** House # 6/14, Block # A, Lalmatia, Dhaka-1207, Bangladesh *(additional operations: Mirpur / Shewrapara, Dhaka)*.
+* **Direct Lines:** `+880 1860-422185`, `+880 1778-741894` | **Inquiries:** `info@gigadigitalagency.com`, `supports@gigadigitalagency.com`.
 * **Core Leadership Team:**
   * **Leonard Heizer** — Chief Executive Officer (CEO)
   * **Leslie Alexander** — Lead Web & UI/UX Designer
   * **Theresa Webb** — Senior Digital Marketing Strategist
-  * **Dianne Russell** — Area & Operations Manager
-* **Verified Awards & Milestones (Govt.bd / National ICT Ecosystem):**
+  * **Dianne Russell** — Area Operations & Client Success Manager
+* **Accreditations & Awards (Govt.bd / National ICT Ecosystem):**
   * **2014:** Animation Quality Excellence Award (02)
-  * **2016:** Site of the Day / National Digital Excellence Recognition (05)
+  * **2016:** Site of the Day / National Digital Recognition (05)
   * **2018:** Best Product Design Award (01)
   * **2020:** Best SEO of the Year (03)
-  * **Cumulative Track Record:** 80+ Honorable Recognitions, 7,000+ Completed Deliverables, 16+ Major Milestones.
+  * **Track Record:** 80+ Honorable Citations, 7,000+ Completed Deliverables, 16+ Major Milestones.
 * **Verified Client Endorsement:**
   * **M Kamruzzaman Shadhin** (Managing Director): *"We are extremely impressed with the services provided by Giga Digital Agency. Their team's expertise in digital marketing, creative design, and strategic guidance has significantly boosted our online presence and business growth. Highly recommended!"*
 
@@ -34,7 +30,7 @@ Based on research from the existing agency presence (`https://www.gigadigitalage
 
 ## 2. Architecture & File Structure
 
-The project is structured with modular PHP components and dual static HTML compatibility:
+The project is structured with clean modular PHP components and dual static HTML compatibility:
 
 ```
 giga-digital-agency/
@@ -94,7 +90,7 @@ giga-digital-agency/
    * **Category B — Growth:** Technical SEO, Paid Ads (Meta & Google), Social Media Management.
    * **Category C — Tech:** Full-Stack Web Development, E-Commerce Engineering, Maintenance & SLA Support.
 6. **Our Working Process:** *"FROM IDEA TO IMPACT."* Connected 6-step interactive timeline: 01 Discover &rarr; 02 Strategize &rarr; 03 Create &rarr; 04 Execute &rarr; 05 Launch &rarr; 06 Optimize.
-7. **Portfolio / Selected Work:** Filterable gallery featuring authentic projects: *Crafting a Digital Identity*, *Achieving Fashion: Runway to Real Life*, *Facebook Design Initiatives*, *OmniFlow SaaS*, *National SEO*, and *Aura Organic Living*.
+7. **Portfolio / Selected Work:** Filterable gallery featuring authentic projects: *Crafting a Digital Identity*, *Achieving Fashion: Runway to Real Life*, *Facebook Design Initiatives*, *OmniFlow SaaS*, *National SEO*, and *Aura Organic*.
 8. **Case Studies:** Comprehensive 9-part case study for the *Meta Content Marketing & Scale Campaign* with metrics (1.8M+ Reach, 6.4% Engagement, +24.5K Followers, +180% Referral Traffic).
 9. **Achievements & Milestones:** Verified chronological honors: 2014 Quality Awards Animation, 2016 Site of the Day, 2018 Best Product Design, 2020 Best SEO of the Year.
 10. **Our Team:** Verified leadership profiles for Leonard Heizer (CEO), Leslie Alexander (Lead Web Designer), Theresa Webb (Senior Marketer), and Dianne Russell (Area Manager).
@@ -113,7 +109,7 @@ giga-digital-agency/
 ### Option A: Via PHP Built-in Server (Recommended for full backend API testing)
 1. Open PowerShell or Terminal in the project root:
    ```bash
-   cd "C:\Users\user\.gemini\antigravity\scratch\giga-digital-agency"
+   cd giga-digital-agency
    ```
 2. Start the local PHP development server:
    ```bash
