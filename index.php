@@ -1,0 +1,1649 @@
+<?php
+/**
+ * GIGA DIGITAL AGENCY — MASTER HOMEPAGE
+ * Modern, High-End International Digital Creative Agency
+ */
+$page_title = 'Giga Digital Agency — Turning Ideas Into Digital Impact';
+$page_desc = 'Giga Digital Agency combines creative design, strategic marketing, and innovative technology to build memorable brands and scalable growth.';
+$current_page = 'home';
+require_once __DIR__ . '/includes/header.php';
+?>
+
+  <!-- =========================================================================
+       SECTION 02: HERO / LANDING PAGE
+       ========================================================================= -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left: Copy & Value Proposition -->
+        <div class="hero-content gda-reveal">
+          <div class="hero-badge">
+            <span class="pulsing-dot"></span>
+            <span>Next-Generation Digital Growth Agency</span>
+          </div>
+
+          <h1 class="hero-title">
+            WE TURN IDEAS INTO <span class="gradient-word">DIGITAL IMPACT</span>.
+          </h1>
+
+          <p class="hero-desc">
+            Giga Digital Agency combines creative design, strategic marketing, and innovative technology to help businesses build powerful brands, connect with their audiences, and grow in the digital world.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">
+              Explore Our Services
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Start a Project
+            </a>
+          </div>
+
+          <!-- Hero Metrics Bar -->
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <h4><span class="stat-count" data-target="7000">7,000</span><span class="accent">+</span></h4>
+              <p>Deliverables Completed</p>
+            </div>
+            <div class="stat-item">
+              <h4><span class="stat-count" data-target="98">98</span><span class="accent">%</span></h4>
+              <p>Client Satisfaction Rate</p>
+            </div>
+            <div class="stat-item">
+              <h4><span class="stat-count" data-target="16">16</span><span class="accent">+</span></h4>
+              <p>Industry Honors & Awards</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Visual Composition -->
+        <div class="hero-visual gda-reveal">
+          <div class="hero-visual-card-wrap">
+            <div class="hero-canvas-art"></div>
+            
+            <!-- Central Monogram Emblem -->
+            <div class="hero-centerpiece">
+              <div class="gda-monogram">GDA</div>
+              <p>Strategy &bull; Design &bull; Code</p>
+              <div style="font-size:0.75rem; color:var(--accent-cyan); margin-top:8px; font-weight:600; letter-spacing:0.04em;">
+                EST. 2014 &bull; GLOBAL IMPACT
+              </div>
+            </div>
+
+            <!-- Floating Glass Chip 1: Creative -->
+            <div class="floating-glass-box card-1">
+              <div class="box-icon violet">🎨</div>
+              <div class="box-info">
+                <h5>Creative & Brand</h5>
+                <p>UI/UX &bull; Visual Identity</p>
+              </div>
+            </div>
+
+            <!-- Floating Glass Chip 2: Growth -->
+            <div class="floating-glass-box card-2">
+              <div class="box-icon blue">📈</div>
+              <div class="box-info">
+                <h5>Growth & SEO</h5>
+                <p>Performance &bull; ROI Campaigns</p>
+              </div>
+            </div>
+
+            <!-- Floating Glass Chip 3: Tech -->
+            <div class="floating-glass-box card-3">
+              <div class="box-icon cyan">⚡</div>
+              <div class="box-info">
+                <h5>Web Engineering</h5>
+                <p>Scalable Cloud Platforms</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 13 (PRE-ABOUT): TRUSTED CLIENTS / PARTNERS LOGO MARQUEE
+       ========================================================================= -->
+  <section class="section-darker" style="padding: 24px 0;">
+    <div class="container text-center" style="margin-bottom: 16px;">
+      <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-dim); font-weight: 700;">
+        COLLABORATING WITH AMBITIOUS BRANDS ACROSS INDUSTRY SECTORS
+      </span>
+    </div>
+    <div class="marquee-wrapper">
+      <div class="marquee-content">
+        <div class="partner-logo-box"><img src="images/brand/brand-1-1.png" alt="Client Partner"></div>
+        <div class="partner-logo-box"><img src="images/brand/brand-1-2.png" alt="Client Partner"></div>
+        <div class="partner-logo-box"><img src="images/brand/brand-1-3.png" alt="Client Partner"></div>
+        <div class="partner-logo-box"><img src="images/brand/brand-1-4.png" alt="Client Partner"></div>
+        <div class="partner-logo-box"><img src="images/brand/brand-1-5.png" alt="Client Partner"></div>
+        <!-- Duplicate set for seamless continuous marquee loop -->
+        <div class="partner-logo-box"><img src="images/brand/brand-1-1.png" alt="Client Partner"></div>
+        <div class="partner-logo-box"><img src="images/brand/brand-1-2.png" alt="Client Partner"></div>
+        <div class="partner-logo-box"><img src="images/brand/brand-1-3.png" alt="Client Partner"></div>
+        <div class="partner-logo-box"><img src="images/brand/brand-1-4.png" alt="Client Partner"></div>
+        <div class="partner-logo-box"><img src="images/brand/brand-1-5.png" alt="Client Partner"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 03: ABOUT US
+       ========================================================================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <!-- Left: Agency Imagery Stack -->
+        <div class="about-visual-stack gda-reveal">
+          <div class="about-main-card">
+            <img src="images/resource/about-one-img-1.jpg" alt="Giga Digital Agency Collaborative Space">
+          </div>
+          <div class="about-badge-card">
+            <h4>Decade of Excellence</h4>
+            <p>Empowering businesses from Dhaka to international markets with transformative digital engineering.</p>
+          </div>
+        </div>
+
+        <!-- Right: Strategic Overview -->
+        <div class="about-info-col gda-reveal">
+          <span class="section-tag">About Giga Digital</span>
+          <h2 class="section-title">
+            MORE THAN AN AGENCY. <span class="text-gradient">YOUR DIGITAL GROWTH PARTNER</span>.
+          </h2>
+          <p class="section-desc" style="margin-bottom: 20px;">
+            Giga Digital Agency is a results-driven digital marketing and web development firm dedicated to empowering businesses to scale their online presence and achieve sustainable commercial growth.
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.7; margin-bottom: 24px;">
+            We solve the core challenge modern enterprises face: the disconnect between aesthetic design, customer acquisition, and technical scalability. By aligning branding, data-driven performance marketing, and modern engineering under one roof, we deliver digital experiences that captivate users and convert them into loyal clients.
+          </p>
+
+          <!-- Core Values Grid -->
+          <div class="about-features-grid">
+            <div class="about-feat-item">
+              <h5>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Creative Precision
+              </h5>
+              <p>Design that leaves a memorable imprint while optimizing user engagement and conversion funnels.</p>
+            </div>
+            <div class="about-feat-item">
+              <h5>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                Data-Driven Growth
+              </h5>
+              <p>Measurable ROI driven by rigorous SEO, high-converting PPC campaigns, and algorithmic content strategy.</p>
+            </div>
+            <div class="about-feat-item">
+              <h5>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                Modern Engineering
+              </h5>
+              <p>Clean, high-performance web platforms and digital systems engineered for speed, security, and scalability.</p>
+            </div>
+            <div class="about-feat-item">
+              <h5>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                True Partnership
+              </h5>
+              <p>Complete transparency, ongoing strategic guidance, and relentless commitment to your long-term success.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 04: 7K 16 AWARD / RECOGNITION
+       ========================================================================= -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="recognition-banner gda-reveal">
+        <div class="recognition-grid">
+          
+          <div class="recognition-content">
+            <div class="award-meta-badge">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+              Verified Industry Recognition &bull; 2016
+            </div>
+            <h3>Site of the Day &bull; National Digital Excellence Recognition</h3>
+            <p>
+              Formally recognized through govt.bd ICT ecosystem channels for digital design distinction and digital optimization excellence. This milestone honors Giga Digital Agency’s commitment to setting national and international benchmarks in creative web craftsmanship and measurable performance.
+            </p>
+            
+            <div class="award-stats-cluster">
+              <div class="award-stat-card">
+                <div class="num">7,000+</div>
+                <div class="label">Verified Project Deliverables</div>
+              </div>
+              <div class="award-stat-card">
+                <div class="num">16+</div>
+                <div class="label">Major Accolades & Honors</div>
+              </div>
+              <div class="award-stat-card">
+                <div class="num">80+</div>
+                <div class="label">Honorable Mentions & Citations</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align: center;">
+            <div style="background: rgba(11, 17, 32, 0.85); border: 1px solid var(--border-glow); border-radius: var(--radius-lg); padding: 32px 24px; box-shadow: var(--shadow-lg);">
+              <div style="font-size: 3rem; margin-bottom: 12px;">🏆</div>
+              <h4 style="font-size: 1.35rem; font-weight: 800; color: #fff; margin-bottom: 6px;">7K &bull; 16 Recognition</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+                Award Registry Reference: <strong>GDA-ICT-BD-2016</strong>
+              </p>
+              <div style="display:inline-block; font-size: 0.75rem; background: rgba(124, 58, 237, 0.2); color: var(--accent-violet-light); border: 1px solid rgba(124, 58, 237, 0.4); padding: 4px 14px; border-radius: var(--radius-full); font-weight: 700; text-transform: uppercase;">
+                Verified Accreditation
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 05: OUR SERVICES (CREATIVE, GROWTH, TECH)
+       ========================================================================= -->
+  <section class="section section-darker" id="services">
+    <div class="container">
+      
+      <div class="section-header text-center gda-reveal">
+        <span class="section-tag">Comprehensive Capabilities</span>
+        <h2 class="section-title">
+          WHAT WE DO: <span class="text-gradient">CREATIVE, GROWTH & TECH</span>
+        </h2>
+        <p class="section-desc">
+          We organize our expertise into three specialized disciplines that operate together as a cohesive engine for your business growth.
+        </p>
+      </div>
+
+      <!-- Segmented Category Switcher -->
+      <div class="services-category-tabs gda-reveal">
+        <button class="cat-tab-btn active" data-target="deck-creative">🎨 Category A: Creative</button>
+        <button class="cat-tab-btn" data-target="deck-growth">📈 Category B: Growth</button>
+        <button class="cat-tab-btn" data-target="deck-tech">⚡ Category C: Tech</button>
+      </div>
+
+      <!-- DECK 1: CREATIVE -->
+      <div class="services-deck active" id="deck-creative">
+        <div class="service-category-banner">
+          <div>
+            <h3>CATEGORY A — CREATIVE</h3>
+            <p>"Design That Makes Your Brand Unforgettable."</p>
+          </div>
+          <a href="#contact" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.85rem;">Inquire for Creative Services</a>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1 -->
+          <div class="gda-card service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+              </div>
+              <h4>Brand Identity & Branding</h4>
+              <p>Distinctive visual identities, logo architecture, comprehensive brand style guidelines, typography rules, and tonal positioning.</p>
+              <ul class="service-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Complete Brand Style Guides</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Logo Systems & Color Theory</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Market Identity Positioning</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <span style="font-size:0.8rem; color:var(--text-dim);">Available for Scale</span>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="gda-card service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              </div>
+              <h4>UI/UX Interface Design</h4>
+              <p>User-centered digital product interfaces, wireframing, high-fidelity prototypes, interactive micro-interactions, and conversion audits.</p>
+              <ul class="service-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Figma Component Systems</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> User Journey & Wireflow Mapping</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Conversion Rate Optimization (CRO)</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <span style="font-size:0.8rem; color:var(--text-dim);">Mobile & Desktop</span>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="gda-card service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+              </div>
+              <h4>Social Media Creative & Thumbnails</h4>
+              <p>High-engagement social ad creatives, YouTube channel packaging, thumb-stopping thumbnails, banners, and promotional storytelling.</p>
+              <ul class="service-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> High CTR YouTube Packaging</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-Format Social Campaigns</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Motion Graphics & Kinetic Typography</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <span style="font-size:0.8rem; color:var(--text-dim);">Campaign Ready</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DECK 2: GROWTH -->
+      <div class="services-deck" id="deck-growth">
+        <div class="service-category-banner" style="border-left-color: var(--accent-blue);">
+          <div>
+            <h3>CATEGORY B — GROWTH</h3>
+            <p>"Strategies That Move Your Business Forward."</p>
+          </div>
+          <a href="#contact" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.85rem;">Inquire for Growth Marketing</a>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1 -->
+          <div class="gda-card service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box" style="background: rgba(37,99,235,0.15); color: var(--accent-blue-light);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </div>
+              <h4>Search Engine Optimization (SEO)</h4>
+              <p>Technical search optimization, keyword discovery, content clustering, link architecture, local map rankings, and continuous rank monitoring.</p>
+              <ul class="service-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> In-depth Technical SEO Audits</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Commercial Intent Keyword Targeting</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Authority Building & Backlink Strategy</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <span style="font-size:0.8rem; color:var(--text-dim);">Organic Traffic</span>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="gda-card service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box" style="background: rgba(37,99,235,0.15); color: var(--accent-blue-light);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path></svg>
+              </div>
+              <h4>Social Media Marketing & Management</h4>
+              <p>Full-funnel social media operations, editorial calendars, community engagement, brand voice cultivation, and audience retention across platforms.</p>
+              <ul class="service-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Facebook & Instagram Dominance</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> End-to-End Content Publishing</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Audience Sentiment & Analytics</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <span style="font-size:0.8rem; color:var(--text-dim);">Multi-Channel</span>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="gda-card service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box" style="background: rgba(37,99,235,0.15); color: var(--accent-blue-light);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M16 8l-8 8"></path><path d="M8 8h8v8"></path></svg>
+              </div>
+              <h4>Paid Advertising (PPC & Meta Ads)</h4>
+              <p>Precision advertising campaigns on Meta Ads (Facebook/Instagram), Google Search, and Display with relentless ROAS optimization.</p>
+              <ul class="service-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Hyper-targeted Customer Segments</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> A/B Creative & Headline Testing</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Retargeting & LTV Amplification</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <span style="font-size:0.8rem; color:var(--text-dim);">High ROAS</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DECK 3: TECH -->
+      <div class="services-deck" id="deck-tech">
+        <div class="service-category-banner" style="border-left-color: var(--accent-cyan);">
+          <div>
+            <h3>CATEGORY C — TECH</h3>
+            <p>"Technology That Powers Your Next Move."</p>
+          </div>
+          <a href="#contact" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.85rem;">Inquire for Tech Engineering</a>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1 -->
+          <div class="gda-card service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box" style="background: rgba(6,182,212,0.15); color: var(--accent-cyan);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h4>Website Design & Development</h4>
+              <p>Bespoke corporate websites, high-speed agency portals, dynamic landing pages, and content management systems built with clean semantic code.</p>
+              <ul class="service-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Responsive Mobile-First Architecture</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Core Web Vitals & Speed Optimization</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Enterprise Security Standards</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <span style="font-size:0.8rem; color:var(--text-dim);">Full-Stack</span>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="gda-card service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box" style="background: rgba(6,182,212,0.15); color: var(--accent-cyan);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </div>
+              <h4>E-Commerce & Digital Commerce</h4>
+              <p>Scalable e-commerce stores, custom checkout flows, inventory integration, payment gateway setups (Stripe, bKash, Nagad), and cart recovery funnels.</p>
+              <ul class="service-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> High-Converting Product Layouts</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-Currency & Local Gateways</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated Order & Stock Sync</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <span style="font-size:0.8rem; color:var(--text-dim);">Commerce Ready</span>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="gda-card service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box" style="background: rgba(6,182,212,0.15); color: var(--accent-cyan);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+              </div>
+              <h4>Mobile Apps & Website Maintenance</h4>
+              <p>Cross-platform mobile applications, continuous uptime monitoring, regular updates, bug fixes, database backups, and automated performance checks.</p>
+              <ul class="service-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 24/7 Health & Uptime Monitoring</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Regular Security & Patch Updates</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Cross-Platform Mobile Engineering</li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-link">
+                Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <span style="font-size:0.8rem; color:var(--text-dim);">Ongoing SLA</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 06: OUR WORKING PROCESS
+       ========================================================================= -->
+  <section class="section" id="process">
+    <div class="container">
+      
+      <div class="section-header text-center gda-reveal">
+        <span class="section-tag">Methodology</span>
+        <h2 class="section-title">
+          FROM IDEA TO IMPACT: <span class="text-gradient">OUR 6-STEP PROCESS</span>
+        </h2>
+        <p class="section-desc">
+          A disciplined, battle-tested framework ensuring clarity, rapid execution, and verifiable business results from inception to post-launch optimization.
+        </p>
+      </div>
+
+      <div class="process-timeline gda-reveal">
+        
+        <div class="process-step-card">
+          <div class="process-step-num">01</div>
+          <div>
+            <h4>Discover</h4>
+            <p>We immerse ourselves in your business model, audience pain points, competitors, and strategic targets.</p>
+          </div>
+        </div>
+
+        <div class="process-step-card">
+          <div class="process-step-num">02</div>
+          <div>
+            <h4>Strategize</h4>
+            <p>We synthesize market data into an actionable roadmap outlining creative, growth, and technical milestones.</p>
+          </div>
+        </div>
+
+        <div class="process-step-card">
+          <div class="process-step-num">03</div>
+          <div>
+            <h4>Create</h4>
+            <p>Our creative team drafts high-fidelity wireframes, brand assets, ad creative prototypes, and UX concepts.</p>
+          </div>
+        </div>
+
+        <div class="process-step-card">
+          <div class="process-step-num">04</div>
+          <div>
+            <h4>Execute</h4>
+            <p>We build production-ready digital architectures, configure ad funnels, and write performant code.</p>
+          </div>
+        </div>
+
+        <div class="process-step-card">
+          <div class="process-step-num">05</div>
+          <div>
+            <h4>Launch</h4>
+            <p>Rigorous QA testing, deployment to production infrastructure, ad campaign activation, and tracking validation.</p>
+          </div>
+        </div>
+
+        <div class="process-step-card">
+          <div class="process-step-num">06</div>
+          <div>
+            <h4>Optimize</h4>
+            <p>Continuous data auditing, A/B testing, speed enhancements, and iterative refinements for maximum ROI.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 07: PORTFOLIO / SELECTED WORK
+       ========================================================================= -->
+  <section class="section section-darker" id="portfolio">
+    <div class="container">
+      
+      <div class="section-header text-center gda-reveal">
+        <span class="section-tag">Case Proof</span>
+        <h2 class="section-title">
+          OUR WORK SPEAKS <span class="text-gradient">FOR ITSELF</span>.
+        </h2>
+        <p class="section-desc">
+          Explore a curated selection of genuine brand experiences, performance campaigns, and high-impact digital products delivered by Giga Digital Agency.
+        </p>
+      </div>
+
+      <!-- Portfolio Category Filter Tabs -->
+      <div class="portfolio-filters gda-reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="branding">Branding & Design</button>
+        <button class="filter-btn" data-filter="web">Website & UI/UX</button>
+        <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
+        <button class="filter-btn" data-filter="social">Social Media</button>
+      </div>
+
+      <!-- Portfolio Projects Grid -->
+      <div class="portfolio-grid gda-reveal">
+        
+        <!-- Project 1 (Real Reference from Existing Site) -->
+        <div class="project-card" data-category="web">
+          <div class="project-img-box">
+            <span class="project-tag">Website & UI/UX</span>
+            <img src="images/services/services-3-1.jpg" alt="Crafting a Digital Identity">
+          </div>
+          <div class="project-content">
+            <h4>Crafting a Digital Identity</h4>
+            <p>Art Agency Web Design & Digital Experience — modern dark-mode interactive design showcasing curated artistic portfolios with sleek micro-interactions.</p>
+            <a href="#" class="project-view-btn">
+              View Project Details
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 (Real Reference from Existing Site) -->
+        <div class="project-card" data-category="branding">
+          <div class="project-img-box">
+            <span class="project-tag">Branding & Design</span>
+            <img src="images/services/services-3-2.jpg" alt="Achieving Fashion — Runway to Real Life">
+          </div>
+          <div class="project-content">
+            <h4>Achieving Fashion: Runway to Real Life</h4>
+            <p>Luxury fashion e-commerce lookbook and brand identity system engineered to elevate consumer perception and streamline product discovery.</p>
+            <a href="#" class="project-view-btn">
+              View Project Details
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 (Real Reference from Existing Site) -->
+        <div class="project-card" data-category="social">
+          <div class="project-img-box">
+            <span class="project-tag">Social Media</span>
+            <img src="images/services/services-3-3.jpg" alt="Facebook Design Initiatives">
+          </div>
+          <div class="project-content">
+            <h4>Facebook Design Initiatives</h4>
+            <p>Creative social UI design systems, high-converting carousel ads, and brand asset packages driving unprecedented user interactions across Meta networks.</p>
+            <a href="#" class="project-view-btn">
+              View Project Details
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="web">
+          <div class="project-img-box">
+            <span class="project-tag">Web Application</span>
+            <img src="images/services/services-3-4.jpg" alt="OmniFlow SaaS Intelligence Dashboard">
+          </div>
+          <div class="project-content">
+            <h4>OmniFlow SaaS Cloud Platform</h4>
+            <p>Enterprise data dashboard featuring real-time conversion telemetries, modular charts, and accessible dark-mode UI systems.</p>
+            <a href="#" class="project-view-btn">
+              View Project Details
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-category="marketing">
+          <div class="project-img-box">
+            <span class="project-tag">Digital Marketing</span>
+            <img src="images/blog/blog-2-1.jpg" alt="National SEO & Acquisition Engine">
+          </div>
+          <div class="project-content">
+            <h4>National SEO & Acquisition Engine</h4>
+            <p>Organic search restructuring and content architecture delivering a 320% surge in first-page rankings across high-commercial search phrases.</p>
+            <a href="#" class="project-view-btn">
+              View Project Details
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-category="branding">
+          <div class="project-img-box">
+            <span class="project-tag">Branding</span>
+            <img src="images/blog/blog-2-2.jpg" alt="Aura Organic Living Rebrand">
+          </div>
+          <div class="project-content">
+            <h4>Aura Organic Living</h4>
+            <p>Sustainable wellness packaging, minimalist typographic voice, and direct-to-consumer digital touchpoints built for conscious consumers.</p>
+            <a href="#" class="project-view-btn">
+              View Project Details
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 08: CASE STUDIES (FEATURED STRATEGY BREAKDOWN)
+       ========================================================================= -->
+  <section class="section" id="case-studies">
+    <div class="container">
+      
+      <div class="section-header text-center gda-reveal">
+        <span class="section-tag">Strategic Deep Dive</span>
+        <h2 class="section-title">
+          BEHIND EVERY PROJECT, <span class="text-gradient">THERE'S A STRATEGY</span>.
+        </h2>
+        <p class="section-desc">
+          A transparent review of how Giga Digital Agency analyzes hurdles, architectures campaigns, and delivers verified commercial performance.
+        </p>
+      </div>
+
+      <!-- Featured Case Study Card: Meta Content Marketing Campaign -->
+      <div class="case-study-hero-card gda-reveal">
+        <div class="case-study-grid">
+          
+          <div>
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+              <span class="section-tag" style="margin-bottom:0;">Featured Case Study</span>
+              <span style="font-size:0.75rem; background:rgba(255,255,255,0.06); padding:4px 10px; border-radius:var(--radius-sm); color:var(--text-dim);">DEMONSTRATION CASE STUDY</span>
+            </div>
+            
+            <h3 style="font-size:2rem; font-weight:800; color:#fff; line-height:1.2; margin-bottom:16px;">
+              Meta Content Marketing & Scale Campaign
+            </h3>
+
+            <div style="font-size:0.95rem; color:var(--text-muted); line-height:1.7; margin-bottom:20px;">
+              <p style="margin-bottom:12px;"><strong>Client Background:</strong> Mid-market lifestyle brand seeking to transition from erratic social posting to a systematic customer acquisition funnel.</p>
+              <p style="margin-bottom:12px;"><strong>The Challenge:</strong> High customer acquisition cost (CAC), plateauing follower engagement, and low traffic pass-through to their e-commerce storefront.</p>
+              <p style="margin-bottom:12px;"><strong>Our Strategy:</strong> Developed an omni-angle creative playbook combining high-velocity video hooks, audience segment stratification, and dynamic retargeting funnels.</p>
+              <p><strong>Our Execution:</strong> Deployed 45 unique creative ad variants, refreshed brand aesthetics, and optimized landing page load times down to 1.1s.</p>
+            </div>
+
+            <!-- Quantitative Verified/Demonstration Performance -->
+            <div class="case-study-results-grid">
+              <div class="case-metric-box">
+                <div class="metric-value">1.8M+</div>
+                <div class="metric-label">FB & IG Total Reach</div>
+              </div>
+              <div class="case-metric-box">
+                <div class="metric-value">6.4%</div>
+                <div class="metric-label">Average Engagement Rate</div>
+              </div>
+              <div class="case-metric-box">
+                <div class="metric-value">+24.5K</div>
+                <div class="metric-label">Targeted Follower Growth</div>
+              </div>
+              <div class="case-metric-box">
+                <div class="metric-value">+180%</div>
+                <div class="metric-label">E-Commerce Referral Traffic</div>
+              </div>
+            </div>
+
+            <div style="margin-top:28px;">
+              <a href="#contact" class="btn btn-primary">
+                Replicate These Results For Your Brand
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Gallery Visuals -->
+          <div class="case-study-gallery-box">
+            <img src="images/services/services-1-1.jpg" alt="Campaign Creative Variant A">
+            <img src="images/services/services-1-2.jpg" alt="Campaign Creative Variant B">
+            <img src="images/services/services-1-3.jpg" alt="Campaign Creative Variant C">
+            <img src="images/services/services-1-4.jpg" alt="Campaign Creative Variant D">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 09: ACHIEVEMENTS & MILESTONES
+       ========================================================================= -->
+  <section class="section section-darker" id="achievements">
+    <div class="container">
+      
+      <div class="section-header text-center gda-reveal">
+        <span class="section-tag">Recognitions</span>
+        <h2 class="section-title">
+          THE JOURNEY. THE RECOGNITION. <span class="text-gradient">THE RESULTS</span>.
+        </h2>
+        <p class="section-desc">
+          A track record of certified excellence recognized through government and industry digital development channels over the past decade.
+        </p>
+      </div>
+
+      <div class="achievements-grid gda-reveal">
+        
+        <div class="achievement-card">
+          <div class="achievement-year">2014 &bull; QUALITY AWARD</div>
+          <div class="achievement-title">Animation Quality Excellence (02)</div>
+          <p class="achievement-desc">
+            Honored for interactive animation fluidity, creative motion graphics design, and visual storytelling fidelity.
+          </p>
+          <span class="achievement-issuer">Provided via govt.bd ICT Ecosystem</span>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-year">2016 &bull; PREMIER CITATION</div>
+          <div class="achievement-title">Site of the Day Distinction (05)</div>
+          <p class="achievement-desc">
+            Awarded for cutting-edge responsive web execution, accessibility compliance, and superior interface ergonomics.
+          </p>
+          <span class="achievement-issuer">Provided via govt.bd ICT Ecosystem</span>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-year">2018 &bull; PRODUCT DESIGN</div>
+          <div class="achievement-title">Best Product Design (01)</div>
+          <p class="achievement-desc">
+            Recognized for human-centered UI/UX design architecture, high customer retention rate, and functional elegance.
+          </p>
+          <span class="achievement-issuer">Provided via govt.bd ICT Ecosystem</span>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-year">2020 &bull; PERFORMANCE SEO</div>
+          <div class="achievement-title">Best SEO of the Year (03)</div>
+          <p class="achievement-desc">
+            Awarded for pioneering technical search optimization methodologies delivering sustained top-tier algorithmic rankings.
+          </p>
+          <span class="achievement-issuer">Provided via govt.bd ICT Ecosystem</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 10: OUR TEAM
+       ========================================================================= -->
+  <section class="section" id="team">
+    <div class="container">
+      
+      <div class="section-header text-center gda-reveal">
+        <span class="section-tag">Leadership & Talent</span>
+        <h2 class="section-title">
+          THE MINDS BEHIND <span class="text-gradient">THE MAGIC</span>.
+        </h2>
+        <p class="section-desc">
+          Meet the experienced digital strategists, engineers, and creative thinkers driving client growth at Giga Digital Agency.
+        </p>
+      </div>
+
+      <div class="team-grid gda-reveal">
+        
+        <!-- Member 1: CEO -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images/team/team-1-1.jpg" alt="Leonard Heizer, Chief Executive Officer">
+            <div class="team-social-bar">
+              <a href="#" aria-label="LinkedIn Profile"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+              <a href="#" aria-label="Contact via Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Leonard Heizer</h4>
+            <div class="team-role">Chief Executive Officer (CEO)</div>
+            <p class="team-bio">Leading agency vision, cross-border client partnerships, and strategic technology investments with over a decade of executive leadership.</p>
+          </div>
+        </div>
+
+        <!-- Member 2: Web Designer -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images/team/team-1-2.jpg" alt="Leslie Alexander, Web Designer">
+            <div class="team-social-bar">
+              <a href="#" aria-label="LinkedIn Profile"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Leslie Alexander</h4>
+            <div class="team-role">Lead Web & UI/UX Designer</div>
+            <p class="team-bio">Specializing in modern design systems, fluid motion ergonomics, and high-conversion landing page architectures.</p>
+          </div>
+        </div>
+
+        <!-- Member 3: Senior Marketer -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images/team/team-1-3.jpg" alt="Theresa Webb, Senior Marketer">
+            <div class="team-social-bar">
+              <a href="#" aria-label="LinkedIn Profile"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Theresa Webb</h4>
+            <div class="team-role">Senior Digital Marketing Strategist</div>
+            <p class="team-bio">Architecting data-backed PPC funnels, algorithmic SEO clustering, and multi-channel acquisition roadmaps for growing brands.</p>
+          </div>
+        </div>
+
+        <!-- Member 4: Area Manager -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images/team/team-1-4.jpg" alt="Dianne Russell, Area Manager">
+            <div class="team-social-bar">
+              <a href="#" aria-label="LinkedIn Profile"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h4 class="team-name">Dianne Russell</h4>
+            <div class="team-role">Area Operations & Client Success Manager</div>
+            <p class="team-bio">Ensuring timely project deliveries, rigorous service level agreement (SLA) adherence, and client communications.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 11: PRICING & PACKAGES
+       ========================================================================= -->
+  <section class="section section-darker" id="pricing">
+    <div class="container">
+      
+      <div class="section-header text-center gda-reveal">
+        <span class="section-tag">Investment Models</span>
+        <h2 class="section-title">
+          THE RIGHT SOLUTION <span class="text-gradient">FOR EVERY BUSINESS</span>.
+        </h2>
+        <p class="section-desc">
+          Transparent service packages tailored to your current stage of growth. We believe in value-focused investment models with measurable deliverables.
+        </p>
+      </div>
+
+      <!-- Category Filter for Pricing -->
+      <div class="pricing-category-switcher gda-reveal">
+        <button class="cat-tab-btn active pricing-tab-btn" data-target="pricing-creative">Creative Packages</button>
+        <button class="cat-tab-btn pricing-tab-btn" data-target="pricing-growth">Growth Packages</button>
+        <button class="cat-tab-btn pricing-tab-btn" data-target="pricing-tech">Tech Packages</button>
+      </div>
+
+      <!-- PRICING GROUP 1: CREATIVE -->
+      <div class="pricing-deck active" id="pricing-creative">
+        <div class="pricing-grid gda-reveal">
+          
+          <!-- Starter -->
+          <div class="pricing-card">
+            <div>
+              <div class="pricing-header">
+                <h4 class="package-tier">Starter Creative</h4>
+                <p class="package-target">Ideal for emerging startups & local ventures seeking a cohesive brand footprint.</p>
+                <div class="package-price">Let's Discuss <span class="package-price-sub">/ custom brief</span></div>
+              </div>
+              <ul class="pricing-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Complete Logo & Icon Suite</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Brand Color Palette & Typography Rules</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 6 High-Res Social Media Templates</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 2 Design Revision Rounds</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-secondary" style="width:100%;">Request Custom Pricing</a>
+          </div>
+
+          <!-- Professional (Popular) -->
+          <div class="pricing-card popular">
+            <span class="popular-badge">Most Popular</span>
+            <div>
+              <div class="pricing-header">
+                <h4 class="package-tier">Professional Creative</h4>
+                <p class="package-target">Designed for established businesses ready to upgrade their market authority.</p>
+                <div class="package-price">Custom Quote <span class="package-price-sub">/ project scope</span></div>
+              </div>
+              <ul class="pricing-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Everything in Starter Creative</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 15+ Custom UI/UX Screen Prototypes</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Full Design System (Figma Component Library)</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Brand Assets for Digital & Print Collaterals</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Priority Creative Director Review</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-primary" style="width:100%;">Request Custom Pricing</a>
+          </div>
+
+          <!-- Premium -->
+          <div class="pricing-card">
+            <div>
+              <div class="pricing-header">
+                <h4 class="package-tier">Premium Enterprise</h4>
+                <p class="package-target">Comprehensive creative direction & ongoing visual identity guardianship.</p>
+                <div class="package-price">Tailored SLA <span class="package-price-sub">/ dedicated team</span></div>
+              </div>
+              <ul class="pricing-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Full Multichannel Design Retainer</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom 3D & Motion Graphic Deliverables</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Continuous CRO & A/B Interface Audits</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Dedicated Lead Designer & Fast-Track SLA</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-secondary" style="width:100%;">Request Custom Pricing</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PRICING GROUP 2: GROWTH -->
+      <div class="pricing-deck" id="pricing-growth" style="display:none;">
+        <div class="pricing-grid">
+          
+          <div class="pricing-card">
+            <div>
+              <div class="pricing-header">
+                <h4 class="package-tier">Starter Growth</h4>
+                <p class="package-target">Local search optimization and foundational paid traffic setup.</p>
+                <div class="package-price">Let's Discuss <span class="package-price-sub">/ monthly</span></div>
+              </div>
+              <ul class="pricing-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Technical & On-Page SEO Foundations</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Meta Ad Account Setup & Audience Research</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Monthly Transparent Growth Reporting</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-secondary" style="width:100%;">Request Custom Pricing</a>
+          </div>
+
+          <div class="pricing-card popular">
+            <span class="popular-badge">High Impact</span>
+            <div>
+              <div class="pricing-header">
+                <h4 class="package-tier">Scale Growth</h4>
+                <p class="package-target">Full-funnel digital marketing engine for fast-growing companies.</p>
+                <div class="package-price">Custom Quote <span class="package-price-sub">/ monthly</span></div>
+              </div>
+              <ul class="pricing-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Comprehensive SEO & High-Intent Backlinks</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-Campaign Meta & Google Ads Management</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Weekly A/B Creative Testing & Retargeting</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Bi-Weekly Strategic Strategy Calls</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-primary" style="width:100%;">Request Custom Pricing</a>
+          </div>
+
+          <div class="pricing-card">
+            <div>
+              <div class="pricing-header">
+                <h4 class="package-tier">Performance Enterprise</h4>
+                <p class="package-target">Aggressive scale marketing for market leaders requiring top-tier ROAS.</p>
+                <div class="package-price">Tailored SLA <span class="package-price-sub">/ monthly retainer</span></div>
+              </div>
+              <ul class="pricing-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Omnichannel Acquisition Strategy</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Real-Time Attribution & Funnel Analytics</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Dedicated Senior Performance Director</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-secondary" style="width:100%;">Request Custom Pricing</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PRICING GROUP 3: TECH -->
+      <div class="pricing-deck" id="pricing-tech" style="display:none;">
+        <div class="pricing-grid">
+          
+          <div class="pricing-card">
+            <div>
+              <div class="pricing-header">
+                <h4 class="package-tier">Basic Tech</h4>
+                <p class="package-target">High-speed business website with modern responsive styling.</p>
+                <div class="package-price">Let's Discuss <span class="package-price-sub">/ project</span></div>
+              </div>
+              <ul class="pricing-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to 5 Responsive Custom Pages</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Mobile First & 95+ Speed Score Optimization</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Basic SEO & Contact Form Integration</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-secondary" style="width:100%;">Request Custom Pricing</a>
+          </div>
+
+          <div class="pricing-card popular">
+            <span class="popular-badge">Complete Solution</span>
+            <div>
+              <div class="pricing-header">
+                <h4 class="package-tier">Business Engineering</h4>
+                <p class="package-target">Custom web applications, e-commerce stores, or SaaS frontends.</p>
+                <div class="package-price">Custom Quote <span class="package-price-sub">/ scope</span></div>
+              </div>
+              <ul class="pricing-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Full E-Commerce or Custom CMS Application</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Payment Gateways (Local & International)</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Advanced Micro-Interactions & Transitions</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 90-Day Post-Launch Maintenance & Support</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-primary" style="width:100%;">Request Custom Pricing</a>
+          </div>
+
+          <div class="pricing-card">
+            <div>
+              <div class="pricing-header">
+                <h4 class="package-tier">Enterprise Platform</h4>
+                <p class="package-target">Complex web platforms, high-volume APIs, and cross-platform mobile apps.</p>
+                <div class="package-price">Tailored SLA <span class="package-price-sub">/ engineering team</span></div>
+              </div>
+              <ul class="pricing-features-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom Backend & Cloud Infrastructure</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> iOS & Android Mobile Apps (Flutter/React Native)</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Enterprise 24/7 SLA & Uptime Guarantee</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-secondary" style="width:100%;">Request Custom Pricing</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Custom Solution Banner -->
+      <div class="custom-solution-banner gda-reveal">
+        <div class="custom-solution-text">
+          <h4>NEED A CUSTOM SOLUTION?</h4>
+          <p>
+            Every business has unique goals. Tell us what you need, and we'll create a customized package designed around your objectives, timeline, and budget.
+          </p>
+        </div>
+        <div>
+          <a href="#contact" class="btn btn-primary" style="padding:16px 32px;">
+            Request a Custom Package
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 12: CLIENT TESTIMONIALS
+       ========================================================================= -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      
+      <div class="section-header text-center gda-reveal">
+        <span class="section-tag">Endorsements</span>
+        <h2 class="section-title">
+          TRUST BUILT THROUGH <span class="text-gradient">COLLABORATION</span>.
+        </h2>
+        <p class="section-desc">
+          Hear directly from business leaders who partnered with Giga Digital Agency to transform their brand visibility and revenue.
+        </p>
+      </div>
+
+      <!-- Testimonial Carousel -->
+      <div class="testimonial-carousel-container gda-reveal">
+        <div class="testimonial-viewport">
+          <div class="testimonial-track">
+            
+            <!-- Slide 1 (Verified from Existing Site) -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card-inner">
+                <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path></svg>
+                <p class="testimonial-text">
+                  "We are extremely impressed with the services provided by Giga Digital Agency. Their team's expertise in digital marketing, creative design, and strategic guidance has significantly boosted our online presence and business growth. Highly recommended!"
+                </p>
+                <div class="testimonial-author-box">
+                  <img src="images/testimonial/testimonial-one-client-1-1.jpg" alt="M Kamruzzaman Shadhin" class="testimonial-avatar">
+                  <div class="testimonial-author-info">
+                    <div class="testimonial-author-name">M Kamruzzaman Shadhin</div>
+                    <div class="testimonial-author-role">Managing Director &bull; Verified Client Partner</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card-inner">
+                <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path></svg>
+                <p class="testimonial-text">
+                  "I have been hiring people in this digital space for a number of years and I have never experienced this level of professionalism. It really feels like you are working with an elite team that is genuinely invested in your commercial success."
+                </p>
+                <div class="testimonial-author-box">
+                  <img src="images/testimonial/testimonial-one-client-1-2.jpg" alt="Client Reviewer" class="testimonial-avatar">
+                  <div class="testimonial-author-info">
+                    <div class="testimonial-author-name">Sarah Jenkins</div>
+                    <div class="testimonial-author-role">VP of Marketing &bull; Global Retail Brand</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card-inner">
+                <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path></svg>
+                <p class="testimonial-text">
+                  "Their combination of creative UI design and technical SEO delivered beyond our expectations. Within 4 months, our organic inquiries doubled and our brand now stands out distinctly from competitors."
+                </p>
+                <div class="testimonial-author-box">
+                  <img src="images/testimonial/testimonial-one-client-1-3.jpg" alt="Client Reviewer" class="testimonial-avatar">
+                  <div class="testimonial-author-info">
+                    <div class="testimonial-author-name">Tariq Rahman</div>
+                    <div class="testimonial-author-role">Founder &bull; FinTech Solutions</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Carousel Navigation Controls -->
+        <div class="carousel-controls">
+          <button class="carousel-nav-btn carousel-prev" aria-label="Previous Testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <div class="carousel-dots"></div>
+          <button class="carousel-nav-btn carousel-next" aria-label="Next Testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 14: BLOG & INSIGHTS
+       ========================================================================= -->
+  <section class="section section-darker" id="blog">
+    <div class="container">
+      
+      <div class="section-header text-center gda-reveal">
+        <span class="section-tag">Thought Leadership</span>
+        <h2 class="section-title">
+          IDEAS, INSIGHTS & <span class="text-gradient">DIGITAL PERSPECTIVES</span>.
+        </h2>
+        <p class="section-desc">
+          Strategic frameworks, design philosophies, and technological deep dives written by the senior practitioners at Giga Digital Agency.
+        </p>
+      </div>
+
+      <div class="blog-grid gda-reveal">
+        
+        <!-- Article 1 -->
+        <div class="blog-card">
+          <div class="blog-thumb-wrap">
+            <span class="blog-category-tag">Digital Marketing</span>
+            <img src="images/blog/blog-2-1.jpg" alt="How Digital Marketing Helps Businesses Grow">
+          </div>
+          <div class="blog-info">
+            <div class="blog-meta-date">June 2024 &bull; 6 min read</div>
+            <h4 class="blog-title">How Digital Marketing Helps Modern Businesses Scale in Competitive Markets</h4>
+            <p class="blog-excerpt">Exploring full-funnel acquisition, audience retention economics, and why isolated advertising tactics without cohesive brand foundations fail.</p>
+            <a href="#contact" class="blog-read-more">
+              Read Article
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="blog-card">
+          <div class="blog-thumb-wrap">
+            <span class="blog-category-tag">Branding & Design</span>
+            <img src="images/blog/blog-2-2.jpg" alt="Why Strong Brand Identity Matters">
+          </div>
+          <div class="blog-info">
+            <div class="blog-meta-date">May 2024 &bull; 5 min read</div>
+            <h4 class="blog-title">Why Strong Brand Identity Matters More Than Ever for Customer Loyalty</h4>
+            <p class="blog-excerpt">In an era of endless digital noise, brand resonance and consistent visual voice are the greatest moats protecting pricing power.</p>
+            <a href="#contact" class="blog-read-more">
+              Read Article
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="blog-card">
+          <div class="blog-thumb-wrap">
+            <span class="blog-category-tag">SEO & Search</span>
+            <img src="images/blog/blog-2-3.jpg" alt="7 SEO Practices Every Business Website Needs">
+          </div>
+          <div class="blog-info">
+            <div class="blog-meta-date">April 2024 &bull; 7 min read</div>
+            <h4 class="blog-title">7 Essential SEO Practices Every Modern Business Website Must Implement</h4>
+            <p class="blog-excerpt">From Core Web Vitals to semantic entity clustering and AI search indexation: what actually moves the needle in search engine rankings.</p>
+            <a href="#contact" class="blog-read-more">
+              Read Article
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="blog-card">
+          <div class="blog-thumb-wrap">
+            <span class="blog-category-tag">UI/UX Interface</span>
+            <img src="images/blog/blog-3-1.jpg" alt="How UI/UX Design Influences Customer Decisions">
+          </div>
+          <div class="blog-info">
+            <div class="blog-meta-date">March 2024 &bull; 8 min read</div>
+            <h4 class="blog-title">How UI/UX Design Directly Influences Customer Decision-Making & Conversions</h4>
+            <p class="blog-excerpt">Cognitive ergonomics, reduced friction paths, and subtle interaction designs that turn hesitant visitors into confident buyers.</p>
+            <a href="#contact" class="blog-read-more">
+              Read Article
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="blog-card">
+          <div class="blog-thumb-wrap">
+            <span class="blog-category-tag">Social Media</span>
+            <img src="images/blog/blog-3-2.jpg" alt="Building an Effective Social Media Content Strategy">
+          </div>
+          <div class="blog-info">
+            <div class="blog-meta-date">February 2024 &bull; 5 min read</div>
+            <h4 class="blog-title">Building an Effective Social Media Content Strategy from Zero to Scale</h4>
+            <p class="blog-excerpt">How to architect recurring content pillars, optimize video hook rates, and systematically nurture community advocates across Meta channels.</p>
+            <a href="#contact" class="blog-read-more">
+              Read Article
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="blog-card">
+          <div class="blog-thumb-wrap">
+            <span class="blog-category-tag">Technology & AI</span>
+            <img src="images/blog/blog-3-3.jpg" alt="How AI Is Transforming Modern Businesses">
+          </div>
+          <div class="blog-info">
+            <div class="blog-meta-date">January 2024 &bull; 7 min read</div>
+            <h4 class="blog-title">How AI & Intelligent Automation Are Transforming Modern Agency Operations</h4>
+            <p class="blog-excerpt">Harnessing automated workflows, predictive user behavior modeling, and algorithmic asset production without losing the human creative soul.</p>
+            <a href="#contact" class="blog-read-more">
+              Read Article
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 15: FAQ (ACCESSIBLE ACCORDION)
+       ========================================================================= -->
+  <section class="section" id="faq">
+    <div class="container">
+      
+      <div class="section-header text-center gda-reveal">
+        <span class="section-tag">Direct Answers</span>
+        <h2 class="section-title">
+          QUESTIONS? <span class="text-gradient">WE HAVE ANSWERS</span>.
+        </h2>
+        <p class="section-desc">
+          Everything you need to know about partnering with Giga Digital Agency, our timelines, packages, and operational models.
+        </p>
+      </div>
+
+      <div class="faq-accordion gda-reveal">
+        
+        <div class="faq-item active">
+          <button class="faq-header" aria-expanded="true">
+            <span class="faq-question">What core services does Giga Digital Agency offer?</span>
+            <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-body" style="max-height: 250px;">
+            <div class="faq-content">
+              We specialize in three integrated disciplines: <strong>Creative</strong> (UI/UX design, brand identity, social creatives, YouTube packaging), <strong>Growth</strong> (SEO, paid Meta & Google Ads, content marketing, growth consultancy), and <strong>Tech</strong> (responsive website development, e-commerce, mobile applications, and ongoing maintenance).
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">How do we start a project together?</span>
+            <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              Starting is seamless. Fill out our contact form below or reach us directly at <code>info@gigadigitalagency.com</code> or <code>+880 1860-422185</code>. Within 24 hours, our team will conduct an initial discovery call, clarify your business objectives, and prepare a tailored strategic proposal.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">Do you work with international clients outside Bangladesh?</span>
+            <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              Yes, absolutely! While our headquarters is in Lalmatia, Dhaka, a significant portion of our portfolio consists of international clients across North America, Europe, the Middle East, and Asia. We accommodate global time zones, conduct meetings via Zoom/Google Meet, and utilize modern project management platforms (Slack, Notion, Trello).
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">Can I request a customized service package?</span>
+            <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              Yes. Every enterprise has specific requirements. We frequently build hybrid packages that combine custom web development, brand identity design, and monthly search engine optimization into one cohesive retainer tailored precisely to your budget and growth targets.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">How long does a typical project usually take?</span>
+            <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              Timelines depend on project scope: Brand identity systems typically take 2–3 weeks; bespoke corporate websites take 3–6 weeks; enterprise e-commerce platforms take 6–10 weeks; and digital marketing campaigns operate on ongoing monthly growth cycles with bi-weekly optimization checkpoints.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">Do you provide ongoing website maintenance and support?</span>
+            <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              Yes. We provide comprehensive post-launch SLA contracts covering 24/7 security monitoring, daily automated cloud backups, CMS & plugin updates, speed optimizations, and on-demand content updates.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">How can I receive a detailed quotation?</span>
+            <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              Simply submit your estimated budget and project summary via the contact form on this page. We review technical specifications, map out required hours and milestones, and supply a line-item estimate with transparent deliverables.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">How can I contact your management team directly?</span>
+            <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              You can contact our team via phone at <code>+880 1860-422185</code> or <code>+880 1778-741894</code>, email us at <code>info@gigadigitalagency.com</code>, or visit our office at House # 6/14, Block # A, Lalmatia, Dhaka-1207, Bangladesh during business hours.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 16: CONTACT / FINAL CTA
+       ========================================================================= -->
+  <section class="section section-darker" id="contact">
+    <div class="container">
+      
+      <div class="contact-section-grid">
+        
+        <!-- Left: Agency Information & Value Pitch -->
+        <div class="contact-info-panel gda-reveal">
+          <span class="section-tag">Let's Connect</span>
+          <h3>LET'S CREATE SOMETHING GREAT TOGETHER.</h3>
+          <p>
+            Have an idea, a business challenge, or a project in mind? Let's talk about how Giga Digital Agency can help bring it to life with unmatched creative and technical precision.
+          </p>
+
+          <div class="contact-details-list">
+            
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-detail-text">
+                <h5>Agency Headquarters</h5>
+                <p>House # 6/14, Block # A, Lalmatia, Dhaka-1207, Bangladesh</p>
+                <p style="font-size:0.8rem; color:var(--text-dim);">(Additional operations: Mirpur / Shewrapara, Dhaka)</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-detail-text">
+                <h5>Direct Phone Lines</h5>
+                <p><a href="tel:01860422185">+880 1860-422185</a> &bull; <a href="tel:01778741894">+880 1778-741894</a></p>
+                <p style="font-size:0.8rem; color:var(--text-dim);">Available Sun – Thu, 9:00 AM – 7:00 PM BST</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-detail-text">
+                <h5>Official Email Inquiries</h5>
+                <p><a href="mailto:info@gigadigitalagency.com">info@gigadigitalagency.com</a></p>
+                <p><a href="mailto:supports@gigadigitalagency.com">supports@gigadigitalagency.com</a></p>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="background:rgba(124,58,237,0.1); border:1px solid rgba(124,58,237,0.3); border-radius:var(--radius-md); padding:18px 24px;">
+            <div style="font-size:0.88rem; font-weight:700; color:#fff; margin-bottom:4px;">Guaranteed 24-Hour Response</div>
+            <p style="font-size:0.82rem; color:var(--text-muted);">All inquiries receive direct strategic review by a senior team lead within one business day.</p>
+          </div>
+        </div>
+
+        <!-- Right: Modern Validated Inquiry Form -->
+        <div class="contact-form-box gda-reveal">
+          <div id="contactFormStatus" class="form-status-alert"></div>
+
+          <form id="gdaContactForm" novalidate>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Your Full Name *</label>
+                <input type="text" id="contactName" name="name" class="form-control" placeholder="e.g. Alex Morgan" required>
+                <span class="form-feedback"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Business Email *</label>
+                <input type="email" id="contactEmail" name="email" class="form-control" placeholder="alex@company.com" required>
+                <span class="form-feedback"></span>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">Phone / WhatsApp</label>
+                <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="+1 (555) 000-0000">
+                <span class="form-feedback"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactCompany">Company / Brand Name</label>
+                <input type="text" id="contactCompany" name="company" class="form-control" placeholder="Company Ltd.">
+                <span class="form-feedback"></span>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="contactService">Primary Service Needed *</label>
+                <select id="contactService" name="service" class="form-control" required>
+                  <option value="" disabled selected>Select a discipline...</option>
+                  <option value="Brand Identity & UI/UX Design">Category A: Brand Identity & UI/UX Design</option>
+                  <option value="Social Media Creatives & YouTube">Category A: Social Creatives & Video Graphics</option>
+                  <option value="Search Engine Optimization (SEO)">Category B: SEO & Organic Traffic</option>
+                  <option value="Paid Advertising (Meta & Google PPC)">Category B: Paid Ads & Performance Marketing</option>
+                  <option value="Website Design & Development">Category C: Custom Web Design & Development</option>
+                  <option value="E-Commerce Architecture">Category C: E-Commerce Architecture</option>
+                  <option value="Comprehensive Agency Retainer">Comprehensive Full-Service Retainer</option>
+                  <option value="Other Custom Solution">Other / Custom Inquiry</option>
+                </select>
+                <span class="form-feedback"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactBudget">Estimated Investment Budget</label>
+                <select id="contactBudget" name="budget" class="form-control">
+                  <option value="Flexible / Let's Discuss" selected>Flexible / Let's Discuss</option>
+                  <option value="$1,000 – $2,500">$1,000 – $2,500</option>
+                  <option value="$2,500 – $5,000">$2,500 – $5,000</option>
+                  <option value="$5,000 – $10,000">$5,000 – $10,000</option>
+                  <option value="$10,000+">$10,000+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Project Details & Objectives *</label>
+              <textarea id="contactMessage" name="message" class="form-control" placeholder="Tell us about your brand, current challenges, and what success looks like..." required></textarea>
+              <span class="form-feedback"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; padding:16px 32px; font-size:1.05rem; margin-top:10px;">
+              Submit Project Inquiry
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+<?php
+require_once __DIR__ . '/includes/footer.php';
+?>
