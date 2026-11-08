@@ -570,84 +570,537 @@ ul, ol {
   padding: 6px 0;
 }
 
-/* 6. HERO SECTION (Zaman IT Style Deep Navy & Real Agency Visual) */
+/* 6. HERO SECTION (Exact Zaman IT Architecture & Devices Showcase) */
 .hero-banner {
-  padding: 85px 0 95px;
+  padding: 60px 0 0;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(10,20,36,0.95) 0%, rgba(15,28,50,0.85) 100%);
+  background: linear-gradient(135deg, #06111f 0%, #0b223d 50%, #09172c 100%);
   border-bottom: 1px solid var(--border-subtle);
 }
+[data-theme="light"] .hero-banner {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e6f1fc 50%, #f8fafc 100%);
+}
+
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 50px;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 40px;
   align-items: center;
+  position: relative;
 }
+
+/* Zaman IT Trusted IT Partner Pill */
+.hero-partner-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  background: rgba(15, 28, 50, 0.85);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #d1fae5;
+  font-size: 0.84rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+[data-theme="light"] .hero-partner-pill {
+  background: #ffffff;
+  color: #065f46;
+  border-color: rgba(34, 197, 94, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.hero-partner-pill svg {
+  color: #22c55e;
+}
+
+/* Zaman IT Exact Headline */
 .hero-title {
-  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-size: clamp(2.4rem, 4.2vw, 3.6rem);
   font-weight: 900;
-  line-height: 1.15;
+  line-height: 1.12;
   color: var(--text-heading);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   letter-spacing: -0.03em;
 }
+.hero-accent-green {
+  color: #22c55e !important;
+  display: inline;
+}
+
 .hero-subtitle {
-  font-size: 1.12rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.7;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
+  max-width: 580px;
 }
+
+/* Zaman IT Action Buttons Row */
 .hero-cta-group {
   display: flex;
   align-items: center;
   gap: 14px;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
-.hero-pills-row {
+.btn-whatsapp-pill {
+  background: #22c55e;
+  color: #ffffff !important;
+  font-weight: 800;
+  font-size: 0.96rem;
+  padding: 13px 26px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.35);
+  transition: all var(--transition);
+}
+.btn-whatsapp-pill:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(34, 197, 94, 0.45);
+}
+
+.btn-dark-pill {
+  background: rgba(15, 28, 50, 0.85);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.96rem;
+  padding: 11px 24px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-medium);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all var(--transition);
+}
+[data-theme="light"] .btn-dark-pill {
+  background: #0f172a;
+}
+.btn-dark-pill:hover {
+  background: rgba(21, 36, 61, 0.95);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+.play-arrow-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 0.72rem;
+  padding-left: 2px;
+}
+
+/* Small Subtext With Underline Links */
+.hero-price-subtext {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+.hero-price-subtext a {
+  color: var(--text-heading);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 700;
+  transition: color var(--transition);
+}
+.hero-price-subtext a:hover {
+  color: #22c55e;
+}
+
+/* Top-Right Handwritten Script (Your Vision Our Creation) */
+.handwritten-script-wrap {
+  position: absolute;
+  top: -15px;
+  right: 40px;
+  text-align: right;
+  z-index: 10;
+  pointer-events: none;
+}
+.handwritten-script {
+  font-family: 'Caveat', cursive, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #a7f3d0;
+  line-height: 1.05;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+[data-theme="light"] .handwritten-script {
+  color: #059669;
+}
+.handwritten-doodle {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #22c55e;
+  transform: rotate(-15deg);
+}
+
+/* 3D Angled Devices Showcase (Laptop + Mobile Mockup) */
+.zaman-devices-stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 440px;
+}
+
+/* Background Atmospheric City Glow */
+.zaman-stage-backdrop {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  background: radial-gradient(circle at 60% 40%, rgba(34, 197, 94, 0.14) 0%, rgba(18, 115, 207, 0.16) 40%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Realistic CSS Laptop Mockup */
+.mockup-laptop {
+  position: relative;
+  width: 92%;
+  max-width: 530px;
+  z-index: 2;
+  perspective: 1200px;
+  filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.6));
+}
+.laptop-screen-frame {
+  background: #0f172a;
+  border-radius: 14px 14px 0 0;
+  padding: 10px 10px 0;
+  border: 2px solid #334155;
+  border-bottom: none;
+  position: relative;
+}
+.laptop-notch {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #475569;
+  margin: 0 auto 6px;
+}
+.laptop-screen-display {
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+  height: 275px;
+  background: #081220;
+}
+.laptop-screen-display img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Live Overlay Inside Laptop Screen (resembling actual agency web portal) */
+.laptop-screen-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(8, 18, 32, 0.88) 0%, rgba(12, 35, 64, 0.72) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 14px 18px;
+}
+.screen-mini-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 8px;
+}
+.screen-mini-nav {
+  display: flex;
+  gap: 10px;
+  font-size: 0.65rem;
+  color: #cbd5e1;
+  font-weight: 600;
+}
+.screen-mini-hero {
+  margin-top: 10px;
+}
+.screen-mini-tag {
+  font-size: 0.62rem;
+  color: #22c55e;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.screen-mini-title {
+  font-size: 1.18rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 4px;
+}
+.screen-mini-desc {
+  font-size: 0.68rem;
+  color: #94a3b8;
+  line-height: 1.35;
+  margin-bottom: 10px;
+  max-width: 260px;
+}
+.screen-mini-btn-group {
+  display: flex;
+  gap: 8px;
+}
+.mini-btn-blue {
+  background: #1273cf;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+.mini-btn-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.62rem;
+  font-weight: 600;
+}
+.laptop-base {
+  height: 14px;
+  background: linear-gradient(180deg, #334155 0%, #1e293b 100%);
+  border-radius: 0 0 16px 16px;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.laptop-trackpad-notch {
+  width: 70px;
+  height: 4px;
+  background: #475569;
+  border-radius: 0 0 4px 4px;
+  margin: 0 auto;
+}
+
+/* Realistic Smartphone Mockup Overlapping Right Side */
+.mockup-smartphone {
+  position: absolute;
+  bottom: -15px;
+  right: -8px;
+  width: 145px;
+  height: 260px;
+  background: #0f172a;
+  border-radius: 24px;
+  border: 3px solid #475569;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
+  z-index: 4;
+  overflow: hidden;
+  padding: 6px;
+}
+.phone-screen {
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;
+  background: #081220;
+  position: relative;
+}
+.phone-island {
+  width: 44px;
+  height: 9px;
+  background: #000000;
+  border-radius: var(--radius-full);
+  margin: 3px auto 4px;
+}
+.phone-content {
+  padding: 6px 8px;
+  text-align: left;
+}
+.phone-logo {
+  height: 18px;
+  width: auto;
+  margin-bottom: 6px;
+}
+.phone-hero-title {
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 4px;
+}
+.phone-hero-desc {
+  font-size: 0.52rem;
+  color: #94a3b8;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+.phone-mini-btn {
+  background: #22c55e;
+  color: #ffffff;
+  font-size: 0.52rem;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* Floating Glass Feature Dock (The 4 Tabs from Zaman IT) */
+.hero-feature-dock {
+  margin-top: 45px;
+  background: rgba(12, 24, 44, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-full);
+  padding: 10px 18px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 5;
+}
+[data-theme="light"] .hero-feature-dock {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(15, 23, 42, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.dock-feature-item {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-wrap: wrap;
-}
-.hero-pill-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
+  padding: 10px 14px;
   border-radius: var(--radius-full);
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-medium);
-  font-size: 0.82rem;
-  font-weight: 700;
   color: var(--text-heading);
-  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 700;
+  transition: all var(--transition);
+}
+.dock-feature-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+[data-theme="light"] .dock-feature-item:hover {
+  background: rgba(18, 115, 207, 0.08);
+}
+.dock-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 0.95rem;
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+}
+.dock-feature-item:nth-child(2) .dock-icon-box {
+  background: rgba(18, 115, 207, 0.15);
+  color: #1273cf;
+  border-color: rgba(18, 115, 207, 0.35);
+}
+.dock-feature-item:nth-child(3) .dock-icon-box {
+  background: rgba(14, 165, 233, 0.15);
+  color: #0ea5e9;
+  border-color: rgba(14, 165, 233, 0.35);
+}
+.dock-feature-item:nth-child(4) .dock-icon-box {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  border-color: rgba(34, 197, 94, 0.35);
 }
 
-/* Eye-Catching Real Agency Visual Card */
-.hero-visual-card {
-  position: relative;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg), var(--shadow-glow);
+/* 6-Metric Stats Ticker Bar (Zaman IT Bottom Bar) */
+.zaman-stats-strip {
+  margin-top: 24px;
+  padding: 18px 24px;
+  background: rgba(8, 18, 34, 0.9);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+[data-theme="light"] .zaman-stats-strip {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.08);
+}
+.zaman-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+.zaman-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.zaman-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(18, 115, 207, 0.15);
+  color: #38bdf8;
+  font-size: 1.1rem;
+}
+.zaman-stat-number {
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: var(--text-heading);
+  line-height: 1.1;
+}
+.zaman-stat-title {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Fixed Right Edge Contact Widgets ( কথা বলুন, Call Us, WhatsApp ) */
+.right-fixed-actions {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 999;
+}
+.right-action-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 24px 0 0 24px;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: -4px 6px 18px rgba(0, 0, 0, 0.35);
+  transition: all var(--transition);
+}
+.right-action-pill:hover {
+  transform: translateX(-4px);
+}
+.pill-talk {
+  background: #0f1c32;
+  color: #ffffff;
   border: 1px solid var(--border-glow);
-  background: var(--bg-card);
+  border-right: none;
 }
-.hero-main-photo {
-  width: 100%;
-  height: 440px;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s ease;
+.pill-call {
+  background: #ffffff;
+  color: #0f172a;
 }
-.hero-visual-card:hover .hero-main-photo {
-  transform: scale(1.03);
+.pill-whatsapp {
+  background: #22c55e;
+  color: #ffffff;
 }
-
-/* Floating Trust Badges on Hero */
-.hero-float-chip {
-  position: absolute;
   background: var(--bg-glass);
   backdrop-filter: blur(14px);
   border: 1px solid var(--border-glow);

@@ -1,9 +1,9 @@
 ﻿<?php
 /**
- * GIGA DIGITAL AGENCY — MASTER HOMEPAGE
+ * GIGA DIGITAL AGENCY â€” MASTER HOMEPAGE
  * Clean Modern International Digital Agency
  */
-$page_title = 'Giga Digital Agency — Best Web Design, UI/UX, SEO & Digital Marketing Agency in Bangladesh';
+$page_title = 'Giga Digital Agency â€” Best Web Design, UI/UX, SEO & Digital Marketing Agency in Bangladesh';
 $page_desc = 'Giga Digital Agency is a premier digital agency in Dhaka, Bangladesh specializing in UI/UX design, corporate web development, e-commerce, SEO, and Facebook & YouTube ad boosting.';
 $current_page = 'home';
 $is_subpage = false;
@@ -13,76 +13,174 @@ require_once __DIR__ . '/includes/header.php';
     <div class="container">
       <div class="hero-grid">
         
-        <!-- Left: Copy & Value Proposition -->
+        <!-- Left: Copy & Value Proposition (Zaman IT exact layout) -->
         <div>
-          <span class="section-tag" style="background:rgba(0,229,153,0.15); color:var(--accent-green); border-color:var(--border-green);">
-            <span class="pulsing-dot"></span>
-            BUILD THE FUTURE &bull; INSPIRE EXCELLENCE
-          </span>
+          <!-- Trusted IT Partner Pill -->
+          <div class="hero-partner-pill">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+            <span>Your Trusted IT Partner in Dhaka</span>
+          </div>
+
+          <!-- Main Headline -->
           <h1 class="hero-title">
-            DREAM BOLDLY. BUILD WITH PURPOSE. <span class="gradient-text">SCALE EXPONENTIALLY</span>.
+            <span class="hero-accent-green">Web Design</span> Company<br>in Bangladesh
           </h1>
+
           <p class="hero-subtitle">
-            We don't just design websites and run ads — we build enduring digital legacies. Giga Digital Agency unites human-centered <strong>UI/UX Design</strong>, <strong>Corporate & E-Commerce Web Engineering</strong>, and <strong>High-ROAS Facebook & YouTube Ad Boosting</strong> to turn visionary ambition into market dominance.
+            GIGA DIGITAL AGENCY provides professional website design and development from Lalmatia, Dhaka. We build fast, responsive business websites, ecommerce stores and custom web solutions with transparent pricing, modern technology and ongoing support.
           </p>
 
+          <!-- Buttons Row -->
           <div class="hero-cta-group">
-            <a href="#services" class="btn btn-primary">
-              Explore Our Services
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-pill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.154.57 4.175 1.564 5.918l-1.564 5.71 5.86-1.536c1.678.914 3.603 1.408 5.64 1.408 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+              <span>WhatsApp: +880 1860-422185 (24/7) 💬</span>
             </a>
-            <a href="#contact" class="btn btn-secondary">
-              Get Instant Quote
-            </a>
-            <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-              💬 WhatsApp
+            <a href="#contact" class="btn-dark-pill">
+              <span class="play-arrow-circle">▶</span>
+              <span>Get Started Today</span>
             </a>
           </div>
 
-          <!-- Zaman IT Quick Stats Trust Strip -->
-          <div class="hero-quick-strip">
-            <div class="quick-metric-item">
-              <div class="metric-num">10+</div>
-              <div class="metric-label">Years Innovation</div>
+          <!-- Small Pricing Subtext with Links -->
+          <p class="hero-price-subtext">
+            Website packages from ৳15,000 (domain and hosting extra). <a href="#pricing">Compare website packages</a> &bull; <a href="#case-study">View completed website projects</a>
+          </p>
+        </div>
+
+        <!-- Right: 3D Angled Devices Showcase + Cursive Tag -->
+        <div style="position:relative;">
+          <!-- Handwritten Cursive Text (Top Right) -->
+          <div class="handwritten-script-wrap">
+            <div class="handwritten-script">
+              Your Vision<br>Our Creation <span class="handwritten-doodle">⤵</span>
             </div>
-            <div class="quick-metric-item">
-              <div class="metric-num">7,000+</div>
-              <div class="metric-label">Deliverables</div>
+          </div>
+
+          <!-- Devices Stage -->
+          <div class="zaman-devices-stage">
+            <div class="zaman-stage-backdrop"></div>
+            
+            <!-- Laptop Frame -->
+            <div class="mockup-laptop">
+              <div class="laptop-screen-frame">
+                <div class="laptop-notch"></div>
+                <div class="laptop-screen-display">
+                  <img src="images/resource/why-choose-one-img.jpg" alt="Agency Portal Preview">
+                  <div class="laptop-screen-overlay">
+                    <div class="screen-mini-header">
+                      <img src="images/resource/logo-1.png" alt="Giga Logo" style="height:18px; width:auto;">
+                      <div class="screen-mini-nav">
+                        <span>Home</span>
+                        <span>Services</span>
+                        <span>Portfolio</span>
+                        <span>Pricing</span>
+                      </div>
+                    </div>
+                    <div class="screen-mini-hero">
+                      <div class="screen-mini-tag">Official Digital Agency</div>
+                      <div class="screen-mini-title">Build Your<br>Digital Future</div>
+                      <div class="screen-mini-desc">Modern Websites, Real Results. High-impact engineering & marketing.</div>
+                      <div class="screen-mini-btn-group">
+                        <span class="mini-btn-blue">Get Started</span>
+                        <span class="mini-btn-ghost">View Our Work</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop-base">
+                <div class="laptop-trackpad-notch"></div>
+              </div>
             </div>
-            <div class="quick-metric-item">
-              <div class="metric-num">4.8x</div>
-              <div class="metric-label">Average ROAS</div>
+
+            <!-- Overlapping Smartphone Mockup -->
+            <div class="mockup-smartphone">
+              <div class="phone-screen">
+                <div class="phone-island"></div>
+                <div class="phone-content">
+                  <img src="images/resource/logo-1.png" alt="Giga Logo" class="phone-logo">
+                  <div class="phone-hero-title">Build Your Digital Future</div>
+                  <div class="phone-hero-desc">Modern Websites, Real Results.</div>
+                  <span class="phone-mini-btn">Get Started</span>
+                </div>
+              </div>
             </div>
-            <div class="quick-metric-item">
-              <div class="metric-num">98.4%</div>
-              <div class="metric-label">Retention</div>
-            </div>
+
           </div>
         </div>
 
-        <!-- Right: Eye-Catching Real Agency Visual with Floating Trust Chips -->
-        <div class="hero-visual-card">
-          <img src="images/resource/about-one-img-1.jpg" alt="Giga Digital Agency Team & Creative Workspace" class="hero-main-photo">
-          
-          <!-- Floating Chip 1: ROAS Metric -->
-          <div class="hero-float-chip hero-chip-top">
-            <span style="font-size:1.6rem;">🎯</span>
+      </div>
+
+      <!-- Floating Glass Feature Dock (The 4 Tabs from Zaman IT) -->
+      <div class="hero-feature-dock" aria-label="Key Agency Capabilities">
+        <a href="#services" class="dock-feature-item">
+          <span class="dock-icon-box">🖥️</span>
+          <span>Web & Ecommerce</span>
+        </a>
+        <a href="#services" class="dock-feature-item">
+          <span class="dock-icon-box">&lt;/&gt;</span>
+          <span>Custom Software</span>
+        </a>
+        <a href="#services" class="dock-feature-item">
+          <span class="dock-icon-box">📊</span>
+          <span>Digital Marketing</span>
+        </a>
+        <a href="#contact" class="dock-feature-item">
+          <span class="dock-icon-box">🎧</span>
+          <span>Dedicated Support</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- 6-Metric Stats Ticker Bar (Zaman IT Bottom Bar) -->
+    <div class="zaman-stats-strip">
+      <div class="container">
+        <div class="zaman-stats-grid">
+          <div class="zaman-stat-card">
+            <div class="zaman-stat-icon">🏆</div>
             <div>
-              <div style="font-size:1.15rem; font-weight:900; color:var(--text-heading); line-height:1.1;">4.8x Average ROAS</div>
-              <div style="font-size:0.75rem; color:var(--accent-primary); font-weight:700;">Meta & YouTube Ad Boosting</div>
+              <div class="zaman-stat-number">7000+</div>
+              <div class="zaman-stat-title">Completed Projects</div>
             </div>
           </div>
-
-          <!-- Floating Chip 2: Verified Deliverables -->
-          <div class="hero-float-chip hero-chip-bottom">
-            <span style="font-size:1.6rem;">🏆</span>
+          <div class="zaman-stat-card">
+            <div class="zaman-stat-icon">👥</div>
             <div>
-              <div style="font-size:1.15rem; font-weight:900; color:var(--text-heading); line-height:1.1;">7,000+ Completed Projects</div>
-              <div style="font-size:0.75rem; color:var(--accent-green); font-weight:700;">★ 98.4% Client Satisfaction</div>
+              <div class="zaman-stat-number">40+</div>
+              <div class="zaman-stat-title">Team Members</div>
+            </div>
+          </div>
+          <div class="zaman-stat-card">
+            <div class="zaman-stat-icon">🌐</div>
+            <div>
+              <div class="zaman-stat-number">22K+</div>
+              <div class="zaman-stat-title">Active Clients</div>
+            </div>
+          </div>
+          <div class="zaman-stat-card">
+            <div class="zaman-stat-icon">⏳</div>
+            <div>
+              <div class="zaman-stat-number">10+</div>
+              <div class="zaman-stat-title">Years Experience</div>
+            </div>
+          </div>
+          <div class="zaman-stat-card">
+            <div class="zaman-stat-icon">🎖️</div>
+            <div>
+              <div class="zaman-stat-number">75+</div>
+              <div class="zaman-stat-title">Awards & Honors</div>
+            </div>
+          </div>
+          <div class="zaman-stat-card">
+            <div class="zaman-stat-icon">📍</div>
+            <div>
+              <div class="zaman-stat-number">4</div>
+              <div class="zaman-stat-title">Service Hubs</div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -1327,6 +1425,7 @@ require_once __DIR__ . '/includes/header.php';
 
     </div>
   </section>
+
 <?php
 require_once __DIR__ . '/includes/footer.php';
 ?>
