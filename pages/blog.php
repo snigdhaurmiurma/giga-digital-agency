@@ -1,10 +1,11 @@
-<?php
+﻿<?php
 /**
- * GIGA DIGITAL AGENCY — BLOG & INSIGHTS PAGE
+ * GIGA DIGITAL AGENCY â€” BLOG & INSIGHTS PAGE
  */
-$page_title = 'Blog & Digital Perspectives — Giga Digital Agency';
+$page_title = 'Blog & Digital Perspectives â€” Giga Digital Agency';
 $page_desc = 'Read the latest thought leadership on Digital Marketing, SEO, UI/UX Design, and AI Business Automation from Giga Digital Agency specialists.';
 $current_page = 'blog';
+$is_subpage = true;
 require_once __DIR__ . '/../includes/header.php';
 ?>
 
@@ -27,7 +28,7 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="blog-card">
           <div class="blog-thumb-wrap">
             <span class="blog-category-tag">Digital Marketing</span>
-            <img src="images/blog/blog-2-1.jpg" alt="Digital Marketing">
+            <img src="../images/blog/blog-2-1.jpg" alt="Digital Marketing">
           </div>
           <div class="blog-info">
             <div class="blog-meta-date">June 2024 &bull; 6 min read</div>
@@ -40,7 +41,7 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="blog-card">
           <div class="blog-thumb-wrap">
             <span class="blog-category-tag">Branding & Design</span>
-            <img src="images/blog/blog-2-2.jpg" alt="Brand Identity">
+            <img src="../images/blog/blog-2-2.jpg" alt="Brand Identity">
           </div>
           <div class="blog-info">
             <div class="blog-meta-date">May 2024 &bull; 5 min read</div>
@@ -53,7 +54,7 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="blog-card">
           <div class="blog-thumb-wrap">
             <span class="blog-category-tag">SEO & Search</span>
-            <img src="images/blog/blog-2-3.jpg" alt="SEO Practices">
+            <img src="../images/blog/blog-2-3.jpg" alt="SEO Practices">
           </div>
           <div class="blog-info">
             <div class="blog-meta-date">April 2024 &bull; 7 min read</div>
@@ -66,7 +67,7 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="blog-card">
           <div class="blog-thumb-wrap">
             <span class="blog-category-tag">UI/UX Interface</span>
-            <img src="images/blog/blog-3-1.jpg" alt="UI UX Design">
+            <img src="../images/blog/blog-3-1.jpg" alt="UI UX Design">
           </div>
           <div class="blog-info">
             <div class="blog-meta-date">March 2024 &bull; 8 min read</div>
@@ -79,7 +80,7 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="blog-card">
           <div class="blog-thumb-wrap">
             <span class="blog-category-tag">Social Media</span>
-            <img src="images/blog/blog-3-2.jpg" alt="Social Media Strategy">
+            <img src="../images/blog/blog-3-2.jpg" alt="Social Media Strategy">
           </div>
           <div class="blog-info">
             <div class="blog-meta-date">February 2024 &bull; 5 min read</div>
@@ -92,7 +93,7 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="blog-card">
           <div class="blog-thumb-wrap">
             <span class="blog-category-tag">Technology & AI</span>
-            <img src="images/blog/blog-3-3.jpg" alt="AI in Business">
+            <img src="../images/blog/blog-3-3.jpg" alt="AI in Business">
           </div>
           <div class="blog-info">
             <div class="blog-meta-date">January 2024 &bull; 7 min read</div>
@@ -109,3 +110,4 @@ require_once __DIR__ . '/../includes/header.php';
 <?php
 require_once __DIR__ . '/../includes/footer.php';
 ?>
+

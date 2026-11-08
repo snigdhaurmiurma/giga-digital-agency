@@ -1,10 +1,11 @@
-<?php
+﻿<?php
 /**
- * GIGA DIGITAL AGENCY — ABOUT US PAGE
+ * GIGA DIGITAL AGENCY â€” ABOUT US PAGE
  */
-$page_title = 'About Us — Giga Digital Agency | Strategic Digital Growth Partner';
+$page_title = 'About Us â€” Giga Digital Agency | Strategic Digital Growth Partner';
 $page_desc = 'Discover the story, mission, leadership, and verified awards of Giga Digital Agency. Decades of combined experience scaling brands across borders.';
 $current_page = 'about';
+$is_subpage = true;
 require_once __DIR__ . '/../includes/header.php';
 ?>
 
@@ -26,7 +27,7 @@ require_once __DIR__ . '/../includes/header.php';
       <div class="about-grid">
         <div class="about-visual-stack gda-reveal">
           <div class="about-main-card">
-            <img src="images/resource/about-one-img-1.jpg" alt="Agency Studio Collaboration">
+            <img src="../images/resource/about-one-img-1.jpg" alt="Agency Studio Collaboration">
           </div>
           <div class="about-badge-card">
             <h4>Est. 2014</h4>
@@ -80,7 +81,7 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
           <div style="text-align: center;">
             <div style="background: rgba(11, 17, 32, 0.85); border: 1px solid var(--border-glow); border-radius: var(--radius-lg); padding: 32px 24px;">
-              <div style="font-size: 3rem; margin-bottom: 12px;">🏆</div>
+              <div style="font-size: 3rem; margin-bottom: 12px;">ðŸ†</div>
               <h4 style="font-size: 1.35rem; font-weight: 800; color: #fff;">7K &bull; 16 Recognition</h4>
               <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">Official Registry ID: <strong>GDA-ICT-BD-2016</strong></p>
               <div style="font-size: 0.75rem; background: rgba(124, 58, 237, 0.2); color: var(--accent-violet-light); padding: 4px 14px; border-radius: var(--radius-full); font-weight: 700; text-transform: uppercase;">
@@ -104,7 +105,7 @@ require_once __DIR__ . '/../includes/header.php';
 
       <div class="team-grid gda-reveal">
         <div class="team-card">
-          <div class="team-img-wrap"><img src="images/team/team-1-1.jpg" alt="Leonard Heizer, CEO"></div>
+          <div class="team-img-wrap"><img src="../images/team/team-1-1.jpg" alt="Leonard Heizer, CEO"></div>
           <div class="team-info">
             <h4 class="team-name">Leonard Heizer</h4>
             <div class="team-role">Chief Executive Officer (CEO)</div>
@@ -112,7 +113,7 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
         </div>
         <div class="team-card">
-          <div class="team-img-wrap"><img src="images/team/team-1-2.jpg" alt="Leslie Alexander, Web Designer"></div>
+          <div class="team-img-wrap"><img src="../images/team/team-1-2.jpg" alt="Leslie Alexander, Web Designer"></div>
           <div class="team-info">
             <h4 class="team-name">Leslie Alexander</h4>
             <div class="team-role">Lead Web & UI Designer</div>
@@ -120,7 +121,7 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
         </div>
         <div class="team-card">
-          <div class="team-img-wrap"><img src="images/team/team-1-3.jpg" alt="Theresa Webb, Senior Marketer"></div>
+          <div class="team-img-wrap"><img src="../images/team/team-1-3.jpg" alt="Theresa Webb, Senior Marketer"></div>
           <div class="team-info">
             <h4 class="team-name">Theresa Webb</h4>
             <div class="team-role">Senior Marketer & Strategist</div>
@@ -128,7 +129,7 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
         </div>
         <div class="team-card">
-          <div class="team-img-wrap"><img src="images/team/team-1-4.jpg" alt="Dianne Russell, Area Manager"></div>
+          <div class="team-img-wrap"><img src="../images/team/team-1-4.jpg" alt="Dianne Russell, Area Manager"></div>
           <div class="team-info">
             <h4 class="team-name">Dianne Russell</h4>
             <div class="team-role">Area Operations Manager</div>
@@ -142,3 +143,4 @@ require_once __DIR__ . '/../includes/header.php';
 <?php
 require_once __DIR__ . '/../includes/footer.php';
 ?>
+

@@ -1,10 +1,11 @@
-<?php
+﻿<?php
 /**
- * GIGA DIGITAL AGENCY — CASE STUDIES PAGE
+ * GIGA DIGITAL AGENCY â€” CASE STUDIES PAGE
  */
-$page_title = 'Strategy Case Studies — Giga Digital Agency';
+$page_title = 'Strategy Case Studies â€” Giga Digital Agency';
 $page_desc = 'Detailed analytical breakdown of strategy, execution, and verified results for our client campaigns and digital engineering projects.';
 $current_page = 'case-studies';
+$is_subpage = true;
 require_once __DIR__ . '/../includes/header.php';
 ?>
 
@@ -67,10 +68,10 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
 
           <div class="case-study-gallery-box">
-            <img src="images/services/services-1-1.jpg" alt="Campaign Asset 1">
-            <img src="images/services/services-1-2.jpg" alt="Campaign Asset 2">
-            <img src="images/services/services-1-3.jpg" alt="Campaign Asset 3">
-            <img src="images/services/services-1-4.jpg" alt="Campaign Asset 4">
+            <img src="../images/services/services-1-1.jpg" alt="Campaign Asset 1">
+            <img src="../images/services/services-1-2.jpg" alt="Campaign Asset 2">
+            <img src="../images/services/services-1-3.jpg" alt="Campaign Asset 3">
+            <img src="../images/services/services-1-4.jpg" alt="Campaign Asset 4">
           </div>
         </div>
       </div>
@@ -80,3 +81,4 @@ require_once __DIR__ . '/../includes/header.php';
 <?php
 require_once __DIR__ . '/../includes/footer.php';
 ?>
+

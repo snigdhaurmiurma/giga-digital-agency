@@ -1,10 +1,11 @@
-<?php
+﻿<?php
 /**
- * GIGA DIGITAL AGENCY — PRICING & PACKAGES PAGE
+ * GIGA DIGITAL AGENCY â€” PRICING & PACKAGES PAGE
  */
-$page_title = 'Pricing & Service Packages — Giga Digital Agency';
+$page_title = 'Pricing & Service Packages â€” Giga Digital Agency';
 $page_desc = 'Explore our transparent investment models across Creative, Growth Marketing, and Web Engineering packages with customized pricing options.';
 $current_page = 'pricing';
+$is_subpage = true;
 require_once __DIR__ . '/../includes/header.php';
 ?>
 
@@ -208,3 +209,4 @@ require_once __DIR__ . '/../includes/header.php';
 <?php
 require_once __DIR__ . '/../includes/footer.php';
 ?>
+

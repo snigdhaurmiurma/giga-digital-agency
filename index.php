@@ -1,24 +1,29 @@
 ﻿<?php
 /**
  * GIGA DIGITAL AGENCY — MASTER HOMEPAGE
- * Human-Designed Corporate Agency Architecture (Zaman-IT Style)
+ * Corporate Agency Architecture with Dual Light & Dark Cosmic Modes
  */
-$page_title = 'Giga Digital Agency — Best Web Design, Custom Software & Digital Marketing Agency in Bangladesh';
-$page_desc = 'Giga Digital Agency is a premier corporate web design, custom software development, e-commerce, and digital marketing firm in Dhaka, Bangladesh.';
+$page_title = 'Giga Digital Agency — Best Web Design, UI/UX, SEO & Digital Marketing Agency in Bangladesh';
+$page_desc = 'Giga Digital Agency is a premier digital agency in Dhaka, Bangladesh specializing in UI/UX design, corporate web development, e-commerce, SEO, and Facebook & YouTube ad boosting.';
 $current_page = 'home';
+$is_subpage = false;
 require_once __DIR__ . '/includes/header.php';
 ?>
   <section class="hero-banner" id="home">
     <div class="container">
       <div class="hero-grid">
         
+        <!-- Left Column: Copy & Value Proposition -->
         <div>
-          <span class="section-tag">Established 2014 &bull; Lalmatia, Dhaka</span>
+          <span class="section-tag">
+            <span class="pulsing-dot"></span>
+            Established 2014 &bull; Lalmatia, Dhaka
+          </span>
           <h1 class="hero-title">
-            Top Web Design, Custom Software & <span class="text-highlight">Digital Growth Agency</span> in Bangladesh
+            We Turn Ideas Into High-ROI <span class="gradient-text">Digital Impact</span>.
           </h1>
           <p class="hero-subtitle">
-            We help companies in Bangladesh and globally build high-performing corporate websites, e-commerce stores with bKash/Nagad integration, business automation software, and high-ROI digital marketing campaigns.
+            Giga Digital Agency is a premier full-service digital agency in Dhaka, Bangladesh specializing in <strong>UI/UX Design</strong>, <strong>Corporate & E-Commerce Web Development</strong>, <strong>SEO</strong>, and <strong>High-Conversion Facebook & YouTube Ad Boosting</strong> for local and global businesses.
           </p>
 
           <div class="hero-cta-group">
@@ -26,68 +31,166 @@ require_once __DIR__ . '/includes/header.php';
               Explore Our Services
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
-            <a href="#packages" class="btn btn-secondary">
-              View Packages & Pricing
+            <a href="#contact" class="btn btn-secondary">
+              Get Instant Quote
             </a>
-            <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-              ðŸ’¬ WhatsApp Us
+            <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              ðŸ’¬ WhatsApp
             </a>
           </div>
 
-          <!-- 4 Trust Highlights -->
-          <div class="hero-trust-bar">
-            <div class="trust-item">
-              <h4>10+</h4>
-              <p>Years of Experience</p>
-            </div>
-            <div class="trust-item">
-              <h4>7,000+</h4>
-              <p>Projects Delivered</p>
-            </div>
-            <div class="trust-item">
-              <h4>98%</h4>
-              <p>Happy Clients</p>
-            </div>
-            <div class="trust-item">
-              <h4>2016</h4>
-              <p>National ICT Award</p>
-            </div>
+          <div class="hero-pills-row">
+            <span class="hero-pill-badge">ðŸŽ¨ UI/UX & Graphics</span>
+            <span class="hero-pill-badge">ðŸ’» Web & E-Commerce</span>
+            <span class="hero-pill-badge">ðŸš€ Facebook Boosting</span>
+            <span class="hero-pill-badge">â–¶ï¸ YouTube Video Ads</span>
+            <span class="hero-pill-badge">ðŸ“ˆ Google SEO Ranking</span>
           </div>
         </div>
 
-        <!-- Right Quick Inquire Box -->
-        <div>
-          <div class="hero-preview-box">
-            <h3>Ready to Scale Your Brand?</h3>
-            <p>Select what you need and get immediate consultation from our in-house senior engineers:</p>
+        <!-- Right Column: Interactive Capability Transition Card -->
+        <div class="hero-showcase-box">
+          
+          <div class="showcase-header-tabs">
+            <button class="showcase-tab-btn active" data-index="0">ðŸš€ Ad Boosting</button>
+            <button class="showcase-tab-btn" data-index="1">ðŸŽ¨ UI/UX Design</button>
+            <button class="showcase-tab-btn" data-index="2">ðŸ’» Web & E-Com</button>
+            <button class="showcase-tab-btn" data-index="3">ðŸ“ˆ Google SEO #1</button>
+          </div>
+
+          <div class="showcase-display-stage">
             
-            <div class="quick-service-list">
-              <div class="quick-service-item">
-                <span class="icon">ðŸŒ</span>
-                <span>Corporate Web Design (Responsive & SEO Ready)</span>
+            <!-- Slide 1: Facebook & YouTube Ad Boosting -->
+            <div class="capability-slide active">
+              <div class="capability-slide-header">
+                <div>
+                  <h4 style="font-size:1.15rem; font-weight:800; color:var(--text-heading);">Facebook & YouTube Ad Boosting</h4>
+                  <p style="font-size:0.80rem; color:var(--text-muted);">Full-Funnel Meta CAPI & Google Video Ads</p>
+                </div>
+                <span class="capability-badge badge-adboost">Live Campaign</span>
               </div>
-              <div class="quick-service-item">
-                <span class="icon">ðŸ›’</span>
-                <span>E-Commerce Portal (bKash/Nagad/Cards Integration)</span>
+              <div style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:16px; margin:14px 0;">
+                <p style="font-size:0.88rem; color:var(--text-main); line-height:1.5;">
+                  <strong>Strategy:</strong> High-converting dynamic video reels + precise lookalike audience targeting with pixel retargeting funnels.
+                </p>
               </div>
-              <div class="quick-service-item">
-                <span class="icon">ðŸ’¼</span>
-                <span>Custom Software & ERP / Billing Systems</span>
-              </div>
-              <div class="quick-service-item">
-                <span class="icon">ðŸ“ˆ</span>
-                <span>Search Engine Optimization & Google Maps Ranking</span>
-              </div>
-              <div class="quick-service-item">
-                <span class="icon">ðŸŽ¯</span>
-                <span>Meta (Facebook/Instagram) & Google Ads Scaling</span>
+              <div class="capability-stats-row">
+                <div class="stat-pill">
+                  <div class="stat-pill-val" style="color:#fb7185;">1.85M+</div>
+                  <div class="stat-pill-lbl">Impressions</div>
+                </div>
+                <div class="stat-pill">
+                  <div class="stat-pill-val" style="color:var(--accent-primary);">4.8x</div>
+                  <div class="stat-pill-lbl">Average ROAS</div>
+                </div>
+                <div class="stat-pill">
+                  <div class="stat-pill-val" style="color:var(--accent-green);">6.4%</div>
+                  <div class="stat-pill-lbl">Click Rate</div>
+                </div>
               </div>
             </div>
 
-            <a href="#contact" class="btn btn-primary" style="width:100%; text-align:center;">
-              Request Free Consultation
-            </a>
+            <!-- Slide 2: UI/UX & Graphic Design -->
+            <div class="capability-slide">
+              <div class="capability-slide-header">
+                <div>
+                  <h4 style="font-size:1.15rem; font-weight:800; color:var(--text-heading);">UI/UX & Figma Prototyping</h4>
+                  <p style="font-size:0.80rem; color:var(--text-muted);">Conversion-Focused Digital Experiences</p>
+                </div>
+                <span class="capability-badge badge-uiux">Design System</span>
+              </div>
+              <div style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:16px; margin:14px 0;">
+                <p style="font-size:0.88rem; color:var(--text-main); line-height:1.5;">
+                  <strong>Deliverable:</strong> Pixel-perfect component libraries, interactive mobile wireframes, and streamlined 1-click cart flows.
+                </p>
+              </div>
+              <div class="capability-stats-row">
+                <div class="stat-pill">
+                  <div class="stat-pill-val" style="color:#c084fc;">100%</div>
+                  <div class="stat-pill-lbl">Figma Ready</div>
+                </div>
+                <div class="stat-pill">
+                  <div class="stat-pill-val" style="color:var(--accent-primary);">+62%</div>
+                  <div class="stat-pill-lbl">Usability Score</div>
+                </div>
+                <div class="stat-pill">
+                  <div class="stat-pill-val" style="color:var(--accent-green);">&lt; 3s</div>
+                  <div class="stat-pill-lbl">Checkout Flow</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Web & E-Commerce Development -->
+            <div class="capability-slide">
+              <div class="capability-slide-header">
+                <div>
+                  <h4 style="font-size:1.15rem; font-weight:800; color:var(--text-heading);">Corporate Web & E-Commerce</h4>
+                  <p style="font-size:0.80rem; color:var(--text-muted);">bKash, Nagad & Courier API Automated</p>
+                </div>
+                <span class="capability-badge badge-web">Clean Code</span>
+              </div>
+              <div style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:16px; margin:14px 0;">
+                <p style="font-size:0.88rem; color:var(--text-main); line-height:1.5;">
+                  <strong>Architecture:</strong> Ultra-fast NVMe cloud infrastructure, automated inventory sync, and instant SMS order tracking.
+                </p>
+              </div>
+              <div class="capability-stats-row">
+                <div class="stat-pill">
+                  <div class="stat-pill-val" style="color:#7dd3fc;">99.9%</div>
+                  <div class="stat-pill-lbl">Server Uptime</div>
+                </div>
+                <div class="stat-pill">
+                  <div class="stat-pill-val" style="color:var(--accent-primary);">0.8s</div>
+                  <div class="stat-pill-lbl">Page Load</div>
+                </div>
+                <div class="stat-pill">
+                  <div class="stat-pill-val" style="color:var(--accent-green);">100%</div>
+                  <div class="stat-pill-lbl">Mobile Friendly</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4: Google SEO Ranking -->
+            <div class="capability-slide">
+              <div class="capability-slide-header">
+                <div>
+                  <h4 style="font-size:1.15rem; font-weight:800; color:var(--text-heading);">Search Engine Optimization (SEO)</h4>
+                  <p style="font-size:0.80rem; color:var(--text-muted);">Google Search & Maps Local 3-Pack</p>
+                </div>
+                <span class="capability-badge badge-seo">Rank #1 Growth</span>
+              </div>
+              <div style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:16px; margin:14px 0;">
+                <p style="font-size:0.88rem; color:var(--text-main); line-height:1.5;">
+                  <strong>Outcome:</strong> Commercial intent keyword domination, high-authority backlink outreach, and localized Google Maps ranking.
+                </p>
+              </div>
+              <div class="capability-stats-row">
+                <div class="stat-pill">
+                  <div class="stat-pill-val" style="color:#6ee7b7;">#1</div>
+                  <div class="stat-pill-lbl">Rank Target</div>
+                </div>
+                <div class="stat-pill">
+                  <div class="stat-pill-val" style="color:var(--accent-primary);">+280%</div>
+                  <div class="stat-pill-lbl">Organic Visits</div>
+                </div>
+                <div class="stat-pill">
+                  <div class="stat-pill-val" style="color:#fbbf24;">Zero</div>
+                  <div class="stat-pill-lbl">Ad Cost</div>
+                </div>
+              </div>
+            </div>
+
           </div>
+
+          <!-- Floating Metric Badge -->
+          <div class="hero-floating-badge">
+            <div class="val">7,000+</div>
+            <div>
+              <div style="font-size:0.82rem; font-weight:800; color:var(--text-heading);">Completed Projects</div>
+              <div style="font-size:0.72rem; color:var(--accent-green); font-weight:700;">â˜… 98.4% Retention</div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -95,602 +198,419 @@ require_once __DIR__ . '/includes/header.php';
   </section>
 
   <!-- =========================================================================
-       4. CLIENT & PARTNER LOGO MARQUEE
+       4. COLORFUL TRUSTED BY BRANDS SECTION
        ========================================================================= -->
-  <section style="padding: 24px 0; background: var(--bg-surface); border-bottom: 1px solid var(--border-subtle);">
-    <div class="container text-center" style="margin-bottom: 12px;">
-      <span style="font-size:0.8rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;">
-        Trusted by Leading Enterprises, Startups & Retail Brands in Bangladesh & Abroad
-      </span>
-    </div>
-    <div class="marquee-container">
-      <div class="marquee-track">
-        <div class="partner-logo-item"><img src="images/brand/brand-1-1.png" alt="Client Partner"></div>
-        <div class="partner-logo-item"><img src="images/brand/brand-1-2.png" alt="Client Partner"></div>
-        <div class="partner-logo-item"><img src="images/brand/brand-1-3.png" alt="Client Partner"></div>
-        <div class="partner-logo-item"><img src="images/brand/brand-1-4.png" alt="Client Partner"></div>
-        <div class="partner-logo-item"><img src="images/brand/brand-1-5.png" alt="Client Partner"></div>
-        <!-- Duplication for infinite loop -->
-        <div class="partner-logo-item"><img src="images/brand/brand-1-1.png" alt="Client Partner"></div>
-        <div class="partner-logo-item"><img src="images/brand/brand-1-2.png" alt="Client Partner"></div>
-        <div class="partner-logo-item"><img src="images/brand/brand-1-3.png" alt="Client Partner"></div>
-        <div class="partner-logo-item"><img src="images/brand/brand-1-4.png" alt="Client Partner"></div>
-        <div class="partner-logo-item"><img src="images/brand/brand-1-5.png" alt="Client Partner"></div>
+  <section class="brands-section">
+    <div class="container">
+      <div class="brands-title-tag">
+        Trusted by Leading Enterprises, Startups & Retail Brands in Bangladesh and Abroad
+      </div>
+      <div class="brands-colorful-grid">
+        <div class="colorful-brand-card">
+          <span class="brand-dot" style="background:#3b82f6; box-shadow:0 0 8px #3b82f6;"></span>
+          <span class="brand-name">Shadhin Tech</span>
+        </div>
+        <div class="colorful-brand-card">
+          <span class="brand-dot" style="background:#e11d48; box-shadow:0 0 8px #e11d48;"></span>
+          <span class="brand-name">Apex Retail BD</span>
+        </div>
+        <div class="colorful-brand-card">
+          <span class="brand-dot" style="background:#ef4444; box-shadow:0 0 8px #ef4444;"></span>
+          <span class="brand-name">Pathao Logistics</span>
+        </div>
+        <div class="colorful-brand-card">
+          <span class="brand-dot" style="background:#e11d48; box-shadow:0 0 8px #e11d48;"></span>
+          <span class="brand-name">bKash Merchant</span>
+        </div>
+        <div class="colorful-brand-card">
+          <span class="brand-dot" style="background:#10b981; box-shadow:0 0 8px #10b981;"></span>
+          <span class="brand-name">Walton E-Com</span>
+        </div>
+        <div class="colorful-brand-card">
+          <span class="brand-dot" style="background:#f59e0b; box-shadow:0 0 8px #f59e0b;"></span>
+          <span class="brand-name">Aarong Artisan</span>
+        </div>
+        <div class="colorful-brand-card">
+          <span class="brand-dot" style="background:#8b5cf6; box-shadow:0 0 8px #8b5cf6;"></span>
+          <span class="brand-name">Global SaaS Group</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- =========================================================================
-       5. COMPREHENSIVE SERVICES (Zaman IT Style 8 Corporate Offerings)
+       5. ABOUT US & 2016 NATIONAL ICT RECOGNITION
        ========================================================================= -->
-  <section class="section" id="services">
+  <section class="section" id="about">
+    <div class="container">
+      
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center;">
+        <div>
+          <span class="section-tag">About Giga Digital Agency</span>
+          <h2 class="section-title">
+            MORE THAN AN AGENCY. <span class="gradient-text">YOUR DIGITAL PARTNER</span>.
+          </h2>
+          <p class="section-desc" style="margin-bottom:18px;">
+            Established in 2014 in Lalmatia, Dhaka, Giga Digital Agency was built to eliminate the gap between creative visual design, robust web engineering, and profitable performance marketing.
+          </p>
+          <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.7; margin-bottom:24px;">
+            Over the last decade, we have completed more than 7,000 project deliverables for corporate brands, e-commerce stores, manufacturing companies, and technology scale-ups across Bangladesh, North America, and Europe.
+          </p>
+          
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+            <div style="background:var(--bg-card); border:1px solid var(--border-subtle); padding:16px; border-radius:var(--radius-sm);">
+              <div style="font-size:1.1rem; font-weight:800; color:var(--accent-primary); margin-bottom:4px;">ðŸŽ¯ Precision Focus</div>
+              <p style="font-size:0.84rem; color:var(--text-muted);">Every campaign and line of code is measured against client revenue and conversion.</p>
+            </div>
+            <div style="background:var(--bg-card); border:1px solid var(--border-subtle); padding:16px; border-radius:var(--radius-sm);">
+              <div style="font-size:1.1rem; font-weight:800; color:var(--accent-violet); margin-bottom:4px;">ðŸ¤ Real Human Support</div>
+              <p style="font-size:0.84rem; color:var(--text-muted);">Direct consultation with senior strategists, not automated robots or ticket delays.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2016 National ICT Ecosystem Recognition Card -->
+        <div style="background:linear-gradient(135deg, rgba(15,23,42,0.9), rgba(30,41,59,0.8)); border:1px solid var(--border-glow); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow-lg), var(--shadow-glow);">
+          <div style="display:flex; align-items:center; gap:14px; margin-bottom:18px;">
+            <div style="font-size:2.4rem;">ðŸ†</div>
+            <div>
+              <span style="font-size:0.75rem; font-weight:800; color:#fbbf24; text-transform:uppercase; letter-spacing:0.08em;">Official Accreditation</span>
+              <h3 style="font-size:1.4rem; font-weight:900; color:#ffffff;">2016 National ICT Recognition</h3>
+            </div>
+          </div>
+          <p style="font-size:0.92rem; color:#cbd5e1; line-height:1.65; margin-bottom:20px;">
+            Recognized as <strong>Site of the Day & Digital Innovation Partner</strong> within the Bangladesh ICT ecosystem for pioneering responsive web design and digital growth architectures.
+          </p>
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-top:1px solid rgba(255,255,255,0.1); padding-top:18px;">
+            <span style="font-size:0.85rem; color:#94a3b8;"><strong>Accreditation Registry:</strong> GDA-ICT-BD-2016</span>
+            <span class="section-tag" style="margin-bottom:0; background:rgba(251,191,36,0.15); color:#fef08a; border-color:rgba(251,191,36,0.4);">Verified Partner</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. CATEGORIZED SERVICES (Creative, Growth, Tech)
+       ========================================================================= -->
+  <section class="section section-alt" id="services">
     <div class="container">
       
       <div class="section-header text-center">
-        <span class="section-tag">Our Core Solutions</span>
-        <h2 class="section-title">End-to-End Technology & Marketing Services</h2>
+        <span class="section-tag">Comprehensive Capabilities</span>
+        <h2 class="section-title">
+          WHAT WE DO AT <span class="gradient-text">GIGA DIGITAL AGENCY</span>
+        </h2>
         <p class="section-desc">
-          We provide practical, results-oriented solutions designed specifically to help modern companies acquire customers, automate operations, and scale online.
-        </p>
-      </div>
-
-      <div class="services-card-grid">
-        
-        <!-- Service 1: Web Design & Development -->
-        <div class="corp-service-card">
-          <div>
-            <div class="service-icon-wrap">ðŸ’»</div>
-            <h4>Web Design & Development</h4>
-            <p>Modern, responsive, fast-loading business websites built on clean code with high conversion ergonomics.</p>
-            <ul class="service-features-mini">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 100% Mobile & Tablet Responsive</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> WordPress, Laravel & Custom Code</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Google PageSpeed & SEO Optimized</li>
-            </ul>
-          </div>
-          <a href="#contact" class="service-action-link">Get a Web Quote &rarr;</a>
-        </div>
-
-        <!-- Service 2: E-Commerce Solutions -->
-        <div class="corp-service-card">
-          <div>
-            <div class="service-icon-wrap" style="color:var(--accent-secondary); background:rgba(124,58,237,0.1);">ðŸ›ï¸</div>
-            <h4>E-Commerce Solutions</h4>
-            <p>Complete online shops with localized payment gateways, automated courier delivery integration, and inventory control.</p>
-            <ul class="service-features-mini">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> bKash, Nagad, Cards & SSLCommerz</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Steadfast, Pathao & RedX Courier Sync</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Dynamic Product Stock & Order Manager</li>
-            </ul>
-          </div>
-          <a href="#contact" class="service-action-link">Start Your Online Store &rarr;</a>
-        </div>
-
-        <!-- Service 3: Custom Software & POS -->
-        <div class="corp-service-card">
-          <div>
-            <div class="service-icon-wrap" style="color:var(--accent-cyan); background:rgba(6,182,212,0.1);">âš™ï¸</div>
-            <h4>Custom Software & POS</h4>
-            <p>Tailored management software, Point of Sale systems, and business process automation to simplify your daily operations.</p>
-            <ul class="service-features-mini">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Retail POS & Invoice Generator</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> HRM, Payroll & Staff Tracking</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Real-Time Financial Accounting</li>
-            </ul>
-          </div>
-          <a href="#contact" class="service-action-link">Request Software Demo &rarr;</a>
-        </div>
-
-        <!-- Service 4: Search Engine Optimization -->
-        <div class="corp-service-card">
-          <div>
-            <div class="service-icon-wrap" style="color:var(--accent-green); background:rgba(16,185,129,0.1);">ðŸ“ˆ</div>
-            <h4>Search Engine Optimization (SEO)</h4>
-            <p>Data-proven organic ranking campaigns ensuring your business appears on Page 1 for high-buying-intent queries.</p>
-            <ul class="service-features-mini">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Local Google Maps Pack Optimization</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Comprehensive Technical SEO Audits</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Quality Backlinks & Authority Growth</li>
-            </ul>
-          </div>
-          <a href="#contact" class="service-action-link">Audit Your SEO &rarr;</a>
-        </div>
-
-        <!-- Service 5: Social Media & Paid Ads -->
-        <div class="corp-service-card">
-          <div>
-            <div class="service-icon-wrap">ðŸŽ¯</div>
-            <h4>Meta & Google Ads Marketing</h4>
-            <p>Targeted PPC and social ad campaigns on Facebook, Instagram, YouTube, and Google with positive Return on Ad Spend (ROAS).</p>
-            <ul class="service-features-mini">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> High-Converting Ad Copy & Creative</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom Audience & Retargeting Setup</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Weekly Budget & Lead Cost Auditing</li>
-            </ul>
-          </div>
-          <a href="#contact" class="service-action-link">Launch Ad Campaign &rarr;</a>
-        </div>
-
-        <!-- Service 6: UI/UX & Graphic Design -->
-        <div class="corp-service-card">
-          <div>
-            <div class="service-icon-wrap" style="color:var(--accent-secondary); background:rgba(124,58,237,0.1);">ðŸŽ¨</div>
-            <h4>Brand Identity & Graphic Design</h4>
-            <p>Professional logo design, corporate branding assets, YouTube channel packaging, and high-CTR social banners.</p>
-            <ul class="service-features-mini">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Corporate Logo & Brand Identity Guide</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> High-Click YouTube Thumbnails & Banners</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Social Media Promotional Graphics</li>
-            </ul>
-          </div>
-          <a href="#contact" class="service-action-link">Explore Design Work &rarr;</a>
-        </div>
-
-        <!-- Service 7: Domain & Cloud Hosting -->
-        <div class="corp-service-card">
-          <div>
-            <div class="service-icon-wrap" style="color:var(--accent-cyan); background:rgba(6,182,212,0.1);">â˜ï¸</div>
-            <h4>Domain & NVMe SSD Hosting</h4>
-            <p>Secure corporate web hosting with ultra-fast NVMe servers, cPanel, free SSL certificates, and institutional business email.</p>
-            <ul class="service-features-mini">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> .com, .com.bd & Country TLD Registration</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 99.9% Server Uptime Guarantee</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Daily Automated Cloud Backups</li>
-            </ul>
-          </div>
-          <a href="#contact" class="service-action-link">Check Domain / Host &rarr;</a>
-        </div>
-
-        <!-- Service 8: Maintenance & Support -->
-        <div class="corp-service-card">
-          <div>
-            <div class="service-icon-wrap" style="color:var(--accent-green); background:rgba(16,185,129,0.1);">ðŸ› ï¸</div>
-            <h4>Maintenance & 24/7 SLA Support</h4>
-            <p>Dedicated monthly technical maintenance to keep your digital infrastructure updated, secure from malware, and bug-free.</p>
-            <ul class="service-features-mini">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Security Patching & Malware Scans</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Regular Content & Product Updates</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Dedicated Support Team in Dhaka</li>
-            </ul>
-          </div>
-          <a href="#contact" class="service-action-link">View Support Plans &rarr;</a>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       6. ABOUT US & WHY CHOOSE US
-       ========================================================================= -->
-  <section class="section section-alt" id="about">
-    <div class="container">
-      <div class="about-split-grid">
-        
-        <div>
-          <span class="section-tag">About Our Agency</span>
-          <h2 class="section-title">Your Dedicated IT & Digital Growth Partner in Dhaka</h2>
-          <p class="section-desc" style="margin-bottom: 16px;">
-            Established in 2014 and operating from Lalmatia, Dhaka, <strong>Giga Digital Agency</strong> is a full-service web design, software development, and performance digital marketing agency.
-          </p>
-          <p style="color:var(--text-muted); line-height:1.7; margin-bottom:20px;">
-            Unlike freelance contractors or generic templates, we operate an experienced in-house team of engineers, UI/UX designers, and digital marketers. We build long-term relationships by ensuring your website is delivered on time, stays secure, and actively brings in new customers.
-          </p>
-
-          <div class="about-feature-points">
-            <div class="point-box">
-              <h5>In-House Development Team</h5>
-              <p>Experienced programmers working directly from our Dhaka office.</p>
-            </div>
-            <div class="point-box">
-              <h5>On-Time Project Delivery</h5>
-              <p>Structured milestones and transparent progress reporting.</p>
-            </div>
-            <div class="point-box">
-              <h5>Local & Global Integrations</h5>
-              <p>Seamless bKash, Nagad, Stripe, and courier API connections.</p>
-            </div>
-            <div class="point-box">
-              <h5>Dedicated After-Sales Support</h5>
-              <p>Continuous maintenance and direct phone support when you need it.</p>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="about-photo-card">
-            <img src="images/resource/about-one-img-1.jpg" alt="Giga Digital Agency Collaborative Team in Dhaka">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       7. VERIFIED RECOGNITION (Govt.bd ICT Award 2016)
-       ========================================================================= -->
-  <section class="section">
-    <div class="container">
-      <div class="award-highlight-box">
-        <div class="award-content">
-          <span class="section-tag" style="background:#fef3c7; color:#92400e; border-color:#fde68a;">
-            National Digital Excellence
-          </span>
-          <h3>Recognized by Govt.bd ICT Ecosystem &bull; 2016</h3>
-          <p>
-            Giga Digital Agency was officially honored as <strong>Site of the Day (05)</strong> through government ICT ecosystem channels for exemplary responsive web design, accessibility compliance, and performance optimization.
-          </p>
-          <div class="award-metrics-row">
-            <div class="metric-pill">
-              <div class="num">7,000+</div>
-              <div class="lbl">Projects Done</div>
-            </div>
-            <div class="metric-pill">
-              <div class="num">16+</div>
-              <div class="lbl">Industry Awards</div>
-            </div>
-            <div class="metric-pill">
-              <div class="num">80+</div>
-              <div class="lbl">Citations & Mentions</div>
-            </div>
-          </div>
-        </div>
-
-        <div style="text-align: center;">
-          <div style="background:var(--bg-surface); border:1px solid var(--border-medium); border-radius:var(--radius-md); padding:26px 20px; box-shadow:var(--shadow-sm);">
-            <div style="font-size:2.8rem; margin-bottom:8px;">ðŸ†</div>
-            <h4 style="font-size:1.15rem; font-weight:800; color:var(--text-heading); margin-bottom:4px;">National Digital Award</h4>
-            <p style="font-size:0.82rem; color:var(--text-muted); margin-bottom:12px;">Official Registry: <strong>GDA-ICT-BD-2016</strong></p>
-            <span style="font-size:0.75rem; background:var(--badge-bg); color:var(--badge-text); padding:4px 12px; border-radius:var(--radius-full); font-weight:700;">
-              VERIFIED RECORD
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       8. TRANSPARENT PACKAGES & PRICING (Zaman IT Package Style)
-       ========================================================================= -->
-  <section class="section section-alt" id="packages">
-    <div class="container">
-      
-      <div class="section-header text-center">
-        <span class="section-tag">Value Investment</span>
-        <h2 class="section-title">Transparent Service Packages for Every Stage</h2>
-        <p class="section-desc">
-          Choose a pre-configured package or request a custom budget quotation tailored directly to your specific business requirements.
+          Structured into three core divisions â€” <strong>Creative</strong>, <strong>Growth & Ad Boosting</strong>, and <strong>Technology</strong> â€” to elevate your brand from concept to measurable revenue.
         </p>
       </div>
 
       <!-- Category Filter Tabs -->
-      <div class="package-tab-bar">
-        <button class="pkg-tab-btn active" data-target="pkg-web">Web Design Packages</button>
-        <button class="pkg-tab-btn" data-target="pkg-mkt">Digital Marketing Packages</button>
-        <button class="pkg-tab-btn" data-target="pkg-soft">Software & POS Packages</button>
+      <div class="services-tabs-row">
+        <button class="service-cat-tab active" data-category="all">All Services (10)</button>
+        <button class="service-cat-tab" data-category="creative">ðŸŽ¨ Creative (Design & YouTube)</button>
+        <button class="service-cat-tab" data-category="growth">ðŸš€ Growth (Marketing, SEO & Ads)</button>
+        <button class="service-cat-tab" data-category="tech">ðŸ’» Tech & Web Development</button>
       </div>
 
-      <!-- DECK 1: WEB PACKAGES -->
-      <div class="packages-grid pkg-deck" id="pkg-web">
+      <!-- Services Cards Grid -->
+      <div class="services-cards-grid">
         
-        <!-- Starter Web -->
-        <div class="pkg-card">
+        <!-- Service 1 (Creative): Graphic Design -->
+        <div class="service-box" data-category="creative">
           <div>
-            <div class="pkg-header">
-              <h4>Starter Business Website</h4>
-              <p>Ideal for local service firms, clinics, consultancies, or schools.</p>
-              <div class="pkg-price">Let's Discuss <span style="font-size:0.85rem; color:var(--text-muted); font-weight:500;">/ project</span></div>
-            </div>
-            <ul class="pkg-features">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to 5 Custom Responsive Pages</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 1 Year Free Domain (.com) & Hosting</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Contact Form & WhatsApp Button</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Basic On-Page SEO Setup</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 30 Days Free Technical Support</li>
+            <span class="service-cat-pill">Creative Division</span>
+            <div class="service-icon-wrap">ðŸŽ¨</div>
+            <h3 class="service-title">Graphic Design & Brand Identity</h3>
+            <p class="service-desc">
+              Custom corporate logos, brand guidelines, marketing banners, packaging design, and social media creative toolkits that command immediate visual authority.
+            </p>
+            <ul class="service-features-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Complete Vector Logo & Typography Guidelines</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> High-Converting Social Media Banner Packs</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Print & Digital Corporate Collateral</li>
             </ul>
           </div>
-          <a href="#contact" class="btn btn-secondary" style="width:100%;">Select Starter Package</a>
+          <a href="#contact" class="btn btn-secondary" style="width:100%;">Inquire About Graphic Design</a>
         </div>
 
-        <!-- Corporate Business (Featured) -->
-        <div class="pkg-card featured">
-          <span class="pkg-badge">Most Popular</span>
+        <!-- Service 2 (Creative): UI/UX Design -->
+        <div class="service-box" data-category="creative">
           <div>
-            <div class="pkg-header">
-              <h4>Corporate Business Portal</h4>
-              <p>For established companies requiring a high-credibility dynamic web presence.</p>
-              <div class="pkg-price">Custom Quote <span style="font-size:0.85rem; color:var(--text-muted); font-weight:500;">/ tailored scope</span></div>
-            </div>
-            <ul class="pkg-features">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to 15 Dynamic Pages + Blog CMS</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> High-Speed NVMe Cloud Hosting Included</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Career Portal, Services & Portfolio Modules</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Google Search Console & Analytics Integration</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 90 Days Free SLA Support</li>
+            <span class="service-cat-pill">Creative Division</span>
+            <div class="service-icon-wrap">ðŸ“±</div>
+            <h3 class="service-title">UI/UX Design & Prototyping</h3>
+            <p class="service-desc">
+              Interactive Figma prototypes, wireframing, user persona mapping, and conversion-optimized mobile app and web design systems tested for effortless usability.
+            </p>
+            <ul class="service-features-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Modern Design Systems in Figma</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Mobile-First Wireframing & Usability Audits</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> High-Conversion Checkout User Journeys</li>
             </ul>
           </div>
-          <a href="#contact" class="btn btn-primary" style="width:100%;">Request Corporate Quote</a>
+          <a href="#contact" class="btn btn-secondary" style="width:100%;">Inquire About UI/UX</a>
         </div>
 
-        <!-- E-Commerce Store -->
-        <div class="pkg-card">
+        <!-- Service 3 (Creative): YouTube Services -->
+        <div class="service-box" data-category="creative">
           <div>
-            <div class="pkg-header">
-              <h4>E-Commerce Storefront</h4>
-              <p>Full-fledged multi-product store with online payments and delivery API.</p>
-              <div class="pkg-price">Let's Discuss <span style="font-size:0.85rem; color:var(--text-muted); font-weight:500;">/ e-comm scope</span></div>
-            </div>
-            <ul class="pkg-features">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Unlimited Products & Categories</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> bKash, Nagad, Rocket & Cards (SSLCommerz)</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Courier Integration (Steadfast / Pathao)</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Abandoned Cart & Discount Coupon System</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Comprehensive Admin Training Included</li>
+            <span class="service-cat-pill">Creative Division</span>
+            <div class="service-icon-wrap">â–¶ï¸</div>
+            <h3 class="service-title">YouTube Creative & Channel Services</h3>
+            <p class="service-desc">
+              Custom high-CTR YouTube thumbnails, channel branding, video intros/outros, engaging motion graphics, and video editing to maximize audience retention.
+            </p>
+            <ul class="service-features-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> A/B Tested High-CTR Thumbnail Design</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> YouTube Banner & Channel Identity Kit</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Motion Graphic Hooks & Retention Editing</li>
             </ul>
           </div>
-          <a href="#contact" class="btn btn-secondary" style="width:100%;">Start E-Commerce Store</a>
+          <a href="#contact" class="btn btn-secondary" style="width:100%;">Inquire About YouTube Creative</a>
         </div>
 
-      </div>
-
-      <!-- DECK 2: MARKETING PACKAGES (Hidden by default) -->
-      <div class="packages-grid pkg-deck" id="pkg-mkt" style="display:none;">
-        <div class="pkg-card">
-          <div class="pkg-header">
-            <h4>Local SEO & Google Maps</h4>
-            <p>Ensure customers in your area find your phone number and address on Google.</p>
-            <div class="pkg-price">Monthly Retainer</div>
+        <!-- Service 4 (Growth): Facebook Ad Boosting -->
+        <div class="service-box" data-category="growth">
+          <div>
+            <span class="service-cat-pill" style="background:rgba(244,63,94,0.15); color:#fb7185; border-color:rgba(244,63,94,0.3);">Growth Division</span>
+            <div class="service-icon-wrap" style="color:#f43f5e;">ðŸš€</div>
+            <h3 class="service-title">Facebook & Instagram Ad Boosting</h3>
+            <p class="service-desc">
+              Precision Meta ad management, pixel setup with Conversions API, custom & lookalike audiences, reel video boosting, and high-ROAS e-commerce scaling.
+            </p>
+            <ul class="service-features-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Meta Conversions API (CAPI) Integration</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom Retargeting & Cart Abandoner Funnels</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Daily Bidding Tuning & Clear ROAS Reports</li>
+            </ul>
           </div>
-          <ul class="pkg-features">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Google Business Profile Optimization</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Local Citation & Reviews Strategy</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Monthly Keyword Ranking Report</li>
-          </ul>
-          <a href="#contact" class="btn btn-secondary" style="width:100%;">Inquire Local SEO</a>
+          <a href="#contact" class="btn btn-primary" style="width:100%;">Start Facebook Boosting</a>
         </div>
 
-        <div class="pkg-card featured">
-          <span class="pkg-badge">High ROAS</span>
-          <div class="pkg-header">
-            <h4>Meta (FB/IG) Ad Management</h4>
-            <p>Strategic paid ad campaigns on Facebook and Instagram to generate leads or sales.</p>
-            <div class="pkg-price">Custom Budget</div>
+        <!-- Service 5 (Growth): YouTube Ad Boosting -->
+        <div class="service-box" data-category="growth">
+          <div>
+            <span class="service-cat-pill" style="background:rgba(239,68,68,0.15); color:#f87171; border-color:rgba(239,68,68,0.3);">Growth Division</span>
+            <div class="service-icon-wrap" style="color:#ef4444;">ðŸŽ¯</div>
+            <h3 class="service-title">YouTube Ad Boosting & Video Marketing</h3>
+            <p class="service-desc">
+              Skippable in-stream ads, non-skippable 6-second bumper ads, in-feed discovery ads, subscriber growth campaigns, and demographic video marketing.
+            </p>
+            <ul class="service-features-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Google Ads YouTube Video Campaign Setup</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Geo-Targeted Views & Subscriber Acquisition</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> YouTube Remarketing to Web Visitors</li>
+            </ul>
           </div>
-          <ul class="pkg-features">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> High-Converting Ad Creative & Video Hooks</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Pixel & Conversion API Configuration</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-Tier Retargeting Funnel</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Bi-Weekly ROAS Review Calls</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary" style="width:100%;">Inquire Meta Ads</a>
+          <a href="#contact" class="btn btn-primary" style="width:100%;">Start YouTube Boosting</a>
         </div>
 
-        <div class="pkg-card">
-          <div class="pkg-header">
-            <h4>Full-Service Growth Retainer</h4>
-            <p>Complete digital marketing team handling SEO, paid ads, and social content.</p>
-            <div class="pkg-price">Tailored Plan</div>
+        <!-- Service 6 (Growth): SEO -->
+        <div class="service-box" data-category="growth">
+          <div>
+            <span class="service-cat-pill" style="background:rgba(16,185,129,0.15); color:#6ee7b7; border-color:rgba(16,185,129,0.3);">Growth Division</span>
+            <div class="service-icon-wrap" style="color:#10b981;">ðŸ“ˆ</div>
+            <h3 class="service-title">Search Engine Optimization (SEO)</h3>
+            <p class="service-desc">
+              Dominate page 1 of Google Search. Complete technical audits, keyword mapping, high-authority backlink building, and Google Maps Local 3-Pack ranking.
+            </p>
+            <ul class="service-features-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Technical & On-Page Keyword Optimization</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Google Business Profile & Maps 3-Pack Rank</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Sustainable White-Hat Backlink Outreach</li>
+            </ul>
           </div>
-          <ul class="pkg-features">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> SEO + Meta Ads + Google Search Ads</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 12 Branded Social Creatives / Month</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Dedicated Account Manager</li>
-          </ul>
-          <a href="#contact" class="btn btn-secondary" style="width:100%;">Inquire Growth Plan</a>
-        </div>
-      </div>
-
-      <!-- DECK 3: SOFTWARE PACKAGES (Hidden by default) -->
-      <div class="packages-grid pkg-deck" id="pkg-soft" style="display:none;">
-        <div class="pkg-card">
-          <div class="pkg-header">
-            <h4>Retail POS Software</h4>
-            <p>Fast billing, barcode scanning, and inventory system for retail shops.</p>
-            <div class="pkg-price">Let's Discuss</div>
-          </div>
-          <ul class="pkg-features">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Barcode Reader & Thermal Receipt Print</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Daily Profit & Loss Reporting</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Low Stock Alert Notifications</li>
-          </ul>
-          <a href="#contact" class="btn btn-secondary" style="width:100%;">Get POS Demo</a>
+          <a href="#contact" class="btn btn-secondary" style="width:100%;">Rank #1 on Google</a>
         </div>
 
-        <div class="pkg-card featured">
-          <span class="pkg-badge">Enterprise</span>
-          <div class="pkg-header">
-            <h4>Custom Web ERP / CRM</h4>
-            <p>Bespoke web software designed around your specific business processes.</p>
-            <div class="pkg-price">Custom Scope</div>
+        <!-- Service 7 (Tech): Corporate Web Development -->
+        <div class="service-box" data-category="tech">
+          <div>
+            <span class="service-cat-pill" style="background:rgba(56,189,248,0.15); color:#7dd3fc; border-color:rgba(56,189,248,0.3);">Tech Division</span>
+            <div class="service-icon-wrap" style="color:#38bdf8;">ðŸ’»</div>
+            <h3 class="service-title">Corporate Website Design & Development</h3>
+            <p class="service-desc">
+              Custom-coded, lightning-fast corporate websites. Mobile responsive, easy-to-manage dynamic CMS, SSL encryption, and Google Core Web Vitals optimization.
+            </p>
+            <ul class="service-features-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom Modern Architecture (PHP / HTML5 / JS)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Free .com Domain & NVMe Hosting (1 Year)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> WhatsApp Chat & Lead Capture Integration</li>
+            </ul>
           </div>
-          <ul class="pkg-features">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-Role User Access & Audit Logs</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Customer Management & Lead Pipelines</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Cloud Database with Daily Automated Backups</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 6 Months Dedicated Warranty</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary" style="width:100%;">Discuss Custom ERP</a>
+          <a href="#contact" class="btn btn-secondary" style="width:100%;">Build Corporate Website</a>
         </div>
 
-        <div class="pkg-card">
-          <div class="pkg-header">
-            <h4>Accounting & Payroll</h4>
-            <p>Digital accounting software compliant with Bangladeshi taxation standards.</p>
-            <div class="pkg-price">Let's Discuss</div>
+        <!-- Service 8 (Tech): E-Commerce Development -->
+        <div class="service-box" data-category="tech">
+          <div>
+            <span class="service-cat-pill" style="background:rgba(56,189,248,0.15); color:#7dd3fc; border-color:rgba(56,189,248,0.3);">Tech Division</span>
+            <div class="service-icon-wrap" style="color:#38bdf8;">ðŸ›’</div>
+            <h3 class="service-title">E-Commerce Store (bKash/Nagad/Cards)</h3>
+            <p class="service-desc">
+              Feature-rich online store with automated bKash, Nagad, Rocket, SSLCommerz, and Visa/Mastercard payments plus Pathao/Steadfast Courier API delivery tracking.
+            </p>
+            <ul class="service-features-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated bKash & Nagad Merchant Checkout</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Pathao / Steadfast Courier Dispatch API</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Inventory Sync, Order Alerts & Customer Accounts</li>
+            </ul>
           </div>
-          <ul class="pkg-features">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> General Ledger, Balance Sheet & Cashflow</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Employee Salary Sheet & Pay Slip</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Exportable to Excel & PDF</li>
-          </ul>
-          <a href="#contact" class="btn btn-secondary" style="width:100%;">Request Demo</a>
+          <a href="#contact" class="btn btn-secondary" style="width:100%;">Launch E-Commerce Store</a>
         </div>
+
+        <!-- Service 9 (Tech): Custom Software & POS -->
+        <div class="service-box" data-category="tech">
+          <div>
+            <span class="service-cat-pill" style="background:rgba(56,189,248,0.15); color:#7dd3fc; border-color:rgba(56,189,248,0.3);">Tech Division</span>
+            <div class="service-icon-wrap" style="color:#38bdf8;">âš™ï¸</div>
+            <h3 class="service-title">Custom Software, POS & ERP Systems</h3>
+            <p class="service-desc">
+              Bespoke business automation systems: inventory tracking, multi-branch POS, billing, automated invoicing, customer CRM, and employee management portals.
+            </p>
+            <ul class="service-features-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-Branch Point of Sale (POS) & Thermal Billing</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom ERP & Accounting Database Solutions</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 100% Data Ownership & Secure Cloud Backups</li>
+            </ul>
+          </div>
+          <a href="#contact" class="btn btn-secondary" style="width:100%;">Discuss Custom Software</a>
+        </div>
+
       </div>
 
     </div>
   </section>
 
   <!-- =========================================================================
-       9. OUR WORKING PROCESS (6-Step Human Workflow)
+       7. OUR WORKING PROCESS (4 Authentic Steps)
        ========================================================================= -->
   <section class="section" id="process">
     <div class="container">
       
       <div class="section-header text-center">
-        <span class="section-tag">Methodology</span>
-        <h2 class="section-title">From Concept to Delivery: Our 6-Step Workflow</h2>
+        <span class="section-tag">Proven Workflow</span>
+        <h2 class="section-title">
+          HOW WE BRING YOUR PROJECT <span class="gradient-text">TO LIFE</span>
+        </h2>
         <p class="section-desc">
-          We maintain structured milestones so you always know what is being built, when it will be delivered, and how it will perform.
+          A disciplined four-step execution framework engineered specifically for web development, UI/UX design, and multi-platform ad boosting campaigns.
         </p>
       </div>
 
       <div class="process-steps-grid">
-        <div class="step-card">
-          <div class="step-number">01</div>
-          <h5>Requirement Consultation</h5>
-          <p>We analyze your business model, competitors, and exact feature list.</p>
+        
+        <!-- Step 1 -->
+        <div class="process-step-card">
+          <div class="step-num-badge">01</div>
+          <div class="step-icon">ðŸ“‹</div>
+          <h3 class="step-title">Requirement Consultation & Strategy</h3>
+          <p class="step-desc">
+            We meet with your team to analyze your business goals, competitors, and target audience, formulating a comprehensive technical and marketing roadmap.
+          </p>
         </div>
 
-        <div class="step-card">
-          <div class="step-number">02</div>
-          <h5>UI/UX Design Approval</h5>
-          <p>We provide full Figma mockups for your feedback before writing code.</p>
+        <!-- Step 2 -->
+        <div class="process-step-card">
+          <div class="step-num-badge">02</div>
+          <div class="step-icon">ðŸŽ¨</div>
+          <h3 class="step-title">UI/UX Design & Client Approval</h3>
+          <p class="step-desc">
+            Our creative team crafts interactive Figma prototypes, ad creatives, and high-fidelity layouts for your review and explicit sign-off before coding begins.
+          </p>
         </div>
 
-        <div class="step-card">
-          <div class="step-number">03</div>
-          <h5>Development & Coding</h5>
-          <p>Our developers code the system with responsive layouts and local APIs.</p>
+        <!-- Step 3 -->
+        <div class="process-step-card">
+          <div class="step-num-badge">03</div>
+          <div class="step-icon">ðŸ’»</div>
+          <h3 class="step-title">Development & Coding</h3>
+          <p class="step-desc">
+            Our software engineers develop clean, high-performance code, integrate bKash/Nagad gateways, configure tracking pixels, and deploy SEO architecture.
+          </p>
         </div>
 
-        <div class="step-card">
-          <div class="step-number">04</div>
-          <h5>QA & Security Testing</h5>
-          <p>Rigorous mobile responsiveness, speed, and payment testing.</p>
+        <!-- Step 4 -->
+        <div class="process-step-card">
+          <div class="step-num-badge">04</div>
+          <div class="step-icon">ðŸš€</div>
+          <h3 class="step-title">Launch, Ad Boosting & Optimization</h3>
+          <p class="step-desc">
+            We deploy your platform live, ignite high-conversion Facebook and YouTube ad boost campaigns, monitor ROAS metrics, and continuously scale results.
+          </p>
         </div>
 
-        <div class="step-card">
-          <div class="step-number">05</div>
-          <h5>Live Deployment</h5>
-          <p>Connecting your domain, setting up SSL, and training your staff.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-number">06</div>
-          <h5>Ongoing Maintenance</h5>
-          <p>Continuous security monitoring, backups, and after-sales support.</p>
-        </div>
       </div>
 
     </div>
   </section>
 
   <!-- =========================================================================
-       10. RECENT WORK & PORTFOLIO
+       8. CASE STUDY: 'META CONTENT MARKETING'
        ========================================================================= -->
-  <section class="section section-alt" id="portfolio">
+  <section class="section section-alt" id="case-study">
     <div class="container">
       
       <div class="section-header text-center">
-        <span class="section-tag">Our Portfolio</span>
-        <h2 class="section-title">Selected Projects Delivered by Our Team</h2>
+        <span class="section-tag">Verified Case Study</span>
+        <h2 class="section-title">
+          CASE STUDY: <span class="gradient-text">META CONTENT MARKETING & SCALE</span>
+        </h2>
         <p class="section-desc">
-          Browse real web platforms, e-commerce stores, and digital campaigns crafted by Giga Digital Agency.
+          How Giga Digital Agency transformed an established fashion and lifestyle retail brand into an e-commerce powerhouse through full-funnel Meta advertising.
         </p>
       </div>
 
-      <div class="portfolio-filter-row">
-        <button class="p-filter-btn active" data-filter="all">All Projects</button>
-        <button class="p-filter-btn" data-filter="web">Websites</button>
-        <button class="p-filter-btn" data-filter="ecomm">E-Commerce</button>
-        <button class="p-filter-btn" data-filter="marketing">Digital Marketing</button>
-      </div>
-
-      <div class="portfolio-card-grid">
-        
-        <div class="portfolio-item-card" data-category="web">
-          <img src="images/services/services-3-1.jpg" alt="Art Agency Web Platform" class="portfolio-thumb">
-          <div class="portfolio-info">
-            <div class="portfolio-category-badge">Web Design & UI/UX</div>
-            <h4>Crafting a Digital Identity</h4>
-            <p>Custom digital agency portfolio built for creative professionals with high-converting mobile architecture.</p>
-          </div>
-        </div>
-
-        <div class="portfolio-item-card" data-category="ecomm">
-          <img src="images/services/services-3-2.jpg" alt="Fashion E-Commerce Lookbook" class="portfolio-thumb">
-          <div class="portfolio-info">
-            <div class="portfolio-category-badge">E-Commerce Store</div>
-            <h4>Achieving Fashion: Runway to Real Life</h4>
-            <p>Luxury lifestyle fashion storefront with integrated bKash gateway and automated delivery tracking.</p>
-          </div>
-        </div>
-
-        <div class="portfolio-item-card" data-category="marketing">
-          <img src="images/services/services-3-3.jpg" alt="Social Media Campaigns" class="portfolio-thumb">
-          <div class="portfolio-info">
-            <div class="portfolio-category-badge">Social Media & Meta Ads</div>
-            <h4>Facebook Design Initiatives</h4>
-            <p>Creative social ad packaging and conversion campaigns driving lower cost per acquisition for retail brands.</p>
-          </div>
-        </div>
-
-        <div class="portfolio-item-card" data-category="web">
-          <img src="images/services/services-3-4.jpg" alt="OmniFlow SaaS Platform" class="portfolio-thumb">
-          <div class="portfolio-info">
-            <div class="portfolio-category-badge">Custom Web Software</div>
-            <h4>OmniFlow SaaS Cloud Dashboard</h4>
-            <p>Cloud management dashboard featuring live telemetry metrics, financial charts, and role-based access.</p>
-          </div>
-        </div>
-
-        <div class="portfolio-item-card" data-category="marketing">
-          <img src="images/blog/blog-2-1.jpg" alt="SEO Organic Traffic Engine" class="portfolio-thumb">
-          <div class="portfolio-info">
-            <div class="portfolio-category-badge">SEO & Traffic Growth</div>
-            <h4>National SEO & Google Ranking Engine</h4>
-            <p>Technical search restructuring resulting in Page 1 rankings across high-intent commercial keywords.</p>
-          </div>
-        </div>
-
-        <div class="portfolio-item-card" data-category="ecomm">
-          <img src="images/blog/blog-2-2.jpg" alt="Aura Organic Living Rebrand" class="portfolio-thumb">
-          <div class="portfolio-info">
-            <div class="portfolio-category-badge">Branding & E-Commerce</div>
-            <h4>Aura Organic Living Store</h4>
-            <p>Sustainable wellness packaging and direct-to-consumer store with localized mobile checkouts.</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       11. CLIENT TESTIMONIAL
-       ========================================================================= -->
-  <section class="section">
-    <div class="container">
-      
-      <div class="section-header text-center">
-        <span class="section-tag">Testimonials</span>
-        <h2 class="section-title">What Our Clients Say About Working With Us</h2>
-      </div>
-
-      <div class="testimonial-box-inner">
-        <p class="testimonial-quote">
-          "We are extremely impressed with the services provided by Giga Digital Agency. Their team's expertise in digital marketing, creative design, and strategic guidance has significantly boosted our online presence and business growth. Highly recommended!"
-        </p>
-        <div class="testimonial-client-meta">
-          <img src="images/testimonial/testimonial-one-client-1-1.jpg" alt="M Kamruzzaman Shadhin" class="client-avatar-circle">
+      <div class="case-study-hero">
+        <div class="case-study-grid">
+          
           <div>
-            <div class="client-author-name">M Kamruzzaman Shadhin</div>
-            <div class="client-author-desig">Managing Director &bull; Verified Client Partner</div>
+            <span class="section-tag" style="background:rgba(244,63,94,0.15); color:#fb7185; border-color:rgba(244,63,94,0.3);">
+              Retail & E-Commerce Flagship
+            </span>
+            <h3 style="font-size:1.8rem; font-weight:900; color:var(--text-heading); margin:12px 0 16px;">
+              Scaling From High Ad Waste to 4.8x ROAS
+            </h3>
+            
+            <p style="font-size:0.95rem; color:var(--text-main); line-height:1.7; margin-bottom:14px;">
+              <strong>The Challenge:</strong> The client suffered from high Cost Per Click (CPC) and high cart abandonment (over 74%), with generic boosted posts failing to convert followers into paying customers.
+            </p>
+            <p style="font-size:0.95rem; color:var(--text-main); line-height:1.7; margin-bottom:14px;">
+              <strong>Our Strategy:</strong> We restructured the brand's Meta ad account from scratch. We integrated Meta Conversions API (CAPI), produced 45+ dynamic video reels highlighting product features, and introduced automated retargeting discounts for abandoned checkouts.
+            </p>
+            <p style="font-size:0.95rem; color:var(--text-main); line-height:1.7; margin-bottom:24px;">
+              <strong>The Execution:</strong> Over a 90-day execution period, our media buyers continuously tested 4 audience segments across Dhaka, Chittagong, Sylhet, and overseas Bangladeshi expats, deploying one-click bKash payment landing pages.
+            </p>
+
+            <a href="#contact" class="btn btn-primary">
+              Discuss Your Campaign
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
           </div>
+
+          <!-- 4 Highlight Metric Cards -->
+          <div class="metric-cards-grid">
+            <div class="metric-box">
+              <div class="metric-val" style="color:#fb7185;">1.85M+</div>
+              <div class="metric-label">Total Reach & Impressions</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-val" style="color:var(--accent-primary);">6.4%</div>
+              <div class="metric-label">Engagement Rate (3.2x benchmark)</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-val" style="color:var(--accent-violet);">+24,500</div>
+              <div class="metric-label">Targeted Followers & Leads</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-val" style="color:var(--accent-green);">4.8x</div>
+              <div class="metric-label">Verified Average ROAS</div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -698,66 +618,256 @@ require_once __DIR__ . '/includes/header.php';
   </section>
 
   <!-- =========================================================================
-       12. FREQUENTLY ASKED QUESTIONS
+       9. PRICING & ESTIMATED PACKAGES WITH CUSTOMIZER
        ========================================================================= -->
-  <section class="section section-alt" id="faq">
+  <section class="section" id="pricing">
     <div class="container">
       
       <div class="section-header text-center">
-        <span class="section-tag">FAQ</span>
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <p class="section-desc">Got questions about timelines, payment terms, or server hosting? Here are quick answers.</p>
+        <span class="section-tag">Transparent Investment</span>
+        <h2 class="section-title">
+          ESTIMATED PACKAGES & <span class="gradient-text">CUSTOM SOLUTIONS</span>
+        </h2>
+        <p class="section-desc">
+          Honest, transparent pricing for growing businesses. Choose a standard estimated package or build a customized plan tailored to your exact budget.
+        </p>
       </div>
 
-      <div class="faq-list">
+      <!-- Pricing Cards Grid -->
+      <div class="pricing-cards-grid">
         
-        <div class="faq-box active">
-          <button class="faq-btn">
-            <span>How much time does it take to develop a corporate website?</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="faq-answer" style="max-height: 180px;">
-            A standard corporate website of 5â€“10 pages typically takes <strong>7 to 14 business days</strong>. Full custom e-commerce stores or custom software with bKash/Nagad integrations usually take <strong>2 to 4 weeks</strong> depending on custom requirements.
+        <!-- Package 1: Starter Business Website -->
+        <div class="pricing-card">
+          <div>
+            <h3 class="price-heading">Starter Business Website</h3>
+            <p class="price-subtitle">Ideal for startups, clinics, schools & corporate portfolios</p>
+            
+            <div class="price-tag-wrap">
+              <span class="price-currency">à§³</span>
+              <span class="price-amount">15,000</span>
+              <div class="price-approx">Estimated Price (approx $140 USD)</div>
+            </div>
+
+            <ul class="price-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 5 to 7 Custom Responsive Pages</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Modern Clean UI/UX Design</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Contact Form with Instant Email Alert</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Floating WhatsApp Click-to-Chat Button</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Free .com Domain & NVMe Hosting (1 Year)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Delivery: 5â€“7 Working Days</li>
+            </ul>
+          </div>
+          <a href="#contact" class="btn btn-secondary" style="width:100%;">Select Starter Package</a>
+        </div>
+
+        <!-- Package 2: Professional Corporate Website (Featured) -->
+        <div class="pricing-card featured">
+          <span class="popular-ribbon">Most Popular</span>
+          <div>
+            <h3 class="price-heading">Professional Corporate Website</h3>
+            <p class="price-subtitle">For established firms demanding prestige, SEO & dynamic CMS</p>
+            
+            <div class="price-tag-wrap">
+              <span class="price-currency">à§³</span>
+              <span class="price-amount">28,000</span>
+              <div class="price-approx">Estimated Price (approx $260 USD)</div>
+            </div>
+
+            <ul class="price-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to 15 Dynamic Responsive Pages</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom CMS to Manage Blogs, Projects & Services</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Advanced Technical On-Page SEO & Google Maps</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Meta Pixel & Google Analytics 4 Setup</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> High-Speed NVMe cPanel Hosting (1 Year)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 3 Months Free Priority Maintenance</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Delivery: 10â€“14 Working Days</li>
+            </ul>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="width:100%;">Select Professional Package</a>
+        </div>
+
+        <!-- Package 3: E-Commerce Store with bKash/Nagad -->
+        <div class="pricing-card">
+          <div>
+            <h3 class="price-heading">E-Commerce Growth Store</h3>
+            <p class="price-subtitle">Full online store with instant payment & courier dispatch</p>
+            
+            <div class="price-tag-wrap">
+              <span class="price-currency">à§³</span>
+              <span class="price-amount">45,000</span>
+              <div class="price-approx">Estimated Price (approx $420 USD)</div>
+            </div>
+
+            <ul class="price-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Unlimited Products, Categories & Variations</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated bKash, Nagad, SSLCommerz & Card Gateways</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Pathao & Steadfast Courier API Integration</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Inventory Control, Automated Invoices & SMS Alerts</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 6 Months Free Maintenance & Security SLA</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Delivery: 14â€“20 Working Days</li>
+            </ul>
+          </div>
+          <a href="#contact" class="btn btn-secondary" style="width:100%;">Select E-Commerce Store</a>
+        </div>
+
+      </div>
+
+      <!-- Interactive Custom Package Estimator -->
+      <div class="customizer-box">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+          <div>
+            <span class="section-tag" style="margin-bottom:6px;">Need a Tailored Bundle?</span>
+            <h3 style="font-size:1.45rem; font-weight:800; color:var(--text-heading);">Build Your Custom Solution</h3>
+            <p style="font-size:0.90rem; color:var(--text-muted);">Select the services you need to estimate your investment:</p>
+          </div>
+          <div id="customEstimateDisplay" style="font-size:1.05rem; font-weight:700; color:var(--text-heading);">
+            Select options below for estimated total
           </div>
         </div>
 
-        <div class="faq-box">
-          <button class="faq-btn">
-            <span>Can you integrate local Bangladeshi payment gateways like bKash and Nagad?</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="faq-answer">
-            Yes, absolutely. We officially integrate bKash Merchant API, Nagad, Rocket, Upay, and all Visa/Mastercard payments via SSLCommerz, ShurjoPay, or Aamarpay, as well as international gateways like Stripe and PayPal.
+        <div class="customizer-grid">
+          <label class="custom-check-item">
+            <input type="checkbox" class="custom-pkg-checkbox" data-label="Corporate Website Design" data-price="15000">
+            <span>Corporate Website (à§³15k+)</span>
+          </label>
+          <label class="custom-check-item">
+            <input type="checkbox" class="custom-pkg-checkbox" data-label="E-Commerce Store with bKash" data-price="45000">
+            <span>E-Commerce with bKash (à§³45k+)</span>
+          </label>
+          <label class="custom-check-item">
+            <input type="checkbox" class="custom-pkg-checkbox" data-label="UI/UX Design in Figma" data-price="10000">
+            <span>UI/UX Figma Design (à§³10k+)</span>
+          </label>
+          <label class="custom-check-item">
+            <input type="checkbox" class="custom-pkg-checkbox" data-label="Facebook & Instagram Ad Boosting" data-price="12000">
+            <span>Facebook Ad Boosting (à§³12k+/mo)</span>
+          </label>
+          <label class="custom-check-item">
+            <input type="checkbox" class="custom-pkg-checkbox" data-label="YouTube Video Ad Boosting" data-price="15000">
+            <span>YouTube Ad Boosting (à§³15k+/mo)</span>
+          </label>
+          <label class="custom-check-item">
+            <input type="checkbox" class="custom-pkg-checkbox" data-label="Search Engine Optimization (SEO)" data-price="15000">
+            <span>Google SEO & Maps (à§³15k+/mo)</span>
+          </label>
+        </div>
+
+        <div style="text-align:center;">
+          <a href="#contact" class="btn btn-primary" style="padding:14px 34px;">
+            Request Customized Quotation
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. ACHIEVEMENTS & MILESTONES (Eye-Catching Counters)
+       ========================================================================= -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="achievements-box">
+        <div class="counters-grid">
+          <div class="counter-item">
+            <div class="counter-number">7,000+</div>
+            <div class="counter-label">Deliverables Completed</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-number">80+</div>
+            <div class="counter-label">Industry Recognitions</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-number">98.4%</div>
+            <div class="counter-label">Client Retention Rate</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-number">10+</div>
+            <div class="counter-label">Years of Craftsmanship</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. OUR TEAM SECTION
+       ========================================================================= -->
+  <section class="section" id="team">
+    <div class="container">
+      
+      <div class="section-header text-center">
+        <span class="section-tag">Executive Leadership</span>
+        <h2 class="section-title">
+          THE MINDS BEHIND <span class="gradient-text">GIGA DIGITAL AGENCY</span>
+        </h2>
+        <p class="section-desc">
+          Meet the experienced digital marketing strategists, creative designers, and engineers powering our clients' commercial success.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        
+        <!-- Member 1 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images/team/team-1-1.jpg" alt="Leonard Heizer â€” Chief Executive Officer">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Leonard Heizer</h3>
+            <div class="team-role">Chief Executive Officer (CEO)</div>
+            <p class="team-bio">12+ years directing agency growth, omnichannel marketing strategies, and enterprise client partnerships.</p>
+            <div class="team-socials">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="LinkedIn">in</a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Twitter">ð•</a>
+            </div>
           </div>
         </div>
 
-        <div class="faq-box">
-          <button class="faq-btn">
-            <span>Are domain name and web hosting included in your packages?</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="faq-answer">
-            Yes, our web packages include 1 year of high-speed NVMe SSD cPanel hosting and domain registration (.com or .com.bd), along with free SSL certificates and corporate email accounts.
+        <!-- Member 2 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images/team/team-1-2.jpg" alt="Leslie Alexander â€” Lead UI/UX Designer">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Leslie Alexander</h3>
+            <div class="team-role">Lead Web & UI/UX Designer</div>
+            <p class="team-bio">Specialist in Figma design systems, conversion-driven mobile UX, and digital brand identity kits.</p>
+            <div class="team-socials">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="LinkedIn">in</a>
+              <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Behance">BÄ“</a>
+            </div>
           </div>
         </div>
 
-        <div class="faq-box">
-          <button class="faq-btn">
-            <span>Do you provide after-sales support and maintenance?</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="faq-answer">
-            Every project comes with free technical support (30 to 90 days). After the warranty period, we provide affordable annual maintenance contracts (AMC) for security, backups, and regular content updates.
+        <!-- Member 3 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images/team/team-1-3.jpg" alt="Theresa Webb â€” Senior Digital Marketer">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Theresa Webb</h3>
+            <div class="team-role">Senior Digital Marketing Lead</div>
+            <p class="team-bio">Expert in Meta Conversions API, high-ROAS Facebook boosting, and YouTube video ad campaigns.</p>
+            <div class="team-socials">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="LinkedIn">in</a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Twitter">ð•</a>
+            </div>
           </div>
         </div>
 
-        <div class="faq-box">
-          <button class="faq-btn">
-            <span>How can we discuss our project in person?</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="faq-answer">
-            You can visit our office in Lalmatia, Dhaka, or schedule a phone/WhatsApp call at <code>+880 1860-422185</code>. We are available Saturday to Thursday from 9:30 AM to 7:00 PM.
+        <!-- Member 4 -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images/team/team-1-4.jpg" alt="Dianne Russell â€” Operations Manager">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Dianne Russell</h3>
+            <div class="team-role">Client Operations Director</div>
+            <p class="team-bio">Ensuring on-time delivery across web projects, SLAs, customer success, and ongoing technical support.</p>
+            <div class="team-socials">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="LinkedIn">in</a>
+            </div>
           </div>
         </div>
 
@@ -767,77 +877,283 @@ require_once __DIR__ . '/includes/header.php';
   </section>
 
   <!-- =========================================================================
-       13. CONTACT & QUOTATION FORM (Zaman IT Consultation Style)
+       12. CLIENT REVIEWS (Sliding Transition Carousel)
        ========================================================================= -->
-  <section class="section" id="contact">
+  <section class="section section-alt" id="reviews">
     <div class="container">
       
-      <div class="contact-layout-grid">
+      <div class="section-header text-center">
+        <span class="section-tag">Client Feedback</span>
+        <h2 class="section-title">
+          WHAT OUR CLIENTS SAY ABOUT <span class="gradient-text">GIGA DIGITAL</span>
+        </h2>
+        <p class="section-desc">
+          Real reviews from business owners, managing directors, and retail founders who have scaled with our team.
+        </p>
+      </div>
+
+      <!-- Sliding Review Carousel -->
+      <div class="testimonial-carousel-wrap">
         
-        <!-- Address & Hotlines Card -->
-        <div class="contact-address-card">
-          <span class="section-tag">Direct Contact</span>
-          <h3>Get in Touch With Our Office</h3>
-          <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.65;">
-            Visit our office in Dhaka or connect directly with our senior project managers for a free consultation and project estimate.
+        <button class="carousel-nav-btn carousel-prev" aria-label="Previous Review">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        <button class="carousel-nav-btn carousel-next" aria-label="Next Review">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+
+        <div class="testimonial-track">
+          
+          <!-- Slide 1: M Kamruzzaman Shadhin -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+              <p class="review-quote">
+                "We are extremely impressed with the services provided by Giga Digital Agency. Their team's expertise in digital marketing, creative design, and strategic guidance has significantly boosted our online presence and business growth. Highly recommended!"
+              </p>
+              <div class="reviewer-profile">
+                <img src="images/team/team-1-5.jpg" alt="M Kamruzzaman Shadhin" class="reviewer-avatar">
+                <div>
+                  <div class="reviewer-name">M Kamruzzaman Shadhin</div>
+                  <div class="reviewer-company">Managing Director, Enterprise Group</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Retail Founder -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+              <p class="review-quote">
+                "Their Facebook and YouTube ad boosting strategies tripled our e-commerce sales within 60 days. The automated bKash and Pathao courier integrations work without a single hitch. Exceptional engineering."
+              </p>
+              <div class="reviewer-profile">
+                <img src="images/team/team-1-6.jpg" alt="Anisur Rahman" class="reviewer-avatar">
+                <div>
+                  <div class="reviewer-name">Anisur Rahman</div>
+                  <div class="reviewer-company">Founder, Retail Express Bangladesh</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: SaaS Executive -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+              <p class="review-quote">
+                "Giga Digital Agency designed our entire web application and UI/UX in Figma, followed by flawless front-end development. Our user activation rate jumped by 48% within two weeks of launch."
+              </p>
+              <div class="reviewer-profile">
+                <img src="images/team/team-1-7.jpg" alt="Sophia Chen" class="reviewer-avatar">
+                <div>
+                  <div class="reviewer-name">Sophia Chen</div>
+                  <div class="reviewer-company">Product Lead, TechNova Global</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Corporate Logistics CEO -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+              <p class="review-quote">
+                "Best SEO and web development firm in Dhaka. We are now ranking #1 on Google for all of our primary commercial keywords, bringing in qualified B2B leads every single morning."
+              </p>
+              <div class="reviewer-profile">
+                <img src="images/team/team-1-8.jpg" alt="Tanvir Hasan" class="reviewer-avatar">
+                <div>
+                  <div class="reviewer-name">Tanvir Hasan</div>
+                  <div class="reviewer-company">CEO, Horizon Logistics</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="carousel-dots"></div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       13. BLOG & PERSPECTIVES SECTION (Topic-Focused Articles)
+       ========================================================================= -->
+  <section class="section" id="blog">
+    <div class="container">
+      
+      <div class="section-header text-center">
+        <span class="section-tag">Industry Perspectives</span>
+        <h2 class="section-title">
+          DIGITAL MARKETING & <span class="gradient-text">TECH PERSPECTIVES</span>
+        </h2>
+        <p class="section-desc">
+          In-depth articles and actionable strategies written by Giga Digital Agency experts to help your business grow.
+        </p>
+      </div>
+
+      <div class="blog-grid">
+        
+        <!-- Blog 1 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="images/blog/blog-2-1.jpg" alt="Facebook and YouTube Ad Boosting Strategy">
+          </div>
+          <div class="blog-content">
+            <div>
+              <div class="blog-meta-row">
+                <span class="section-tag" style="padding:2px 8px; font-size:0.70rem; margin-bottom:0;">Performance Ads</span>
+                <span>November 2026</span>
+              </div>
+              <h3 class="blog-title">How to Scale Your Business with Facebook & YouTube Ad Boosting in 2026</h3>
+              <p class="blog-excerpt">
+                Mastering Meta Conversions API, short-form video hooks, and retargeting funnels to achieve consistent 4.0x+ ROAS.
+              </p>
+            </div>
+            <a href="#" class="blog-read-btn" data-article="blog-1">
+              Read Article &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog 2 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="images/blog/blog-2-2.jpg" alt="UI/UX Design for E-Commerce Websites">
+          </div>
+          <div class="blog-content">
+            <div>
+              <div class="blog-meta-row">
+                <span class="section-tag" style="padding:2px 8px; font-size:0.70rem; margin-bottom:0;">UI/UX Design</span>
+                <span>October 2026</span>
+              </div>
+              <h3 class="blog-title">The Science of High-Converting UI/UX Design for E-Commerce Platforms</h3>
+              <p class="blog-excerpt">
+                Why 70% of shoppers abandon carts in South Asia and how one-click mobile checkout designs slash drop-off rates.
+              </p>
+            </div>
+            <a href="#" class="blog-read-btn" data-article="blog-2">
+              Read Article &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog 3 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="images/blog/blog-2-3.jpg" alt="Local SEO Ranking in Bangladesh">
+          </div>
+          <div class="blog-content">
+            <div>
+              <div class="blog-meta-row">
+                <span class="section-tag" style="padding:2px 8px; font-size:0.70rem; margin-bottom:0;">SEO Strategy</span>
+                <span>September 2026</span>
+              </div>
+              <h3 class="blog-title">Local SEO Strategies: How to Rank #1 on Google Search and Maps in Bangladesh</h3>
+              <p class="blog-excerpt">
+                Proven blueprint for dominating Google's Local 3-Pack and ranking commercial intent keywords organically.
+              </p>
+            </div>
+            <a href="#" class="blog-read-btn" data-article="blog-3">
+              Read Article &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog 4 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="images/blog/blog-3-1.jpg" alt="Custom Software and POS Systems">
+          </div>
+          <div class="blog-content">
+            <div>
+              <div class="blog-meta-row">
+                <span class="section-tag" style="padding:2px 8px; font-size:0.70rem; margin-bottom:0;">Tech & Code</span>
+                <span>August 2026</span>
+              </div>
+              <h3 class="blog-title">Why Custom Software & ERP Outperforms Off-the-Shelf Templates for Growing Businesses</h3>
+              <p class="blog-excerpt">
+                Avoid recurring SaaS tax: how custom multi-branch inventory systems protect margin and streamline operations.
+              </p>
+            </div>
+            <a href="#" class="blog-read-btn" data-article="blog-4">
+              Read Article &rarr;
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       14. CONTACT & INSTANT QUOTATION SECTION
+       ========================================================================= -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      
+      <div class="contact-grid">
+        
+        <!-- Left: Agency Information -->
+        <div class="contact-info-card">
+          <span class="section-tag">Let's Connect</span>
+          <h2 style="font-size:2rem; font-weight:900; color:var(--text-heading); margin-bottom:16px;">
+            START YOUR PROJECT TODAY
+          </h2>
+          <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.7; margin-bottom:28px;">
+            Whether you need a full corporate website, an e-commerce platform with bKash integration, or a high-ROAS Facebook and YouTube ad boost campaign, our team is ready to deliver.
           </p>
 
-          <div class="contact-item-row">
-            <div class="contact-icon-circle">ðŸ“</div>
-            <div>
-              <h5>Office Address</h5>
-              <p>House # 6/14, Block # A, Lalmatia, Dhaka-1207, Bangladesh</p>
-              <p style="font-size:0.8rem; color:var(--text-dim);">(Additional operations: Mirpur / Shewrapara, Dhaka)</p>
-            </div>
+          <div style="margin-bottom:24px;">
+            <div style="font-size:0.85rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:6px;">Office Headquarters:</div>
+            <p style="font-size:1.05rem; font-weight:700; color:var(--text-heading); line-height:1.5;">
+              House # 6/14, Block # A, Lalmatia,<br>
+              Dhaka-1207, Bangladesh
+            </p>
           </div>
 
-          <div class="contact-item-row">
-            <div class="contact-icon-circle">ðŸ“ž</div>
-            <div>
-              <h5>Direct Hotlines</h5>
-              <p><a href="tel:01860422185" style="color:var(--text-heading); font-weight:700;">+880 1860-422185</a></p>
-              <p><a href="tel:01778741894" style="color:var(--text-heading); font-weight:700;">+880 1778-741894</a></p>
-            </div>
+          <div style="margin-bottom:24px;">
+            <div style="font-size:0.85rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:6px;">Direct Phone Hotlines:</div>
+            <p style="font-size:1.15rem; font-weight:800; color:var(--accent-primary);">
+              <a href="tel:01860422185">+880 1860-422185</a><br>
+              <a href="tel:01778741894">+880 1778-741894</a>
+            </p>
           </div>
 
-          <div class="contact-item-row">
-            <div class="contact-icon-circle">ðŸ’¬</div>
-            <div>
-              <h5>Instant WhatsApp</h5>
-              <p><a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" style="color:#25d366; font-weight:700;">+880 1860-422185 (Click to Chat)</a></p>
-            </div>
+          <div style="margin-bottom:28px;">
+            <div style="font-size:0.85rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:6px;">Direct Email:</div>
+            <p style="font-size:1.05rem; font-weight:700; color:var(--text-heading);">
+              <a href="mailto:info@gigadigitalagency.com" style="color:var(--accent-cyan);">info@gigadigitalagency.com</a>
+            </p>
           </div>
 
-          <div class="contact-item-row">
-            <div class="contact-icon-circle">âœ‰ï¸</div>
-            <div>
-              <h5>Official Inquiries</h5>
-              <p><a href="mailto:info@gigadigitalagency.com" style="color:var(--accent-primary);">info@gigadigitalagency.com</a></p>
-              <p><a href="mailto:supports@gigadigitalagency.com" style="color:var(--text-muted);">supports@gigadigitalagency.com</a></p>
-            </div>
-          </div>
-
-          <div style="margin-top:28px; background:var(--badge-bg); border:1px solid var(--badge-border); border-radius:var(--radius-sm); padding:16px;">
-            <p style="font-size:0.85rem; font-weight:700; color:var(--badge-text); margin-bottom:4px;">Direct Phone Support Guarantee</p>
-            <p style="font-size:0.82rem; color:var(--text-muted);">Speak directly with a technical manager who understands your exact business needs.</p>
-          </div>
+          <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%;">
+            ðŸ’¬ Instant WhatsApp Chat (+880 1860-422185)
+          </a>
         </div>
 
-        <!-- Consultation Form -->
-        <div class="consultation-form-card">
-          <h3 style="font-size:1.4rem; font-weight:800; color:var(--text-heading); margin-bottom:8px;">Request a Free Quotation</h3>
-          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:20px;">Fill out the form below. We will analyze your requirements and call you back with a quote.</p>
+        <!-- Right: Quotation Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size:1.5rem; font-weight:800; color:var(--text-heading); margin-bottom:8px;">Request a Quotation</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:24px;">Fill out your project details for an immediate consultation within 2 hours.</p>
 
           <div id="formAlert" style="display:none;"></div>
 
-          <form id="consultationForm" novalidate>
+          <form id="consultationForm">
             <div class="form-row-2">
               <div class="input-group">
-                <label class="input-label" for="custName">Your Name *</label>
-                <input type="text" id="custName" name="name" class="form-input" placeholder="e.g. M. Rahman" required>
+                <label class="input-label" for="custName">Your Full Name *</label>
+                <input type="text" id="custName" name="name" class="form-input" placeholder="e.g. Tanvir Ahmed" required>
               </div>
               <div class="input-group">
-                <label class="input-label" for="custPhone">Phone / Mobile *</label>
+                <label class="input-label" for="custPhone">Phone / Mobile (WhatsApp) *</label>
                 <input type="tel" id="custPhone" name="phone" class="form-input" placeholder="018XXXXXXXX" required>
               </div>
             </div>
@@ -850,22 +1166,22 @@ require_once __DIR__ . '/includes/header.php';
               <div class="input-group">
                 <label class="input-label" for="custService">Service Required *</label>
                 <select id="custService" name="service" class="form-input" required>
-                  <option value="" disabled selected>Select service...</option>
-                  <option value="Corporate Web Design">Corporate Web Design & Development</option>
-                  <option value="E-Commerce Store with bKash">E-Commerce Store (bKash/Nagad/Courier)</option>
-                  <option value="Custom Software / POS / ERP">Custom Software / POS / ERP</option>
+                  <option value="" disabled selected>Select service category...</option>
+                  <option value="Starter Business Web (à§³15,000)">Starter Business Web Design (à§³15,000)</option>
+                  <option value="Corporate Web Design (à§³28,000)">Professional Corporate Web Design (à§³28,000)</option>
+                  <option value="E-Commerce Store (à§³45,000)">E-Commerce Store with bKash (à§³45,000)</option>
+                  <option value="Facebook & YouTube Ad Boosting">Facebook & YouTube Ad Boosting</option>
+                  <option value="UI/UX Design in Figma">UI/UX Design in Figma</option>
                   <option value="Search Engine Optimization (SEO)">Search Engine Optimization (SEO)</option>
-                  <option value="Meta & Google Ads Campaign">Meta & Google Ads Campaign</option>
-                  <option value="UI/UX & Graphic Design">UI/UX & Graphic Design</option>
-                  <option value="Domain & Cloud Hosting">Domain & Cloud Hosting</option>
-                  <option value="Other Consultation">Other Consultation</option>
+                  <option value="Custom Software / POS / ERP">Custom Software / POS / ERP</option>
+                  <option value="Customized Multi-Service Solution">Customized Multi-Service Solution</option>
                 </select>
               </div>
             </div>
 
             <div class="input-group">
               <label class="input-label" for="custDetails">Project Details & Requirements *</label>
-              <textarea id="custDetails" name="details" class="form-input" placeholder="Please describe your company, reference websites, and key requirements..." required></textarea>
+              <textarea id="custDetails" name="details" class="form-input" placeholder="Tell us about your company, target audience, reference websites, and key requirements..." required></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary" style="width:100%; padding:14px; font-size:1.02rem;">
@@ -880,7 +1196,7 @@ require_once __DIR__ . '/includes/header.php';
   </section>
 
   <!-- =========================================================================
-       14. CORPORATE FOOTER WITH ACTUAL LOGO
+       15. CORPORATE FOOTER
        ========================================================================= -->
 <?php
 require_once __DIR__ . '/includes/footer.php';

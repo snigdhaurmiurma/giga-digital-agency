@@ -1,10 +1,11 @@
-<?php
+﻿<?php
 /**
- * GIGA DIGITAL AGENCY — CONTACT PAGE
+ * GIGA DIGITAL AGENCY â€” CONTACT PAGE
  */
-$page_title = 'Contact Us — Giga Digital Agency | Start Your Project';
+$page_title = 'Contact Us â€” Giga Digital Agency | Start Your Project';
 $page_desc = 'Contact Giga Digital Agency. Connect with our senior digital strategists in Lalmatia, Dhaka, or schedule a virtual consultation for global projects.';
 $current_page = 'contact';
+$is_subpage = true;
 require_once __DIR__ . '/../includes/header.php';
 ?>
 
@@ -31,7 +32,7 @@ require_once __DIR__ . '/../includes/header.php';
 
           <div class="contact-details-list">
             <div class="contact-detail-item">
-              <div class="contact-icon-box">📍</div>
+              <div class="contact-icon-box">ðŸ“</div>
               <div class="contact-detail-text">
                 <h5>Physical Studio</h5>
                 <p>House # 6/14, Block # A, Lalmatia, Dhaka-1207, Bangladesh</p>
@@ -40,7 +41,7 @@ require_once __DIR__ . '/../includes/header.php';
             </div>
 
             <div class="contact-detail-item">
-              <div class="contact-icon-box">📞</div>
+              <div class="contact-icon-box">ðŸ“ž</div>
               <div class="contact-detail-text">
                 <h5>Phone / Direct Inquiries</h5>
                 <p><a href="tel:01860422185">+880 1860-422185</a> &bull; <a href="tel:01778741894">+880 1778-741894</a></p>
@@ -48,7 +49,7 @@ require_once __DIR__ . '/../includes/header.php';
             </div>
 
             <div class="contact-detail-item">
-              <div class="contact-icon-box">✉️</div>
+              <div class="contact-icon-box">âœ‰ï¸</div>
               <div class="contact-detail-text">
                 <h5>Email Inquiries</h5>
                 <p><a href="mailto:info@gigadigitalagency.com">info@gigadigitalagency.com</a></p>
@@ -114,9 +115,9 @@ require_once __DIR__ . '/../includes/header.php';
                 <label class="form-label" for="contactBudget">Estimated Investment Budget</label>
                 <select id="contactBudget" name="budget" class="form-control">
                   <option value="Flexible / Let's Discuss" selected>Flexible / Let's Discuss</option>
-                  <option value="$1,000 – $2,500">$1,000 – $2,500</option>
-                  <option value="$2,500 – $5,000">$2,500 – $5,000</option>
-                  <option value="$5,000 – $10,000">$5,000 – $10,000</option>
+                  <option value="$1,000 â€“ $2,500">$1,000 â€“ $2,500</option>
+                  <option value="$2,500 â€“ $5,000">$2,500 â€“ $5,000</option>
+                  <option value="$5,000 â€“ $10,000">$5,000 â€“ $10,000</option>
                   <option value="$10,000+">$10,000+</option>
                 </select>
               </div>
@@ -142,3 +143,4 @@ require_once __DIR__ . '/../includes/header.php';
 <?php
 require_once __DIR__ . '/../includes/footer.php';
 ?>
+

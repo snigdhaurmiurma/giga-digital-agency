@@ -1,10 +1,11 @@
-<?php
+﻿<?php
 /**
- * GIGA DIGITAL AGENCY — PORTFOLIO PAGE
+ * GIGA DIGITAL AGENCY â€” PORTFOLIO PAGE
  */
-$page_title = 'Selected Work & Portfolio — Giga Digital Agency';
+$page_title = 'Selected Work & Portfolio â€” Giga Digital Agency';
 $page_desc = 'Explore our showcase of web development, UI/UX design, brand identity, and performance marketing projects delivered for ambitious brands.';
 $current_page = 'portfolio';
+$is_subpage = true;
 require_once __DIR__ . '/../includes/header.php';
 ?>
 
@@ -37,11 +38,11 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="project-card" data-category="web">
           <div class="project-img-box">
             <span class="project-tag">Website & UI/UX</span>
-            <img src="images/services/services-3-1.jpg" alt="Crafting a Digital Identity">
+            <img src="../images/services/services-3-1.jpg" alt="Crafting a Digital Identity">
           </div>
           <div class="project-content">
             <h4>Crafting a Digital Identity</h4>
-            <p>Art Agency Web Design & Digital Experience — dark mode aesthetics, interactive fluid grids, and curated creator showcases.</p>
+            <p>Art Agency Web Design & Digital Experience â€” dark mode aesthetics, interactive fluid grids, and curated creator showcases.</p>
             <a href="#" class="project-view-btn">View Project Details &rarr;</a>
           </div>
         </div>
@@ -49,7 +50,7 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="project-card" data-category="branding">
           <div class="project-img-box">
             <span class="project-tag">Branding & Design</span>
-            <img src="images/services/services-3-2.jpg" alt="Achieving Fashion">
+            <img src="../images/services/services-3-2.jpg" alt="Achieving Fashion">
           </div>
           <div class="project-content">
             <h4>Achieving Fashion: Runway to Real Life</h4>
@@ -61,7 +62,7 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="project-card" data-category="social">
           <div class="project-img-box">
             <span class="project-tag">Social Media</span>
-            <img src="images/services/services-3-3.jpg" alt="Facebook Design Initiatives">
+            <img src="../images/services/services-3-3.jpg" alt="Facebook Design Initiatives">
           </div>
           <div class="project-content">
             <h4>Facebook Design Initiatives</h4>
@@ -73,7 +74,7 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="project-card" data-category="web">
           <div class="project-img-box">
             <span class="project-tag">Web Application</span>
-            <img src="images/services/services-3-4.jpg" alt="OmniFlow Cloud Platform">
+            <img src="../images/services/services-3-4.jpg" alt="OmniFlow Cloud Platform">
           </div>
           <div class="project-content">
             <h4>OmniFlow SaaS Intelligence Platform</h4>
@@ -85,7 +86,7 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="project-card" data-category="marketing">
           <div class="project-img-box">
             <span class="project-tag">Digital Marketing</span>
-            <img src="images/blog/blog-2-1.jpg" alt="National SEO Engine">
+            <img src="../images/blog/blog-2-1.jpg" alt="National SEO Engine">
           </div>
           <div class="project-content">
             <h4>National SEO & Acquisition Engine</h4>
@@ -97,7 +98,7 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="project-card" data-category="branding">
           <div class="project-img-box">
             <span class="project-tag">Branding</span>
-            <img src="images/blog/blog-2-2.jpg" alt="Aura Organic Living">
+            <img src="../images/blog/blog-2-2.jpg" alt="Aura Organic Living">
           </div>
           <div class="project-content">
             <h4>Aura Organic Living Brand System</h4>
@@ -114,3 +115,4 @@ require_once __DIR__ . '/../includes/header.php';
 <?php
 require_once __DIR__ . '/../includes/footer.php';
 ?>
+

@@ -5,11 +5,12 @@
 
 @media screen and (max-width: 1200px) {
   .process-steps-grid {
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
-  .packages-grid {
-    gap: 16px;
+  .counters-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 
@@ -27,26 +28,21 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  .about-split-grid {
+  .case-study-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
-  .award-highlight-box {
+  .contact-grid {
     grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .award-metrics-row {
-    justify-content: center;
-  }
-  .packages-grid {
-    grid-template-columns: 1fr;
-    max-width: 480px;
-    margin: 0 auto;
-  }
-  .contact-layout-grid {
-    grid-template-columns: 1fr;
+    gap: 30px;
   }
   .footer-cols-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .hero-floating-badge {
+    bottom: -10px;
+    right: 10px;
   }
 }
 
@@ -54,33 +50,33 @@
   .topbar {
     display: none; /* Hide topbar on mobile for cleaner viewport */
   }
-  .hero-trust-bar {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+  .nav-container {
+    height: 72px;
+  }
+  .site-logo {
+    height: 42px;
+  }
+  .site-brand-title {
+    font-size: 1.05rem;
+  }
+  .site-brand-tagline {
+    display: none;
   }
   .process-steps-grid {
     grid-template-columns: 1fr;
-    text-align: left;
   }
-  .step-card {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    text-align: left;
-  }
-  .step-number {
-    margin: 0;
-    flex-shrink: 0;
-  }
-  .services-card-grid {
+  .counters-grid {
     grid-template-columns: 1fr;
   }
-  .portfolio-card-grid {
+  .metric-cards-grid {
     grid-template-columns: 1fr;
   }
   .form-row-2 {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+  .customizer-grid {
+    grid-template-columns: 1fr;
   }
   .footer-cols-grid {
     grid-template-columns: 1fr;
@@ -88,7 +84,21 @@
   .footer-bottom-bar {
     flex-direction: column;
     text-align: center;
-    gap: 10px;
+    gap: 12px;
+  }
+  .floating-whatsapp-btn {
+    bottom: 16px;
+    left: 16px;
+    width: 50px;
+    height: 50px;
+  }
+  .floating-whatsapp-btn svg {
+    width: 26px;
+    height: 26px;
+  }
+  .back-to-top-btn {
+    bottom: 16px;
+    right: 16px;
   }
 }
 
@@ -98,21 +108,12 @@
   }
   .hero-cta-group {
     flex-direction: column;
-    width: 100%;
+    align-items: stretch;
   }
   .hero-cta-group .btn {
     width: 100%;
   }
-  .hero-trust-bar {
-    grid-template-columns: 1fr;
-  }
-  .consultation-form-card {
+  .service-box, .pricing-card, .case-study-hero, .contact-form-card {
     padding: 24px 18px;
-  }
-  .floating-whatsapp-btn {
-    bottom: 16px;
-    left: 16px;
-    width: 48px;
-    height: 48px;
   }
 }

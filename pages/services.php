@@ -1,10 +1,11 @@
-<?php
+﻿<?php
 /**
- * GIGA DIGITAL AGENCY — SERVICES PAGE
+ * GIGA DIGITAL AGENCY â€” SERVICES PAGE
  */
-$page_title = 'Our Services — Creative, Growth & Tech | Giga Digital Agency';
+$page_title = 'Our Services â€” Creative, Growth & Tech | Giga Digital Agency';
 $page_desc = 'Explore Giga Digital Agency specialized disciplines: Creative Design & UI/UX, Growth & Search Engine Optimization, and Full-Stack Web Development.';
 $current_page = 'services';
+$is_subpage = true;
 require_once __DIR__ . '/../includes/header.php';
 ?>
 
@@ -25,7 +26,7 @@ require_once __DIR__ . '/../includes/header.php';
     <div class="container">
       <div class="service-category-banner gda-reveal">
         <div>
-          <h3>CATEGORY A — CREATIVE</h3>
+          <h3>CATEGORY A â€” CREATIVE</h3>
           <p>"Design That Makes Your Brand Unforgettable."</p>
         </div>
         <a href="#contact" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.85rem;">Inquire for Creative Services</a>
@@ -34,7 +35,7 @@ require_once __DIR__ . '/../includes/header.php';
       <div class="services-grid gda-reveal">
         <div class="gda-card service-card">
           <div class="service-card-top">
-            <div class="service-icon-box">🎨</div>
+            <div class="service-icon-box">ðŸŽ¨</div>
             <h4>Brand Identity & Strategy</h4>
             <p>Comprehensive logo design, brand architecture, typography standards, visual design systems, and brand voice positioning.</p>
           </div>
@@ -45,7 +46,7 @@ require_once __DIR__ . '/../includes/header.php';
 
         <div class="gda-card service-card">
           <div class="service-card-top">
-            <div class="service-icon-box">✨</div>
+            <div class="service-icon-box">âœ¨</div>
             <h4>UI/UX Interface Design</h4>
             <p>User research, Figma design systems, interactive web & mobile prototypes, and conversion-optimized checkout layouts.</p>
           </div>
@@ -56,7 +57,7 @@ require_once __DIR__ . '/../includes/header.php';
 
         <div class="gda-card service-card">
           <div class="service-card-top">
-            <div class="service-icon-box">🎬</div>
+            <div class="service-icon-box">ðŸŽ¬</div>
             <h4>Social Media Creatives & Motion</h4>
             <p>Thumb-stopping social ads, YouTube thumbnail packaging, animated banners, motion graphics, and video ad edits.</p>
           </div>
@@ -73,7 +74,7 @@ require_once __DIR__ . '/../includes/header.php';
     <div class="container">
       <div class="service-category-banner gda-reveal" style="border-left-color: var(--accent-blue);">
         <div>
-          <h3>CATEGORY B — GROWTH</h3>
+          <h3>CATEGORY B â€” GROWTH</h3>
           <p>"Strategies That Move Your Business Forward."</p>
         </div>
         <a href="#contact" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.85rem;">Inquire for Growth Marketing</a>
@@ -82,7 +83,7 @@ require_once __DIR__ . '/../includes/header.php';
       <div class="services-grid gda-reveal">
         <div class="gda-card service-card">
           <div class="service-card-top">
-            <div class="service-icon-box" style="background: rgba(37,99,235,0.15); color: var(--accent-blue-light);">📈</div>
+            <div class="service-icon-box" style="background: rgba(37,99,235,0.15); color: var(--accent-blue-light);">ðŸ“ˆ</div>
             <h4>Search Engine Optimization (SEO)</h4>
             <p>Technical search auditing, high-commercial keyword targeting, local search maps, and authoritative backlink funnels.</p>
           </div>
@@ -93,7 +94,7 @@ require_once __DIR__ . '/../includes/header.php';
 
         <div class="gda-card service-card">
           <div class="service-card-top">
-            <div class="service-icon-box" style="background: rgba(37,99,235,0.15); color: var(--accent-blue-light);">🎯</div>
+            <div class="service-icon-box" style="background: rgba(37,99,235,0.15); color: var(--accent-blue-light);">ðŸŽ¯</div>
             <h4>Paid Advertising (Meta & Google Ads)</h4>
             <p>Data-driven PPC management, multi-tier retargeting funnels, A/B creative testing, and ROAS-focused campaign scaling.</p>
           </div>
@@ -104,7 +105,7 @@ require_once __DIR__ . '/../includes/header.php';
 
         <div class="gda-card service-card">
           <div class="service-card-top">
-            <div class="service-icon-box" style="background: rgba(37,99,235,0.15); color: var(--accent-blue-light);">📱</div>
+            <div class="service-icon-box" style="background: rgba(37,99,235,0.15); color: var(--accent-blue-light);">ðŸ“±</div>
             <h4>Social Media Management</h4>
             <p>Organic social growth strategy, content calendar planning, community management, and brand authority cultivation.</p>
           </div>
@@ -121,7 +122,7 @@ require_once __DIR__ . '/../includes/header.php';
     <div class="container">
       <div class="service-category-banner gda-reveal" style="border-left-color: var(--accent-cyan);">
         <div>
-          <h3>CATEGORY C — TECH</h3>
+          <h3>CATEGORY C â€” TECH</h3>
           <p>"Technology That Powers Your Next Move."</p>
         </div>
         <a href="#contact" class="btn btn-outline" style="padding: 8px 20px; font-size: 0.85rem;">Inquire for Tech Engineering</a>
@@ -130,7 +131,7 @@ require_once __DIR__ . '/../includes/header.php';
       <div class="services-grid gda-reveal">
         <div class="gda-card service-card">
           <div class="service-card-top">
-            <div class="service-icon-box" style="background: rgba(6,182,212,0.15); color: var(--accent-cyan);">⚡</div>
+            <div class="service-icon-box" style="background: rgba(6,182,212,0.15); color: var(--accent-cyan);">âš¡</div>
             <h4>Website Design & Development</h4>
             <p>High-performance bespoke corporate websites, landing pages, and web portals optimized for Core Web Vitals and SEO.</p>
           </div>
@@ -141,7 +142,7 @@ require_once __DIR__ . '/../includes/header.php';
 
         <div class="gda-card service-card">
           <div class="service-card-top">
-            <div class="service-icon-box" style="background: rgba(6,182,212,0.15); color: var(--accent-cyan);">🛍️</div>
+            <div class="service-icon-box" style="background: rgba(6,182,212,0.15); color: var(--accent-cyan);">ðŸ›ï¸</div>
             <h4>E-Commerce Engineering</h4>
             <p>Scalable online storefronts, payment gateways, custom cart funnels, inventory integration, and high-converting checkouts.</p>
           </div>
@@ -152,7 +153,7 @@ require_once __DIR__ . '/../includes/header.php';
 
         <div class="gda-card service-card">
           <div class="service-card-top">
-            <div class="service-icon-box" style="background: rgba(6,182,212,0.15); color: var(--accent-cyan);">🛠️</div>
+            <div class="service-icon-box" style="background: rgba(6,182,212,0.15); color: var(--accent-cyan);">ðŸ› ï¸</div>
             <h4>Maintenance & SLA Support</h4>
             <p>Continuous uptime tracking, daily cloud backups, security patching, plugin updates, speed audits, and bug fixes.</p>
           </div>
@@ -180,3 +181,4 @@ require_once __DIR__ . '/../includes/header.php';
 <?php
 require_once __DIR__ . '/../includes/footer.php';
 ?>
+

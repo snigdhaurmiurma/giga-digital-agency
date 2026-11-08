@@ -1,18 +1,20 @@
 /**
- * GIGA DIGITAL AGENCY — CORE INTERACTION LOGIC
- * Features: Light/Dark Theme Switcher, Sticky Nav, Mobile Menu, Filter, Accordion, Contact Form
+ * GIGA DIGITAL AGENCY — CORE APPLICATION LOGIC
+ * High-End Agency Interactivity: Dual Themes, Frosted Nav, Hero Transitions,
+ * Service Categories, Sliding Reviews, Package Customizer & Form Handlers
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
-  // --- 1. Light / Dark Theme Switcher ---
+  // =========================================================================
+  // 1. LIGHT / DARK THEME TOGGLE (Aesthetic & Persisted)
+  // =========================================================================
   const themeToggleBtn = document.getElementById('themeToggleBtn');
-  const currentTheme = localStorage.getItem('gda_theme') || 'light';
+  const storedTheme = localStorage.getItem('gda_theme') || 'dark'; // Default aesthetic dark
   
-  // Set initial theme
-  document.documentElement.setAttribute('data-theme', currentTheme);
-  updateThemeIcon(currentTheme);
+  document.documentElement.setAttribute('data-theme', storedTheme);
+  updateThemeIcon(storedTheme);
 
   themeToggleBtn?.addEventListener('click', () => {
     const activeTheme = document.documentElement.getAttribute('data-theme');
@@ -26,9 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateThemeIcon(theme) {
     if (!themeToggleBtn) return;
     if (theme === 'dark') {
-      // Show sun icon to switch to light
       themeToggleBtn.innerHTML = `
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19">
           <circle cx="12" cy="12" r="5"></circle>
           <line x1="12" y1="1" x2="12" y2="3"></line>
           <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -40,26 +41,27 @@ document.addEventListener('DOMContentLoaded', () => {
           <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
         </svg>
       `;
-      themeToggleBtn.setAttribute('title', 'Switch to Light Mode');
+      themeToggleBtn.setAttribute('title', 'Switch to Light Aesthetic Mode');
     } else {
-      // Show moon icon to switch to dark
       themeToggleBtn.innerHTML = `
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
       `;
-      themeToggleBtn.setAttribute('title', 'Switch to Dark Mode');
+      themeToggleBtn.setAttribute('title', 'Switch to Dark Cosmic Mode');
     }
   }
 
-  // --- 2. Sticky Header & Back-To-Top ---
+  // =========================================================================
+  // 2. STICKY FROSTED HEADER & BACK TO TOP BUTTON
+  // =========================================================================
   const header = document.querySelector('.main-header');
   const backToTopBtn = document.querySelector('.back-to-top-btn');
 
   window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
-    header?.classList.toggle('scrolled', scrollPos > 50);
-    backToTopBtn?.classList.toggle('visible', scrollPos > 400);
+    header?.classList.toggle('scrolled', scrollPos > 40);
+    backToTopBtn?.classList.toggle('visible', scrollPos > 350);
   });
 
   backToTopBtn?.addEventListener('click', (e) => {
@@ -67,7 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // --- 3. Mobile Navigation Drawer ---
+  // =========================================================================
+  // 3. MOBILE NAVIGATION DRAWER
+  // =========================================================================
   const mobileToggle = document.querySelector('.mobile-toggle');
   const mobileDrawer = document.querySelector('.mobile-drawer');
   const mobileOverlay = document.querySelector('.mobile-drawer-overlay');
@@ -90,84 +94,288 @@ document.addEventListener('DOMContentLoaded', () => {
   mobileOverlay?.addEventListener('click', closeDrawer);
   document.querySelectorAll('.drawer-nav-list a').forEach(a => a.addEventListener('click', closeDrawer));
 
-  // --- 4. Package / Pricing Filter Switcher ---
-  const pkgTabBtns = document.querySelectorAll('.pkg-tab-btn');
-  const pkgDecks = document.querySelectorAll('.pkg-deck');
+  // =========================================================================
+  // 4. HERO CAPABILITY TRANSITION SHOWCASE (Automatic + Tab Click)
+  // =========================================================================
+  const showcaseTabs = document.querySelectorAll('.showcase-tab-btn');
+  const capabilitySlides = document.querySelectorAll('.capability-slide');
+  let currentSlideIndex = 0;
+  let slideInterval = null;
 
-  pkgTabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      pkgTabBtns.forEach(b => b.classList.remove('active'));
-      pkgDecks.forEach(d => d.style.display = 'none');
+  function showSlide(index) {
+    if (capabilitySlides.length === 0) return;
+    showcaseTabs.forEach((tab, i) => tab.classList.toggle('active', i === index));
+    capabilitySlides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+    currentSlideIndex = index;
+  }
 
-      btn.classList.add('active');
-      const targetDeck = document.getElementById(btn.dataset.target);
-      if (targetDeck) {
-        targetDeck.style.display = 'grid';
-      }
+  showcaseTabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+      showSlide(index);
+      resetSlideTimer();
     });
   });
 
-  // --- 5. Portfolio Filter ---
-  const pFilterBtns = document.querySelectorAll('.p-filter-btn');
-  const portfolioItems = document.querySelectorAll('.portfolio-item-card');
+  function startSlideTimer() {
+    if (capabilitySlides.length > 1) {
+      slideInterval = setInterval(() => {
+        const nextIndex = (currentSlideIndex + 1) % capabilitySlides.length;
+        showSlide(nextIndex);
+      }, 4500);
+    }
+  }
 
-  pFilterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      pFilterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const val = btn.dataset.filter;
+  function resetSlideTimer() {
+    clearInterval(slideInterval);
+    startSlideTimer();
+  }
 
-      portfolioItems.forEach(item => {
-        if (val === 'all' || item.dataset.category === val) {
-          item.style.display = 'block';
+  startSlideTimer();
+
+  // =========================================================================
+  // 5. SERVICES CATEGORY FILTER (Creative, Growth, Tech)
+  // =========================================================================
+  const serviceTabs = document.querySelectorAll('.service-cat-tab');
+  const serviceBoxes = document.querySelectorAll('.service-box');
+
+  serviceTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      serviceTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const category = tab.dataset.category;
+
+      serviceBoxes.forEach(box => {
+        if (category === 'all' || box.dataset.category === category) {
+          box.style.display = 'flex';
         } else {
-          item.style.display = 'none';
+          box.style.display = 'none';
         }
       });
     });
   });
 
-  // --- 6. FAQ Accordion ---
-  const faqBoxes = document.querySelectorAll('.faq-box');
+  // =========================================================================
+  // 6. SLIDING TESTIMONIAL CAROUSEL (Arrows, Dots, Auto-play)
+  // =========================================================================
+  const track = document.querySelector('.testimonial-track');
+  const slides = document.querySelectorAll('.testimonial-slide');
+  const prevBtn = document.querySelector('.carousel-prev');
+  const nextBtn = document.querySelector('.carousel-next');
+  const dotsContainer = document.querySelector('.carousel-dots');
+  let activeSlide = 0;
+  let carouselInterval = null;
 
-  faqBoxes.forEach(box => {
-    const btn = box.querySelector('.faq-btn');
-    const answer = box.querySelector('.faq-answer');
-
-    btn?.addEventListener('click', () => {
-      const isOpen = box.classList.contains('active');
-
-      // Close all other accordions
-      faqBoxes.forEach(b => {
-        if (b !== box) {
-          b.classList.remove('active');
-          const ans = b.querySelector('.faq-answer');
-          if (ans) ans.style.maxHeight = null;
-        }
+  if (track && slides.length > 0) {
+    // Generate dots
+    dotsContainer.innerHTML = '';
+    slides.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.className = `carousel-dot ${i === 0 ? 'active' : ''}`;
+      dot.addEventListener('click', () => {
+        goToReviewSlide(i);
+        resetReviewTimer();
       });
+      dotsContainer.appendChild(dot);
+    });
 
-      if (isOpen) {
-        box.classList.remove('active');
-        if (answer) answer.style.maxHeight = null;
+    const updateCarousel = () => {
+      track.style.transform = `translateX(-${activeSlide * 100}%)`;
+      document.querySelectorAll('.carousel-dot').forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === activeSlide);
+      });
+    };
+
+    const goToReviewSlide = (idx) => {
+      activeSlide = (idx + slides.length) % slides.length;
+      updateCarousel();
+    };
+
+    prevBtn?.addEventListener('click', () => {
+      goToReviewSlide(activeSlide - 1);
+      resetReviewTimer();
+    });
+
+    nextBtn?.addEventListener('click', () => {
+      goToReviewSlide(activeSlide + 1);
+      resetReviewTimer();
+    });
+
+    function startReviewTimer() {
+      carouselInterval = setInterval(() => {
+        goToReviewSlide(activeSlide + 1);
+      }, 5000);
+    }
+
+    function resetReviewTimer() {
+      clearInterval(carouselInterval);
+      startReviewTimer();
+    }
+
+    // Touch swipe support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    track.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    track.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchStartX - touchEndX > 45) {
+        goToReviewSlide(activeSlide + 1);
+        resetReviewTimer();
+      } else if (touchEndX - touchStartX > 45) {
+        goToReviewSlide(activeSlide - 1);
+        resetReviewTimer();
+      }
+    }, { passive: true });
+
+    startReviewTimer();
+  }
+
+  // =========================================================================
+  // 7. CUSTOM PACKAGE ESTIMATOR CHECKBOX CALCULATOR
+  // =========================================================================
+  const packageCheckboxes = document.querySelectorAll('.custom-pkg-checkbox');
+  const estPriceDisplay = document.getElementById('customEstimateDisplay');
+  const packageDetailsInput = document.getElementById('custDetails');
+
+  function calculatePackageEstimate() {
+    let baseBdt = 0;
+    let selectedList = [];
+
+    packageCheckboxes.forEach(cb => {
+      if (cb.checked) {
+        baseBdt += parseInt(cb.dataset.price || '0', 10);
+        selectedList.push(cb.dataset.label);
+      }
+    });
+
+    if (estPriceDisplay) {
+      if (baseBdt === 0) {
+        estPriceDisplay.textContent = 'Select options below for estimated total';
       } else {
-        box.classList.add('active');
-        if (answer) answer.style.maxHeight = answer.scrollHeight + 20 + 'px';
+        const approxUsd = Math.round(baseBdt / 115);
+        estPriceDisplay.innerHTML = `Estimated Total: <strong style="color:var(--accent-primary); font-size:1.3rem;">৳${baseBdt.toLocaleString()} BDT</strong> <span style="font-size:0.95rem; color:var(--text-muted);">(approx $${approxUsd} USD)</span>`;
+      }
+    }
+
+    // Pre-populate quotation form with selected custom bundle
+    if (packageDetailsInput && selectedList.length > 0) {
+      packageDetailsInput.value = `Custom Package Selection:\n- ${selectedList.join('\n- ')}\n\nAdditional notes: `;
+    }
+  }
+
+  packageCheckboxes.forEach(cb => {
+    cb.addEventListener('change', calculatePackageEstimate);
+  });
+
+  // =========================================================================
+  // 8. BLOG ARTICLE PREVIEW MODAL
+  // =========================================================================
+  const articleModal = document.getElementById('articleModal');
+  const modalCloseBtn = articleModal?.querySelector('.gda-modal-close');
+  const readArticleBtns = document.querySelectorAll('.blog-read-btn');
+
+  const blogArticles = {
+    'blog-1': {
+      title: 'How to Scale Your Business with Facebook & YouTube Ad Boosting in 2026',
+      cat: 'Growth & Performance Ads',
+      date: 'Updated November 2026',
+      img: 'images/blog/blog-2-1.jpg',
+      content: `
+        <p>In 2026, social ad boosting has transitioned from vanity metrics to full-funnel profit engineering. Simply clicking "Boost Post" without tracking leads to wasted budget. Real growth requires precision setup:</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">1. Meta Conversions API (CAPI) Integration</h4>
+        <p>Server-side tracking bypasses browser ad-blockers and iOS privacy restrictions, providing accurate purchase events directly to Meta's AI bidding algorithms.</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">2. YouTube Shorts & In-Stream Retargeting</h4>
+        <p>Pairing 15-second YouTube Shorts with remarketing ads allows businesses to capture high-intent buyers while keeping Cost Per Mille (CPM) under control.</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">3. Creative A/B Testing</h4>
+        <p>Deploying at least 3 distinct creative angles (founder video, product benefit showcase, customer testimonial) ensures consistent ROAS over 4.0x.</p>
+      `
+    },
+    'blog-2': {
+      title: 'The Science of High-Converting UI/UX Design for E-Commerce Platforms',
+      cat: 'Creative UI/UX',
+      date: 'Updated October 2026',
+      img: 'images/blog/blog-2-2.jpg',
+      content: `
+        <p>A staggering 70% of e-commerce carts in South Asia are abandoned due to cluttered navigation and complicated checkout flows. Modern UI/UX must eliminate every friction point:</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">1. One-Click Mobile Checkout</h4>
+        <p>Integrating direct bKash and Nagad payment buttons directly on the product page boosts impulse purchase conversion by over 45%.</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">2. Visual Hierarchy & Micro-Interactions</h4>
+        <p>Deliberate contrast on the "Add to Cart" button, clean typography, and tactile button animations reassure the buyer throughout the transaction.</p>
+      `
+    },
+    'blog-3': {
+      title: 'Local SEO Strategies: How to Rank #1 on Google Search and Maps in Bangladesh',
+      cat: 'SEO & Search Growth',
+      date: 'Updated September 2026',
+      img: 'images/blog/blog-2-3.jpg',
+      content: `
+        <p>Ranking in Google's Local 3-Pack delivers ready-to-buy customers without recurring ad spend. The key pillars to dominate local search include:</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">1. Google Business Profile Optimization</h4>
+        <p>Maintaining exact NAP consistency (Name, Address, Phone), weekly geo-tagged photo updates, and verified review generation in Bengali and English.</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">2. Localized Citations & Schema Markup</h4>
+        <p>Implementing structured JSON-LD local business schema to help search engines instantly recognize your service areas and physical locations.</p>
+      `
+    },
+    'blog-4': {
+      title: 'Why Custom Software & ERP Outperforms Off-the-Shelf Templates for Growing Businesses',
+      cat: 'Tech & Engineering',
+      date: 'Updated August 2026',
+      img: 'images/blog/blog-3-1.jpg',
+      content: `
+        <p>Generic SaaS tools often lock growing enterprises into high monthly seat licenses and rigid workflows. A custom POS, inventory, or ERP system built by Giga Digital Agency gives you 100% data ownership:</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">1. Tailored Multi-Branch POS Integration</h4>
+        <p>Real-time synchronization between brick-and-mortar stores and online e-commerce inventories prevents overselling and manual bookkeeping errors.</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">2. Zero Recurring Subscription Tax</h4>
+        <p>Build once, own forever. Custom software scales with your organization without increasing software fees.</p>
+      `
+    }
+  };
+
+  readArticleBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const articleId = btn.dataset.article;
+      const article = blogArticles[articleId];
+
+      if (article && articleModal) {
+        document.getElementById('modalArticleCat').textContent = article.cat;
+        document.getElementById('modalArticleTitle').textContent = article.title;
+        document.getElementById('modalArticleDate').textContent = article.date;
+        document.getElementById('modalArticleImg').src = article.img;
+        document.getElementById('modalArticleBody').innerHTML = article.content;
+        articleModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
       }
     });
   });
 
-  // --- 7. Contact Consultation Form Submission (AJAX) ---
+  modalCloseBtn?.addEventListener('click', () => {
+    articleModal?.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+
+  articleModal?.addEventListener('click', (e) => {
+    if (e.target === articleModal) {
+      articleModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+
+  // =========================================================================
+  // 9. QUOTATION / CONSULTATION FORM (AJAX Submission)
+  // =========================================================================
   const consultationForm = document.getElementById('consultationForm');
   const formAlert = document.getElementById('formAlert');
 
   consultationForm?.addEventListener('submit', async function(e) {
     e.preventDefault();
 
-    const name = this.querySelector('#custName').value.trim();
-    const phone = this.querySelector('#custPhone').value.trim();
-    const email = this.querySelector('#custEmail').value.trim();
-    const service = this.querySelector('#custService').value;
-    const details = this.querySelector('#custDetails').value.trim();
+    const name = this.querySelector('#custName')?.value.trim();
+    const phone = this.querySelector('#custPhone')?.value.trim();
+    const email = this.querySelector('#custEmail')?.value.trim();
+    const service = this.querySelector('#custService')?.value;
+    const details = this.querySelector('#custDetails')?.value.trim();
     const submitBtn = this.querySelector('button[type="submit"]');
 
     if (!name || !phone || !email || !service || !details) {
@@ -192,25 +400,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (formAlert) {
         formAlert.style.display = 'block';
-        formAlert.style.padding = '14px';
-        formAlert.style.borderRadius = '6px';
-        formAlert.style.marginBottom = '16px';
-        formAlert.style.background = '#d1fae5';
-        formAlert.style.color = '#065f46';
-        formAlert.style.border = '1px solid #a7f3d0';
-        formAlert.textContent = data?.message || 'Thank you! Your quotation request has been received. Our team will contact you shortly.';
+        formAlert.style.padding = '14px 18px';
+        formAlert.style.borderRadius = '8px';
+        formAlert.style.marginBottom = '20px';
+        formAlert.style.background = 'rgba(16, 185, 129, 0.15)';
+        formAlert.style.color = '#34d399';
+        formAlert.style.border = '1px solid rgba(16, 185, 129, 0.35)';
+        formAlert.textContent = data?.message || 'Thank you! Your quotation request has been received. A senior strategist from Giga Digital Agency will contact you within 2 hours.';
       }
       consultationForm.reset();
     } catch {
       if (formAlert) {
         formAlert.style.display = 'block';
-        formAlert.style.padding = '14px';
-        formAlert.style.borderRadius = '6px';
-        formAlert.style.marginBottom = '16px';
-        formAlert.style.background = '#d1fae5';
-        formAlert.style.color = '#065f46';
-        formAlert.style.border = '1px solid #a7f3d0';
-        formAlert.textContent = 'Thank you! Your quotation request has been received. Our team will contact you shortly.';
+        formAlert.style.padding = '14px 18px';
+        formAlert.style.borderRadius = '8px';
+        formAlert.style.marginBottom = '20px';
+        formAlert.style.background = 'rgba(16, 185, 129, 0.15)';
+        formAlert.style.color = '#34d399';
+        formAlert.style.border = '1px solid rgba(16, 185, 129, 0.35)';
+        formAlert.textContent = 'Thank you! Your quotation request has been received. A senior strategist from Giga Digital Agency will contact you within 2 hours.';
       }
       consultationForm.reset();
     } finally {
@@ -218,4 +426,5 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = false;
     }
   });
+
 });
