@@ -56,6 +56,49 @@
   --transition: 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Complete Light Theme Definition */
+[data-theme="light"] {
+  --bg-base: #f8fafc;
+  --bg-mesh: radial-gradient(circle at 12% 18%, rgba(18, 115, 207, 0.08) 0%, transparent 45%),
+             radial-gradient(circle at 88% 45%, rgba(16, 185, 129, 0.08) 0%, transparent 45%),
+             radial-gradient(circle at 50% 85%, rgba(14, 165, 233, 0.07) 0%, transparent 45%),
+             #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f1f5f9;
+  --bg-surface-hover: #e2e8f0;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --bg-glass: rgba(255, 255, 255, 0.95);
+  --bg-dropdown: #ffffff;
+  
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-medium: rgba(15, 23, 42, 0.16);
+  --border-glow: rgba(18, 115, 207, 0.35);
+  --border-green: rgba(16, 185, 129, 0.35);
+  
+  --text-main: #334155;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  --text-heading: #0f172a;
+  
+  --accent-primary: #0284c7;
+  --accent-primary-hover: #0369a1;
+  --accent-green: #059669;
+  --accent-green-hover: #047857;
+  --accent-cyan: #0284c7;
+  --accent-violet: #7c3aed;
+  --accent-amber: #d97706;
+  
+  --badge-bg: rgba(2, 132, 199, 0.10);
+  --badge-text: #0284c7;
+  --badge-border: rgba(2, 132, 199, 0.25);
+  
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 35px rgba(2, 132, 199, 0.15);
+}
+
 /* 2. Global Reset & Base Typography */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -398,12 +441,67 @@ ul, ol {
   line-height: 1.35;
 }
 
+/* Logo backing in Light Mode to preserve crisp visibility of white lettering */
+[data-theme="light"] .site-brand {
+  background: #0a1424;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
 /* Header Action Tools & Spacing */
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 22px; /* Generous breathing room between Contact & Quote */
+  gap: 18px; /* Generous breathing room */
   margin-left: 20px;
+}
+
+/* 5B. PROMINENT DUAL THEME TOGGLE SWITCH */
+.theme-toggle-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 14px 5px 6px;
+  height: 42px;
+  border-radius: var(--radius-full);
+  background: var(--bg-surface-elevated);
+  border: 1.5px solid var(--border-glow);
+  color: var(--text-heading);
+  font-size: 0.88rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all var(--transition);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  user-select: none;
+  white-space: nowrap;
+}
+.theme-toggle-switch:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 4px 18px rgba(18, 115, 207, 0.4);
+}
+.switch-ball {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1273cf 0%, #0d5ea8 100%);
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all var(--transition);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.theme-toggle-switch.is-light .switch-ball {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  transform: scale(1.05);
+}
+.switch-label {
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
 }
 
 /* Mobile Toggle & Drawer */
@@ -1523,4 +1621,338 @@ textarea.form-input {
 }
 .gda-modal-close:hover {
   color: var(--text-heading);
+}
+
+/* ==========================================================================
+   22. PER-SECTION COLOR IDENTITIES (Dark & Light Variations)
+   Each major section has a distinct, vibrant, customized color environment
+   ========================================================================== */
+
+/* 1. HERO BANNER — Zaman IT Cosmic Navy (Dark) / Ice Sky Pearl (Light) */
+.hero-banner {
+  padding: 85px 0 95px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #06111f 0%, #0b223d 50%, #09172c 100%);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background 0.3s ease;
+}
+[data-theme="light"] .hero-banner {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e6f1fc 50%, #f8fafc 100%);
+  border-bottom-color: rgba(15, 23, 42, 0.08);
+}
+
+/* Zaman IT Quick Stats Trust Strip */
+.hero-quick-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+  padding: 18px 24px;
+  border-radius: var(--radius-md);
+  background: rgba(12, 27, 48, 0.85);
+  border: 1px solid rgba(18, 115, 207, 0.35);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-md);
+}
+[data-theme="light"] .hero-quick-strip {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+.quick-metric-item {
+  text-align: center;
+  border-right: 1px solid var(--border-subtle);
+}
+.quick-metric-item:last-child {
+  border-right: none;
+}
+.metric-num {
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: var(--accent-green);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+[data-theme="light"] .metric-num {
+  color: #059669;
+}
+.metric-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* 2. BRANDS SECTION */
+.brands-section {
+  padding: 42px 0 48px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: linear-gradient(180deg, #06101c 0%, #081525 100%);
+  transition: background 0.3s ease;
+}
+[data-theme="light"] .brands-section {
+  background: #ffffff;
+  border-bottom-color: rgba(15, 23, 42, 0.08);
+}
+
+/* 3. ABOUT US — Midnight Sapphire & Indigo */
+#about {
+  background: linear-gradient(180deg, #09152a 0%, #0c1e3a 100%);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background 0.3s ease;
+}
+[data-theme="light"] #about {
+  background: linear-gradient(180deg, #f4f8fe 0%, #ebf2fc 100%);
+  border-bottom-color: rgba(15, 23, 42, 0.08);
+}
+[data-theme="light"] #about .about-tab-btn {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.12);
+  color: #334155;
+}
+[data-theme="light"] #about .about-tab-btn.active {
+  background: var(--accent-primary);
+  color: #ffffff;
+}
+
+/* 4. SERVICES — THE MINT & EMERALD VORTEX (Inspired by mint-vortex.jpg) */
+#services {
+  background: linear-gradient(135deg, #041a17 0%, #072923 50%, #031613 100%);
+  border-top: 1px solid rgba(0, 229, 153, 0.2);
+  border-bottom: 1px solid rgba(0, 229, 153, 0.2);
+  position: relative;
+  transition: background 0.3s ease;
+}
+[data-theme="light"] #services {
+  background: linear-gradient(135deg, #e6fffa 0%, #ecfdf5 50%, #f0fdf4 100%);
+  border-top-color: rgba(5, 150, 105, 0.18);
+  border-bottom-color: rgba(5, 150, 105, 0.18);
+}
+#services .service-box {
+  background: rgba(5, 33, 29, 0.85);
+  border: 1.5px solid rgba(0, 229, 153, 0.25);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+}
+#services .service-box:hover {
+  border-color: #00e599;
+  box-shadow: 0 14px 40px rgba(0, 229, 153, 0.22);
+}
+[data-theme="light"] #services .service-box {
+  background: #ffffff;
+  border: 1.5px solid rgba(5, 150, 105, 0.22);
+  box-shadow: 0 8px 24px rgba(5, 150, 105, 0.08);
+}
+[data-theme="light"] #services .service-box:hover {
+  border-color: #059669;
+  box-shadow: 0 14px 36px rgba(5, 150, 105, 0.20);
+}
+#services .service-cat-pill {
+  background: rgba(0, 229, 153, 0.15);
+  color: #00e599;
+  border: 1px solid rgba(0, 229, 153, 0.35);
+}
+[data-theme="light"] #services .service-cat-pill {
+  background: #d1fae5;
+  color: #065f46;
+  border-color: #a7f3d0;
+}
+[data-theme="light"] #services .service-cat-tab {
+  background: #ffffff;
+  border-color: rgba(5, 150, 105, 0.2);
+  color: #334155;
+}
+[data-theme="light"] #services .service-cat-tab.active {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  color: #ffffff;
+}
+
+/* 5. PROCESS — Royal Amethyst & Cosmic Violet */
+#process {
+  background: linear-gradient(135deg, #130d29 0%, #1c133a 50%, #100b22 100%);
+  border-top: 1px solid rgba(168, 85, 247, 0.2);
+  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+  transition: background 0.3s ease;
+}
+[data-theme="light"] #process {
+  background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #fdf4ff 100%);
+  border-top-color: rgba(147, 51, 234, 0.18);
+  border-bottom-color: rgba(147, 51, 234, 0.18);
+}
+#process .process-step-card {
+  background: rgba(25, 17, 48, 0.85);
+  border: 1.5px solid rgba(168, 85, 247, 0.3);
+}
+#process .process-step-card:hover {
+  border-color: #a855f7;
+  box-shadow: 0 12px 36px rgba(168, 85, 247, 0.25);
+}
+[data-theme="light"] #process .process-step-card {
+  background: #ffffff;
+  border: 1.5px solid rgba(147, 51, 234, 0.2);
+  box-shadow: 0 8px 24px rgba(147, 51, 234, 0.08);
+}
+[data-theme="light"] #process .process-step-card:hover {
+  border-color: #9333ea;
+  box-shadow: 0 12px 32px rgba(147, 51, 234, 0.20);
+}
+
+/* 6. CASE STUDY — High-Tech Cyber Ocean & Cyan */
+#case-study {
+  background: linear-gradient(135deg, #05182a 0%, #092644 50%, #041322 100%);
+  border-top: 1px solid rgba(14, 165, 233, 0.2);
+  border-bottom: 1px solid rgba(14, 165, 233, 0.2);
+  transition: background 0.3s ease;
+}
+[data-theme="light"] #case-study {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f8fafc 100%);
+  border-top-color: rgba(2, 132, 199, 0.18);
+  border-bottom-color: rgba(2, 132, 199, 0.18);
+}
+[data-theme="light"] #case-study .case-study-hero-card {
+  background: #ffffff;
+  border-color: rgba(2, 132, 199, 0.2);
+  box-shadow: 0 12px 36px rgba(2, 132, 199, 0.08);
+}
+
+/* 7. PRICING — Executive Obsidian & Amber Gold */
+#pricing {
+  background: linear-gradient(135deg, #131722 0%, #1c2230 50%, #0f131c 100%);
+  border-top: 1px solid rgba(245, 158, 11, 0.2);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+  transition: background 0.3s ease;
+}
+[data-theme="light"] #pricing {
+  background: linear-gradient(135deg, #fffdf5 0%, #fef8e7 50%, #fafafa 100%);
+  border-top-color: rgba(217, 119, 6, 0.18);
+  border-bottom-color: rgba(217, 119, 6, 0.18);
+}
+[data-theme="light"] #pricing .package-card,
+[data-theme="light"] #pricing .pricing-customizer-card {
+  background: #ffffff;
+  border-color: rgba(217, 119, 6, 0.2);
+  box-shadow: 0 8px 24px rgba(217, 119, 6, 0.08);
+}
+
+/* 8. TEAM — Midnight Slate & Steel Blue */
+#team {
+  background: linear-gradient(180deg, #091529 0%, #0d1e38 100%);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background 0.3s ease;
+}
+[data-theme="light"] #team {
+  background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
+  border-bottom-color: rgba(15, 23, 42, 0.08);
+}
+[data-theme="light"] #team .team-card {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* 9. REVIEWS — Sunset Coral & Twilight Rose */
+#reviews {
+  background: linear-gradient(135deg, #191022 0%, #271635 50%, #140c1b 100%);
+  border-top: 1px solid rgba(244, 63, 94, 0.2);
+  border-bottom: 1px solid rgba(244, 63, 94, 0.2);
+  transition: background 0.3s ease;
+}
+[data-theme="light"] #reviews {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 50%, #fdf2f8 100%);
+  border-top-color: rgba(225, 29, 72, 0.18);
+  border-bottom-color: rgba(225, 29, 72, 0.18);
+}
+[data-theme="light"] #reviews .testimonial-slide {
+  background: #ffffff;
+  border-color: rgba(225, 29, 72, 0.2);
+  box-shadow: 0 10px 30px rgba(225, 29, 72, 0.08);
+}
+
+/* 10. BLOG — Modern Deep Teal */
+#blog {
+  background: linear-gradient(135deg, #061a1d 0%, #0a272c 50%, #041416 100%);
+  border-top: 1px solid rgba(20, 184, 166, 0.2);
+  border-bottom: 1px solid rgba(20, 184, 166, 0.2);
+  transition: background 0.3s ease;
+}
+[data-theme="light"] #blog {
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 50%, #f8fafc 100%);
+  border-top-color: rgba(13, 148, 136, 0.18);
+  border-bottom-color: rgba(13, 148, 136, 0.18);
+}
+[data-theme="light"] #blog .blog-card {
+  background: #ffffff;
+  border-color: rgba(13, 148, 136, 0.2);
+  box-shadow: 0 8px 24px rgba(13, 148, 136, 0.08);
+}
+
+/* 11. CONTACT — Royal Cobalt & Indigo Nexus */
+#contact {
+  background: linear-gradient(135deg, #07162b 0%, #0c2446 50%, #051222 100%);
+  border-top: 1px solid var(--border-subtle);
+  transition: background 0.3s ease;
+}
+[data-theme="light"] #contact {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #f8fafc 100%);
+  border-top-color: rgba(2, 132, 199, 0.18);
+}
+[data-theme="light"] #contact .contact-form-card {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.12);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+}
+[data-theme="light"] #contact .form-input {
+  background: #f8fafc;
+  color: #0f172a;
+  border-color: rgba(15, 23, 42, 0.18);
+}
+
+/* 12. INSPIRATIONAL INNOVATION CREED BANNER */
+.inspirational-footer-banner {
+  padding: 85px 0;
+  background: linear-gradient(135deg, #041f1a 0%, #082d38 50%, #0c2340 100%);
+  border-top: 1px solid rgba(0, 229, 153, 0.25);
+  border-bottom: 1px solid rgba(18, 115, 207, 0.25);
+  position: relative;
+  text-align: center;
+}
+[data-theme="light"] .inspirational-footer-banner {
+  background: linear-gradient(135deg, #e6fffa 0%, #e0f2fe 50%, #ecfdf5 100%);
+  border-top-color: rgba(5, 150, 105, 0.25);
+  border-bottom-color: rgba(2, 132, 199, 0.25);
+}
+.inspiration-quote {
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-weight: 900;
+  color: var(--text-heading);
+  line-height: 1.35;
+  max-width: 920px;
+  margin: 18px auto 16px;
+  letter-spacing: -0.02em;
+}
+.inspiration-subquote {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* 13. ZAMAN-IT 4-PILLAR BANNER */
+.impact-banner-section {
+  padding: 65px 0;
+  background: linear-gradient(135deg, #081424 0%, #0b1f37 100%);
+  border-top: 1px solid var(--border-medium);
+  border-bottom: 1px solid var(--border-medium);
+}
+[data-theme="light"] .impact-banner-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+  border-top-color: rgba(15, 23, 42, 0.1);
+  border-bottom-color: rgba(15, 23, 42, 0.1);
+}
+[data-theme="light"] .impact-pillar-card {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.1);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
 }

@@ -15,15 +15,15 @@ require_once __DIR__ . '/includes/header.php';
         
         <!-- Left: Copy & Value Proposition -->
         <div>
-          <span class="section-tag">
+          <span class="section-tag" style="background:rgba(0,229,153,0.15); color:var(--accent-green); border-color:var(--border-green);">
             <span class="pulsing-dot"></span>
-            Established 2014 &bull; Full-Service Digital Agency
+            BUILD THE FUTURE &bull; INSPIRE EXCELLENCE
           </span>
           <h1 class="hero-title">
-            We Turn Ideas Into High-ROI <span class="gradient-text">Digital Impact</span>.
+            DREAM BOLDLY. BUILD WITH PURPOSE. <span class="gradient-text">SCALE EXPONENTIALLY</span>.
           </h1>
           <p class="hero-subtitle">
-            Giga Digital Agency is a premier full-service digital agency in Dhaka, Bangladesh specializing in <strong>UI/UX Design</strong>, <strong>Corporate & E-Commerce Web Development</strong>, <strong>SEO</strong>, and <strong>High-Conversion Facebook & YouTube Ad Boosting</strong> for local and global businesses.
+            We don't just design websites and run ads — we build enduring digital legacies. Giga Digital Agency unites human-centered <strong>UI/UX Design</strong>, <strong>Corporate & E-Commerce Web Engineering</strong>, and <strong>High-ROAS Facebook & YouTube Ad Boosting</strong> to turn visionary ambition into market dominance.
           </p>
 
           <div class="hero-cta-group">
@@ -39,12 +39,24 @@ require_once __DIR__ . '/includes/header.php';
             </a>
           </div>
 
-          <div class="hero-pills-row">
-            <span class="hero-pill-badge">🎨 UI/UX & Graphics</span>
-            <span class="hero-pill-badge">💻 Web & E-Commerce</span>
-            <span class="hero-pill-badge">🚀 Facebook Boosting</span>
-            <span class="hero-pill-badge">▶️ YouTube Video Ads</span>
-            <span class="hero-pill-badge">📈 Google SEO Ranking</span>
+          <!-- Zaman IT Quick Stats Trust Strip -->
+          <div class="hero-quick-strip">
+            <div class="quick-metric-item">
+              <div class="metric-num">10+</div>
+              <div class="metric-label">Years Innovation</div>
+            </div>
+            <div class="quick-metric-item">
+              <div class="metric-num">7,000+</div>
+              <div class="metric-label">Deliverables</div>
+            </div>
+            <div class="quick-metric-item">
+              <div class="metric-num">4.8x</div>
+              <div class="metric-label">Average ROAS</div>
+            </div>
+            <div class="quick-metric-item">
+              <div class="metric-num">98.4%</div>
+              <div class="metric-label">Retention</div>
+            </div>
           </div>
         </div>
 

@@ -8,49 +8,46 @@ document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   // =========================================================================
-  // 1. LIGHT / DARK THEME TOGGLE (Aesthetic & Persisted)
+  // 1. PROMINENT DUAL THEME TOGGLE (Dark & Light Mode Switcher)
   // =========================================================================
   const themeToggleBtn = document.getElementById('themeToggleBtn');
-  const storedTheme = localStorage.getItem('gda_theme') || 'dark'; // Default aesthetic dark
-  
-  document.documentElement.setAttribute('data-theme', storedTheme);
-  updateThemeIcon(storedTheme);
+  const drawerThemeToggleBtn = document.getElementById('drawerThemeToggleBtn');
+  const storedTheme = localStorage.getItem('gda_theme') || 'dark';
 
-  themeToggleBtn?.addEventListener('click', () => {
-    const activeTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('gda_theme', theme);
     
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('gda_theme', newTheme);
-    updateThemeIcon(newTheme);
-  });
-
-  function updateThemeIcon(theme) {
-    if (!themeToggleBtn) return;
-    if (theme === 'dark') {
-      themeToggleBtn.innerHTML = `
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-      `;
-      themeToggleBtn.setAttribute('title', 'Switch to Light Aesthetic Mode');
-    } else {
-      themeToggleBtn.innerHTML = `
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-      `;
-      themeToggleBtn.setAttribute('title', 'Switch to Dark Cosmic Mode');
-    }
+    [themeToggleBtn, drawerThemeToggleBtn].forEach(btn => {
+      if (!btn) return;
+      const switchBall = btn.querySelector('.switch-ball');
+      const switchLabel = btn.querySelector('.switch-label');
+      if (theme === 'dark') {
+        if (switchBall) switchBall.textContent = '🌙';
+        if (switchLabel) switchLabel.textContent = 'Dark Mode';
+        btn.setAttribute('title', 'Switch to Light Mode');
+        btn.classList.remove('is-light');
+      } else {
+        if (switchBall) switchBall.textContent = '☀️';
+        if (switchLabel) switchLabel.textContent = 'Light Mode';
+        btn.setAttribute('title', 'Switch to Dark Mode');
+        btn.classList.add('is-light');
+      }
+    });
   }
+
+  // Initialize on load
+  applyTheme(storedTheme);
+
+  const toggleHandler = (e) => {
+    e.preventDefault();
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    applyTheme(newTheme);
+  };
+
+  themeToggleBtn?.addEventListener('click', toggleHandler);
+  drawerThemeToggleBtn?.addEventListener('click', toggleHandler);
 
   // =========================================================================
   // 2. STICKY FROSTED HEADER & BACK TO TOP BUTTON

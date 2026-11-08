@@ -159,9 +159,10 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
 
       <!-- Action Tools: Generous Space, Theme Toggle, Quote Button -->
       <div class="header-actions">
-        <!-- Dual Theme Toggle Switch -->
-        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Light and Dark Theme" title="Toggle Theme">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <!-- Prominent Dual Theme Switcher (Dark & Light) -->
+        <button id="themeToggleBtn" class="theme-toggle-switch" aria-label="Toggle Light and Dark Mode" title="Toggle Light and Dark Mode">
+          <span class="switch-ball">🌙</span>
+          <span class="switch-label">Dark Mode</span>
         </button>
 
         <!-- Primary Action Button -->
@@ -203,6 +204,11 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
       </nav>
     </div>
     <div style="border-top:1px solid var(--border-subtle); padding-top:18px;">
+      <!-- Mobile Theme Toggle -->
+      <button id="drawerThemeToggleBtn" class="theme-toggle-switch" style="width:100%; margin-bottom:12px; justify-content:center;">
+        <span class="switch-ball">🌙</span>
+        <span class="switch-label">Dark Mode</span>
+      </button>
       <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:4px;">Direct Hotline:</p>
       <p style="font-size:1.05rem; font-weight:800; color:var(--text-heading); margin-bottom:12px;">+880 1860-422185</p>
       <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%; margin-bottom:10px;">

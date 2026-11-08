@@ -149,9 +149,10 @@
 
       <!-- Action Tools: Generous Space, Theme Toggle, Quote Button -->
       <div class="header-actions">
-        <!-- Dual Theme Toggle Switch -->
-        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Light and Dark Theme" title="Toggle Theme">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <!-- Prominent Dual Theme Switcher (Dark & Light) -->
+        <button id="themeToggleBtn" class="theme-toggle-switch" aria-label="Toggle Light and Dark Mode" title="Toggle Light and Dark Mode">
+          <span class="switch-ball">🌙</span>
+          <span class="switch-label">Dark Mode</span>
         </button>
 
         <!-- Primary Action Button -->
@@ -193,6 +194,11 @@
       </nav>
     </div>
     <div style="border-top:1px solid var(--border-subtle); padding-top:18px;">
+      <!-- Mobile Theme Toggle -->
+      <button id="drawerThemeToggleBtn" class="theme-toggle-switch" style="width:100%; margin-bottom:12px; justify-content:center;">
+        <span class="switch-ball">🌙</span>
+        <span class="switch-label">Dark Mode</span>
+      </button>
       <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:4px;">Direct Hotline:</p>
       <p style="font-size:1.05rem; font-weight:800; color:var(--text-heading); margin-bottom:12px;">+880 1860-422185</p>
       <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%; margin-bottom:10px;">
@@ -203,7 +209,7 @@
   </aside>
 
   <!-- =========================================================================
-       3. HERO SECTION WITH EYE-CATCHING VISUAL & VALUE PROPOSITION
+       3. HERO SECTION (Zaman IT Architecture & Inspirational Heading)
        ========================================================================= -->
   <section class="hero-banner" id="home">
     <div class="container">
@@ -211,15 +217,15 @@
         
         <!-- Left: Copy & Value Proposition -->
         <div>
-          <span class="section-tag">
+          <span class="section-tag" style="background:rgba(0,229,153,0.15); color:var(--accent-green); border-color:var(--border-green);">
             <span class="pulsing-dot"></span>
-            Established 2014 &bull; Full-Service Digital Agency
+            BUILD THE FUTURE &bull; INSPIRE EXCELLENCE
           </span>
           <h1 class="hero-title">
-            We Turn Ideas Into High-ROI <span class="gradient-text">Digital Impact</span>.
+            DREAM BOLDLY. BUILD WITH PURPOSE. <span class="gradient-text">SCALE EXPONENTIALLY</span>.
           </h1>
           <p class="hero-subtitle">
-            Giga Digital Agency is a premier full-service digital agency in Dhaka, Bangladesh specializing in <strong>UI/UX Design</strong>, <strong>Corporate & E-Commerce Web Development</strong>, <strong>SEO</strong>, and <strong>High-Conversion Facebook & YouTube Ad Boosting</strong> for local and global businesses.
+            We don't just design websites and run ads — we build enduring digital legacies. Giga Digital Agency unites human-centered <strong>UI/UX Design</strong>, <strong>Corporate & E-Commerce Web Engineering</strong>, and <strong>High-ROAS Facebook & YouTube Ad Boosting</strong> to turn visionary ambition into market dominance.
           </p>
 
           <div class="hero-cta-group">
@@ -235,12 +241,24 @@
             </a>
           </div>
 
-          <div class="hero-pills-row">
-            <span class="hero-pill-badge">🎨 UI/UX & Graphics</span>
-            <span class="hero-pill-badge">💻 Web & E-Commerce</span>
-            <span class="hero-pill-badge">🚀 Facebook Boosting</span>
-            <span class="hero-pill-badge">▶️ YouTube Video Ads</span>
-            <span class="hero-pill-badge">📈 Google SEO Ranking</span>
+          <!-- Zaman IT Quick Stats Trust Strip -->
+          <div class="hero-quick-strip">
+            <div class="quick-metric-item">
+              <div class="metric-num">10+</div>
+              <div class="metric-label">Years Innovation</div>
+            </div>
+            <div class="quick-metric-item">
+              <div class="metric-num">7,000+</div>
+              <div class="metric-label">Deliverables</div>
+            </div>
+            <div class="quick-metric-item">
+              <div class="metric-num">4.8x</div>
+              <div class="metric-label">Average ROAS</div>
+            </div>
+            <div class="quick-metric-item">
+              <div class="metric-num">98.4%</div>
+              <div class="metric-label">Retention</div>
+            </div>
           </div>
         </div>
 
@@ -1509,6 +1527,30 @@
 
       </div>
 
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       INSPIRATIONAL INNOVATION CREED (Motivational Vision for Bold Brands)
+       ========================================================================= -->
+  <section class="inspirational-footer-banner" aria-label="Our Innovation Creed">
+    <div class="container text-center">
+      <span class="section-tag" style="background:rgba(0,229,153,0.15); color:var(--accent-green); border-color:var(--border-green);">✨ The Giga Innovation Creed</span>
+      <h2 class="inspiration-quote">
+        &ldquo;Innovation isn't about following the current; it's about engineering the future with audacity, precision, and relentless passion.&rdquo;
+      </h2>
+      <p class="inspiration-subquote">
+        Every transformative digital achievement begins with a single bold decision. Whether you are launching a disruptive venture, modernizing your enterprise web platform, or scaling your business with high-ROAS marketing, our team builds the technology and crafts the strategies that turn human vision into industry leadership.
+      </p>
+      <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin-top:28px;">
+        <a href="#contact" class="btn btn-primary" style="font-size:1.02rem; padding:15px 32px;">
+          Start Your Project With Us
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20am%20ready%20to%20build%20something%20inspirational." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="font-size:1.02rem; padding:15px 32px;">
+          💬 Chat Directly With Our Strategists
+        </a>
+      </div>
     </div>
   </section>
 
