@@ -17,6 +17,15 @@ Designed with a high-end international digital creative & growth agency aestheti
 * **Official Emails:** `info@gigadigitalagency.com`, `supports@gigadigitalagency.com`
 * **Live Deployment:** [https://giga-digital-agency.vercel.app/](https://giga-digital-agency.vercel.app/)
 * **GitHub Repository:** [https://github.com/snigdhaurmiurma/giga-digital-agency.git](https://github.com/snigdhaurmiurma/giga-digital-agency.git)
+* **Core Team & Leadership (Verified from Official Agency Registry):**
+  * **Engr. Md. Ashikur Rahman** — Founder & CEO
+  * **Engr. Md. Hasinur Rahman** — CTO (Chief Technology Officer)
+  * **Engr. Md. Al Amin** — Senior Software Engineer
+  * **Jannatul Nayem** — Digital Marketing Specialist
+  * **Engr. Md. Mehedi Hasan** — Senior Graphics Designer
+  * **Md. Rezaul Karim** — Deputy General Manager
+  * **Md. Nazmus Sakib** — Digital Marketing Specialist
+  * **Kobir Hossen** — App Developer
 * **Accreditations & Awards:**
   * **2016:** Site of the Day / National ICT Ecosystem Recognition (Accreditation Reg: `GDA-ICT-BD-2016`)
   * **Track Record:** 80+ Citations, 7,000+ Completed Deliverables, 98.4% Retention Rate.
@@ -26,7 +35,9 @@ Designed with a high-end international digital creative & growth agency aestheti
 ## 2. Key Design & Architectural Highlights
 
 ### Prominent Header & Frosted Glass Menu
-* **High-Visibility Logo:** Sized to 52px height inside a sleek contrast capsule with bold company typography: **GIGA DIGITAL AGENCY** (`Web Design • UI/UX • Digital Marketing`).
+* **High-Visibility Clean Logo:** The official Giga Digital Agency brand logo stands prominently by itself without awkward companion subtitles.
+* **Services Mega Dropdown:** Multi-column interactive menu structured into Creative, Growth, and Tech divisions with clear descriptions of each service.
+* **Strict Single-Line Navigation & Spacing:** "About Us" and all nav links stay cleanly on a single line, with generous visual breathing room before the theme switcher and quotation CTA.
 * **Frosted Glass Navigation:** Modern glassmorphism floating navbar (`backdrop-filter: blur(20px) saturate(190%)`) with dropdown menus and instant quote CTA.
 * **Dual Light & Dark Mode:** Interactive sun/moon toggle switch with persistence across visitor sessions via `localStorage`.
 

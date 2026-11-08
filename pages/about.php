@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * GIGA DIGITAL AGENCY â€” ABOUT US PAGE
  */
@@ -105,35 +105,35 @@ require_once __DIR__ . '/../includes/header.php';
 
       <div class="team-grid gda-reveal">
         <div class="team-card">
-          <div class="team-img-wrap"><img src="../images/team/team-1-1.jpg" alt="Leonard Heizer, CEO"></div>
+          <div class="team-img-wrap"><img src="../images/team/team-1-1.jpg" alt="Engr. Md. Ashikur Rahman, Founder & CEO"></div>
           <div class="team-info">
-            <h4 class="team-name">Leonard Heizer</h4>
-            <div class="team-role">Chief Executive Officer (CEO)</div>
+            <h4 class="team-name">Engr. Md. Ashikur Rahman</h4>
+            <div class="team-role">Founder & CEO</div>
             <p class="team-bio">Providing strategic vision and enterprise client partnership direction.</p>
           </div>
         </div>
         <div class="team-card">
-          <div class="team-img-wrap"><img src="../images/team/team-1-2.jpg" alt="Leslie Alexander, Web Designer"></div>
+          <div class="team-img-wrap"><img src="../images/team/team-1-2.jpg" alt="Engr. Md. Hasinur Rahman, CTO"></div>
           <div class="team-info">
-            <h4 class="team-name">Leslie Alexander</h4>
-            <div class="team-role">Lead Web & UI Designer</div>
-            <p class="team-bio">Spearheading user experience architecture and visual systems.</p>
+            <h4 class="team-name">Engr. Md. Hasinur Rahman</h4>
+            <div class="team-role">CTO (Chief Technology Officer)</div>
+            <p class="team-bio">Spearheading software engineering, cloud architecture, and technical quality.</p>
           </div>
         </div>
         <div class="team-card">
-          <div class="team-img-wrap"><img src="../images/team/team-1-3.jpg" alt="Theresa Webb, Senior Marketer"></div>
+          <div class="team-img-wrap"><img src="../images/team/team-1-3.jpg" alt="Engr. Md. Al Amin, Senior Software Engineer"></div>
           <div class="team-info">
-            <h4 class="team-name">Theresa Webb</h4>
-            <div class="team-role">Senior Marketer & Strategist</div>
-            <p class="team-bio">Architecting data-backed search engine optimization and PPC campaigns.</p>
+            <h4 class="team-name">Engr. Md. Al Amin</h4>
+            <div class="team-role">Senior Software Engineer</div>
+            <p class="team-bio">Architecting full-stack web platforms, payment gateways, and custom ERP systems.</p>
           </div>
         </div>
         <div class="team-card">
-          <div class="team-img-wrap"><img src="../images/team/team-1-4.jpg" alt="Dianne Russell, Area Manager"></div>
+          <div class="team-img-wrap"><img src="../images/team/team-1-4.jpg" alt="Jannatul Nayem, Digital Marketing Specialist"></div>
           <div class="team-info">
-            <h4 class="team-name">Dianne Russell</h4>
-            <div class="team-role">Area Operations Manager</div>
-            <p class="team-bio">Overseeing delivery schedules, client success, and operational excellence.</p>
+            <h4 class="team-name">Jannatul Nayem</h4>
+            <div class="team-role">Digital Marketing Specialist</div>
+            <p class="team-bio">Managing high-ROAS Meta and Google ad boosting campaigns and audience retargeting.</p>
           </div>
         </div>
       </div>

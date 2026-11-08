@@ -1,7 +1,7 @@
 ﻿<?php
 /**
  * GIGA DIGITAL AGENCY — MASTER HOMEPAGE
- * Corporate Agency Architecture with Dual Light & Dark Cosmic Modes
+ * Clean Modern International Digital Agency
  */
 $page_title = 'Giga Digital Agency — Best Web Design, UI/UX, SEO & Digital Marketing Agency in Bangladesh';
 $page_desc = 'Giga Digital Agency is a premier digital agency in Dhaka, Bangladesh specializing in UI/UX design, corporate web development, e-commerce, SEO, and Facebook & YouTube ad boosting.';
@@ -13,7 +13,7 @@ require_once __DIR__ . '/includes/header.php';
     <div class="container">
       <div class="hero-grid">
         
-        <!-- Left Column: Copy & Value Proposition -->
+        <!-- Left: Copy & Value Proposition -->
         <div>
           <span class="section-tag">
             <span class="pulsing-dot"></span>
@@ -48,149 +48,27 @@ require_once __DIR__ . '/includes/header.php';
           </div>
         </div>
 
-        <!-- Right Column: Interactive Capability Transition Card -->
-        <div class="hero-showcase-box">
+        <!-- Right: Eye-Catching Real Agency Visual with Floating Trust Chips -->
+        <div class="hero-visual-card">
+          <img src="images/resource/about-one-img-1.jpg" alt="Giga Digital Agency Team & Creative Workspace" class="hero-main-photo">
           
-          <div class="showcase-header-tabs">
-            <button class="showcase-tab-btn active" data-index="0">ðŸš€ Ad Boosting</button>
-            <button class="showcase-tab-btn" data-index="1">ðŸŽ¨ UI/UX Design</button>
-            <button class="showcase-tab-btn" data-index="2">ðŸ’» Web & E-Com</button>
-            <button class="showcase-tab-btn" data-index="3">ðŸ“ˆ Google SEO #1</button>
-          </div>
-
-          <div class="showcase-display-stage">
-            
-            <!-- Slide 1: Facebook & YouTube Ad Boosting -->
-            <div class="capability-slide active">
-              <div class="capability-slide-header">
-                <div>
-                  <h4 style="font-size:1.15rem; font-weight:800; color:var(--text-heading);">Facebook & YouTube Ad Boosting</h4>
-                  <p style="font-size:0.80rem; color:var(--text-muted);">Full-Funnel Meta CAPI & Google Video Ads</p>
-                </div>
-                <span class="capability-badge badge-adboost">Live Campaign</span>
-              </div>
-              <div style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:16px; margin:14px 0;">
-                <p style="font-size:0.88rem; color:var(--text-main); line-height:1.5;">
-                  <strong>Strategy:</strong> High-converting dynamic video reels + precise lookalike audience targeting with pixel retargeting funnels.
-                </p>
-              </div>
-              <div class="capability-stats-row">
-                <div class="stat-pill">
-                  <div class="stat-pill-val" style="color:#fb7185;">1.85M+</div>
-                  <div class="stat-pill-lbl">Impressions</div>
-                </div>
-                <div class="stat-pill">
-                  <div class="stat-pill-val" style="color:var(--accent-primary);">4.8x</div>
-                  <div class="stat-pill-lbl">Average ROAS</div>
-                </div>
-                <div class="stat-pill">
-                  <div class="stat-pill-val" style="color:var(--accent-green);">6.4%</div>
-                  <div class="stat-pill-lbl">Click Rate</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 2: UI/UX & Graphic Design -->
-            <div class="capability-slide">
-              <div class="capability-slide-header">
-                <div>
-                  <h4 style="font-size:1.15rem; font-weight:800; color:var(--text-heading);">UI/UX & Figma Prototyping</h4>
-                  <p style="font-size:0.80rem; color:var(--text-muted);">Conversion-Focused Digital Experiences</p>
-                </div>
-                <span class="capability-badge badge-uiux">Design System</span>
-              </div>
-              <div style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:16px; margin:14px 0;">
-                <p style="font-size:0.88rem; color:var(--text-main); line-height:1.5;">
-                  <strong>Deliverable:</strong> Pixel-perfect component libraries, interactive mobile wireframes, and streamlined 1-click cart flows.
-                </p>
-              </div>
-              <div class="capability-stats-row">
-                <div class="stat-pill">
-                  <div class="stat-pill-val" style="color:#c084fc;">100%</div>
-                  <div class="stat-pill-lbl">Figma Ready</div>
-                </div>
-                <div class="stat-pill">
-                  <div class="stat-pill-val" style="color:var(--accent-primary);">+62%</div>
-                  <div class="stat-pill-lbl">Usability Score</div>
-                </div>
-                <div class="stat-pill">
-                  <div class="stat-pill-val" style="color:var(--accent-green);">&lt; 3s</div>
-                  <div class="stat-pill-lbl">Checkout Flow</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 3: Web & E-Commerce Development -->
-            <div class="capability-slide">
-              <div class="capability-slide-header">
-                <div>
-                  <h4 style="font-size:1.15rem; font-weight:800; color:var(--text-heading);">Corporate Web & E-Commerce</h4>
-                  <p style="font-size:0.80rem; color:var(--text-muted);">bKash, Nagad & Courier API Automated</p>
-                </div>
-                <span class="capability-badge badge-web">Clean Code</span>
-              </div>
-              <div style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:16px; margin:14px 0;">
-                <p style="font-size:0.88rem; color:var(--text-main); line-height:1.5;">
-                  <strong>Architecture:</strong> Ultra-fast NVMe cloud infrastructure, automated inventory sync, and instant SMS order tracking.
-                </p>
-              </div>
-              <div class="capability-stats-row">
-                <div class="stat-pill">
-                  <div class="stat-pill-val" style="color:#7dd3fc;">99.9%</div>
-                  <div class="stat-pill-lbl">Server Uptime</div>
-                </div>
-                <div class="stat-pill">
-                  <div class="stat-pill-val" style="color:var(--accent-primary);">0.8s</div>
-                  <div class="stat-pill-lbl">Page Load</div>
-                </div>
-                <div class="stat-pill">
-                  <div class="stat-pill-val" style="color:var(--accent-green);">100%</div>
-                  <div class="stat-pill-lbl">Mobile Friendly</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 4: Google SEO Ranking -->
-            <div class="capability-slide">
-              <div class="capability-slide-header">
-                <div>
-                  <h4 style="font-size:1.15rem; font-weight:800; color:var(--text-heading);">Search Engine Optimization (SEO)</h4>
-                  <p style="font-size:0.80rem; color:var(--text-muted);">Google Search & Maps Local 3-Pack</p>
-                </div>
-                <span class="capability-badge badge-seo">Rank #1 Growth</span>
-              </div>
-              <div style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:16px; margin:14px 0;">
-                <p style="font-size:0.88rem; color:var(--text-main); line-height:1.5;">
-                  <strong>Outcome:</strong> Commercial intent keyword domination, high-authority backlink outreach, and localized Google Maps ranking.
-                </p>
-              </div>
-              <div class="capability-stats-row">
-                <div class="stat-pill">
-                  <div class="stat-pill-val" style="color:#6ee7b7;">#1</div>
-                  <div class="stat-pill-lbl">Rank Target</div>
-                </div>
-                <div class="stat-pill">
-                  <div class="stat-pill-val" style="color:var(--accent-primary);">+280%</div>
-                  <div class="stat-pill-lbl">Organic Visits</div>
-                </div>
-                <div class="stat-pill">
-                  <div class="stat-pill-val" style="color:#fbbf24;">Zero</div>
-                  <div class="stat-pill-lbl">Ad Cost</div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Floating Metric Badge -->
-          <div class="hero-floating-badge">
-            <div class="val">7,000+</div>
+          <!-- Floating Chip 1: ROAS Metric -->
+          <div class="hero-float-chip hero-chip-top">
+            <span style="font-size:1.6rem;">ðŸŽ¯</span>
             <div>
-              <div style="font-size:0.82rem; font-weight:800; color:var(--text-heading);">Completed Projects</div>
-              <div style="font-size:0.72rem; color:var(--accent-green); font-weight:700;">â˜… 98.4% Retention</div>
+              <div style="font-size:1.15rem; font-weight:900; color:var(--text-heading); line-height:1.1;">4.8x Average ROAS</div>
+              <div style="font-size:0.75rem; color:var(--accent-primary); font-weight:700;">Meta & YouTube Ad Boosting</div>
             </div>
           </div>
 
+          <!-- Floating Chip 2: Verified Deliverables -->
+          <div class="hero-float-chip hero-chip-bottom">
+            <span style="font-size:1.6rem;">ðŸ†</span>
+            <div>
+              <div style="font-size:1.15rem; font-weight:900; color:var(--text-heading); line-height:1.1;">7,000+ Completed Projects</div>
+              <div style="font-size:0.75rem; color:var(--accent-green); font-weight:700;">â˜… 98.4% Client Satisfaction</div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -198,7 +76,7 @@ require_once __DIR__ . '/includes/header.php';
   </section>
 
   <!-- =========================================================================
-       4. COLORFUL TRUSTED BY BRANDS SECTION
+       4. COLORFUL TRUSTED BY BRANDS
        ========================================================================= -->
   <section class="brands-section">
     <div class="container">
@@ -259,11 +137,11 @@ require_once __DIR__ . '/includes/header.php';
           
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
             <div style="background:var(--bg-card); border:1px solid var(--border-subtle); padding:16px; border-radius:var(--radius-sm);">
-              <div style="font-size:1.1rem; font-weight:800; color:var(--accent-primary); margin-bottom:4px;">ðŸŽ¯ Precision Focus</div>
+              <div style="font-size:1.05rem; font-weight:800; color:var(--accent-primary); margin-bottom:4px;">ðŸŽ¯ Precision Focus</div>
               <p style="font-size:0.84rem; color:var(--text-muted);">Every campaign and line of code is measured against client revenue and conversion.</p>
             </div>
             <div style="background:var(--bg-card); border:1px solid var(--border-subtle); padding:16px; border-radius:var(--radius-sm);">
-              <div style="font-size:1.1rem; font-weight:800; color:var(--accent-violet); margin-bottom:4px;">ðŸ¤ Real Human Support</div>
+              <div style="font-size:1.05rem; font-weight:800; color:var(--accent-violet); margin-bottom:4px;">ðŸ¤ Real Human Support</div>
               <p style="font-size:0.84rem; color:var(--text-muted);">Direct consultation with senior strategists, not automated robots or ticket delays.</p>
             </div>
           </div>
@@ -275,7 +153,7 @@ require_once __DIR__ . '/includes/header.php';
             <div style="font-size:2.4rem;">ðŸ†</div>
             <div>
               <span style="font-size:0.75rem; font-weight:800; color:#fbbf24; text-transform:uppercase; letter-spacing:0.08em;">Official Accreditation</span>
-              <h3 style="font-size:1.4rem; font-weight:900; color:#ffffff;">2016 National ICT Recognition</h3>
+              <h3 style="font-size:1.35rem; font-weight:900; color:#ffffff;">2016 National ICT Recognition</h3>
             </div>
           </div>
           <p style="font-size:0.92rem; color:#cbd5e1; line-height:1.65; margin-bottom:20px;">
@@ -309,7 +187,7 @@ require_once __DIR__ . '/includes/header.php';
 
       <!-- Category Filter Tabs -->
       <div class="services-tabs-row">
-        <button class="service-cat-tab active" data-category="all">All Services (10)</button>
+        <button class="service-cat-tab active" data-category="all">All Services (9)</button>
         <button class="service-cat-tab" data-category="creative">ðŸŽ¨ Creative (Design & YouTube)</button>
         <button class="service-cat-tab" data-category="growth">ðŸš€ Growth (Marketing, SEO & Ads)</button>
         <button class="service-cat-tab" data-category="tech">ðŸ’» Tech & Web Development</button>
@@ -549,7 +427,7 @@ require_once __DIR__ . '/includes/header.php';
   </section>
 
   <!-- =========================================================================
-       8. CASE STUDY: 'META CONTENT MARKETING'
+       8. CASE STUDY: 'META CONTENT MARKETING & SCALE CAMPAIGN'
        ========================================================================= -->
   <section class="section section-alt" id="case-study">
     <div class="container">
@@ -791,82 +669,139 @@ require_once __DIR__ . '/includes/header.php';
   </section>
 
   <!-- =========================================================================
-       11. OUR TEAM SECTION
+       11. OUR TEAM SECTION (Actual Verified Names From Official Website)
        ========================================================================= -->
   <section class="section" id="team">
     <div class="container">
       
       <div class="section-header text-center">
-        <span class="section-tag">Executive Leadership</span>
+        <span class="section-tag">Executive Leadership & Core Team</span>
         <h2 class="section-title">
-          THE MINDS BEHIND <span class="gradient-text">GIGA DIGITAL AGENCY</span>
+          MEET THE EXPERTS AT <span class="gradient-text">GIGA DIGITAL AGENCY</span>
         </h2>
         <p class="section-desc">
-          Meet the experienced digital marketing strategists, creative designers, and engineers powering our clients' commercial success.
+          The verified engineering leads, marketing specialists, and designers driving high-impact digital solutions for our clients.
         </p>
       </div>
 
       <div class="team-grid">
         
-        <!-- Member 1 -->
+        <!-- Member 1: Founder & CEO -->
         <div class="team-card">
           <div class="team-img-wrap">
-            <img src="images/team/team-1-1.jpg" alt="Leonard Heizer â€” Chief Executive Officer">
+            <img src="images/team/team-1-1.jpg" alt="Engr. Md. Ashikur Rahman â€” Founder & CEO">
           </div>
           <div class="team-info">
-            <h3 class="team-name">Leonard Heizer</h3>
-            <div class="team-role">Chief Executive Officer (CEO)</div>
-            <p class="team-bio">12+ years directing agency growth, omnichannel marketing strategies, and enterprise client partnerships.</p>
+            <h3 class="team-name">Engr. Md. Ashikur Rahman</h3>
+            <div class="team-role">Founder & CEO</div>
             <div class="team-socials">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="LinkedIn">in</a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Twitter">ð•</a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Facebook">fb</a>
             </div>
           </div>
         </div>
 
-        <!-- Member 2 -->
+        <!-- Member 2: CTO -->
         <div class="team-card">
           <div class="team-img-wrap">
-            <img src="images/team/team-1-2.jpg" alt="Leslie Alexander â€” Lead UI/UX Designer">
+            <img src="images/team/team-1-2.jpg" alt="Engr. Md. Hasinur Rahman â€” CTO">
           </div>
           <div class="team-info">
-            <h3 class="team-name">Leslie Alexander</h3>
-            <div class="team-role">Lead Web & UI/UX Designer</div>
-            <p class="team-bio">Specialist in Figma design systems, conversion-driven mobile UX, and digital brand identity kits.</p>
+            <h3 class="team-name">Engr. Md. Hasinur Rahman</h3>
+            <div class="team-role">CTO (Chief Technology Officer)</div>
             <div class="team-socials">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="LinkedIn">in</a>
-              <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Behance">BÄ“</a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Facebook">fb</a>
             </div>
           </div>
         </div>
 
-        <!-- Member 3 -->
+        <!-- Member 3: Senior Software Engineer -->
         <div class="team-card">
           <div class="team-img-wrap">
-            <img src="images/team/team-1-3.jpg" alt="Theresa Webb â€” Senior Digital Marketer">
+            <img src="images/team/team-1-3.jpg" alt="Engr. Md. Al Amin â€” Senior Software Engineer">
           </div>
           <div class="team-info">
-            <h3 class="team-name">Theresa Webb</h3>
-            <div class="team-role">Senior Digital Marketing Lead</div>
-            <p class="team-bio">Expert in Meta Conversions API, high-ROAS Facebook boosting, and YouTube video ad campaigns.</p>
+            <h3 class="team-name">Engr. Md. Al Amin</h3>
+            <div class="team-role">Senior Software Engineer</div>
             <div class="team-socials">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="LinkedIn">in</a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Twitter">ð•</a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="GitHub">gh</a>
             </div>
           </div>
         </div>
 
-        <!-- Member 4 -->
+        <!-- Member 4: Digital Marketing Specialist -->
         <div class="team-card">
           <div class="team-img-wrap">
-            <img src="images/team/team-1-4.jpg" alt="Dianne Russell â€” Operations Manager">
+            <img src="images/team/team-1-4.jpg" alt="Jannatul Nayem â€” Digital Marketing Specialist">
           </div>
           <div class="team-info">
-            <h3 class="team-name">Dianne Russell</h3>
-            <div class="team-role">Client Operations Director</div>
-            <p class="team-bio">Ensuring on-time delivery across web projects, SLAs, customer success, and ongoing technical support.</p>
+            <h3 class="team-name">Jannatul Nayem</h3>
+            <div class="team-role">Digital Marketing Specialist</div>
             <div class="team-socials">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="LinkedIn">in</a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Facebook">fb</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 5: Senior Graphics Designer -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images/team/team-1-5.jpg" alt="Engr. Md. Mehedi Hasan â€” Senior Graphics Designer">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Engr. Md. Mehedi Hasan</h3>
+            <div class="team-role">Senior Graphics Designer</div>
+            <div class="team-socials">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="LinkedIn">in</a>
+              <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Behance">bÄ“</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 6: Deputy General Manager -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images/team/team-1-6.jpg" alt="Md. Rezaul Karim â€” Deputy General Manager">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Md. Rezaul Karim</h3>
+            <div class="team-role">Deputy General Manager</div>
+            <div class="team-socials">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="LinkedIn">in</a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Facebook">fb</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 7: Digital Marketing Specialist -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images/team/team-1-7.jpg" alt="Md. Nazmus Sakib â€” Digital Marketing Specialist">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Md. Nazmus Sakib</h3>
+            <div class="team-role">Digital Marketing Specialist</div>
+            <div class="team-socials">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="LinkedIn">in</a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="Facebook">fb</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 8: App Developer -->
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="images/team/team-1-8.jpg" alt="Kobir Hossen â€” App Developer">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Kobir Hossen</h3>
+            <div class="team-role">App Developer</div>
+            <div class="team-socials">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="LinkedIn">in</a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="team-social-btn" aria-label="GitHub">gh</a>
             </div>
           </div>
         </div>
@@ -913,7 +848,7 @@ require_once __DIR__ . '/includes/header.php';
                 "We are extremely impressed with the services provided by Giga Digital Agency. Their team's expertise in digital marketing, creative design, and strategic guidance has significantly boosted our online presence and business growth. Highly recommended!"
               </p>
               <div class="reviewer-profile">
-                <img src="images/team/team-1-5.jpg" alt="M Kamruzzaman Shadhin" class="reviewer-avatar">
+                <img src="images/team/team-1-1.jpg" alt="M Kamruzzaman Shadhin" class="reviewer-avatar">
                 <div>
                   <div class="reviewer-name">M Kamruzzaman Shadhin</div>
                   <div class="reviewer-company">Managing Director, Enterprise Group</div>
@@ -930,7 +865,7 @@ require_once __DIR__ . '/includes/header.php';
                 "Their Facebook and YouTube ad boosting strategies tripled our e-commerce sales within 60 days. The automated bKash and Pathao courier integrations work without a single hitch. Exceptional engineering."
               </p>
               <div class="reviewer-profile">
-                <img src="images/team/team-1-6.jpg" alt="Anisur Rahman" class="reviewer-avatar">
+                <img src="images/team/team-1-2.jpg" alt="Anisur Rahman" class="reviewer-avatar">
                 <div>
                   <div class="reviewer-name">Anisur Rahman</div>
                   <div class="reviewer-company">Founder, Retail Express Bangladesh</div>
@@ -947,7 +882,7 @@ require_once __DIR__ . '/includes/header.php';
                 "Giga Digital Agency designed our entire web application and UI/UX in Figma, followed by flawless front-end development. Our user activation rate jumped by 48% within two weeks of launch."
               </p>
               <div class="reviewer-profile">
-                <img src="images/team/team-1-7.jpg" alt="Sophia Chen" class="reviewer-avatar">
+                <img src="images/team/team-1-3.jpg" alt="Sophia Chen" class="reviewer-avatar">
                 <div>
                   <div class="reviewer-name">Sophia Chen</div>
                   <div class="reviewer-company">Product Lead, TechNova Global</div>
@@ -964,7 +899,7 @@ require_once __DIR__ . '/includes/header.php';
                 "Best SEO and web development firm in Dhaka. We are now ranking #1 on Google for all of our primary commercial keywords, bringing in qualified B2B leads every single morning."
               </p>
               <div class="reviewer-profile">
-                <img src="images/team/team-1-8.jpg" alt="Tanvir Hasan" class="reviewer-avatar">
+                <img src="images/team/team-1-4.jpg" alt="Tanvir Hasan" class="reviewer-avatar">
                 <div>
                   <div class="reviewer-name">Tanvir Hasan</div>
                   <div class="reviewer-company">CEO, Horizon Logistics</div>
@@ -1007,10 +942,7 @@ require_once __DIR__ . '/includes/header.php';
           </div>
           <div class="blog-content">
             <div>
-              <div class="blog-meta-row">
-                <span class="section-tag" style="padding:2px 8px; font-size:0.70rem; margin-bottom:0;">Performance Ads</span>
-                <span>November 2026</span>
-              </div>
+              <div style="font-size:0.75rem; color:var(--accent-primary); font-weight:800; text-transform:uppercase; margin-bottom:8px;">Performance Ads &bull; Nov 2026</div>
               <h3 class="blog-title">How to Scale Your Business with Facebook & YouTube Ad Boosting in 2026</h3>
               <p class="blog-excerpt">
                 Mastering Meta Conversions API, short-form video hooks, and retargeting funnels to achieve consistent 4.0x+ ROAS.
@@ -1029,10 +961,7 @@ require_once __DIR__ . '/includes/header.php';
           </div>
           <div class="blog-content">
             <div>
-              <div class="blog-meta-row">
-                <span class="section-tag" style="padding:2px 8px; font-size:0.70rem; margin-bottom:0;">UI/UX Design</span>
-                <span>October 2026</span>
-              </div>
+              <div style="font-size:0.75rem; color:var(--accent-violet); font-weight:800; text-transform:uppercase; margin-bottom:8px;">UI/UX Design &bull; Oct 2026</div>
               <h3 class="blog-title">The Science of High-Converting UI/UX Design for E-Commerce Platforms</h3>
               <p class="blog-excerpt">
                 Why 70% of shoppers abandon carts in South Asia and how one-click mobile checkout designs slash drop-off rates.
@@ -1051,10 +980,7 @@ require_once __DIR__ . '/includes/header.php';
           </div>
           <div class="blog-content">
             <div>
-              <div class="blog-meta-row">
-                <span class="section-tag" style="padding:2px 8px; font-size:0.70rem; margin-bottom:0;">SEO Strategy</span>
-                <span>September 2026</span>
-              </div>
+              <div style="font-size:0.75rem; color:var(--accent-green); font-weight:800; text-transform:uppercase; margin-bottom:8px;">SEO Strategy &bull; Sep 2026</div>
               <h3 class="blog-title">Local SEO Strategies: How to Rank #1 on Google Search and Maps in Bangladesh</h3>
               <p class="blog-excerpt">
                 Proven blueprint for dominating Google's Local 3-Pack and ranking commercial intent keywords organically.
@@ -1073,10 +999,7 @@ require_once __DIR__ . '/includes/header.php';
           </div>
           <div class="blog-content">
             <div>
-              <div class="blog-meta-row">
-                <span class="section-tag" style="padding:2px 8px; font-size:0.70rem; margin-bottom:0;">Tech & Code</span>
-                <span>August 2026</span>
-              </div>
+              <div style="font-size:0.75rem; color:var(--accent-cyan); font-weight:800; text-transform:uppercase; margin-bottom:8px;">Tech & Code &bull; Aug 2026</div>
               <h3 class="blog-title">Why Custom Software & ERP Outperforms Off-the-Shelf Templates for Growing Businesses</h3>
               <p class="blog-excerpt">
                 Avoid recurring SaaS tax: how custom multi-branch inventory systems protect margin and streamline operations.
@@ -1104,32 +1027,32 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Left: Agency Information -->
         <div class="contact-info-card">
           <span class="section-tag">Let's Connect</span>
-          <h2 style="font-size:2rem; font-weight:900; color:var(--text-heading); margin-bottom:16px;">
+          <h2 style="font-size:1.9rem; font-weight:900; color:var(--text-heading); margin-bottom:14px;">
             START YOUR PROJECT TODAY
           </h2>
-          <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.7; margin-bottom:28px;">
+          <p style="color:var(--text-muted); font-size:0.94rem; line-height:1.7; margin-bottom:26px;">
             Whether you need a full corporate website, an e-commerce platform with bKash integration, or a high-ROAS Facebook and YouTube ad boost campaign, our team is ready to deliver.
           </p>
 
-          <div style="margin-bottom:24px;">
-            <div style="font-size:0.85rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:6px;">Office Headquarters:</div>
-            <p style="font-size:1.05rem; font-weight:700; color:var(--text-heading); line-height:1.5;">
+          <div style="margin-bottom:22px;">
+            <div style="font-size:0.82rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:4px;">Office Headquarters:</div>
+            <p style="font-size:1.02rem; font-weight:700; color:var(--text-heading); line-height:1.5;">
               House # 6/14, Block # A, Lalmatia,<br>
               Dhaka-1207, Bangladesh
             </p>
           </div>
 
-          <div style="margin-bottom:24px;">
-            <div style="font-size:0.85rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:6px;">Direct Phone Hotlines:</div>
-            <p style="font-size:1.15rem; font-weight:800; color:var(--accent-primary);">
+          <div style="margin-bottom:22px;">
+            <div style="font-size:0.82rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:4px;">Direct Phone Hotlines:</div>
+            <p style="font-size:1.12rem; font-weight:800; color:var(--accent-primary);">
               <a href="tel:01860422185">+880 1860-422185</a><br>
               <a href="tel:01778741894">+880 1778-741894</a>
             </p>
           </div>
 
-          <div style="margin-bottom:28px;">
-            <div style="font-size:0.85rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:6px;">Direct Email:</div>
-            <p style="font-size:1.05rem; font-weight:700; color:var(--text-heading);">
+          <div style="margin-bottom:26px;">
+            <div style="font-size:0.82rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:4px;">Direct Email:</div>
+            <p style="font-size:1.02rem; font-weight:700; color:var(--text-heading);">
               <a href="mailto:info@gigadigitalagency.com" style="color:var(--accent-cyan);">info@gigadigitalagency.com</a>
             </p>
           </div>
@@ -1141,8 +1064,8 @@ require_once __DIR__ . '/includes/header.php';
 
         <!-- Right: Quotation Form -->
         <div class="contact-form-card">
-          <h3 style="font-size:1.5rem; font-weight:800; color:var(--text-heading); margin-bottom:8px;">Request a Quotation</h3>
-          <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:24px;">Fill out your project details for an immediate consultation within 2 hours.</p>
+          <h3 style="font-size:1.45rem; font-weight:800; color:var(--text-heading); margin-bottom:6px;">Request a Quotation</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:22px;">Fill out your project details for an immediate consultation within 2 hours.</p>
 
           <div id="formAlert" style="display:none;"></div>
 

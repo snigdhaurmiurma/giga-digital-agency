@@ -1,7 +1,7 @@
 <?php
 /**
  * GIGA DIGITAL AGENCY — HEADER COMPONENT
- * Aesthetic Cosmic Design & Frosted Glass Navigation
+ * Clean Frosted Glass Navigation with Official Logo & Rich Services Mega Dropdown
  */
 if (!isset($page_title)) {
   $page_title = 'Giga Digital Agency — Best Web Design, UI/UX, SEO & Digital Marketing Agency in Bangladesh';
@@ -73,19 +73,13 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
     </div>
   </div>
 
-  <!-- Main Navigation Header (Frosted Glass & Large Logo) -->
+  <!-- Main Navigation Header (Clean Official Logo & Rich Dropdown) -->
   <header class="main-header">
     <div class="container nav-container">
       
-      <!-- Brand Logo & Typography Lockup -->
+      <!-- Clean Official Logo (NO awkward subtitle text) -->
       <a href="<?php echo $asset_prefix; ?>index.php#home" class="site-brand" title="Giga Digital Agency — Home">
-        <div class="site-logo-wrap">
-          <img src="<?php echo $asset_prefix; ?>images/resource/logo-1.png" alt="Giga Digital Agency Logo" class="site-logo">
-        </div>
-        <div class="site-brand-text">
-          <span class="site-brand-title">GIGA DIGITAL <span style="color:var(--accent-primary);">AGENCY</span></span>
-          <span class="site-brand-tagline">Web Design &bull; UI/UX &bull; Digital Marketing</span>
-        </div>
+        <img src="<?php echo $asset_prefix; ?>images/resource/logo-1.png" alt="Giga Digital Agency Logo" class="site-logo">
       </a>
 
       <!-- Desktop Navigation Menu -->
@@ -94,52 +88,108 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
           <a href="<?php echo $asset_prefix; ?>index.php#home" class="nav-menu-link active">Home</a>
         </div>
         <div class="nav-menu-item">
-          <a href="<?php echo $asset_prefix; ?>index.php#about" class="nav-menu-link">About Us</a>
+          <!-- Guaranteed strictly one-line -->
+          <a href="<?php echo $asset_prefix; ?>index.php#about" class="nav-menu-link" style="white-space:nowrap;">About Us</a>
         </div>
         
-        <!-- Services with Interactive Dropdown -->
+        <!-- Services with Rich 3-Category Mega Dropdown -->
         <div class="nav-menu-item">
-          <a href="<?php echo $asset_prefix; ?>index.php#services" class="nav-menu-link">
+          <a href="<?php echo $asset_prefix; ?>index.php#services" class="nav-menu-link" style="white-space:nowrap;">
             Services
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="12" height="12"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </a>
           <div class="nav-dropdown">
-            <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-link">🎨 Graphic Design & Brand Identity</a>
-            <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-link">📱 UI/UX & Figma Design</a>
-            <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-link">▶️ YouTube Video Services</a>
-            <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-link">🚀 Facebook & Instagram Boosting</a>
-            <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-link">🎯 YouTube Ad Boosting</a>
-            <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-link">📈 Search Engine Optimization (SEO)</a>
-            <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-link">💻 Corporate Web Design</a>
-            <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-link">🛒 E-Commerce (bKash/Nagad)</a>
-            <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-link">⚙️ Custom Software & POS</a>
+            
+            <!-- Category 1: Creative -->
+            <div>
+              <div class="dropdown-col-title">
+                <span>🎨 Creative Division</span>
+              </div>
+              <div class="dropdown-items-group">
+                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
+                  <span class="title">Graphic Design</span>
+                  <span class="desc">Vector logos, brand identity & marketing toolkits</span>
+                </a>
+                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
+                  <span class="title">UI/UX Design</span>
+                  <span class="desc">Interactive Figma mobile app & web interfaces</span>
+                </a>
+                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
+                  <span class="title">YouTube Services</span>
+                  <span class="desc">High-CTR thumbnails & video retention editing</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Category 2: Growth -->
+            <div>
+              <div class="dropdown-col-title" style="color:var(--accent-violet);">
+                <span>🚀 Growth Division</span>
+              </div>
+              <div class="dropdown-items-group">
+                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
+                  <span class="title">Facebook Ad Boosting</span>
+                  <span class="desc">Meta CAPI pixel setup & high-ROAS sales funnels</span>
+                </a>
+                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
+                  <span class="title">YouTube Ad Boosting</span>
+                  <span class="desc">Targeted in-stream ads & video subscriber growth</span>
+                </a>
+                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
+                  <span class="title">Google Search SEO</span>
+                  <span class="desc">Rank #1 organically on Google & Google Maps</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Category 3: Tech -->
+            <div>
+              <div class="dropdown-col-title" style="color:var(--accent-cyan);">
+                <span>💻 Tech Division</span>
+              </div>
+              <div class="dropdown-items-group">
+                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
+                  <span class="title">Corporate Web Design</span>
+                  <span class="desc">Ultra-fast responsive websites with custom CMS</span>
+                </a>
+                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
+                  <span class="title">E-Commerce (bKash)</span>
+                  <span class="desc">Cart checkout with bKash, Nagad & Pathao API</span>
+                </a>
+                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
+                  <span class="title">Custom POS & ERP</span>
+                  <span class="desc">Multi-branch inventory, billing & CRM software</span>
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
 
         <div class="nav-menu-item">
-          <a href="<?php echo $asset_prefix; ?>index.php#process" class="nav-menu-link">Process</a>
+          <a href="<?php echo $asset_prefix; ?>index.php#process" class="nav-menu-link" style="white-space:nowrap;">Process</a>
         </div>
         <div class="nav-menu-item">
-          <a href="<?php echo $asset_prefix; ?>index.php#case-study" class="nav-menu-link">Case Study</a>
+          <a href="<?php echo $asset_prefix; ?>index.php#case-study" class="nav-menu-link" style="white-space:nowrap;">Case Study</a>
         </div>
         <div class="nav-menu-item">
-          <a href="<?php echo $asset_prefix; ?>index.php#pricing" class="nav-menu-link">Pricing</a>
+          <a href="<?php echo $asset_prefix; ?>index.php#pricing" class="nav-menu-link" style="white-space:nowrap;">Pricing</a>
         </div>
         <div class="nav-menu-item">
-          <a href="<?php echo $asset_prefix; ?>index.php#team" class="nav-menu-link">Team</a>
+          <a href="<?php echo $asset_prefix; ?>index.php#team" class="nav-menu-link" style="white-space:nowrap;">Team</a>
         </div>
         <div class="nav-menu-item">
-          <a href="<?php echo $asset_prefix; ?>index.php#reviews" class="nav-menu-link">Reviews</a>
+          <a href="<?php echo $asset_prefix; ?>index.php#reviews" class="nav-menu-link" style="white-space:nowrap;">Reviews</a>
         </div>
         <div class="nav-menu-item">
-          <a href="<?php echo $asset_prefix; ?>index.php#blog" class="nav-menu-link">Blog</a>
+          <a href="<?php echo $asset_prefix; ?>index.php#blog" class="nav-menu-link" style="white-space:nowrap;">Blog</a>
         </div>
         <div class="nav-menu-item">
-          <a href="<?php echo $asset_prefix; ?>index.php#contact" class="nav-menu-link">Contact</a>
+          <a href="<?php echo $asset_prefix; ?>index.php#contact" class="nav-menu-link" style="white-space:nowrap;">Contact</a>
         </div>
       </nav>
 
-      <!-- Action Tools: Light/Dark Theme Switcher & Quote CTA -->
+      <!-- Action Tools: Generous Space, Theme Toggle, Quote Button -->
       <div class="header-actions">
         <!-- Dual Theme Toggle Switch -->
         <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Light and Dark Theme" title="Toggle Theme">
@@ -168,15 +218,13 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
   <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
     <div>
       <div style="display:flex; justify-content:space-between; align-items:center;">
-        <div class="site-logo-wrap" style="padding:4px 8px;">
-          <img src="<?php echo $asset_prefix; ?>images/resource/logo-1.png" alt="Giga Digital Agency" style="height:38px; width:auto;">
-        </div>
+        <img src="<?php echo $asset_prefix; ?>images/resource/logo-1.png" alt="Giga Digital Agency" style="height:44px; width:auto;">
         <button class="drawer-close" style="font-size:1.8rem; color:var(--text-heading);">&times;</button>
       </div>
       <nav class="drawer-nav-list">
         <a href="<?php echo $asset_prefix; ?>index.php#home">Home</a>
-        <a href="<?php echo $asset_prefix; ?>index.php#about">About Giga Digital</a>
-        <a href="<?php echo $asset_prefix; ?>index.php#services">Our IT & Marketing Services</a>
+        <a href="<?php echo $asset_prefix; ?>index.php#about">About Us</a>
+        <a href="<?php echo $asset_prefix; ?>index.php#services">Services Portfolio</a>
         <a href="<?php echo $asset_prefix; ?>index.php#process">Our 4-Step Process</a>
         <a href="<?php echo $asset_prefix; ?>index.php#case-study">Meta Case Study</a>
         <a href="<?php echo $asset_prefix; ?>index.php#pricing">Pricing & Packages</a>
