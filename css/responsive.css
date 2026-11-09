@@ -1,38 +1,51 @@
 /* ==========================================================================
    GIGA DIGITAL AGENCY — RESPONSIVE STYLES
-   Breakpoints: 1200px, 992px, 768px, 480px
+   Breakpoints: 1320px, 1120px, 992px, 768px, 480px
+   Guarantees Prominent Big Logo without Any Overlap across All Viewports
    ========================================================================== */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1320px) {
   .nav-menu {
-    gap: 14px;
+    gap: 12px;
   }
   .nav-menu-link {
-    font-size: 0.88rem;
+    font-size: 0.86rem;
+    padding: 6px 3px;
+  }
+  .site-logo {
+    height: 56px;
+    max-width: 225px;
+  }
+  .header-cta {
+    padding: 8px 14px;
+    font-size: 0.86rem;
   }
   .nav-dropdown {
     width: 640px;
     left: -160px;
   }
-  .process-steps-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+}
+
+/* Below 1120px: Smoothly activate mobile drawer so links never overlap the big logo */
+@media screen and (max-width: 1120px) {
+  .nav-menu, .header-cta {
+    display: none !important;
   }
-  .counters-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  .mobile-toggle {
+    display: flex !important;
+  }
+  .site-logo {
+    height: 54px;
+    max-width: 220px;
+  }
+  .nav-container {
+    height: 80px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .section {
     padding: 60px 0;
-  }
-  .nav-menu, .header-cta {
-    display: none;
-  }
-  .mobile-toggle {
-    display: flex;
   }
   .hero-grid {
     grid-template-columns: 1fr;
@@ -53,14 +66,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .topbar {
-    display: none; /* Hide topbar on mobile for cleaner viewport */
-  }
   .nav-container {
-    height: 70px;
+    height: 74px;
   }
   .site-logo {
-    height: 44px;
+    height: 48px;
+    max-width: 195px;
   }
   .hero-main-photo {
     height: 320px;
@@ -106,6 +117,10 @@
 }
 
 @media screen and (max-width: 480px) {
+  .site-logo {
+    height: 42px;
+    max-width: 175px;
+  }
   .hero-title {
     font-size: 2rem;
   }

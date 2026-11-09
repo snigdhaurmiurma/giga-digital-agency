@@ -310,50 +310,62 @@ ul, ol {
   box-shadow: var(--shadow-md);
   border-bottom-color: var(--border-medium);
 }
+.main-header.scrolled .nav-container {
+  height: 76px;
+}
+.main-header.scrolled .site-logo {
+  height: 54px;
+}
 
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 78px;
+  height: 86px; /* Generous height for prominent big logo */
+  gap: 16px;
 }
 
-/* Logo Sized Standardly (Pure official logo without companion text) */
+/* Big Prominent Official Logo with Safe No-Overlap Guardrails */
 .site-brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
   flex-shrink: 0;
+  margin-right: 12px;
 }
 .site-logo {
-  height: 48px; /* Standard standard agency logo size */
+  height: 62px; /* Big, high-visibility, authoritative agency scale */
   width: auto;
-  max-width: 190px;
+  max-width: 250px;
   object-fit: contain;
   display: block;
+  flex-shrink: 0;
   transition: transform var(--transition);
 }
 .site-brand:hover .site-logo {
   transform: scale(1.02);
 }
 
-/* Navigation Links (strictly one-line) */
+/* Navigation Links (strictly one-line, balanced spacing to prevent any overlap) */
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 16px;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
 }
 .nav-menu-item {
   position: relative;
+  flex-shrink: 0;
 }
 .nav-menu-link {
-  font-size: 0.94rem;
+  font-size: 0.91rem;
   font-weight: 600;
   color: var(--text-main);
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 8px 6px;
+  gap: 4px;
+  padding: 8px 4px;
   white-space: nowrap; /* Ensures 'About Us' and all links never wrap to 2 lines */
   position: relative;
 }
@@ -470,8 +482,9 @@ ul, ol {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 18px; /* Generous breathing room */
-  margin-left: 20px;
+  gap: 14px;
+  margin-left: 12px;
+  flex-shrink: 0;
 }
 
 /* 5B. SLEEK COMPACT ICON-ONLY THEME TOGGLE (NO Text Instruction) */
