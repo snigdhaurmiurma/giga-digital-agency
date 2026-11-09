@@ -770,14 +770,35 @@ ul, ol {
 
 /* 6. HERO SECTION (Exact Zaman IT Architecture & Devices Showcase) */
 .hero-banner {
-  padding: 60px 0 0;
+  padding: 85px 0 95px;
   position: relative;
   overflow: hidden;
-  background: #081220;
+  background-color: #081424;
   border-bottom: 1px solid var(--border-subtle);
 }
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/background/tech-wave-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.38;
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+.hero-banner .container {
+  position: relative;
+  z-index: 1;
+}
 [data-theme="light"] .hero-banner {
-  background: #f8fafc;
+  background-color: #f8fafc;
+}
+[data-theme="light"] .hero-banner::before {
+  opacity: 0.08;
+  filter: invert(1) brightness(0.95);
 }
 
 .hero-grid {
@@ -2282,12 +2303,12 @@ textarea.form-input {
   padding: 85px 0 95px;
   position: relative;
   overflow: hidden;
-  background: #081424;
+  background-color: #081424;
   border-bottom: 1px solid var(--border-subtle);
   transition: background 0.3s ease;
 }
 [data-theme="light"] .hero-banner {
-  background: #f8fafc;
+  background-color: #f8fafc;
   border-bottom-color: rgba(15, 23, 42, 0.08);
 }
 
@@ -2560,16 +2581,38 @@ textarea.form-input {
 /* 12. INSPIRATIONAL INNOVATION CREED BANNER */
 .inspirational-footer-banner {
   padding: 85px 0;
-  background: #081424;
+  background-color: #081424;
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
   position: relative;
+  overflow: hidden;
   text-align: center;
 }
+.inspirational-footer-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/background/tech-wave-bg.jpg');
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.28;
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+.inspirational-footer-banner .container {
+  position: relative;
+  z-index: 1;
+}
 [data-theme="light"] .inspirational-footer-banner {
-  background: #ffffff;
+  background-color: #ffffff;
   border-top-color: rgba(15, 23, 42, 0.08);
   border-bottom-color: rgba(15, 23, 42, 0.08);
+}
+[data-theme="light"] .inspirational-footer-banner::before {
+  opacity: 0.06;
+  filter: invert(1) brightness(0.95);
 }
 .inspiration-quote {
   font-size: clamp(1.8rem, 3.2vw, 2.5rem);
