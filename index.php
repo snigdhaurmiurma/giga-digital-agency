@@ -1350,19 +1350,27 @@ require_once __DIR__ . '/includes/header.php';
             </p>
           </div>
 
-          <div style="margin-bottom:22px;">
+          <div style="margin-bottom:20px;">
             <div style="font-size:0.82rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:4px;">Direct Phone Hotlines:</div>
-            <p style="font-size:1.12rem; font-weight:800; color:var(--accent-primary);">
-              <a href="tel:01860422185">+880 1860-422185</a><br>
-              <a href="tel:01778741894">+880 1778-741894</a>
+            <p style="font-size:1.05rem; font-weight:800; color:var(--accent-primary); line-height:1.6;">
+              <a href="tel:01860422185">+880 1860-422185</a> (Corporate / WhatsApp)<br>
+              <a href="tel:01723654747">+880 1723-654747</a> / <a href="tel:01778741894">+880 1778-741894</a>
             </p>
           </div>
 
-          <div style="margin-bottom:26px;">
+          <div style="margin-bottom:20px;">
             <div style="font-size:0.82rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:4px;">Direct Email:</div>
             <p style="font-size:1.02rem; font-weight:700; color:var(--text-heading);">
               <a href="mailto:info@gigadigitalagency.com" style="color:var(--accent-cyan);">info@gigadigitalagency.com</a>
             </p>
+          </div>
+
+          <div style="margin-bottom:24px;">
+            <div style="font-size:0.82rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:6px;">Official Facebook:</div>
+            <a href="https://www.facebook.com/gigadigitalagency" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:8px; color:#ffffff; background:rgba(24,119,242,0.18); border:1px solid rgba(24,119,242,0.4); padding:8px 14px; border-radius:8px; font-size:0.90rem; font-weight:700; text-decoration:none;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>facebook.com/gigadigitalagency</span>
+            </a>
           </div>
 
           <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%;">
