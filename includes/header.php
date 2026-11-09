@@ -71,7 +71,7 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
             <!-- Category 1: Creative -->
             <div>
               <div class="dropdown-col-title">
-                <span>🎨 Creative Division</span>
+                <span>Creative Division</span>
               </div>
               <div class="dropdown-items-group">
                 <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
@@ -92,7 +92,7 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
             <!-- Category 2: Growth -->
             <div>
               <div class="dropdown-col-title" style="color:var(--accent-violet);">
-                <span>🚀 Growth Division</span>
+                <span>Growth Division</span>
               </div>
               <div class="dropdown-items-group">
                 <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
@@ -113,7 +113,7 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
             <!-- Category 3: Tech -->
             <div>
               <div class="dropdown-col-title" style="color:var(--accent-cyan);">
-                <span>💻 Tech Division</span>
+                <span>Tech Division</span>
               </div>
               <div class="dropdown-items-group">
                 <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
@@ -161,7 +161,7 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
       <div class="header-actions">
         <!-- Sleek Compact Theme Switcher (Icon Only) -->
         <button id="themeToggleBtn" class="theme-toggle-switch" aria-label="Toggle Light and Dark Mode" title="Toggle Light and Dark Mode">
-          <span class="switch-ball">🌙</span>
+          <span class="switch-ball"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="display:block; margin:auto;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
         </button>
 
         <!-- Primary Action Button -->
@@ -205,14 +205,15 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
     <div style="border-top:1px solid var(--border-subtle); padding-top:18px; display:flex; gap:12px; align-items:center;">
       <!-- Mobile Theme Toggle -->
       <button id="drawerThemeToggleBtn" class="theme-toggle-switch" aria-label="Toggle Theme" title="Toggle Light and Dark Mode">
-        <span class="switch-ball">🌙</span>
+        <span class="switch-ball"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="display:block; margin:auto;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
       </button>
       <span style="font-size:0.85rem; color:var(--text-muted); font-weight:700;">Theme Appearance</span>
     </div>
       <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:4px;">Direct Hotline:</p>
       <p style="font-size:1.05rem; font-weight:800; color:var(--text-heading); margin-bottom:12px;">+880 1860-422185</p>
       <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%; margin-bottom:10px;">
-        💬 Chat on WhatsApp
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle; flex-shrink:0; margin-right:6px;"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.154.57 4.175 1.564 5.918l-1.564 5.71 5.86-1.536c1.678.914 3.603 1.408 5.64 1.408 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+        <span>Chat on WhatsApp</span>
       </a>
       <a href="<?php echo $asset_prefix; ?>index.php#contact" class="btn btn-primary" style="width:100%;">Get Quotation</a>
     </div>

@@ -212,9 +212,9 @@
         </div>
       </div>
       <div class="header-actions">
-        <a href="index.html" class="btn btn-outline" target="_blank">🌐 View Website</a>
-        <button id="refreshBtn" class="btn btn-outline">🔄 Refresh</button>
-        <button id="exportBtn" class="btn btn-primary">📥 Export CSV</button>
+        <a href="index.html" class="btn btn-outline" target="_blank">View Website</a>
+        <button id="refreshBtn" class="btn btn-outline">Refresh</button>
+        <button id="exportBtn" class="btn btn-primary">Export CSV</button>
         <button id="testInquiryBtn" class="btn btn-green">+ Test Lead</button>
       </div>
     </header>
@@ -245,8 +245,8 @@
 
     <!-- Tabs Navigation -->
     <div class="tabs-nav">
-      <button class="tab-btn active" data-tab="inquiriesTab">📧 Client Inquiries & Quotes (<span id="inquiryCountBadge">0</span>)</button>
-      <button class="tab-btn" data-tab="activityTab">📊 Phone & WhatsApp Activity Logs (<span id="activityCountBadge">0</span>)</button>
+      <button class="tab-btn active" data-tab="inquiriesTab">Client Inquiries & Quotes (<span id="inquiryCountBadge">0</span>)</button>
+      <button class="tab-btn" data-tab="activityTab">Phone & WhatsApp Activity Logs (<span id="activityCountBadge">0</span>)</button>
     </div>
 
     <!-- TAB 1: INQUIRIES -->
@@ -460,9 +460,9 @@
               </select>
             </td>
             <td style="white-space:nowrap;">
-              ${item.phone ? `<a href="tel:${rawPhone}" class="quick-act act-call" title="Call Client">📞 Call</a>` : ''}
-              ${item.phone ? `<a href="https://wa.me/${rawPhone}?text=Hello%20${encodeURIComponent(item.name)},%20thank%20you%20for%20contacting%20Giga%20Digital%20Agency!" target="_blank" class="quick-act act-wa" title="WhatsApp Client">💬 WA</a>` : ''}
-              <button onclick="deleteInquiry(${item.id})" class="quick-act act-del" title="Delete">✕</button>
+              ${item.phone ? `<a href="tel:${rawPhone}" class="quick-act act-call" title="Call Client">Call</a>` : ''}
+              ${item.phone ? `<a href="https://wa.me/${rawPhone}?text=Hello%20${encodeURIComponent(item.name)},%20thank%20you%20for%20contacting%20Giga%20Digital%20Agency!" target="_blank" class="quick-act act-wa" title="WhatsApp Client">WhatsApp</a>` : ''}
+              <button onclick="deleteInquiry(${item.id})" class="quick-act act-del" title="Delete">&times;</button>
             </td>
           </tr>
         `;
@@ -490,8 +490,8 @@
       tbody.innerHTML = filtered.map(item => {
         const isCall = item.interaction_type === 'call';
         const isWa = item.interaction_type === 'whatsapp';
-        const badge = isCall ? '<span class="badge badge-call">📞 Phone Call Click</span>' : 
-                      isWa ? '<span class="badge badge-whatsapp">💬 WhatsApp Click</span>' : 
+        const badge = isCall ? '<span class="badge badge-call">Phone Call Click</span>' : 
+                      isWa ? '<span class="badge badge-whatsapp">WhatsApp Click</span>' : 
                       `<span class="badge badge-new">${escapeHtml(item.interaction_type)}</span>`;
 
         return `

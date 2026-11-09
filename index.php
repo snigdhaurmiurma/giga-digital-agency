@@ -1,9 +1,9 @@
-﻿<?php
+<?php
 /**
- * GIGA DIGITAL AGENCY â€” MASTER HOMEPAGE
+ * GIGA DIGITAL AGENCY — MASTER HOMEPAGE
  * Clean Modern International Digital Agency
  */
-$page_title = 'Giga Digital Agency â€” Best Web Design, UI/UX, SEO & Digital Marketing Agency in Bangladesh';
+$page_title = 'Giga Digital Agency — Best Web Design, UI/UX, SEO & Digital Marketing Agency in Bangladesh';
 $page_desc = 'Giga Digital Agency is a premier digital agency in Dhaka, Bangladesh specializing in UI/UX design, corporate web development, e-commerce, SEO, and Facebook & YouTube ad boosting.';
 $current_page = 'home';
 $is_subpage = false;
@@ -115,19 +115,27 @@ require_once __DIR__ . '/includes/header.php';
       <!-- Floating Glass Feature Dock (The 4 Tabs from Zaman IT) -->
       <div class="hero-feature-dock" aria-label="Key Agency Capabilities">
         <a href="#services" class="dock-feature-item">
-          <span class="dock-icon-box">🖥️</span>
+          <span class="dock-icon-box">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </span>
           <span>Web & Ecommerce</span>
         </a>
         <a href="#services" class="dock-feature-item">
-          <span class="dock-icon-box">&lt;/&gt;</span>
+          <span class="dock-icon-box">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </span>
           <span>Custom Software</span>
         </a>
         <a href="#services" class="dock-feature-item">
-          <span class="dock-icon-box">📊</span>
+          <span class="dock-icon-box">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </span>
           <span>Digital Marketing</span>
         </a>
         <a href="#contact" class="dock-feature-item">
-          <span class="dock-icon-box">🎧</span>
+          <span class="dock-icon-box">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+          </span>
           <span>Dedicated Support</span>
         </a>
       </div>
@@ -139,42 +147,54 @@ require_once __DIR__ . '/includes/header.php';
       <div class="container">
         <div class="zaman-stats-grid">
           <div class="zaman-stat-card">
-            <div class="zaman-stat-icon">🏆</div>
+            <div class="zaman-stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
             <div>
               <div class="zaman-stat-number">7000+</div>
               <div class="zaman-stat-title">Completed Projects</div>
             </div>
           </div>
           <div class="zaman-stat-card">
-            <div class="zaman-stat-icon">👥</div>
+            <div class="zaman-stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
             <div>
               <div class="zaman-stat-number">40+</div>
               <div class="zaman-stat-title">Team Members</div>
             </div>
           </div>
           <div class="zaman-stat-card">
-            <div class="zaman-stat-icon">🌐</div>
+            <div class="zaman-stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
             <div>
               <div class="zaman-stat-number">22K+</div>
               <div class="zaman-stat-title">Active Clients</div>
             </div>
           </div>
           <div class="zaman-stat-card">
-            <div class="zaman-stat-icon">⏳</div>
+            <div class="zaman-stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
             <div>
               <div class="zaman-stat-number">10+</div>
               <div class="zaman-stat-title">Years Experience</div>
             </div>
           </div>
           <div class="zaman-stat-card">
-            <div class="zaman-stat-icon">🎖️</div>
+            <div class="zaman-stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            </div>
             <div>
               <div class="zaman-stat-number">75+</div>
               <div class="zaman-stat-title">Awards & Honors</div>
             </div>
           </div>
           <div class="zaman-stat-card">
-            <div class="zaman-stat-icon">📍</div>
+            <div class="zaman-stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
             <div>
               <div class="zaman-stat-number">4</div>
               <div class="zaman-stat-title">Service Hubs</div>
@@ -231,12 +251,12 @@ require_once __DIR__ . '/includes/header.php';
 
       <!-- About Us Sub-Portion Navigation Tabs -->
       <div class="about-nav-tabs">
-        <button class="about-tab-btn active" data-tab="story">📖 Our Story</button>
-        <button class="about-tab-btn" data-tab="profile">🏢 Company Profile</button>
-        <button class="about-tab-btn" data-tab="founder">👤 Founder & CEO</button>
-        <button class="about-tab-btn" data-tab="team">👥 Our Team</button>
-        <button class="about-tab-btn" data-tab="gallery">📸 Photo Galleries</button>
-        <button class="about-tab-btn" data-tab="clients">🤝 Our Clients & Recognition</button>
+        <button class="about-tab-btn active" data-tab="story">Our Story</button>
+        <button class="about-tab-btn" data-tab="profile">Company Profile</button>
+        <button class="about-tab-btn" data-tab="founder">Founder & CEO</button>
+        <button class="about-tab-btn" data-tab="team">Our Team</button>
+        <button class="about-tab-btn" data-tab="gallery">Photo Galleries</button>
+        <button class="about-tab-btn" data-tab="clients">Our Clients & Recognition</button>
       </div>
 
       <!-- PANEL 1: Our Story -->
@@ -315,7 +335,10 @@ require_once __DIR__ . '/includes/header.php';
             </p>
             <div style="display:flex; gap:12px; flex-wrap:wrap;">
               <a href="#contact" class="btn btn-primary">Schedule Consultation With CEO</a>
-              <a href="https://wa.me/8801860422185" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">💬 WhatsApp Direct</a>
+              <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20consult%20with%20the%20CEO." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle; margin-right:6px;"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.154.57 4.175 1.564 5.918l-1.564 5.71 5.86-1.536c1.678.914 3.603 1.408 5.64 1.408 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+                <span>WhatsApp Direct</span>
+              </a>
             </div>
           </div>
         </div>
@@ -455,9 +478,11 @@ require_once __DIR__ . '/includes/header.php';
           </div>
 
           <!-- 2016 National ICT Ecosystem Recognition Card -->
-          <div style="background:linear-gradient(135deg, rgba(15,28,50,0.95), rgba(12,35,64,0.9)); border:1px solid var(--border-glow); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow-lg);">
+          <div style="background:#0f1c32; border:1px solid var(--border-medium); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow-md);">
             <div style="display:flex; align-items:center; gap:14px; margin-bottom:18px;">
-              <div style="font-size:2.4rem;">🏆</div>
+              <div>
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </div>
               <div>
                 <span style="font-size:0.75rem; font-weight:800; color:#fbbf24; text-transform:uppercase; letter-spacing:0.08em;">Official Accreditation</span>
                 <h3 style="font-size:1.35rem; font-weight:900; color:#ffffff;">2016 National ICT Recognition</h3>
@@ -496,9 +521,9 @@ require_once __DIR__ . '/includes/header.php';
       <!-- Category Filter Tabs -->
       <div class="services-tabs-row">
         <button class="service-cat-tab active" data-category="all">All Services (9)</button>
-        <button class="service-cat-tab" data-category="creative">🎨 Creative (Design & YouTube)</button>
-        <button class="service-cat-tab" data-category="growth">🚀 Growth (Marketing, SEO & Ads)</button>
-        <button class="service-cat-tab" data-category="tech">💻 Tech & Web Development</button>
+        <button class="service-cat-tab" data-category="creative">Creative (Design & YouTube)</button>
+        <button class="service-cat-tab" data-category="growth">Growth (Marketing, SEO & Ads)</button>
+        <button class="service-cat-tab" data-category="tech">Tech & Web Development</button>
       </div>
 
       <!-- Services Cards Grid -->
@@ -508,7 +533,9 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="creative">
           <div>
             <span class="service-cat-pill">Creative Division</span>
-            <div class="service-icon-wrap">🎨</div>
+            <div class="service-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+            </div>
             <h3 class="service-title">Graphic Design & Brand Identity</h3>
             <p class="service-desc">
               Custom corporate logos, brand guidelines, marketing banners, packaging design, and social media creative toolkits that command immediate visual authority.
@@ -526,7 +553,9 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="creative">
           <div>
             <span class="service-cat-pill">Creative Division</span>
-            <div class="service-icon-wrap">📱</div>
+            <div class="service-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+            </div>
             <h3 class="service-title">UI/UX Design & Prototyping</h3>
             <p class="service-desc">
               Interactive Figma prototypes, wireframing, user persona mapping, and conversion-optimized mobile app and web design systems tested for effortless usability.
@@ -544,7 +573,9 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="creative">
           <div>
             <span class="service-cat-pill">Creative Division</span>
-            <div class="service-icon-wrap">▶️</div>
+            <div class="service-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
             <h3 class="service-title">YouTube Creative & Channel Services</h3>
             <p class="service-desc">
               Custom high-CTR YouTube thumbnails, channel branding, video intros/outros, engaging motion graphics, and video editing to maximize audience retention.
@@ -562,7 +593,9 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="growth">
           <div>
             <span class="service-cat-pill" style="background:rgba(244,63,94,0.15); color:#fb7185; border-color:rgba(244,63,94,0.3);">Growth Division</span>
-            <div class="service-icon-wrap" style="color:#f43f5e;">🚀</div>
+            <div class="service-icon-wrap" style="color:#f43f5e;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            </div>
             <h3 class="service-title">Facebook & Instagram Ad Boosting</h3>
             <p class="service-desc">
               Precision Meta ad management, pixel setup with Conversions API, custom & lookalike audiences, reel video boosting, and high-ROAS e-commerce scaling.
@@ -580,7 +613,9 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="growth">
           <div>
             <span class="service-cat-pill" style="background:rgba(239,68,68,0.15); color:#f87171; border-color:rgba(239,68,68,0.3);">Growth Division</span>
-            <div class="service-icon-wrap" style="color:#ef4444;">🎯</div>
+            <div class="service-icon-wrap" style="color:#ef4444;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            </div>
             <h3 class="service-title">YouTube Ad Boosting & Video Marketing</h3>
             <p class="service-desc">
               Skippable in-stream ads, non-skippable 6-second bumper ads, in-feed discovery ads, subscriber growth campaigns, and demographic video marketing.
@@ -598,7 +633,9 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="growth">
           <div>
             <span class="service-cat-pill" style="background:rgba(16,185,129,0.15); color:#6ee7b7; border-color:rgba(16,185,129,0.3);">Growth Division</span>
-            <div class="service-icon-wrap" style="color:#10b981;">📈</div>
+            <div class="service-icon-wrap" style="color:#10b981;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            </div>
             <h3 class="service-title">Search Engine Optimization (SEO)</h3>
             <p class="service-desc">
               Dominate page 1 of Google Search. Complete technical audits, keyword mapping, high-authority backlink building, and Google Maps Local 3-Pack ranking.
@@ -616,7 +653,9 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="tech">
           <div>
             <span class="service-cat-pill" style="background:rgba(56,189,248,0.15); color:#7dd3fc; border-color:rgba(56,189,248,0.3);">Tech Division</span>
-            <div class="service-icon-wrap" style="color:#38bdf8;">💻</div>
+            <div class="service-icon-wrap" style="color:#38bdf8;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
             <h3 class="service-title">Corporate Website Design & Development</h3>
             <p class="service-desc">
               Custom-coded, lightning-fast corporate websites. Mobile responsive, easy-to-manage dynamic CMS, SSL encryption, and Google Core Web Vitals optimization.
@@ -634,7 +673,9 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="tech">
           <div>
             <span class="service-cat-pill" style="background:rgba(56,189,248,0.15); color:#7dd3fc; border-color:rgba(56,189,248,0.3);">Tech Division</span>
-            <div class="service-icon-wrap" style="color:#38bdf8;">🛒</div>
+            <div class="service-icon-wrap" style="color:#38bdf8;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            </div>
             <h3 class="service-title">E-Commerce Store (bKash/Nagad/Cards)</h3>
             <p class="service-desc">
               Feature-rich online store with automated bKash, Nagad, Rocket, SSLCommerz, and Visa/Mastercard payments plus Pathao/Steadfast Courier API delivery tracking.
@@ -652,7 +693,9 @@ require_once __DIR__ . '/includes/header.php';
         <div class="service-box" data-category="tech">
           <div>
             <span class="service-cat-pill" style="background:rgba(56,189,248,0.15); color:#7dd3fc; border-color:rgba(56,189,248,0.3);">Tech Division</span>
-            <div class="service-icon-wrap" style="color:#38bdf8;">⚙️</div>
+            <div class="service-icon-wrap" style="color:#38bdf8;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            </div>
             <h3 class="service-title">Custom Software, POS & ERP Systems</h3>
             <p class="service-desc">
               Bespoke business automation systems: inventory tracking, multi-branch POS, billing, automated invoicing, customer CRM, and employee management portals.
@@ -692,7 +735,9 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Step 1 -->
         <div class="process-step-card">
           <div class="step-num-badge">01</div>
-          <div class="step-icon">📋</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
           <h3 class="step-title">Requirement Consultation & Strategy</h3>
           <p class="step-desc">
             We meet with your team to analyze your business goals, competitors, and target audience, formulating a comprehensive technical and marketing roadmap.
@@ -702,7 +747,9 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Step 2 -->
         <div class="process-step-card">
           <div class="step-num-badge">02</div>
-          <div class="step-icon">🎨</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path></svg>
+          </div>
           <h3 class="step-title">UI/UX Design & Client Approval</h3>
           <p class="step-desc">
             Our creative team crafts interactive Figma prototypes, ad creatives, and high-fidelity layouts for your review and explicit sign-off before coding begins.
@@ -712,7 +759,9 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Step 3 -->
         <div class="process-step-card">
           <div class="step-num-badge">03</div>
-          <div class="step-icon">💻</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
           <h3 class="step-title">Development & Coding</h3>
           <p class="step-desc">
             Our software engineers develop clean, high-performance code, integrate bKash/Nagad gateways, configure tracking pixels, and deploy SEO architecture.
@@ -722,7 +771,9 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Step 4 -->
         <div class="process-step-card">
           <div class="step-num-badge">04</div>
-          <div class="step-icon">🚀</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg>
+          </div>
           <h3 class="step-title">Launch, Ad Boosting & Optimization</h3>
           <p class="step-desc">
             We deploy your platform live, ignite high-conversion Facebook and YouTube ad boost campaigns, monitor ROAS metrics, and continuously scale results.
@@ -1151,7 +1202,13 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Slide 1: M Kamruzzaman Shadhin -->
           <div class="testimonial-slide">
             <div class="testimonial-card">
-              <div class="review-stars">★★★★★</div>
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
               <p class="review-quote">
                 "We are extremely impressed with the services provided by Giga Digital Agency. Their team's expertise in digital marketing, creative design, and strategic guidance has significantly boosted our online presence and business growth. Highly recommended!"
               </p>
@@ -1168,7 +1225,13 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Slide 2: Retail Founder -->
           <div class="testimonial-slide">
             <div class="testimonial-card">
-              <div class="review-stars">★★★★★</div>
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
               <p class="review-quote">
                 "Their Facebook and YouTube ad boosting strategies tripled our e-commerce sales within 60 days. The automated bKash and Pathao courier integrations work without a single hitch. Exceptional engineering."
               </p>
@@ -1185,7 +1248,13 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Slide 3: SaaS Executive -->
           <div class="testimonial-slide">
             <div class="testimonial-card">
-              <div class="review-stars">★★★★★</div>
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
               <p class="review-quote">
                 "Giga Digital Agency designed our entire web application and UI/UX in Figma, followed by flawless front-end development. Our user activation rate jumped by 48% within two weeks of launch."
               </p>
@@ -1202,7 +1271,13 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Slide 4: Corporate Logistics CEO -->
           <div class="testimonial-slide">
             <div class="testimonial-card">
-              <div class="review-stars">★★★★★</div>
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
               <p class="review-quote">
                 "Best SEO and web development firm in Dhaka. We are now ranking #1 on Google for all of our primary commercial keywords, bringing in qualified B2B leads every single morning."
               </p>
@@ -1434,7 +1509,6 @@ require_once __DIR__ . '/includes/header.php';
 
     </div>
   </section>
-
 <?php
 require_once __DIR__ . '/includes/footer.php';
 ?>

@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const drawerThemeToggleBtn = document.getElementById('drawerThemeToggleBtn');
   const storedTheme = localStorage.getItem('gda_theme') || 'dark';
 
+  const moonSvg = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="display:block; margin:auto;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
+  const sunSvg = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="display:block; margin:auto;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
+
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('gda_theme', theme);
@@ -22,11 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!btn) return;
       const switchBall = btn.querySelector('.switch-ball') || btn;
       if (theme === 'dark') {
-        switchBall.textContent = '🌙';
+        switchBall.innerHTML = moonSvg;
         btn.setAttribute('title', 'Switch to Light Mode');
         btn.classList.remove('is-light');
       } else {
-        switchBall.textContent = '☀️';
+        switchBall.innerHTML = sunSvg;
         btn.setAttribute('title', 'Switch to Dark Mode');
         btn.classList.add('is-light');
       }
@@ -525,7 +528,10 @@ document.addEventListener('DOMContentLoaded', () => {
       formAlert.style.color = '#34d399';
       formAlert.style.border = '1px solid rgba(16, 185, 129, 0.4)';
       formAlert.innerHTML = `
-        <div style="font-weight:800; font-size:1.02rem; margin-bottom:4px;">✅ Inquiry Saved to Database (${leadId})</div>
+        <div style="font-weight:800; font-size:1.02rem; margin-bottom:4px; display:flex; align-items:center; gap:8px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span>Inquiry Saved to Database (${leadId})</span>
+        </div>
         <div style="font-size:0.92rem; line-height:1.5;">${responseMessage}</div>
       `;
     }

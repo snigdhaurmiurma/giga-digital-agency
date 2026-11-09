@@ -10,7 +10,7 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
        ========================================================================= -->
   <section class="inspirational-footer-banner" aria-label="Our Innovation Creed">
     <div class="container text-center">
-      <span class="section-tag" style="background:rgba(0,229,153,0.15); color:var(--accent-green); border-color:var(--border-green);">✨ The Giga Innovation Creed</span>
+      <span class="section-tag" style="background:rgba(18,115,207,0.12); color:var(--accent-primary); border-color:var(--border-subtle);">The Giga Innovation Creed</span>
       <h2 class="inspiration-quote">
         &ldquo;Innovation isn't about following the current; it's about engineering the future with audacity, precision, and relentless passion.&rdquo;
       </h2>
@@ -36,7 +36,7 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
   <section class="impact-banner-section" aria-label="Our Core Agency Execution Pillars">
     <div class="container">
       <div style="text-align:center; max-width:680px; margin:0 auto 36px;">
-        <span class="section-tag" style="background:rgba(34,180,85,0.15); color:var(--accent-green); border-color:var(--border-green);">Execution Philosophy</span>
+        <span class="section-tag" style="background:rgba(18,115,207,0.12); color:var(--accent-primary); border-color:var(--border-subtle);">Execution Philosophy</span>
         <h2 style="font-size:2rem; font-weight:900; color:var(--text-heading); margin-top:8px;">How We Turn Ideas Into Digital Leadership</h2>
         <p style="font-size:0.95rem; color:var(--text-muted);">A proven four-stage agency lifecycle built for commercial longevity and rapid market adoption.</p>
       </div>
@@ -45,7 +45,9 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
         
         <!-- Pillar 1 -->
         <div class="impact-pillar-card">
-          <div class="pillar-icon">💡</div>
+          <div class="pillar-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </div>
           <div class="pillar-title" style="color:var(--accent-cyan);">1. IDEATE</div>
           <p class="pillar-desc">
             Deep requirement workshops, user research, competitor gap mapping, and clear project milestones.
@@ -54,7 +56,9 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
 
         <!-- Pillar 2 -->
         <div class="impact-pillar-card">
-          <div class="pillar-icon">🎨</div>
+          <div class="pillar-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path></svg>
+          </div>
           <div class="pillar-title" style="color:var(--accent-primary);">2. CREATE</div>
           <p class="pillar-desc">
             Human-centered UI/UX prototypes, modern visual systems, interactive Figma flows, and brand assets.
@@ -63,7 +67,9 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
 
         <!-- Pillar 3 -->
         <div class="impact-pillar-card">
-          <div class="pillar-icon">💻</div>
+          <div class="pillar-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
           <div class="pillar-title" style="color:#a855f7;">3. DEVELOP</div>
           <p class="pillar-desc">
             Ultra-fast responsive code, bKash/Nagad checkout integrations, secure databases, and custom CMS.
@@ -72,8 +78,18 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
 
         <!-- Pillar 4 -->
         <div class="impact-pillar-card">
-          <div class="pillar-icon">🚀</div>
+          <div class="pillar-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </div>
           <div class="pillar-title" style="color:var(--accent-green);">4. BOOST</div>
+          <p class="pillar-desc">
+            Meta CAPI pixel tracking, targeted Facebook & YouTube ad boosting, Google SEO, and sustained ROAS.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
           <p class="pillar-desc">
             Meta CAPI pixel tracking, targeted Facebook & YouTube ad boosting, Google SEO, and sustained ROAS.
           </p>
@@ -184,7 +200,8 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
   <!-- Fixed Right-Edge Quick Action Bar (Zaman IT Style) -->
   <aside class="right-fixed-actions" aria-label="Quick Contact Tools">
     <a href="<?php echo $asset_prefix; ?>index.php#contact" class="right-action-pill pill-talk" title="আমাদের সাথে কথা বলুন">
-      <span>📍 কথা বলুন</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      <span>কথা বলুন</span>
     </a>
     <a href="tel:01860422185" class="right-action-pill pill-call" title="Call Giga Digital Agency">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
