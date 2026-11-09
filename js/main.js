@@ -50,6 +50,97 @@ document.addEventListener('DOMContentLoaded', () => {
   drawerThemeToggleBtn?.addEventListener('click', toggleHandler);
 
   // =========================================================================
+  // 1B. INTERACTIVE ACCENT PALETTE PICKER
+  // =========================================================================
+  const palettePickerBtn = document.getElementById('palettePickerBtn');
+  const paletteDropdown = document.getElementById('paletteDropdown');
+  const headerPaletteDot = document.getElementById('headerPaletteDot');
+  const paletteOptions = document.querySelectorAll('.palette-option');
+  const drawerPaletteDots = document.querySelectorAll('.palette-quick-dot');
+
+  const accentColors = {
+    amber: '#f59e0b',
+    violet: '#8b5cf6',
+    cyan: '#06b6d4',
+    emerald: '#10b981',
+    blue: '#1273cf'
+  };
+
+  const storedAccent = localStorage.getItem('gda_accent') || 'emerald';
+
+  function applyAccent(accent) {
+    if (!accentColors[accent]) accent = 'emerald';
+    document.documentElement.setAttribute('data-accent', accent);
+    localStorage.setItem('gda_accent', accent);
+
+    if (headerPaletteDot) {
+      headerPaletteDot.style.background = accentColors[accent];
+    }
+
+    paletteOptions.forEach(opt => {
+      const match = opt.getAttribute('data-accent') === accent;
+      opt.classList.toggle('active', match);
+    });
+
+    drawerPaletteDots.forEach(dot => {
+      const match = dot.getAttribute('data-accent') === accent;
+      dot.classList.toggle('active', match);
+    });
+  }
+
+  // Initialize accent on load
+  applyAccent(storedAccent);
+
+  // Toggle palette popover
+  palettePickerBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isActive = paletteDropdown?.classList.toggle('active');
+    palettePickerBtn.classList.toggle('active', isActive);
+    palettePickerBtn.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+  });
+
+  // Select accent from dropdown
+  paletteOptions.forEach(opt => {
+    opt.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const accent = opt.getAttribute('data-accent');
+      applyAccent(accent);
+      paletteDropdown?.classList.remove('active');
+      palettePickerBtn?.classList.remove('active');
+      palettePickerBtn?.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Mobile drawer quick dots
+  drawerPaletteDots.forEach(dot => {
+    dot.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const accent = dot.getAttribute('data-accent');
+      applyAccent(accent);
+    });
+  });
+
+  // Close dropdown on outside click
+  document.addEventListener('click', (e) => {
+    if (paletteDropdown?.classList.contains('active')) {
+      if (!paletteDropdown.contains(e.target) && !palettePickerBtn.contains(e.target)) {
+        paletteDropdown.classList.remove('active');
+        palettePickerBtn?.classList.remove('active');
+        palettePickerBtn?.setAttribute('aria-expanded', 'false');
+      }
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && paletteDropdown?.classList.contains('active')) {
+      paletteDropdown.classList.remove('active');
+      palettePickerBtn?.classList.remove('active');
+      palettePickerBtn?.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // =========================================================================
   // 2. STICKY FROSTED HEADER & BACK TO TOP BUTTON
   // =========================================================================
   const header = document.querySelector('.main-header');

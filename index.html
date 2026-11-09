@@ -147,12 +147,46 @@
         </div>
       </nav>
 
-      <!-- Action Tools: Generous Space, Theme Toggle, Quote Button -->
+      <!-- Action Tools: Generous Space, Theme Toggle, Accent Palette, Quote Button -->
       <div class="header-actions">
         <!-- Sleek Compact Theme Switcher (Icon Only) -->
         <button id="themeToggleBtn" class="theme-toggle-switch" aria-label="Toggle Light and Dark Mode" title="Toggle Light and Dark Mode">
           <span class="switch-ball"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="display:block; margin:auto;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
         </button>
+
+        <!-- Interactive Accent Palette Picker -->
+        <div class="palette-picker-wrap">
+          <button id="palettePickerBtn" class="palette-picker-btn" aria-label="Choose Accent Palette" title="Choose Accent Palette" aria-expanded="false">
+            <span class="palette-active-dot" id="headerPaletteDot"></span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10c1.38 0 2.5-1.12 2.5-2.5 0-.61-.23-1.21-.64-1.67-.42-.45-.66-1.04-.66-1.68 0-1.38 1.12-2.5 2.5-2.5h2.95c3.04 0 5.35-2.48 5.35-5.52C24 6.07 18.67 2 12 2z"></path><circle cx="6.5" cy="11.5" r="1.5" fill="currentColor"></circle><circle cx="9.5" cy="7.5" r="1.5" fill="currentColor"></circle><circle cx="14.5" cy="7.5" r="1.5" fill="currentColor"></circle><circle cx="17.5" cy="11.5" r="1.5" fill="currentColor"></circle></svg>
+          </button>
+          
+          <div class="palette-dropdown" id="paletteDropdown" role="menu" aria-label="Accent Palette Options">
+            <div class="palette-header">Accent Palette</div>
+            <div class="palette-options">
+              <button class="palette-option" data-accent="amber" role="menuitem">
+                <span class="palette-dot" style="background:#f59e0b;"></span>
+                <span class="palette-label">Cosmic Amber</span>
+              </button>
+              <button class="palette-option" data-accent="violet" role="menuitem">
+                <span class="palette-dot" style="background:#8b5cf6;"></span>
+                <span class="palette-label">Quantum Violet</span>
+              </button>
+              <button class="palette-option" data-accent="cyan" role="menuitem">
+                <span class="palette-dot" style="background:#06b6d4;"></span>
+                <span class="palette-label">Cyber Cyan</span>
+              </button>
+              <button class="palette-option active" data-accent="emerald" role="menuitem">
+                <span class="palette-dot" style="background:#10b981;"></span>
+                <span class="palette-label">Bio Emerald</span>
+              </button>
+              <button class="palette-option" data-accent="blue" role="menuitem">
+                <span class="palette-dot" style="background:#1273cf;"></span>
+                <span class="palette-label">Giga Blue</span>
+              </button>
+            </div>
+          </div>
+        </div>
 
         <!-- Primary Action Button -->
         <a href="#contact" class="btn btn-primary header-cta">
@@ -193,12 +227,21 @@
       </nav>
     </div>
     <div style="border-top:1px solid var(--border-subtle); padding-top:18px;">
-      <!-- Mobile Theme Toggle (Icon Only) -->
-      <div style="display:flex; align-items:center; gap:12px; margin-bottom:14px;">
-        <button id="drawerThemeToggleBtn" class="theme-toggle-switch" aria-label="Toggle Theme" title="Toggle Light and Dark Mode">
-          <span class="switch-ball"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="display:block; margin:auto;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
-        </button>
-        <span style="font-size:0.85rem; color:var(--text-muted); font-weight:700;">Theme Appearance</span>
+      <!-- Mobile Theme & Accent Controls -->
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; gap:8px;">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <button id="drawerThemeToggleBtn" class="theme-toggle-switch" aria-label="Toggle Theme" title="Toggle Light and Dark Mode">
+            <span class="switch-ball"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="display:block; margin:auto;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
+          </button>
+          <span style="font-size:0.85rem; color:var(--text-muted); font-weight:700;">Theme</span>
+        </div>
+        <div style="display:flex; gap:6px;" id="drawerPaletteQuickDots" aria-label="Select Accent Color">
+          <button class="palette-quick-dot" data-accent="amber" style="background:#f59e0b;" title="Cosmic Amber"></button>
+          <button class="palette-quick-dot" data-accent="violet" style="background:#8b5cf6;" title="Quantum Violet"></button>
+          <button class="palette-quick-dot" data-accent="cyan" style="background:#06b6d4;" title="Cyber Cyan"></button>
+          <button class="palette-quick-dot active" data-accent="emerald" style="background:#10b981;" title="Bio Emerald"></button>
+          <button class="palette-quick-dot" data-accent="blue" style="background:#1273cf;" title="Giga Blue"></button>
+        </div>
       </div>
       <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:4px;">Direct Hotline:</p>
       <p style="font-size:1.05rem; font-weight:800; color:var(--text-heading); margin-bottom:12px;">+880 1860-422185</p>

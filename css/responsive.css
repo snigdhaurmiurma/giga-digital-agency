@@ -137,4 +137,12 @@
   .hero-float-chip {
     display: none;
   }
+  .palette-picker-btn {
+    padding: 0 8px;
+    height: 38px;
+  }
+  .palette-dropdown {
+    right: -20px;
+    min-width: 195px;
+  }
 }
