@@ -1,0 +1,5 @@
+# Deny direct browser access to database files
+<FilesMatch "\.(sqlite|json|db)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>

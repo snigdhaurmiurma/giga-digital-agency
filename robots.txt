@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /database/
+Disallow: /admin.html
+Disallow: /admin.php
 
 Sitemap: https://www.gigadigitalagency.com/sitemap.xml

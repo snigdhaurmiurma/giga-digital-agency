@@ -63,8 +63,8 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
         <!-- Services with Rich 3-Category Mega Dropdown -->
         <div class="nav-menu-item">
           <a href="<?php echo $asset_prefix; ?>index.php#services" class="nav-menu-link" style="white-space:nowrap;">
-            Services
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="12" height="12"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            <span>Services</span>
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </a>
           <div class="nav-dropdown">
             
@@ -159,10 +159,9 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
 
       <!-- Action Tools: Generous Space, Theme Toggle, Quote Button -->
       <div class="header-actions">
-        <!-- Prominent Dual Theme Switcher (Dark & Light) -->
+        <!-- Sleek Compact Theme Switcher (Icon Only) -->
         <button id="themeToggleBtn" class="theme-toggle-switch" aria-label="Toggle Light and Dark Mode" title="Toggle Light and Dark Mode">
           <span class="switch-ball">🌙</span>
-          <span class="switch-label">Dark Mode</span>
         </button>
 
         <!-- Primary Action Button -->
@@ -203,12 +202,13 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
         <a href="<?php echo $asset_prefix; ?>index.php#contact">Contact & Quotation</a>
       </nav>
     </div>
-    <div style="border-top:1px solid var(--border-subtle); padding-top:18px;">
+    <div style="border-top:1px solid var(--border-subtle); padding-top:18px; display:flex; gap:12px; align-items:center;">
       <!-- Mobile Theme Toggle -->
-      <button id="drawerThemeToggleBtn" class="theme-toggle-switch" style="width:100%; margin-bottom:12px; justify-content:center;">
+      <button id="drawerThemeToggleBtn" class="theme-toggle-switch" aria-label="Toggle Theme" title="Toggle Light and Dark Mode">
         <span class="switch-ball">🌙</span>
-        <span class="switch-label">Dark Mode</span>
       </button>
+      <span style="font-size:0.85rem; color:var(--text-muted); font-weight:700;">Theme Appearance</span>
+    </div>
       <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:4px;">Direct Hotline:</p>
       <p style="font-size:1.05rem; font-weight:800; color:var(--text-heading); margin-bottom:12px;">+880 1860-422185</p>
       <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%; margin-bottom:10px;">

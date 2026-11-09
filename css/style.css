@@ -277,15 +277,20 @@ ul, ol {
 }
 
 .btn-whatsapp {
-  background: #22b455;
+  background: #22c55e !important;
   color: #ffffff !important;
   font-weight: 800;
-  box-shadow: 0 4px 14px rgba(34, 180, 85, 0.35);
+  border: none !important;
+  box-shadow: none !important; /* Back gradient / shadow removed */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 .btn-whatsapp:hover {
-  background: #1da04b;
+  background: #16a34a !important;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(34, 180, 85, 0.45);
+  box-shadow: none !important;
 }
 
 /* 5. CLEAN DIRECT HEADER (NO Topbar Hotlines clutter) */
@@ -370,6 +375,18 @@ ul, ol {
 .nav-menu-link:hover::after, .nav-menu-link.active::after {
   opacity: 1;
   transform: scaleX(1);
+}
+.nav-menu-link .dropdown-chevron {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  stroke: var(--text-main);
+  transition: transform 0.25s ease, stroke 0.25s ease;
+}
+.nav-menu-item:hover .nav-menu-link .dropdown-chevron,
+.nav-menu-link:hover .dropdown-chevron {
+  transform: rotate(180deg);
+  stroke: var(--accent-cyan);
 }
 
 /* Services Mega Dropdown Menu (3 Categories with Work Explanations) */
@@ -457,51 +474,47 @@ ul, ol {
   margin-left: 20px;
 }
 
-/* 5B. PROMINENT DUAL THEME TOGGLE SWITCH */
+/* 5B. SLEEK COMPACT ICON-ONLY THEME TOGGLE (NO Text Instruction) */
 .theme-toggle-switch {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 5px 14px 5px 6px;
+  justify-content: center;
+  width: 42px;
   height: 42px;
-  border-radius: var(--radius-full);
+  padding: 0;
+  border-radius: 50%;
   background: var(--bg-surface-elevated);
   border: 1.5px solid var(--border-glow);
   color: var(--text-heading);
-  font-size: 0.88rem;
-  font-weight: 800;
   cursor: pointer;
   transition: all var(--transition);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: none; /* No fuzzy back glow */
   user-select: none;
-  white-space: nowrap;
 }
 .theme-toggle-switch:hover {
   transform: translateY(-2px);
   border-color: var(--accent-primary);
-  box-shadow: 0 4px 18px rgba(18, 115, 207, 0.4);
+  background: var(--bg-surface-hover);
 }
 .switch-ball {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #1273cf 0%, #0d5ea8 100%);
-  color: #ffffff;
-  font-size: 1rem;
-  transition: all var(--transition);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  font-size: 1.15rem;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+.theme-toggle-switch:hover .switch-ball {
+  transform: scale(1.12) rotate(15deg);
 }
 .theme-toggle-switch.is-light .switch-ball {
-  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .switch-label {
-  font-size: 0.86rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
+  display: none !important; /* Instruction removed per user directive */
 }
 
 /* Mobile Toggle & Drawer */
@@ -646,7 +659,7 @@ ul, ol {
   margin-bottom: 16px;
 }
 .btn-whatsapp-pill {
-  background: #22c55e;
+  background: #22c55e !important;
   color: #ffffff !important;
   font-weight: 800;
   font-size: 0.96rem;
@@ -655,13 +668,14 @@ ul, ol {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.35);
+  border: none !important;
+  box-shadow: none !important; /* Back gradient / shadow removed */
   transition: all var(--transition);
 }
 .btn-whatsapp-pill:hover {
-  background: #16a34a;
+  background: #16a34a !important;
   transform: translateY(-2px);
-  box-shadow: 0 8px 26px rgba(34, 197, 94, 0.45);
+  box-shadow: none !important;
 }
 
 .btn-dark-pill {
@@ -1098,9 +1112,11 @@ ul, ol {
   color: #0f172a;
 }
 .pill-whatsapp {
-  background: #22c55e;
-  color: #ffffff;
+  background: #22c55e !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
 }
+.hero-chip {
   background: var(--bg-glass);
   backdrop-filter: blur(14px);
   border: 1px solid var(--border-glow);

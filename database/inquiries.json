@@ -1,0 +1,18 @@
+[
+    {
+        "type": "test",
+        "name": "Test User",
+        "email": "test@example.com",
+        "phone": "01860422185",
+        "company": "",
+        "service": "Web Design",
+        "budget": "",
+        "message": "Hello Giga Digital Agency test lead",
+        "page_url": "",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Unknown",
+        "status": "New",
+        "created_at": "2026-11-09 17:08:32",
+        "id": 1
+    }
+]
