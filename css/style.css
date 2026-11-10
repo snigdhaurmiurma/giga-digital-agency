@@ -6,9 +6,11 @@
 
 /* 1. CSS Custom Properties / Color Tokens */
 :root {
-  /* Signature Deep Navy Palette (Pure Solid Colors - NO Gradients) */
+  /* Signature Atmosphere Palette (Dynamic Themed Solid Colors - NO Gradients) */
   --bg-base: #0a1424;
-  --bg-mesh: #0a1424;
+  --bg-hero: #081424;
+  --bg-section-alt: #09152a;
+  --bg-mesh: var(--bg-base);
   --bg-surface: #0f1c32;
   --bg-surface-elevated: #15243d;
   --bg-surface-hover: #1c3052;
@@ -16,6 +18,7 @@
   --bg-card-hover: #15243d;
   --bg-glass: rgba(10, 20, 36, 0.95);
   --bg-dropdown: #0c182c;
+  --bg-footer: #050c18;
   
   --border-subtle: rgba(255, 255, 255, 0.08);
   --border-medium: rgba(255, 255, 255, 0.14);
@@ -63,6 +66,8 @@
 /* Complete Light Theme Definition */
 [data-theme="light"] {
   --bg-base: #f8fafc;
+  --bg-hero: #f8fafc;
+  --bg-section-alt: #f1f5f9;
   --bg-mesh: #f8fafc;
   --bg-surface: #ffffff;
   --bg-surface-elevated: #f1f5f9;
@@ -71,6 +76,7 @@
   --bg-card-hover: #f8fafc;
   --bg-glass: rgba(255, 255, 255, 0.95);
   --bg-dropdown: #ffffff;
+  --bg-footer: #0f172a;
   
   --border-subtle: rgba(15, 23, 42, 0.08);
   --border-medium: rgba(15, 23, 42, 0.16);
@@ -102,6 +108,18 @@
 
 /* Dynamic Accent Customization (Official Giga Logo 5-Step Whole-Page Spectrum) */
 [data-accent="emerald"] {
+  --bg-base: #06150e;
+  --bg-hero: #071c12;
+  --bg-section-alt: #082115;
+  --bg-surface: #0b291a;
+  --bg-surface-elevated: #0f3522;
+  --bg-surface-hover: #14432b;
+  --bg-card: #0b291a;
+  --bg-card-hover: #0f3522;
+  --bg-glass: rgba(6, 21, 14, 0.95);
+  --bg-dropdown: #082115;
+  --bg-footer: #030d08;
+
   --accent-primary: #3eb649;
   --accent-primary-hover: #2f9a39;
   --accent-green: #3eb649;
@@ -113,6 +131,18 @@
   --shadow-glow: 0 0 35px rgba(62, 182, 73, 0.32);
 }
 [data-accent="blue"] {
+  --bg-base: #071324;
+  --bg-hero: #08162a;
+  --bg-section-alt: #09182d;
+  --bg-surface: #0d1e38;
+  --bg-surface-elevated: #122747;
+  --bg-surface-hover: #18335c;
+  --bg-card: #0d1e38;
+  --bg-card-hover: #122747;
+  --bg-glass: rgba(7, 19, 36, 0.95);
+  --bg-dropdown: #09182d;
+  --bg-footer: #040a15;
+
   --accent-primary: #1d4ed8;
   --accent-primary-hover: #1e40af;
   --accent-green: #3b82f6;
@@ -124,6 +154,18 @@
   --shadow-glow: 0 0 35px rgba(29, 78, 216, 0.32);
 }
 [data-accent="violet"] {
+  --bg-base: #100a20;
+  --bg-hero: #140d27;
+  --bg-section-alt: #170f2d;
+  --bg-surface: #1d1338;
+  --bg-surface-elevated: #26194a;
+  --bg-surface-hover: #31215e;
+  --bg-card: #1d1338;
+  --bg-card-hover: #26194a;
+  --bg-glass: rgba(16, 10, 32, 0.95);
+  --bg-dropdown: #170f2d;
+  --bg-footer: #090514;
+
   --accent-primary: #7c3aed;
   --accent-primary-hover: #6d28d9;
   --accent-green: #a855f7;
@@ -136,6 +178,18 @@
 }
 [data-accent="cyan"],
 [data-accent="magenta"] {
+  --bg-base: #180812;
+  --bg-hero: #1d0a16;
+  --bg-section-alt: #220c1a;
+  --bg-surface: #2b0f21;
+  --bg-surface-elevated: #37142b;
+  --bg-surface-hover: #461a37;
+  --bg-card: #2b0f21;
+  --bg-card-hover: #37142b;
+  --bg-glass: rgba(24, 8, 18, 0.95);
+  --bg-dropdown: #220c1a;
+  --bg-footer: #0f030b;
+
   --accent-primary: #e11d48;
   --accent-primary-hover: #be123c;
   --accent-green: #f43f5e;
@@ -147,6 +201,18 @@
   --shadow-glow: 0 0 35px rgba(225, 29, 72, 0.32);
 }
 [data-accent="amber"] {
+  --bg-base: #161005;
+  --bg-hero: #1b1407;
+  --bg-section-alt: #201808;
+  --bg-surface: #291f0b;
+  --bg-surface-elevated: #36290e;
+  --bg-surface-hover: #453412;
+  --bg-card: #291f0b;
+  --bg-card-hover: #36290e;
+  --bg-glass: rgba(22, 16, 5, 0.95);
+  --bg-dropdown: #201808;
+  --bg-footer: #0c0802;
+
   --accent-primary: #f59e0b;
   --accent-primary-hover: #d97706;
   --accent-green: #fbbf24;
@@ -160,27 +226,67 @@
 
 /* Light Theme Accent Overrides for High Contrast */
 [data-theme="light"][data-accent="emerald"] {
+  --bg-base: #f0faf3;
+  --bg-hero: #e6f6ec;
+  --bg-section-alt: #edf8f1;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --bg-glass: rgba(240, 250, 243, 0.95);
+  --bg-dropdown: #ffffff;
+  --bg-footer: #0d2114;
   --badge-text: #15803d;
   --badge-bg: rgba(62, 182, 73, 0.12);
   --badge-border: rgba(62, 182, 73, 0.28);
 }
 [data-theme="light"][data-accent="blue"] {
+  --bg-base: #f1f6fb;
+  --bg-hero: #e7f0fa;
+  --bg-section-alt: #edf4fb;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --bg-glass: rgba(241, 246, 251, 0.95);
+  --bg-dropdown: #ffffff;
+  --bg-footer: #0a1626;
   --badge-text: #1d4ed8;
   --badge-bg: rgba(29, 78, 216, 0.10);
   --badge-border: rgba(29, 78, 216, 0.25);
 }
 [data-theme="light"][data-accent="violet"] {
+  --bg-base: #f5f2fa;
+  --bg-hero: #ece6f6;
+  --bg-section-alt: #f2ecf8;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --bg-glass: rgba(245, 242, 250, 0.95);
+  --bg-dropdown: #ffffff;
+  --bg-footer: #160d26;
   --badge-text: #6d28d9;
   --badge-bg: rgba(124, 58, 237, 0.10);
   --badge-border: rgba(124, 58, 237, 0.25);
 }
 [data-theme="light"][data-accent="cyan"],
 [data-theme="light"][data-accent="magenta"] {
+  --bg-base: #faf1f4;
+  --bg-hero: #f6e6ec;
+  --bg-section-alt: #f8ecf1;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --bg-glass: rgba(250, 241, 244, 0.95);
+  --bg-dropdown: #ffffff;
+  --bg-footer: #210915;
   --badge-text: #be123c;
   --badge-bg: rgba(225, 29, 72, 0.10);
   --badge-border: rgba(225, 29, 72, 0.25);
 }
 [data-theme="light"][data-accent="amber"] {
+  --bg-base: #faf6f0;
+  --bg-hero: #f6ede0;
+  --bg-section-alt: #f8f2e7;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --bg-glass: rgba(250, 246, 240, 0.95);
+  --bg-dropdown: #ffffff;
+  --bg-footer: #1e1405;
   --badge-text: #b45309;
   --badge-bg: rgba(245, 158, 11, 0.12);
   --badge-border: rgba(245, 158, 11, 0.28);
@@ -849,8 +955,9 @@ ul, ol {
   padding: 85px 0 95px;
   position: relative;
   overflow: hidden;
-  background-color: #081424;
+  background-color: var(--bg-hero);
   border-bottom: 1px solid var(--border-subtle);
+  transition: background-color 0.35s ease;
 }
 .hero-banner::before {
   content: '';
@@ -2136,12 +2243,13 @@ ul, ol {
   color: var(--accent-green);
 }
 
-/* 17. ZAMAN-IT STYLE 4-PILLAR GROWTH IMPACT BANNER (Above Footer) */
+/* 17. 4-PILLAR GROWTH IMPACT BANNER (Above Footer) */
 .impact-banner-section {
   padding: 65px 0;
-  background: #091526;
+  background: var(--bg-surface);
   border-top: 1px solid var(--border-medium);
   border-bottom: 1px solid var(--border-medium);
+  transition: background 0.35s ease;
 }
 .impact-pillars-grid {
   display: grid;
@@ -2234,10 +2342,11 @@ textarea.form-input {
 
 /* 19. CORPORATE FOOTER */
 .corporate-footer {
-  background: #060c17;
+  background: var(--bg-footer);
   color: #8fa2b8;
   padding: 65px 0 28px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background 0.35s ease;
 }
 .footer-cols-grid {
   display: grid;
@@ -2380,25 +2489,25 @@ textarea.form-input {
 }
 
 /* ==========================================================================
-   22. PER-SECTION COLOR IDENTITIES (Dark & Light Variations)
-   Each major section has a distinct, vibrant, customized color environment
+   22. PER-SECTION COLOR IDENTITIES & DYNAMIC ATMOSPHERE
+   Connected directly to the 5-step Giga Logo Palette (--bg-base, --bg-hero, --bg-surface, --bg-section-alt)
    ========================================================================== */
 
-/* 1. HERO BANNER — Zaman IT Deep Solid Navy (Dark) / Solid Off-White (Light) */
+/* 1. HERO BANNER — Dynamic Logo Palette Hero Atmosphere */
 .hero-banner {
   padding: 85px 0 95px;
   position: relative;
   overflow: hidden;
-  background-color: #081424;
+  background-color: var(--bg-hero);
   border-bottom: 1px solid var(--border-subtle);
-  transition: background 0.3s ease;
+  transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 [data-theme="light"] .hero-banner {
-  background-color: #f8fafc;
-  border-bottom-color: rgba(15, 23, 42, 0.08);
+  background-color: var(--bg-hero);
+  border-bottom-color: var(--border-subtle);
 }
 
-/* Zaman IT Quick Stats Trust Strip */
+/* Quick Stats Trust Strip */
 .hero-quick-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -2406,13 +2515,14 @@ textarea.form-input {
   margin-top: 36px;
   padding: 18px 24px;
   border-radius: var(--radius-md);
-  background: #0c1b30;
+  background: var(--bg-surface);
   border: 1px solid var(--border-medium);
   box-shadow: var(--shadow-md);
+  transition: background 0.35s ease, border-color 0.35s ease;
 }
 [data-theme="light"] .hero-quick-strip {
-  background: #ffffff;
-  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 .quick-metric-item {
@@ -2430,7 +2540,7 @@ textarea.form-input {
   margin-bottom: 4px;
 }
 [data-theme="light"] .metric-num {
-  color: #059669;
+  color: var(--accent-green);
 }
 .metric-label {
   font-size: 0.78rem;
@@ -2444,64 +2554,65 @@ textarea.form-input {
 .brands-section {
   padding: 42px 0 48px;
   border-bottom: 1px solid var(--border-subtle);
-  background: #06101c;
-  transition: background 0.3s ease;
+  background: var(--bg-base);
+  transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 [data-theme="light"] .brands-section {
-  background: #ffffff;
-  border-bottom-color: rgba(15, 23, 42, 0.08);
+  background: var(--bg-base);
+  border-bottom-color: var(--border-subtle);
 }
 
-/* 3. ABOUT US — Solid Deep Navy */
+/* 3. ABOUT US */
 #about {
-  background: #09152a;
+  background: var(--bg-section-alt);
   border-bottom: 1px solid var(--border-subtle);
-  transition: background 0.3s ease;
+  transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 [data-theme="light"] #about {
-  background: #f4f8fe;
-  border-bottom-color: rgba(15, 23, 42, 0.08);
+  background: var(--bg-section-alt);
+  border-bottom-color: var(--border-subtle);
 }
 [data-theme="light"] #about .about-tab-btn {
-  background: #ffffff;
-  border-color: rgba(15, 23, 42, 0.12);
-  color: #334155;
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
+  color: var(--text-main);
 }
 [data-theme="light"] #about .about-tab-btn.active {
   background: var(--accent-primary);
   color: #ffffff;
 }
 
-/* 4. SERVICES — Solid High-End Dark Navy & Slate */
+/* 4. SERVICES */
 #services {
-  background: #081827;
+  background: var(--bg-base);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
   position: relative;
-  transition: background 0.3s ease;
+  transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 [data-theme="light"] #services {
-  background: #ffffff;
-  border-top-color: rgba(15, 23, 42, 0.08);
-  border-bottom-color: rgba(15, 23, 42, 0.08);
+  background: var(--bg-base);
+  border-top-color: var(--border-subtle);
+  border-bottom-color: var(--border-subtle);
 }
 #services .service-box {
-  background: #0c1f33;
+  background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   box-shadow: none;
+  transition: all 0.35s ease;
 }
 #services .service-box:hover {
   border-color: var(--accent-primary);
-  box-shadow: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 [data-theme="light"] #services .service-box {
-  background: #f8fafc;
-  border: 1px solid rgba(15, 23, 42, 0.1);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
   box-shadow: none;
 }
 [data-theme="light"] #services .service-box:hover {
   border-color: var(--accent-primary);
-  box-shadow: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 #services .service-cat-pill {
   background: var(--badge-bg);
@@ -2515,165 +2626,200 @@ textarea.form-input {
   border-color: var(--badge-border);
 }
 [data-theme="light"] #services .service-cat-tab {
-  background: #ffffff;
-  border-color: rgba(15, 23, 42, 0.15);
-  color: #334155;
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
+  color: var(--text-main);
 }
 [data-theme="light"] #services .service-cat-tab.active {
   background: var(--accent-primary);
   color: #ffffff;
 }
 
-/* 5. PROCESS — Solid Rich Navy */
+/* 5. PROCESS */
 #process {
-  background: #09152a;
+  background: var(--bg-section-alt);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
-  transition: background 0.3s ease;
+  transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 [data-theme="light"] #process {
-  background: #f8fafc;
-  border-top-color: rgba(15, 23, 42, 0.08);
-  border-bottom-color: rgba(15, 23, 42, 0.08);
+  background: var(--bg-section-alt);
+  border-top-color: var(--border-subtle);
+  border-bottom-color: var(--border-subtle);
 }
 #process .process-step-card {
-  background: #0c1b32;
+  background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   box-shadow: none;
+  transition: all 0.35s ease;
 }
 #process .process-step-card:hover {
   border-color: var(--accent-primary);
-  box-shadow: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 [data-theme="light"] #process .process-step-card {
-  background: #ffffff;
-  border: 1px solid rgba(15, 23, 42, 0.1);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
   box-shadow: none;
 }
 [data-theme="light"] #process .process-step-card:hover {
   border-color: var(--accent-primary);
-  box-shadow: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
-/* 6. CASE STUDY — Solid Corporate Blue */
+/* 6. CASE STUDY */
 #case-study {
-  background: #081424;
+  background: var(--bg-base);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
-  transition: background 0.3s ease;
+  transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 [data-theme="light"] #case-study {
-  background: #ffffff;
-  border-top-color: rgba(15, 23, 42, 0.08);
-  border-bottom-color: rgba(15, 23, 42, 0.08);
+  background: var(--bg-base);
+  border-top-color: var(--border-subtle);
+  border-bottom-color: var(--border-subtle);
+}
+#case-study .case-study-hero-card {
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
+  transition: all 0.35s ease;
 }
 [data-theme="light"] #case-study .case-study-hero-card {
-  background: #f8fafc;
-  border-color: rgba(15, 23, 42, 0.1);
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
   box-shadow: none;
 }
 
-/* 7. PRICING — Solid Deep Slate */
+/* 7. PRICING */
 #pricing {
-  background: #09152a;
+  background: var(--bg-section-alt);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
-  transition: background 0.3s ease;
+  transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 [data-theme="light"] #pricing {
-  background: #f8fafc;
-  border-top-color: rgba(15, 23, 42, 0.08);
-  border-bottom-color: rgba(15, 23, 42, 0.08);
+  background: var(--bg-section-alt);
+  border-top-color: var(--border-subtle);
+  border-bottom-color: var(--border-subtle);
+}
+#pricing .package-card,
+#pricing .pricing-customizer-card {
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
+  transition: all 0.35s ease;
 }
 [data-theme="light"] #pricing .package-card,
 [data-theme="light"] #pricing .pricing-customizer-card {
-  background: #ffffff;
-  border-color: rgba(15, 23, 42, 0.1);
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
   box-shadow: none;
 }
 
-/* 8. TEAM — Solid Navy */
+/* 8. TEAM */
 #team {
-  background: #081424;
+  background: var(--bg-base);
   border-bottom: 1px solid var(--border-subtle);
-  transition: background 0.3s ease;
+  transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 [data-theme="light"] #team {
-  background: #ffffff;
-  border-bottom-color: rgba(15, 23, 42, 0.08);
+  background: var(--bg-base);
+  border-bottom-color: var(--border-subtle);
+}
+#team .team-card {
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
+  transition: all 0.35s ease;
 }
 [data-theme="light"] #team .team-card {
-  background: #f8fafc;
-  border-color: rgba(15, 23, 42, 0.1);
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
   box-shadow: none;
 }
 
-/* 9. REVIEWS — Solid Rich Navy */
+/* 9. REVIEWS */
 #reviews {
-  background: #09152a;
+  background: var(--bg-section-alt);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
-  transition: background 0.3s ease;
+  transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 [data-theme="light"] #reviews {
-  background: #f8fafc;
-  border-top-color: rgba(15, 23, 42, 0.08);
-  border-bottom-color: rgba(15, 23, 42, 0.08);
+  background: var(--bg-section-alt);
+  border-top-color: var(--border-subtle);
+  border-bottom-color: var(--border-subtle);
+}
+#reviews .testimonial-slide {
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
+  transition: all 0.35s ease;
 }
 [data-theme="light"] #reviews .testimonial-slide {
-  background: #ffffff;
-  border-color: rgba(15, 23, 42, 0.1);
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
   box-shadow: none;
 }
 
-/* 10. BLOG — Solid Tech Navy */
+/* 10. BLOG */
 #blog {
-  background: #081424;
+  background: var(--bg-base);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
-  transition: background 0.3s ease;
+  transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 [data-theme="light"] #blog {
-  background: #ffffff;
-  border-top-color: rgba(15, 23, 42, 0.08);
-  border-bottom-color: rgba(15, 23, 42, 0.08);
+  background: var(--bg-base);
+  border-top-color: var(--border-subtle);
+  border-bottom-color: var(--border-subtle);
+}
+#blog .blog-card {
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
+  transition: all 0.35s ease;
 }
 [data-theme="light"] #blog .blog-card {
-  background: #f8fafc;
-  border-color: rgba(15, 23, 42, 0.1);
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
   box-shadow: none;
 }
 
-/* 11. CONTACT — Solid Dark Slate */
+/* 11. CONTACT */
 #contact {
-  background: #09152a;
+  background: var(--bg-section-alt);
   border-top: 1px solid var(--border-subtle);
-  transition: background 0.3s ease;
+  transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 [data-theme="light"] #contact {
-  background: #f8fafc;
-  border-top-color: rgba(15, 23, 42, 0.08);
+  background: var(--bg-section-alt);
+  border-top-color: var(--border-subtle);
 }
-[data-theme="light"] #contact .contact-form-card {
-  background: #ffffff;
-  border-color: rgba(15, 23, 42, 0.12);
+#contact .contact-form-card,
+#contact .contact-card-modern {
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
+  transition: all 0.35s ease;
+}
+[data-theme="light"] #contact .contact-form-card,
+[data-theme="light"] #contact .contact-card-modern {
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
   box-shadow: none;
 }
 [data-theme="light"] #contact .form-input {
-  background: #f8fafc;
-  color: #0f172a;
-  border-color: rgba(15, 23, 42, 0.18);
+  background: var(--bg-section-alt);
+  color: var(--text-heading);
+  border-color: var(--border-medium);
 }
 
 /* 12. INSPIRATIONAL INNOVATION CREED BANNER */
 .inspirational-footer-banner {
   padding: 85px 0;
-  background-color: #081424;
+  background-color: var(--bg-hero);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
   position: relative;
   overflow: hidden;
   text-align: center;
+  transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 .inspirational-footer-banner::before {
   content: '';
@@ -2693,9 +2839,9 @@ textarea.form-input {
   z-index: 1;
 }
 [data-theme="light"] .inspirational-footer-banner {
-  background-color: #ffffff;
-  border-top-color: rgba(15, 23, 42, 0.08);
-  border-bottom-color: rgba(15, 23, 42, 0.08);
+  background-color: var(--bg-hero);
+  border-top-color: var(--border-subtle);
+  border-bottom-color: var(--border-subtle);
 }
 [data-theme="light"] .inspirational-footer-banner::before {
   opacity: 0.06;
@@ -2718,20 +2864,26 @@ textarea.form-input {
   line-height: 1.7;
 }
 
-/* 13. ZAMAN-IT 4-PILLAR BANNER */
+/* 13. 4-PILLAR BANNER */
 .impact-banner-section {
   padding: 65px 0;
-  background: #091526;
+  background: var(--bg-surface);
   border-top: 1px solid var(--border-medium);
   border-bottom: 1px solid var(--border-medium);
+  transition: background-color 0.35s ease, border-color 0.35s ease;
+}
+.impact-pillar-card {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s ease;
 }
 [data-theme="light"] .impact-banner-section {
-  background: #f8fafc;
-  border-top-color: rgba(15, 23, 42, 0.1);
-  border-bottom-color: rgba(15, 23, 42, 0.1);
+  background: var(--bg-surface);
+  border-top-color: var(--border-subtle);
+  border-bottom-color: var(--border-subtle);
 }
 [data-theme="light"] .impact-pillar-card {
-  background: #ffffff;
-  border-color: rgba(15, 23, 42, 0.1);
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
   box-shadow: none;
 }
