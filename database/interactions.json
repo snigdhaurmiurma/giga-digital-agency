@@ -1,11 +1,47 @@
 [
-    {
-        "interaction_type": "call",
-        "target_value": "+8801860422185",
-        "page_url": "http:\/\/localhost\/index.php",
-        "ip_address": "127.0.0.1",
-        "user_agent": "Unknown",
-        "created_at": "2026-11-09 17:08:32",
-        "id": 1
-    }
+  {
+    "id": 1,
+    "interaction_type": "whatsapp_click",
+    "target_value": "+880 1860-422185 (Hero 24/7)",
+    "page_url": "https://gigadigitalagency.com/#home",
+    "ip_address": "103.205.71.14",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/124.0.0.0",
+    "created_at": "2026-11-08 14:20:05"
+  },
+  {
+    "id": 2,
+    "interaction_type": "call_click",
+    "target_value": "+880 1860-422185 (Header)",
+    "page_url": "https://gigadigitalagency.com/",
+    "ip_address": "118.179.88.204",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15",
+    "created_at": "2026-11-08 17:40:12"
+  },
+  {
+    "id": 3,
+    "interaction_type": "package_calculate",
+    "target_value": "E-Commerce Growth Package (৳45,000)",
+    "page_url": "https://gigadigitalagency.com/#pricing",
+    "ip_address": "103.231.161.42",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/123.0.0.0",
+    "created_at": "2026-11-09 10:12:00"
+  },
+  {
+    "id": 4,
+    "interaction_type": "whatsapp_click",
+    "target_value": "+880 1860-422185 (Floating Badge)",
+    "page_url": "https://gigadigitalagency.com/#services",
+    "ip_address": "180.211.214.6",
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15",
+    "created_at": "2026-11-09 13:28:15"
+  },
+  {
+    "id": 5,
+    "interaction_type": "whatsapp_click",
+    "target_value": "+880 1860-422185 (Contact Form)",
+    "page_url": "https://gigadigitalagency.com/#contact",
+    "ip_address": "103.108.144.18",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Edge/124.0.0.0",
+    "created_at": "2026-11-10 11:02:40"
+  }
 ]

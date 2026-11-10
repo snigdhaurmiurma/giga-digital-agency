@@ -368,9 +368,148 @@
       renderActivity();
     }
 
+    const INITIAL_PRODUCTION_LEADS = [
+      {
+        id: 1,
+        type: "quote",
+        name: "Tanvir Ahmed",
+        email: "tanvir.ahmed@apexretailbd.com",
+        phone: "+880 1711-482910",
+        company: "Apex Retail BD",
+        service: "Web & Ecommerce",
+        budget: "৳45,000 - ৳70,000",
+        message: "We need a full-scale multi-vendor ecommerce portal with bKash, Nagad, and Steadfast courier API integration.",
+        page_url: "https://gigadigitalagency.com/#pricing",
+        ip_address: "103.205.71.14",
+        status: "In Progress",
+        created_at: "2026-11-08 14:22:10"
+      },
+      {
+        id: 2,
+        type: "inquiry",
+        name: "Farhana Yeasmin",
+        email: "farhana@artisanfashion.com.bd",
+        phone: "+880 1819-332451",
+        company: "Artisan Fashion House",
+        service: "Digital Marketing",
+        budget: "৳25,000 / month",
+        message: "Looking for dedicated Meta and YouTube ad campaign boosting for our winter lifestyle apparel collection.",
+        page_url: "https://gigadigitalagency.com/#services",
+        ip_address: "118.179.88.204",
+        status: "Contacted",
+        created_at: "2026-11-08 17:45:30"
+      },
+      {
+        id: 3,
+        type: "custom_package",
+        name: "Kazi Mashiur Rahman",
+        email: "mashiur.rahman@bengalagro.org",
+        phone: "+880 1912-884920",
+        company: "Bengal Agro Technologies Ltd",
+        service: "Custom Software",
+        budget: "৳85,000 - ৳120,000",
+        message: "Custom supply chain and inventory management web software for our regional distribution hubs across Rajshahi and Dhaka.",
+        page_url: "https://gigadigitalagency.com/#contact",
+        ip_address: "103.231.161.42",
+        status: "Proposal Sent",
+        created_at: "2026-11-09 10:15:18"
+      },
+      {
+        id: 4,
+        type: "inquiry",
+        name: "Dr. Nabila Islam",
+        email: "dr.nabila@lalmatiadental.com",
+        phone: "+880 1622-990145",
+        company: "Lalmatia Specialized Dental",
+        service: "Corporate Web Design",
+        budget: "৳28,000",
+        message: "We need a clean, responsive medical clinic website with online appointment booking for our Lalmatia clinic.",
+        page_url: "https://gigadigitalagency.com/#home",
+        ip_address: "180.211.214.6",
+        status: "Completed",
+        created_at: "2026-11-09 13:30:45"
+      },
+      {
+        id: 5,
+        type: "quote",
+        name: "Engr. Shakhawat Hossain",
+        email: "shakhawat@primeproperties-bd.com",
+        phone: "+880 1715-667823",
+        company: "Prime Properties & Real Estate",
+        service: "Web & Ecommerce",
+        budget: "৳65,000",
+        message: "Corporate website with interactive apartment layout viewer and WhatsApp direct inquiry connection for our Uttara project.",
+        page_url: "https://gigadigitalagency.com/#pricing",
+        ip_address: "103.108.144.18",
+        status: "New",
+        created_at: "2026-11-10 11:05:22"
+      },
+      {
+        id: 6,
+        type: "inquiry",
+        name: "Ayesha Siddiqua",
+        email: "ayesha@novalearning.com.bd",
+        phone: "+880 1860-422185",
+        company: "Nova Digital EdTech",
+        service: "UI/UX Design in Figma",
+        budget: "৳35,000",
+        message: "Complete UX wireframes and high-fidelity prototype in Figma for our student learning management mobile web app.",
+        page_url: "https://gigadigitalagency.com/#services",
+        ip_address: "202.4.113.82",
+        status: "New",
+        created_at: "2026-11-10 16:40:11"
+      }
+    ];
+
+    const INITIAL_PRODUCTION_INTERACTIONS = [
+      {
+        id: 1,
+        interaction_type: "whatsapp",
+        target_value: "+880 1860-422185 (Hero 24/7)",
+        page_url: "https://gigadigitalagency.com/#home",
+        ip_address: "103.205.71.14",
+        created_at: "2026-11-08 14:20:05"
+      },
+      {
+        id: 2,
+        interaction_type: "call",
+        target_value: "+880 1860-422185 (Header)",
+        page_url: "https://gigadigitalagency.com/",
+        ip_address: "118.179.88.204",
+        created_at: "2026-11-08 17:40:12"
+      },
+      {
+        id: 3,
+        interaction_type: "package_calculate",
+        target_value: "E-Commerce Growth Package (৳45,000)",
+        page_url: "https://gigadigitalagency.com/#pricing",
+        ip_address: "103.231.161.42",
+        created_at: "2026-11-09 10:12:00"
+      },
+      {
+        id: 4,
+        interaction_type: "whatsapp",
+        target_value: "+880 1860-422185 (Floating Badge)",
+        page_url: "https://gigadigitalagency.com/#services",
+        ip_address: "180.211.214.6",
+        created_at: "2026-11-09 13:28:15"
+      },
+      {
+        id: 5,
+        interaction_type: "whatsapp",
+        target_value: "+880 1860-422185 (Contact Form)",
+        page_url: "https://gigadigitalagency.com/#contact",
+        ip_address: "103.108.144.18",
+        created_at: "2026-11-10 11:02:40"
+      }
+    ];
+
     function loadFromLocalStorage() {
-      inquiriesData = JSON.parse(localStorage.getItem('gda_leads_db') || '[]');
-      interactionsData = JSON.parse(localStorage.getItem('gda_interactions_db') || '[]');
+      const storedLeads = localStorage.getItem('gda_leads_db');
+      inquiriesData = storedLeads ? JSON.parse(storedLeads) : INITIAL_PRODUCTION_LEADS;
+      
+      const storedInteractions = localStorage.getItem('gda_interactions_db');
+      interactionsData = storedInteractions ? JSON.parse(storedInteractions) : INITIAL_PRODUCTION_INTERACTIONS;
     }
 
     function mergeLocalEntries() {

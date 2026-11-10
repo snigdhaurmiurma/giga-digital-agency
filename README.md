@@ -71,7 +71,7 @@ Designed with a high-end international digital creative & growth agency aestheti
 * **Interactive Package Customizer:** Real-time checklist calculator that computes estimated BDT/USD totals and pre-fills the quotation request form.
 
 ### Team Members & Sliding Review Carousel
-* **Executive Team:** Leonard Heizer (CEO), Leslie Alexander (UI/UX), Theresa Webb (Digital Marketing Lead), Dianne Russell (Operations) with photos, bios, and social links.
+* **Executive Team & Leaders:** Engr. Md. Ashikur Rahman (Founder & CEO), Engr. Md. Hasinur Rahman (CTO), Engr. Md. Al Amin (Senior Software Engineer), Jannatul Nayem (Digital Marketing Specialist), Engr. Md. Mehedi Hasan (Senior Graphics Designer), Md. Rezaul Karim (Deputy General Manager), Md. Nazmus Sakib (Digital Marketing Specialist), and Kobir Hossen (App Developer).
 * **Sliding Testimonial Carousel:** Functional slider with left/right navigation arrows, pagination dots, mobile touch swipe, and auto-play every 5 seconds featuring reviews from **M Kamruzzaman Shadhin** (Managing Director) and retail leaders.
 
 ### Topic-Focused Blog & Reading Modal

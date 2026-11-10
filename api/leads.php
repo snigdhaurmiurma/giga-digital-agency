@@ -26,9 +26,10 @@ if ($action === 'list') {
     $totalCalls = 0;
     $totalWhatsApp = 0;
     foreach ($interactions as $item) {
-        if (($item['interaction_type'] ?? '') === 'call') {
+        $type = $item['interaction_type'] ?? '';
+        if (strpos($type, 'call') !== false) {
             $totalCalls++;
-        } elseif (($item['interaction_type'] ?? '') === 'whatsapp') {
+        } elseif (strpos($type, 'whatsapp') !== false) {
             $totalWhatsApp++;
         }
     }
