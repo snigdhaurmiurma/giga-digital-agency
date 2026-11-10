@@ -27,17 +27,24 @@
   --text-dim: #5c728a;
   --text-heading: #ffffff;
   
-  --accent-primary: #1273cf;       /* Tech Royal Blue */
-  --accent-primary-hover: #0d5ea8;
-  --accent-green: #22b455;         /* Zaman IT Growth Green */
-  --accent-green-hover: #1ca04a;
-  --accent-cyan: #0ea5e9;
-  --accent-violet: #8b5cf6;
-  --accent-amber: #f59e0b;
+  /* Giga Official Stepped Logo Palette */
+  --logo-green: #3eb649;        /* Logo Step 1: Growth Green */
+  --logo-blue: #1d4ed8;         /* Logo Step 2: Tech Royal Blue */
+  --logo-violet: #7c3aed;       /* Logo Step 3: Creative Purple */
+  --logo-magenta: #e11d48;      /* Logo Step 4: Digital Magenta */
+  --logo-amber: #f59e0b;        /* Logo Step 5: Solar Amber */
+
+  --accent-primary: #1d4ed8;       /* Giga Logo Royal Blue */
+  --accent-primary-hover: #1e40af;
+  --accent-green: #3eb649;         /* Giga Logo Growth Green */
+  --accent-green-hover: #2f9a39;
+  --accent-cyan: #e11d48;          /* Giga Logo Magenta */
+  --accent-violet: #7c3aed;        /* Giga Logo Purple */
+  --accent-amber: #f59e0b;         /* Giga Logo Amber */
   
-  --badge-bg: rgba(18, 115, 207, 0.14);
+  --badge-bg: rgba(29, 78, 216, 0.14);
   --badge-text: #60a5fa;
-  --badge-border: rgba(18, 115, 207, 0.35);
+  --badge-border: rgba(29, 78, 216, 0.35);
   
   --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
@@ -93,20 +100,21 @@
   --shadow-glow: 0 0 35px rgba(2, 132, 199, 0.15);
 }
 
-/* Dynamic Accent Customization (Cosmic Amber, Quantum Violet, Cyber Cyan, Bio Emerald, Giga Blue) */
+/* Dynamic Accent Customization (Official Giga Logo 5-Step Spectrum) */
 [data-accent="emerald"] {
-  --accent-primary: #10b981;
-  --accent-primary-hover: #059669;
-  --accent-green: #10b981;
-  --accent-green-hover: #059669;
-  --border-glow: rgba(16, 185, 129, 0.45);
+  --accent-primary: #3eb649;
+  --accent-primary-hover: #2f9a39;
+  --accent-green: #3eb649;
+  --accent-green-hover: #2f9a39;
+  --border-glow: rgba(62, 182, 73, 0.45);
 }
-[data-accent="cyan"] {
-  --accent-primary: #06b6d4;
-  --accent-primary-hover: #0891b2;
-  --accent-green: #06b6d4;
-  --accent-green-hover: #0891b2;
-  --border-glow: rgba(6, 182, 212, 0.45);
+[data-accent="cyan"],
+[data-accent="magenta"] {
+  --accent-primary: #e11d48;
+  --accent-primary-hover: #be123c;
+  --accent-green: #e11d48;
+  --accent-green-hover: #be123c;
+  --border-glow: rgba(225, 29, 72, 0.45);
 }
 [data-accent="amber"] {
   --accent-primary: #f59e0b;
@@ -116,18 +124,18 @@
   --border-glow: rgba(245, 158, 11, 0.45);
 }
 [data-accent="violet"] {
-  --accent-primary: #8b5cf6;
-  --accent-primary-hover: #7c3aed;
-  --accent-green: #8b5cf6;
-  --accent-green-hover: #7c3aed;
-  --border-glow: rgba(139, 92, 246, 0.45);
+  --accent-primary: #7c3aed;
+  --accent-primary-hover: #6d28d9;
+  --accent-green: #7c3aed;
+  --accent-green-hover: #6d28d9;
+  --border-glow: rgba(124, 58, 237, 0.45);
 }
 [data-accent="blue"] {
-  --accent-primary: #1273cf;
-  --accent-primary-hover: #0d5ea8;
-  --accent-green: #22b455;
-  --accent-green-hover: #1ca04a;
-  --border-glow: rgba(18, 115, 207, 0.45);
+  --accent-primary: #1d4ed8;
+  --accent-primary-hover: #1e40af;
+  --accent-green: #3eb649;
+  --accent-green-hover: #2f9a39;
+  --border-glow: rgba(29, 78, 216, 0.45);
 }
 
 /* 2. Global Reset & Base Typography */
@@ -336,6 +344,16 @@ ul, ol {
   border-bottom: 1px solid var(--border-subtle);
   z-index: 1000;
   transition: all var(--transition);
+}
+.main-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3eb649 0% 20%, #1d4ed8 20% 40%, #7c3aed 40% 60%, #e11d48 60% 80%, #f59e0b 80% 100%);
+  z-index: 1001;
 }
 .main-header.scrolled {
   box-shadow: var(--shadow-md);
@@ -1209,24 +1227,29 @@ ul, ol {
   height: 32px;
   border-radius: 50%;
   font-size: 0.95rem;
-  background: rgba(34, 197, 94, 0.15);
-  color: #22c55e;
-  border: 1px solid rgba(34, 197, 94, 0.35);
+  background: rgba(29, 78, 216, 0.15);
+  color: #3b82f6;
+  border: 1px solid rgba(29, 78, 216, 0.35);
+}
+.dock-feature-item:nth-child(1) .dock-icon-box {
+  background: rgba(29, 78, 216, 0.15);
+  color: #3b82f6;
+  border-color: rgba(29, 78, 216, 0.35);
 }
 .dock-feature-item:nth-child(2) .dock-icon-box {
-  background: rgba(18, 115, 207, 0.15);
-  color: #1273cf;
-  border-color: rgba(18, 115, 207, 0.35);
+  background: rgba(124, 58, 237, 0.15);
+  color: #a855f7;
+  border-color: rgba(124, 58, 237, 0.35);
 }
 .dock-feature-item:nth-child(3) .dock-icon-box {
-  background: rgba(14, 165, 233, 0.15);
-  color: #0ea5e9;
-  border-color: rgba(14, 165, 233, 0.35);
+  background: rgba(225, 29, 72, 0.15);
+  color: #f43f5e;
+  border-color: rgba(225, 29, 72, 0.35);
 }
 .dock-feature-item:nth-child(4) .dock-icon-box {
-  background: rgba(34, 197, 94, 0.15);
-  color: #22c55e;
-  border-color: rgba(34, 197, 94, 0.35);
+  background: rgba(62, 182, 73, 0.15);
+  color: #3eb649;
+  border-color: rgba(62, 182, 73, 0.35);
 }
 
 /* 6-Metric Stats Ticker Bar (Zaman IT Bottom Bar) */
@@ -1259,10 +1282,16 @@ ul, ol {
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  background: rgba(18, 115, 207, 0.15);
-  color: #38bdf8;
+  background: rgba(29, 78, 216, 0.15);
+  color: #3b82f6;
   font-size: 1.1rem;
 }
+.zaman-stat-card:nth-child(1) .zaman-stat-icon { background: rgba(62, 182, 73, 0.15); color: #3eb649; }
+.zaman-stat-card:nth-child(2) .zaman-stat-icon { background: rgba(29, 78, 216, 0.15); color: #3b82f6; }
+.zaman-stat-card:nth-child(3) .zaman-stat-icon { background: rgba(124, 58, 237, 0.15); color: #a855f7; }
+.zaman-stat-card:nth-child(4) .zaman-stat-icon { background: rgba(225, 29, 72, 0.15); color: #f43f5e; }
+.zaman-stat-card:nth-child(5) .zaman-stat-icon { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+.zaman-stat-card:nth-child(6) .zaman-stat-icon { background: rgba(62, 182, 73, 0.15); color: #3eb649; }
 .zaman-stat-number {
   font-size: 1.35rem;
   font-weight: 900;
@@ -1595,6 +1624,14 @@ ul, ol {
   right: 20px;
   line-height: 1;
 }
+.process-step-card:nth-child(1) .step-num-badge { color: #3eb649; opacity: 0.45; }
+.process-step-card:nth-child(1):hover { border-color: rgba(62, 182, 73, 0.5); }
+.process-step-card:nth-child(2) .step-num-badge { color: #1d4ed8; opacity: 0.45; }
+.process-step-card:nth-child(2):hover { border-color: rgba(29, 78, 216, 0.5); }
+.process-step-card:nth-child(3) .step-num-badge { color: #7c3aed; opacity: 0.45; }
+.process-step-card:nth-child(3):hover { border-color: rgba(124, 58, 237, 0.5); }
+.process-step-card:nth-child(4) .step-num-badge { color: #e11d48; opacity: 0.45; }
+.process-step-card:nth-child(4):hover { border-color: rgba(225, 29, 72, 0.5); }
 .step-icon {
   font-size: 1.8rem;
   margin-bottom: 14px;

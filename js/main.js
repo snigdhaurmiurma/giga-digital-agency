@@ -60,10 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const accentColors = {
     amber: '#f59e0b',
-    violet: '#8b5cf6',
-    cyan: '#06b6d4',
-    emerald: '#10b981',
-    blue: '#1273cf'
+    violet: '#7c3aed',
+    cyan: '#e11d48',
+    emerald: '#3eb649',
+    blue: '#1d4ed8'
   };
 
   const storedAccent = localStorage.getItem('gda_accent') || 'emerald';
