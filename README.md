@@ -13,6 +13,29 @@ Designed with an international digital creative & growth agency aesthetic, this 
 
 ---
 
+## 📸 Website Visual Showcase & Interactive Transitions
+
+Visitors experience smooth, dynamic visual transitions across color palettes and light/dark modes as they interact with the platform:
+
+### 1. Dynamic Atmosphere & Palette Transitions
+
+| Default Dark Mode (Tech Sapphire) | Logo Green Atmosphere (Obsidian Emerald) |
+| :---: | :---: |
+| ![Default Dark Mode Hero](images/preview-hero.png) | ![Logo Green Emerald Atmosphere](images/preview-green-atmosphere.png) |
+| *Signature midnight slate canvas with Royal Blue accents* | *Dynamic whole-page canvas shift to deep obsidian emerald* |
+
+| Crisp Light Mode (Nordic Slate) | Real-Time Admin Operations Portal |
+| :---: | :---: |
+| ![Crisp Light Mode Interface](images/preview-light-mode.png) | ![Admin Operations Portal](images/preview-admin.png) |
+| *Instant light mode transition with soft pastel contrasts* | *Live lead review, search filter & status management* |
+
+### 2. Categorized Services & Engineering Deck
+
+![Categorized Services Deck](images/preview-services.png)
+*Interactive multi-division service showcase covering Creative Design, Performance Marketing & E-Commerce Engineering.*
+
+---
+
 ## 🗺️ System Architecture & Visual Overview
 
 ```mermaid
