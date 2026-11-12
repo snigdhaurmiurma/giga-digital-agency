@@ -1,9 +1,24 @@
 /* ==========================================================================
-   GIGA DIGITAL AGENCY — RESPONSIVE STYLES
-   Breakpoints: 1320px, 1120px, 992px, 768px, 480px
-   Guarantees Prominent Big Logo without Any Overlap across All Viewports
+   GIGA DIGITAL AGENCY — MASTER RESPONSIVE STYLES
+   Engineered for Pixel-Perfect Mobile Phone Experience (320px - 768px)
+   Breakpoints: 1320px, 1140px, 992px, 768px, 480px, 360px
    ========================================================================== */
 
+/* Universal Viewport Boundary Guard: Zero Horizontal Scroll Blowout */
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   1. LAPTOPS & SMALL DESKTOPS (<= 1320px)
+   ========================================================================== */
 @media screen and (max-width: 1320px) {
   .nav-menu {
     gap: 12px;
@@ -26,7 +41,10 @@
   }
 }
 
-/* Below 1140px: Smoothly activate mobile drawer so links never overlap the big logo */
+/* ==========================================================================
+   2. DESKTOP-TO-MOBILE NAVIGATION BREAKPOINT (<= 1140px)
+   Strictly hides desktop mega dropdowns to prevent big logo collision
+   ========================================================================== */
 @media screen and (max-width: 1140px) {
   .nav-menu,
   .desktop-nav,
@@ -45,21 +63,57 @@
     display: flex !important;
   }
   .site-logo {
-    height: 50px;
-    max-width: 200px;
+    height: 48px;
+    max-width: 195px;
   }
   .nav-container {
-    height: 74px;
+    height: 72px;
   }
 }
 
+/* ==========================================================================
+   3. TABLETS & LANDSCAPE SCREENS (<= 992px)
+   ========================================================================== */
 @media screen and (max-width: 992px) {
   .section {
-    padding: 60px 0;
+    padding: 55px 0;
   }
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 36px;
+  }
+  .hero-poster-viewport,
+  .hero-poster-track {
+    min-height: 560px;
+  }
+  .poster-inner-container {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+  .poster-headline {
+    font-size: clamp(2.1rem, 5vw, 3rem);
+  }
+  .poster-subtext {
+    font-size: 1.02rem;
+  }
+
+  /* Right-edge floating tabs: strictly hide on tablets and phones */
+  .right-fixed-actions {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* 6-Metric stats bar on tablets: 3 columns */
+  .zaman-stats-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 16px !important;
+  }
+
+  /* Grids */
+  .about-grid-two {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
   }
   .case-study-grid {
     grid-template-columns: 1fr;
@@ -69,90 +123,679 @@
     grid-template-columns: 1fr;
     gap: 30px;
   }
+  .service-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .service-content-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
   .footer-cols-grid {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
 }
 
+/* ==========================================================================
+   4. SMARTPHONES & PORTRAIT TABLETS (<= 768px)
+   Mobile App-like Touch Experience
+   ========================================================================== */
 @media screen and (max-width: 768px) {
+  /* Container Padding for Phones */
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Section Spacing */
+  .section {
+    padding: 46px 0;
+  }
+  .section-header {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: clamp(1.7rem, 6vw, 2.2rem) !important;
+    line-height: 1.2 !important;
+  }
+  .section-desc {
+    font-size: 0.95rem !important;
+    line-height: 1.62 !important;
+    margin-bottom: 14px;
+  }
+
+  /* Header Bar */
   .nav-container {
-    height: 74px;
+    height: 68px;
+    padding: 0 14px;
   }
   .site-logo {
-    height: 48px;
-    max-width: 195px;
+    height: 44px;
+    max-width: 180px;
   }
-  .hero-main-photo {
-    height: 320px;
+  .header-actions {
+    gap: 8px;
   }
+
+  /* Mobile Drawer Overlay & Sidebar */
+  .mobile-drawer {
+    width: 86%;
+    max-width: 340px;
+    padding: 24px 18px;
+  }
+  .drawer-close {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+  .drawer-nav-list {
+    gap: 8px;
+    margin-top: 18px;
+  }
+  .drawer-nav-list a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 8px 4px;
+  }
+
+  /* Hero Poster Carousel on Phones */
+  .hero-poster-viewport,
+  .hero-poster-track {
+    min-height: 520px;
+  }
+  .poster-inner-container {
+    padding-top: 34px;
+    padding-bottom: 26px;
+  }
+  .poster-headline {
+    font-size: clamp(1.8rem, 6.6vw, 2.35rem);
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  .poster-subtext {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 20px;
+  }
+  .poster-features-bar {
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+  .p-feat-tag {
+    padding: 5px 12px;
+    font-size: 0.78rem;
+  }
+  .poster-cta-row {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px !important;
+    align-items: stretch !important;
+  }
+  .poster-btn {
+    width: 100% !important;
+    justify-content: center !important;
+    min-height: 48px !important;
+    padding: 13px 20px !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* 6-Metric Stats Bar: 2-Column Responsive Grid on Mobile */
+  .zaman-stats-strip {
+    margin-top: 0;
+    padding: 16px 14px;
+  }
+  .zaman-stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+  .zaman-stat-card {
+    padding: 10px 8px;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+  }
+  .zaman-stat-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    font-size: 1rem;
+  }
+  .zaman-stat-number {
+    font-size: 1.15rem;
+  }
+  .zaman-stat-title {
+    font-size: 0.70rem;
+  }
+
+  /* Brands / Clients Strip */
+  .brands-section {
+    padding: 28px 0 32px;
+  }
+  .brands-title-tag {
+    font-size: 0.76rem;
+    margin-bottom: 18px;
+  }
+  .brands-logo-row {
+    gap: 12px;
+    justify-content: center;
+  }
+  .brand-item-box {
+    padding: 10px 16px;
+    border-radius: 8px;
+  }
+  .brand-item-box img {
+    height: 28px;
+    max-width: 100px;
+  }
+
+  /* About Sub-Navigation Horizontal Swipe Bar */
+  .about-subnav-tabs {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    justify-content: flex-start !important;
+    padding: 4px 4px !important;
+    gap: 8px !important;
+    margin-bottom: 24px !important;
+  }
+  .about-subnav-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .about-tab-btn {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+    padding: 9px 16px !important;
+    font-size: 0.84rem !important;
+  }
+
+  /* About Grids & Photos */
+  .about-grid-two {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  .about-photo-wrap img {
+    height: auto !important;
+    max-height: 280px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+  .why-choose-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    margin-top: 24px;
+  }
+  .why-feature-card {
+    padding: 20px 18px;
+  }
+
+  /* Services Category Filter Tabs Horizontal Swipe */
+  .services-tabs-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    justify-content: flex-start !important;
+    padding: 4px 4px !important;
+    gap: 8px !important;
+    margin-bottom: 24px !important;
+  }
+  .services-tabs-row::-webkit-scrollbar {
+    display: none;
+  }
+  .service-cat-tab {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+    padding: 9px 16px !important;
+    font-size: 0.84rem !important;
+  }
+
+  /* Single Column Services Cards on Phones */
+  .services-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    width: 100% !important;
+  }
+  .service-box {
+    padding: 22px 18px !important;
+    width: 100% !important;
+  }
+  .service-title {
+    font-size: 1.25rem !important;
+    margin: 12px 0 8px !important;
+  }
+
+  /* Process Steps Single Column */
   .process-steps-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
   }
-  .counters-grid {
-    grid-template-columns: 1fr;
+  .process-step-card {
+    padding: 22px 18px !important;
+  }
+
+  /* Case Study Card on Phones */
+  .case-study-hero {
+    padding: 22px 16px !important;
+  }
+  .case-study-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
   }
   .metric-cards-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
   }
-  .form-row-2 {
-    grid-template-columns: 1fr;
-    gap: 0;
+  .metric-box {
+    padding: 14px 10px !important;
+  }
+  .metric-box .metric-num {
+    font-size: 1.35rem;
+  }
+
+  /* Pricing Cards Single Column */
+  .pricing-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .pricing-card {
+    padding: 24px 18px !important;
+  }
+  .customizer-box {
+    padding: 20px 16px !important;
   }
   .customizer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
   }
+  .custom-check-item {
+    padding: 12px 14px;
+    min-height: 48px;
+  }
+
+  /* Impact Pillars & Stats */
+  .impact-pillars-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .hero-quick-strip {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+    padding: 16px 12px !important;
+  }
+  .counters-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 14px !important;
+  }
+
+  /* Real Team Members Single Column */
+  .team-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .team-card {
+    padding: 20px 18px !important;
+  }
+  .team-photo-wrap img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Testimonials on Phones */
+  .testimonial-carousel-wrap {
+    padding: 8px 0 16px !important;
+  }
+  .carousel-nav-btn {
+    display: none !important; /* Hide arrows that obstruct text on small screens */
+  }
+  .testimonial-card {
+    padding: 24px 16px !important;
+  }
+  .review-quote {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* Blog Cards Single Column */
+  .blog-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .blog-photo-wrap img {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* FAQ Accordion Touch Targets */
+  .faq-item {
+    border-radius: var(--radius-md);
+    margin-bottom: 12px;
+  }
+  .faq-question {
+    padding: 15px 16px;
+    font-size: 0.98rem;
+    min-height: 48px;
+  }
+  .faq-answer {
+    padding: 0 16px 14px;
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  /* Contact & Consultation Form (16px Input Font Prevents iOS Auto-Zoom) */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  .contact-form-card {
+    padding: 22px 16px !important;
+  }
+  .form-row-2 {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+  .form-group {
+    margin-bottom: 14px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    height: 48px !important;
+    font-size: 16px !important; /* iOS safari auto-zoom prevention */
+    padding: 0 14px !important;
+    border-radius: 8px !important;
+  }
+  textarea {
+    font-size: 16px !important; /* iOS safari auto-zoom prevention */
+    min-height: 110px !important;
+    padding: 12px 14px !important;
+    border-radius: 8px !important;
+  }
+  .contact-form-card .btn,
+  .btn-submit {
+    width: 100% !important;
+    min-height: 50px !important;
+    font-size: 1rem !important;
+    justify-content: center !important;
+  }
+
+  /* Inspirational Bottom Banner */
+  .inspirational-footer-banner {
+    padding: 44px 0;
+    text-align: center;
+  }
+  .inspiration-quote {
+    font-size: clamp(1.5rem, 5vw, 1.95rem) !important;
+    line-height: 1.25;
+  }
+  .inspirational-footer-banner div[style*="display:flex"] {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+  .inspirational-footer-banner .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    min-height: 48px !important;
+  }
+
+  /* Service Pages Detail Elements */
+  .service-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+  .service-hero-media {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .service-content-grid {
+    grid-template-columns: 1fr !important;
+    gap: 26px !important;
+    margin: 32px 0 !important;
+  }
+  .deliverables-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+  .benefits-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .service-sidebar {
+    width: 100% !important;
+    margin-top: 20px !important;
+  }
+
+  /* Footer on Mobile */
   .footer-cols-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 26px !important;
+  }
+  .footer-col {
+    margin-bottom: 8px;
+  }
+  .footer-links-list li a {
+    display: inline-block;
+    padding: 6px 0;
+    min-height: 36px;
   }
   .footer-bottom-bar {
-    flex-direction: column;
-    text-align: center;
-    gap: 12px;
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 12px !important;
   }
+
+  /* Floating Widgets: WhatsApp & Back to Top */
   .floating-whatsapp-btn {
-    bottom: 16px;
-    left: 16px;
-    width: 50px;
-    height: 50px;
+    bottom: 16px !important;
+    left: 16px !important;
+    width: 48px !important;
+    height: 48px !important;
+    z-index: 990 !important;
   }
   .floating-whatsapp-btn svg {
-    width: 26px;
-    height: 26px;
+    width: 24px !important;
+    height: 24px !important;
   }
   .back-to-top-btn {
-    bottom: 16px;
-    right: 16px;
+    bottom: 16px !important;
+    right: 16px !important;
+    width: 42px !important;
+    height: 42px !important;
+    z-index: 990 !important;
   }
 }
 
+/* ==========================================================================
+   5. COMPACT MOBILE SCREENS (<= 480px)
+   e.g. iPhone 13/14/15, Samsung Galaxy, Pixel Viewports
+   ========================================================================== */
 @media screen and (max-width: 480px) {
+  /* Navigation Bar Compactness */
+  .nav-container {
+    height: 64px;
+    padding: 0 12px;
+    gap: 8px;
+  }
+  .site-brand {
+    margin-right: 0;
+  }
   .site-logo {
-    height: 42px;
-    max-width: 175px;
+    height: 38px;
+    max-width: 155px;
   }
-  .hero-title {
-    font-size: 2rem;
-  }
-  .hero-cta-group {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .hero-cta-group .btn {
-    width: 100%;
-  }
-  .service-box, .pricing-card, .case-study-hero, .contact-form-card {
-    padding: 24px 18px;
-  }
-  .hero-float-chip {
-    display: none;
+  .header-actions {
+    gap: 6px;
   }
   .palette-picker-btn {
-    padding: 0 8px;
-    height: 38px;
+    height: 36px;
+    padding: 0 7px;
+    font-size: 0.80rem;
   }
   .palette-dropdown {
-    right: -20px;
-    min-width: 195px;
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: calc(100% + 8px);
+    min-width: 190px;
+    max-width: calc(100vw - 24px);
+  }
+  .theme-toggle-switch {
+    width: 36px;
+    height: 36px;
+  }
+  .mobile-toggle {
+    width: 38px;
+    height: 38px;
+    padding: 8px;
+  }
+
+  /* Drawer on Small Phones */
+  .mobile-drawer {
+    width: 88%;
+    max-width: 320px;
+    padding: 20px 15px;
+  }
+
+  /* Hero Poster Carousel on Small Phones */
+  .hero-poster-viewport,
+  .hero-poster-track {
+    min-height: 490px;
+  }
+  .poster-inner-container {
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
+  .poster-headline {
+    font-size: clamp(1.55rem, 6.2vw, 1.95rem);
+    line-height: 1.18;
+    margin-bottom: 10px;
+  }
+  .poster-subtext {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .p-feat-tag {
+    padding: 4px 9px;
+    font-size: 0.72rem;
+  }
+  .poster-cta-row {
+    gap: 8px !important;
+  }
+  .poster-btn {
+    padding: 12px 16px !important;
+    font-size: 0.90rem !important;
+  }
+
+  /* Zaman Stats 2-Column on Small Phones */
+  .zaman-stats-strip {
+    padding: 14px 10px;
+  }
+  .zaman-stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+  }
+  .zaman-stat-card {
+    padding: 8px 6px;
+    gap: 8px;
+  }
+  .zaman-stat-icon {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    font-size: 0.90rem;
+  }
+  .zaman-stat-number {
+    font-size: 1.05rem;
+  }
+  .zaman-stat-title {
+    font-size: 0.65rem;
+  }
+
+  /* Service, Pricing & Form Card Inner Padding */
+  .service-box,
+  .pricing-card,
+  .case-study-hero,
+  .contact-form-card,
+  .customizer-box,
+  .team-card {
+    padding: 18px 14px !important;
+  }
+  .hero-float-chip {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   6. ULTRA-COMPACT MOBILE PHONES (<= 360px)
+   e.g. Galaxy Z Flip folded, iPhone SE, ultra-narrow viewports
+   ========================================================================== */
+@media screen and (max-width: 360px) {
+  .nav-container {
+    height: 60px;
+    padding: 0 8px;
+    gap: 6px;
+  }
+  .site-logo {
+    height: 34px;
+    max-width: 135px;
+  }
+  .header-actions {
+    gap: 4px;
+  }
+  .palette-picker-btn {
+    height: 34px;
+    padding: 0 5px;
+    font-size: 0.75rem;
+  }
+  .theme-toggle-switch {
+    width: 34px;
+    height: 34px;
+  }
+  .mobile-toggle {
+    width: 36px;
+    height: 36px;
+  }
+  .hero-poster-viewport,
+  .hero-poster-track {
+    min-height: 460px;
+  }
+  .poster-headline {
+    font-size: 1.45rem;
+  }
+  .poster-subtext {
+    font-size: 0.84rem;
+  }
+  .zaman-stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 6px !important;
+  }
+  .zaman-stat-number {
+    font-size: 0.98rem;
+  }
+  .service-box,
+  .pricing-card,
+  .contact-form-card {
+    padding: 16px 12px !important;
   }
 }

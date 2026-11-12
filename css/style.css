@@ -1593,6 +1593,13 @@ ul, ol {
   gap: 8px;
   z-index: 999;
 }
+@media (max-width: 992px) {
+  .right-fixed-actions {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}
 .right-action-pill {
   display: flex;
   align-items: center;
