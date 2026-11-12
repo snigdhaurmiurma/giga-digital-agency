@@ -4,7 +4,7 @@
  * 
  * Supports:
  * 1. Resend API (Recommended on Vercel: set RESEND_API_KEY)
- * 2. Custom Webhook / SMTP Forwarding
+ * 2. Fallback clear notification when credentials pending
  * 
  * Destination: info@gigadigitalagency.com
  */
@@ -31,14 +31,22 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const body = req.body || {};
+    let body = req.body || {};
+    if (typeof body === 'string') {
+      try {
+        body = JSON.parse(body);
+      } catch (e) {
+        body = {};
+      }
+    }
+
     const name = (body.name || '').trim();
     const email = (body.email || '').trim();
     const phone = (body.phone || '').trim();
     const service = (body.service || '').trim();
     const budget = (body.budget || 'Not Specified').trim();
     const message = (body.message || body.details || '').trim();
-    const type = (body.type || 'quotation').toLowerCase(); // 'contact' or 'quotation'
+    const type = (body.type || 'quotation').toLowerCase();
 
     // Form Validation
     const errors = {};
@@ -75,11 +83,14 @@ module.exports = async (req, res) => {
       ? `New Quotation Request [${referenceId}] — ${name} (${service})`
       : `New Website Contact Inquiry [${referenceId}] — ${name}`;
 
-    const submittedAt = new Date().toLocaleString('en-US', {
-      timeZone: 'Asia/Dhaka',
-      dateStyle: 'full',
-      timeStyle: 'medium'
-    }) + ' (BST)';
+    let submittedAt = '';
+    try {
+      submittedAt = new Date().toLocaleString('en-US', {
+        timeZone: 'Asia/Dhaka'
+      }) + ' (BST)';
+    } catch {
+      submittedAt = new Date().toISOString();
+    }
 
     // Build Polished HTML Email Template
     const htmlContent = `
@@ -98,58 +109,49 @@ module.exports = async (req, res) => {
     .field-row { margin-bottom: 20px; }
     .field-label { font-size: 12px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
     .field-value { font-size: 15px; color: #0f172a; font-weight: 600; line-height: 1.5; }
-    .field-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-top: 6px; font-size: 15px; color: #334155; line-height: 1.6; white-space: pre-wrap; }
-    .footer { background: #f8fafc; padding: 20px 32px; border-top: 1px solid #e2e8f0; font-size: 12px; color: #94a3b8; text-align: center; }
-    .cta-btn { display: inline-block; background: #1d4ed8; color: #ffffff !important; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: 700; font-size: 14px; margin-top: 12px; }
+    .msg-box { background: #f8fafc; border-left: 4px solid #1d4ed8; padding: 16px; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.6; color: #334155; margin-top: 6px; }
+    .footer { background: #f8fafc; padding: 20px 32px; text-align: center; font-size: 12px; color: #94a3b8; border-top: 1px solid #e2e8f0; }
+    .btn { display: inline-block; background: #1d4ed8; color: #ffffff !important; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: 700; font-size: 13px; margin-top: 14px; }
   </style>
 </head>
 <body>
   <div class="card">
     <div class="header">
       <div class="logo-text">GIGA DIGITAL AGENCY</div>
-      <div class="badge">${isQuote ? 'Quotation Request' : 'Contact Inquiry'} &bull; Ref #${referenceId}</div>
+      <div class="badge">${isQuote ? 'Quotation Request' : 'Direct Inquiry'} &bull; Reference #${referenceId}</div>
     </div>
     <div class="content">
-      <h2 style="margin-top:0; font-size:20px; color:#0f172a; font-weight:800;">${isQuote ? 'New Project Quotation Request' : 'New Website Contact Inquiry'}</h2>
-      
       <div class="field-row">
-        <div class="field-label">Client Name</div>
+        <div class="field-label">Lead Name</div>
         <div class="field-value">${name}</div>
       </div>
-
       <div class="field-row">
-        <div class="field-label">Email Address</div>
-        <div class="field-value"><a href="mailto:${email}" style="color:#1d4ed8; text-decoration:none;">${email}</a></div>
+        <div class="field-label">Official Email</div>
+        <div class="field-value"><a href="mailto:${email}" style="color:#1d4ed8;">${email}</a></div>
       </div>
-
       <div class="field-row">
-        <div class="field-label">Telephone Number</div>
-        <div class="field-value"><a href="tel:${phone}" style="color:#1d4ed8; text-decoration:none;">${phone}</a></div>
+        <div class="field-label">Contact Telephone / WhatsApp</div>
+        <div class="field-value"><a href="tel:${phone}" style="color:#1d4ed8;">${phone}</a> &bull; <a href="https://wa.me/${phone.replace(/[^0-9]/g, '')}" style="color:#16a34a;">Open WhatsApp</a></div>
       </div>
-
       <div class="field-row">
-        <div class="field-label">Requested Service</div>
-        <div class="field-value" style="color:#059669; font-weight:700;">${service}</div>
+        <div class="field-label">Service Discipline</div>
+        <div class="field-value" style="color:#1d4ed8;">${service}</div>
       </div>
-
-      ${budget ? `
       <div class="field-row">
-        <div class="field-label">Estimated Budget</div>
+        <div class="field-label">Budget Tier</div>
         <div class="field-value">${budget}</div>
-      </div>` : ''}
-
-      <div class="field-row">
-        <div class="field-label">Project Details &amp; Message</div>
-        <div class="field-box">${message}</div>
       </div>
-
-      <div style="margin-top:28px; text-align:center;">
-        <a href="mailto:${email}?subject=Re:%20Giga%20Digital%20Agency%20—%20${encodeURIComponent(service)}" class="cta-btn">Reply to Client Directly</a>
+      <div class="field-row">
+        <div class="field-label">Project Scope / Message</div>
+        <div class="msg-box">${message.replace(/\n/g, '<br>')}</div>
+      </div>
+      <div style="margin-top:24px; padding-top:20px; border-top:1px solid #e2e8f0;">
+        <a href="mailto:${email}?subject=Re:%20${encodeURIComponent(subject)}" class="btn">Reply Directly to Client</a>
       </div>
     </div>
     <div class="footer">
-      Delivered directly to <strong>${destinationEmail}</strong><br>
-      Submitted on ${submittedAt} via gigadigitalagency.com
+      Automated dispatch from Giga Digital Agency Portal (${submittedAt})<br>
+      Receiving Inbox: ${destinationEmail}
     </div>
   </div>
 </body>
@@ -157,14 +159,17 @@ module.exports = async (req, res) => {
 `;
 
     const textContent = `
-GIGA DIGITAL AGENCY — ${isQuote ? 'QUOTATION REQUEST' : 'CONTACT INQUIRY'}
+==================================================
+GIGA DIGITAL AGENCY — NEW SUBMISSION
 Reference: ${referenceId}
-Date: ${submittedAt}
+Type: ${isQuote ? 'Quotation Request' : 'Direct Inquiry'}
+Timestamp: ${submittedAt}
+==================================================
 
 Client Name: ${name}
 Email: ${email}
 Phone: ${phone}
-Service: ${service}
+Service Required: ${service}
 Budget: ${budget}
 
 Message / Project Scope:
@@ -197,7 +202,7 @@ Delivered to: ${destinationEmail}
       if (resendResponse.ok) {
         return res.status(200).json({
           status: 'success',
-          message: `Thank you, ${name}! Your quotation request has been successfully delivered to our strategy team (Ref #${referenceId}). We will review your brief and contact you within 24 business hours.`,
+          message: `Thank you, ${name}! Your request has been delivered to info@gigadigitalagency.com (Ref #${referenceId}). A senior strategist will contact you within 24 business hours.`,
           reference_id: referenceId,
           delivery_id: resendData.id
         });
@@ -206,27 +211,25 @@ Delivered to: ${destinationEmail}
         return res.status(502).json({
           status: 'error',
           code: 'MAIL_DELIVERY_FAILED',
-          message: 'Unable to deliver message at this moment. Please reach out to us directly on WhatsApp or phone.',
+          message: 'Unable to deliver message through Resend at this moment.',
           details: resendData.message || 'Upstream provider error'
         });
       }
     }
 
     // 2. If RESEND_API_KEY is not yet defined in Vercel environment:
-    // Return a clear, informative status indicating environment configuration is required
-    console.warn('RESEND_API_KEY is not configured in environment variables.');
     return res.status(200).json({
       status: 'pending_configuration',
       reference_id: referenceId,
-      message: `Your inquiry has been logged (Ref #${referenceId}). To activate automated inbox delivery, please set RESEND_API_KEY in your Vercel Project Environment Variables.`,
-      whatsapp_url: `https://wa.me/8801870699677?text=${encodeURIComponent(`Hello Giga Digital Agency, I submitted quotation request #${referenceId} for ${service}: ${name} (${phone})`)}`
+      message: `Your request has been logged successfully (Ref #${referenceId}). To activate automated inbox delivery to info@gigadigitalagency.com, set RESEND_API_KEY in your Vercel Project Environment Variables.`,
+      whatsapp_url: `https://wa.me/8801870699677?text=${encodeURIComponent(`Hello Giga Digital Agency, I submitted request #${referenceId} for ${service}: ${name} (${phone})`)}`
     });
 
   } catch (err) {
     console.error('API submission error:', err);
     return res.status(500).json({
       status: 'error',
-      message: 'An internal server error occurred while processing your request. Please contact us directly via WhatsApp (+8801870-699677).'
+      message: err.message || 'An internal server error occurred while processing your request.'
     });
   }
 };
