@@ -1919,7 +1919,7 @@ require_once __DIR__ . '/includes/header.php';
               </div>
               <div class="input-group">
                 <label class="input-label" for="custPhone">Phone / Mobile (WhatsApp) *</label>
-                <input type="tel" id="custPhone" name="phone" class="form-input" placeholder="018XXXXXXXX" required>
+                <input type="tel" id="custPhone" name="phone" class="form-input" placeholder="e.g. +880 18XX-XXXXXX" required>
               </div>
             </div>
 

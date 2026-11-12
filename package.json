@@ -1,0 +1,9 @@
+{
+  "name": "giga-digital-agency",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Giga Digital Agency — Official Website",
+  "engines": {
+    "node": ">=18.x"
+  }
+}
