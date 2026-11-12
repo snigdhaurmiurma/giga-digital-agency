@@ -22,7 +22,7 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
           Start Your Project With Us
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </a>
-        <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20am%20ready%20to%20build%20something%20inspirational." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="font-size:1.02rem; padding:15px 32px;">
+        <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="font-size:1.02rem; padding:15px 32px;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle; flex-shrink:0;"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.154.57 4.175 1.564 5.918l-1.564 5.71 5.86-1.536c1.678.914 3.603 1.408 5.64 1.408 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
           Chat Directly With Our Strategists
         </a>
@@ -163,14 +163,13 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
             Dhaka-1207, Bangladesh
           </p>
           <p style="font-size:0.88rem; margin-bottom:6px;">
-            <strong style="color:#ffffff;">Hotlines:</strong> <a href="tel:01860422185" style="color:var(--accent-primary);">+880 1860-422185</a>, <a href="tel:01723654747" style="color:var(--accent-primary);">+880 1723-654747</a> / <a href="tel:01778741894" style="color:var(--accent-primary);">+880 1778-741894</a>
-          </p>
+            <strong style="color:#ffffff;">Hotline:</strong> <a href="tel:+8801870699677" style="color:var(--accent-primary);">+8801870-699677</a></p>
           <p style="font-size:0.88rem; margin-bottom:16px;">
             <strong style="color:#ffffff;">Email:</strong> <a href="mailto:info@gigadigitalagency.com" style="color:var(--accent-primary);">info@gigadigitalagency.com</a>
           </p>
-          <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="padding:10px 18px; font-size:0.88rem;">
+          <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="padding:10px 18px; font-size:0.88rem;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle; flex-shrink:0;"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.154.57 4.175 1.564 5.918l-1.564 5.71 5.86-1.536c1.678.914 3.603 1.408 5.64 1.408 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
-            WhatsApp: 01860-422185
+            WhatsApp: +8801870-699677
           </a>
         </div>
 
@@ -191,7 +190,7 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
   </footer>
 
   <!-- Floating WhatsApp Quick Button -->
-  <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Chat with Giga Digital Agency on WhatsApp" title="Chat on WhatsApp (+880 1860-422185)">
+  <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Chat with Giga Digital Agency on WhatsApp" title="Chat on WhatsApp (+8801870-699677)">
     <svg viewBox="0 0 24 24" fill="currentColor">
       <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.154.57 4.175 1.564 5.918l-1.564 5.71 5.86-1.536c1.678.914 3.603 1.408 5.64 1.408 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
     </svg>
@@ -199,15 +198,15 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
 
   <!-- Fixed Right-Edge Quick Action Bar (Zaman IT Style) -->
   <aside class="right-fixed-actions" aria-label="Quick Contact Tools">
-    <a href="<?php echo $asset_prefix; ?>index.php#contact" class="right-action-pill pill-talk" title="আমাদের সাথে কথা বলুন">
+    <a href="<?php echo $asset_prefix; ?>index.php#contact" class="right-action-pill pill-talk" title="আমাদের সাথে Let's Talk">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-      <span>কথা বলুন</span>
+      <span>Let's Talk</span>
     </a>
-    <a href="tel:01860422185" class="right-action-pill pill-call" title="Call Giga Digital Agency">
+    <a href="tel:+8801870699677" class="right-action-pill pill-call" title="Call Giga Digital Agency">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
       <span>Call Us</span>
     </a>
-    <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="right-action-pill pill-whatsapp" title="WhatsApp 24/7">
+    <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener noreferrer" class="right-action-pill pill-whatsapp" title="WhatsApp 24/7">
       <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#ffffff;"></span>
       <span>WhatsApp</span>
     </a>

@@ -216,8 +216,8 @@ giga-digital-agency/
   * **Web & Technology:** Web Design & Development, Custom Enterprise Solutions.
 * **Headquarters:** House # 6/14, Block # A, Lalmatia, Dhaka-1207, Bangladesh *(additional operations: Mirpur / Shewrapara, Dhaka)*.
 * **Office Hours:** Saturday – Thursday, 9:30 AM – 7:00 PM (GMT+6)
-* **Direct Hotlines:** `+880 1860-422185`, `+880 1778-741894`
-* **Direct WhatsApp:** `+880 1860-422185` (Instant Click-to-Chat enabled)
+* **Direct Hotlines:** `+8801870-699677`, `+8801870-699677`
+* **Direct WhatsApp:** `+8801870-699677` (Instant Click-to-Chat enabled)
 * **Official Emails:** `info@gigadigitalagency.com`, `supports@gigadigitalagency.com`
 * **Live Deployment:** [https://giga-digital-agency.vercel.app/](https://giga-digital-agency.vercel.app/)
 * **GitHub Repository:** [https://github.com/snigdhaurmiurma/giga-digital-agency.git](https://github.com/snigdhaurmiurma/giga-digital-agency.git)

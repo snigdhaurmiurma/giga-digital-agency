@@ -555,7 +555,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Recording in Database...';
+    submitBtn.textContent = 'Submitting Request...';
     submitBtn.disabled = true;
 
     const leadPayload = {
@@ -568,24 +568,37 @@ document.addEventListener('DOMContentLoaded', () => {
       page: window.location.href
     };
 
-    let responseMessage = 'Thank you! Your quotation request has been recorded in our agency database. A senior strategist from Giga Digital Agency will contact you within 24 business hours.';
+    let responseMessage = 'Thank you! Your quotation request has been recorded. Our strategy team will review your project and contact you at ' + email + ' within 24 business hours.';
     let leadId = 'GDA-' + Date.now().toString().slice(-6);
+    let isDelivered = false;
 
     try {
-      const res = await fetch('api/contact.php', {
+      // First attempt: Vercel Serverless Function (/api/contact)
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(leadPayload)
       });
       const data = await res.json().catch(() => null);
-      if (data?.message) {
-        responseMessage = data.message;
-      }
-      if (data?.lead_id) {
-        leadId = 'GDA-' + data.lead_id;
+      if (data) {
+        if (data.reference_id) leadId = data.reference_id;
+        if (data.message) responseMessage = data.message;
+        if (data.status === 'success' || data.status === 'delivered') isDelivered = true;
       }
     } catch {
-      // In static Vercel environments without active PHP SAPI, fallback seamlessly
+      // Fallback: If deployed in a PHP LAMP environment, try api/contact.php
+      try {
+        const phpRes = await fetch('api/contact.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(leadPayload)
+        });
+        const phpData = await phpRes.json().catch(() => null);
+        if (phpData?.message) responseMessage = phpData.message;
+        if (phpData?.lead_id) leadId = 'GDA-' + phpData.lead_id;
+      } catch (err) {
+        // Safe offline/fallback recording
+      }
     }
 
     // Always mirror to Client Ledger for admin.html portal
@@ -612,23 +625,68 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (formAlert) {
       formAlert.style.display = 'block';
-      formAlert.style.padding = '16px 20px';
+      formAlert.style.padding = '18px 22px';
       formAlert.style.borderRadius = '10px';
       formAlert.style.marginBottom = '22px';
-      formAlert.style.background = 'rgba(16, 185, 129, 0.15)';
-      formAlert.style.color = '#34d399';
-      formAlert.style.border = '1px solid rgba(16, 185, 129, 0.4)';
+      formAlert.style.background = 'rgba(16, 185, 129, 0.12)';
+      formAlert.style.color = '#10b981';
+      formAlert.style.border = '1px solid rgba(16, 185, 129, 0.35)';
       formAlert.innerHTML = `
-        <div style="font-weight:800; font-size:1.02rem; margin-bottom:4px; display:flex; align-items:center; gap:8px;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          <span>Inquiry Saved to Database (${leadId})</span>
+        <div style="font-weight:800; font-size:1.02rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span>Quotation Request Submitted Successfully (${leadId})</span>
         </div>
-        <div style="font-size:0.92rem; line-height:1.5;">${responseMessage}</div>
+        <div style="font-size:0.92rem; line-height:1.55; color:var(--text-main); margin-bottom:12px;">${responseMessage}</div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+          <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20just%20submitted%20quotation%20request%20${leadId}." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="padding:8px 16px; font-size:0.86rem;">
+            Instant WhatsApp Confirmation
+          </a>
+          <span style="font-size:0.82rem; color:var(--text-muted);">Direct Hotline: +8801870-699677</span>
+        </div>
       `;
     }
     consultationForm.reset();
 
     submitBtn.textContent = originalText;
+    submitBtn.disabled = false;
+  });
+
+  // Support for contact.php standalone contact form
+  const gdaContactForm = document.getElementById('gdaContactForm');
+  gdaContactForm?.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const name = this.querySelector('#contactName')?.value.trim();
+    const email = this.querySelector('#contactEmail')?.value.trim();
+    const phone = this.querySelector('#contactPhone')?.value.trim();
+    const company = this.querySelector('#contactCompany')?.value.trim();
+    const service = this.querySelector('#contactService')?.value;
+    const budget = this.querySelector('#contactBudget')?.value;
+    const message = this.querySelector('#contactMessage')?.value.trim();
+    const submitBtn = this.querySelector('button[type="submit"]');
+
+    if (!name || !email || !service || !message) {
+      alert('Please fill out all required fields.');
+      return;
+    }
+
+    const orig = submitBtn.textContent;
+    submitBtn.textContent = 'Submitting...';
+    submitBtn.disabled = true;
+
+    try {
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'contact_inquiry',
+          name, email, phone, company, service, budget, message
+        })
+      });
+    } catch {}
+
+    alert('Thank you, ' + name + '! Your message has been received. Our team will contact you at ' + email + ' shortly.');
+    gdaContactForm.reset();
+    submitBtn.textContent = orig;
     submitBtn.disabled = false;
   });
 

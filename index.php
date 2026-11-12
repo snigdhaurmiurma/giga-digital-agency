@@ -354,7 +354,7 @@ require_once __DIR__ . '/includes/header.php';
   <section class="brands-section" aria-label="Trusted Clients">
     <div class="container">
       <div class="brands-title-tag">
-        Trusted by Leading Enterprises, Startups & Retail Brands in Bangladesh and Abroad
+        Helping businesses build stronger brands and grow through digital solutions.
       </div>
       <div class="brands-logo-row">
         <div class="brand-item-box" title="Giga Digital Agency Client Partner">
@@ -522,7 +522,7 @@ require_once __DIR__ . '/includes/header.php';
             </p>
             <div style="display:flex; gap:12px; flex-wrap:wrap;">
               <a href="#contact" class="btn btn-primary">Schedule Consultation With CEO</a>
-              <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20consult%20with%20the%20CEO." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle; margin-right:6px;"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.154.57 4.175 1.564 5.918l-1.564 5.71 5.86-1.536c1.678.914 3.603 1.408 5.64 1.408 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
                 <span>WhatsApp Direct</span>
               </a>
@@ -698,19 +698,19 @@ require_once __DIR__ . '/includes/header.php';
       <div class="section-header text-center">
         <span class="section-tag">Results-Driven Solutions</span>
         <h2 class="section-title">
-          OUR 11 CORE <span class="gradient-text">DIGITAL DISCIPLINES</span>
+          OUR CORE <span class="gradient-text">DIGITAL DISCIPLINES</span>
         </h2>
         <p class="section-desc">
-          Structured into three specialized divisions — <strong>Growth & Advertising</strong>, <strong>Creative & Content</strong>, and <strong>Web & Technology</strong> — each engineered to deliver measurable business growth.
+          Structured into three specialized divisions — <strong>Growth &amp; Advertising</strong>, <strong>Creative &amp; Content</strong>, and <strong>Web &amp; Technology</strong> — each engineered to deliver measurable business growth.
         </p>
       </div>
 
       <!-- Category Filter Tabs -->
       <div class="services-tabs-row">
-        <button class="service-cat-tab active" data-category="all">All Services (11)</button>
-        <button class="service-cat-tab" data-category="growth">Growth & Advertising (5)</button>
-        <button class="service-cat-tab" data-category="creative">Creative & Content (5)</button>
-        <button class="service-cat-tab" data-category="tech">Web & Technology (1)</button>
+        <button class="service-cat-tab active" data-category="all">All Services</button>
+        <button class="service-cat-tab" data-category="growth">Growth &amp; Advertising</button>
+        <button class="service-cat-tab" data-category="creative">Creative &amp; Content</button>
+        <button class="service-cat-tab" data-category="tech">Web &amp; Technology</button>
       </div>
 
       <!-- Services Cards Grid -->
@@ -719,18 +719,18 @@ require_once __DIR__ . '/includes/header.php';
         <!-- 1. LinkedIn Ads Management (Growth) -->
         <div class="service-box" data-category="growth">
           <div>
-            <span class="service-cat-pill" style="background:rgba(29,78,216,0.15); color:#60a5fa; border-color:rgba(29,78,216,0.3);">Growth & Advertising</span>
-            <div class="service-icon-wrap" style="color:#60a5fa;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <span class="service-cat-pill" style="background:rgba(10,102,194,0.12); color:#0A66C2; border-color:rgba(10,102,194,0.3);">Growth &amp; Advertising</span>
+            <div class="service-icon-wrap" style="color:#0A66C2;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </div>
             <h3 class="service-title">LinkedIn Ads Management</h3>
             <p class="service-desc">
               Connect your business with industry professionals, business owners, decision-makers, and potential clients through strategic LinkedIn advertising campaigns.
             </p>
             <ul class="service-features-list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Job Title, Industry & Company Targeting</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> B2B Lead Generation Forms & InMail</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Continuous Monitoring & Analytics</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Job Title, Industry &amp; Company Targeting</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> B2B Lead Generation Forms &amp; InMail</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Continuous Monitoring &amp; Analytics</li>
             </ul>
           </div>
           <div style="display:flex; gap:10px; margin-top:20px;">
@@ -742,18 +742,18 @@ require_once __DIR__ . '/includes/header.php';
         <!-- 2. Google Ads Management (Growth) -->
         <div class="service-box" data-category="growth">
           <div>
-            <span class="service-cat-pill" style="background:rgba(29,78,216,0.15); color:#60a5fa; border-color:rgba(29,78,216,0.3);">Growth & Advertising</span>
-            <div class="service-icon-wrap" style="color:#60a5fa;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+            <span class="service-cat-pill" style="background:rgba(66,133,244,0.12); color:#4285F4; border-color:rgba(66,133,244,0.3);">Growth &amp; Advertising</span>
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24"><path fill="#4285F4" d="M12.01 2.01c-.81 0-1.6.21-2.31.62L3.13 6.47c-1.48.86-2.24 2.58-1.92 4.27.32 1.69 1.64 2.99 3.35 3.32l4.82.93c.31.06.63.09.95.09 1.94 0 3.73-1.04 4.69-2.72l4.13-7.15c.67-1.16.48-2.61-.46-3.56-.95-.94-2.4-1.13-3.56-.46l-3.12 1.82V2.01z"/><path fill="#FBBC04" d="M21.94 9.17c-.32-1.69-1.64-2.99-3.35-3.32l-4.82-.93c-.31-.06-.63-.09-.95-.09-1.94 0-3.73 1.04-4.69 2.72L3.99 14.7c-.67 1.16-.48 2.61.46 3.56.95.94 2.4 1.13 3.56.46l3.12-1.82v3.09c0 .81.21 1.6.62 2.31.86 1.48 2.58 2.24 4.27 1.92 1.69-.32 2.99-1.64 3.32-3.35l2.6-6.4c.6-1.48.59-3.15-.02-4.63z"/><circle fill="#34A853" cx="6.5" cy="17.5" r="3.5"/></svg>
             </div>
             <h3 class="service-title">Google Ads Management</h3>
             <p class="service-desc">
               Reach potential customers at the right moment through professionally managed Google Search, Display, Shopping, and YouTube advertising campaigns.
             </p>
             <ul class="service-features-list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Keyword Research & High-Intent Search Ads</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> YouTube Video & Display Network Placement</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Conversion Tracking & Budget Management</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Keyword Research &amp; High-Intent Search Ads</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> YouTube Video &amp; Display Network Placement</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Conversion Tracking &amp; Budget Management</li>
             </ul>
           </div>
           <div style="display:flex; gap:10px; margin-top:20px;">
@@ -765,18 +765,18 @@ require_once __DIR__ . '/includes/header.php';
         <!-- 3. Facebook Boosting Service (Growth) -->
         <div class="service-box" data-category="growth">
           <div>
-            <span class="service-cat-pill" style="background:rgba(244,63,94,0.15); color:#fb7185; border-color:rgba(244,63,94,0.3);">Growth & Advertising</span>
-            <div class="service-icon-wrap" style="color:#f43f5e;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            <span class="service-cat-pill" style="background:rgba(24,119,242,0.12); color:#1877F2; border-color:rgba(24,119,242,0.3);">Growth &amp; Advertising</span>
+            <div class="service-icon-wrap" style="color:#1877F2;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </div>
             <h3 class="service-title">Facebook Boosting Service</h3>
             <p class="service-desc">
               Expand your Facebook presence through strategically managed boosting campaigns designed to increase content reach, engagement, and customer inquiries.
             </p>
             <ul class="service-features-list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Audience & Demographic Interest Targeting</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Post Boosting Strategy & Budget Planning</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Engagement Tracking & Performance Reports</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Audience &amp; Demographic Interest Targeting</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Post Boosting Strategy &amp; Budget Planning</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Engagement Tracking &amp; Performance Reports</li>
             </ul>
           </div>
           <div style="display:flex; gap:10px; margin-top:20px;">
@@ -1556,13 +1556,6 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Slide 1: M Kamruzzaman Shadhin -->
           <div class="testimonial-slide">
             <div class="testimonial-card">
-              <div class="review-stars" aria-label="5 out of 5 stars">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-              </div>
               <p class="review-quote">
                 "We are extremely impressed with the services provided by Giga Digital Agency. Their team's expertise in digital marketing, creative design, and strategic guidance has significantly boosted our online presence and business growth. Highly recommended!"
               </p>
@@ -1579,13 +1572,6 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Slide 2: Retail Founder -->
           <div class="testimonial-slide">
             <div class="testimonial-card">
-              <div class="review-stars" aria-label="5 out of 5 stars">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-              </div>
               <p class="review-quote">
                 "Their Facebook and YouTube ad boosting strategies tripled our e-commerce sales within 60 days. The automated bKash and Pathao courier integrations work without a single hitch. Exceptional engineering."
               </p>
@@ -1602,13 +1588,6 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Slide 3: SaaS Executive -->
           <div class="testimonial-slide">
             <div class="testimonial-card">
-              <div class="review-stars" aria-label="5 out of 5 stars">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-              </div>
               <p class="review-quote">
                 "Giga Digital Agency designed our entire web application and UI/UX in Figma, followed by flawless front-end development. Our user activation rate jumped by 48% within two weeks of launch."
               </p>
@@ -1625,13 +1604,6 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Slide 4: Corporate Logistics CEO -->
           <div class="testimonial-slide">
             <div class="testimonial-card">
-              <div class="review-stars" aria-label="5 out of 5 stars">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-              </div>
               <p class="review-quote">
                 "Best SEO and web development firm in Dhaka. We are now ranking #1 on Google for all of our primary commercial keywords, bringing in qualified B2B leads every single morning."
               </p>
@@ -1905,10 +1877,9 @@ require_once __DIR__ . '/includes/header.php';
           </div>
 
           <div style="margin-bottom:20px;">
-            <div style="font-size:0.82rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:4px;">Direct Phone Hotlines:</div>
+            <div style="font-size:0.82rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:4px;">Official Phone Hotline:</div>
             <p style="font-size:1.05rem; font-weight:800; color:var(--accent-primary); line-height:1.6;">
-              <a href="tel:01860422185">+880 1860-422185</a> (Corporate / WhatsApp)<br>
-              <a href="tel:01723654747">+880 1723-654747</a> / <a href="tel:01778741894">+880 1778-741894</a>
+              <a href="tel:+8801870699677">+8801870-699677</a> (Direct Hotline &amp; WhatsApp)
             </p>
           </div>
 
@@ -1927,9 +1898,9 @@ require_once __DIR__ . '/includes/header.php';
             </a>
           </div>
 
-          <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%;">
+          <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle; flex-shrink:0;"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.154.57 4.175 1.564 5.918l-1.564 5.71 5.86-1.536c1.678.914 3.603 1.408 5.64 1.408 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
-            Instant WhatsApp Chat (+880 1860-422185)
+            Instant WhatsApp Chat (+8801870-699677)
           </a>
         </div>
 
@@ -2013,7 +1984,7 @@ require_once __DIR__ . '/includes/header.php';
       </p>
       <div style="display:flex; justify-content:center; gap:16px; margin-top:32px; flex-wrap:wrap;">
         <a href="#contact" class="btn btn-primary" style="padding:14px 34px; font-size:1.05rem;">Start Your Project</a>
-        <a href="https://wa.me/8801860422185?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20contact%20your%20team." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding:14px 34px; font-size:1.05rem;">Contact Our Team</a>
+        <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding:14px 34px; font-size:1.05rem;">Contact Our Team</a>
       </div>
     </div>
   </section>
