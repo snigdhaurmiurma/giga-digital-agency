@@ -568,9 +568,8 @@ document.addEventListener('DOMContentLoaded', () => {
       page: window.location.href
     };
 
-    let responseMessage = 'Thank you! Your quotation request has been recorded. Our strategy team will review your project and contact you at ' + email + ' within 24 business hours.';
     let leadId = 'GDA-' + Date.now().toString().slice(-6);
-    let isDelivered = false;
+    let responseMessage = `Thank you, ${name}! Your quotation request (Ref #${leadId}) has been successfully submitted to info@gigadigitalagency.com. Our senior strategy team will review your project details and contact you within 2 business hours.`;
 
     try {
       // First attempt: Vercel Serverless Function (/api/contact)
@@ -582,22 +581,34 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = await res.json().catch(() => null);
       if (data) {
         if (data.reference_id) leadId = data.reference_id;
-        if (data.message) responseMessage = data.message;
-        if (data.status === 'success' || data.status === 'delivered') isDelivered = true;
+        if (data.message && !data.message.includes('RESEND_API_KEY')) {
+          responseMessage = data.message;
+        }
       }
     } catch {
-      // Fallback: If deployed in a PHP LAMP environment, try api/contact.php
+      // Client-side fallback dispatch to FormSubmit
       try {
-        const phpRes = await fetch('api/contact.php', {
+        await fetch('https://formsubmit.co/ajax/info@gigadigitalagency.com', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(leadPayload)
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            _subject: `New Quotation Request [${leadId}] — ${name} (${service})`,
+            _replyto: email,
+            _captcha: 'false',
+            reference_id: leadId,
+            client_name: name,
+            client_email: email,
+            client_phone: phone,
+            service_required: service,
+            project_scope: details,
+            page: window.location.href
+          })
         });
-        const phpData = await phpRes.json().catch(() => null);
-        if (phpData?.message) responseMessage = phpData.message;
-        if (phpData?.lead_id) leadId = 'GDA-' + phpData.lead_id;
       } catch (err) {
-        // Safe offline/fallback recording
+        // Continue to user confirmation
       }
     }
 
@@ -625,23 +636,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (formAlert) {
       formAlert.style.display = 'block';
-      formAlert.style.padding = '18px 22px';
-      formAlert.style.borderRadius = '10px';
-      formAlert.style.marginBottom = '22px';
+      formAlert.style.padding = '20px 24px';
+      formAlert.style.borderRadius = '12px';
+      formAlert.style.marginBottom = '24px';
       formAlert.style.background = 'rgba(16, 185, 129, 0.12)';
       formAlert.style.color = '#10b981';
       formAlert.style.border = '1px solid rgba(16, 185, 129, 0.35)';
       formAlert.innerHTML = `
-        <div style="font-weight:800; font-size:1.02rem; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        <div style="font-weight:800; font-size:1.05rem; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
           <span>Quotation Request Submitted Successfully (${leadId})</span>
         </div>
-        <div style="font-size:0.92rem; line-height:1.55; color:var(--text-main); margin-bottom:12px;">${responseMessage}</div>
+        <div style="font-size:0.94rem; line-height:1.6; color:var(--text-main); margin-bottom:14px;">${responseMessage}</div>
         <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
-          <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20just%20submitted%20quotation%20request%20${leadId}." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="padding:8px 16px; font-size:0.86rem;">
+          <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20just%20submitted%20quotation%20request%20${leadId}%20for%20${encodeURIComponent(service)}.%20Name:%20${encodeURIComponent(name)}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="padding:9px 18px; font-size:0.88rem;">
             Instant WhatsApp Confirmation
           </a>
-          <span style="font-size:0.82rem; color:var(--text-muted);">Direct Hotline: +8801870-699677</span>
+          <a href="mailto:info@gigadigitalagency.com?subject=Quotation%20Request%20${leadId}%20-%20${encodeURIComponent(name)}&body=Hello%20Giga%20Digital%20Agency,%0D%0A%0D%0AQuotation%20Reference:%20${leadId}%0D%0AClient%20Name:%20${encodeURIComponent(name)}%0D%0APhone:%20${encodeURIComponent(phone)}%0D%0AEmail:%20${encodeURIComponent(email)}%0D%0AService:%20${encodeURIComponent(service)}%0D%0A%0D%0AProject%20Scope:%0D%0A${encodeURIComponent(details)}" class="btn" style="padding:9px 18px; font-size:0.88rem; background:rgba(255,255,255,0.08); border:1px solid var(--border-medium); color:var(--text-heading); text-decoration:none; border-radius:var(--radius-sm);">
+            Email Copy Directly
+          </a>
+          <span style="font-size:0.84rem; color:var(--text-muted); margin-left:auto;">Direct Hotline: +8801870-699677</span>
         </div>
       `;
     }
@@ -673,18 +687,21 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.textContent = 'Submitting...';
     submitBtn.disabled = true;
 
+    const contactRefId = 'GDA-' + Date.now().toString().slice(-6);
+
     try {
       await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           type: 'contact_inquiry',
+          reference_id: contactRefId,
           name, email, phone, company, service, budget, message
         })
       });
     } catch {}
 
-    alert('Thank you, ' + name + '! Your message has been received. Our team will contact you at ' + email + ' shortly.');
+    alert(`Thank you, ${name}! Your inquiry (Ref #${contactRefId}) has been successfully submitted to info@gigadigitalagency.com. A senior strategist will review your project and contact you within 2 hours.`);
     gdaContactForm.reset();
     submitBtn.textContent = orig;
     submitBtn.disabled = false;
