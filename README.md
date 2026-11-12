@@ -164,10 +164,22 @@ The website's atmosphere transforms dynamically based on the 5 signature steps o
 
 ```
 giga-digital-agency/
-├── 📄 index.html                 # Production static entrypoint (Vercel-ready)
+├── 📄 index.html                 # Production static entrypoint (11 services, 6-step process, 3-tier pricing, FAQ)
 ├── 📄 index.php                  # Dynamic PHP entrypoint with component architecture
 ├── 📄 admin.html                 # Client-side Admin Portal & lead review dashboard
 ├── 📄 admin.php                  # Server-side PHP Admin Portal with live database queries
+├── 📁 services/                  # 11 Dedicated High-Conversion Service Detail Pages
+│   ├── 📄 linkedin-ads.html      # LinkedIn Ads Management detail page
+│   ├── 📄 google-ads.html        # Google Ads Management detail page
+│   ├── 📄 facebook-boosting.html # Facebook Boosting Service detail page
+│   ├── 📄 seo.html               # Search Engine Optimization (SEO) detail page
+│   ├── 📄 digital-marketing.html # Digital Marketing Multi-Channel detail page
+│   ├── 📄 company-profile-design.html # Company Profile & Brochure Design page
+│   ├── 📄 banner-poster-design.html   # Banner & Poster Creative Design page
+│   ├── 📄 content-marketing.html      # Content Marketing & Storytelling page
+│   ├── 📄 branding-design.html        # Branding, Logo & Visual Identity page
+│   ├── 📄 video-editing.html          # Professional Video Editing page
+│   └── 📄 web-design-development.html # Web Design & Development detail page
 ├── 📁 api/                       # REST endpoints & form ingestion handlers
 │   ├── 📄 inquire.php            # Quotation & project brief handler (PDO + JSON)
 │   └── 📄 track.php              # Real-time interaction logger (hotline/WhatsApp clicks)
@@ -184,9 +196,9 @@ giga-digital-agency/
 │   ├── 📄 header.php             # Frosted glass navigation, logo & palette switcher
 │   └── 📄 footer.php             # 4-pillar banner, corporate footer & dynamic modals
 ├── 📁 css/                       # Master stylesheet
-│   └── 📄 style.css              # 2,800+ lines of custom CSS variables & component rules
+│   └── 📄 style.css              # 3,400+ lines of custom CSS variables, themes & components
 ├── 📁 js/                        # Client-side interactivity
-│   └── 📄 main.js                # Theme switcher, pricing calculator, slider & modals
+│   └── 📄 main.js                # Theme switcher, FAQ accordion, package switcher & modals
 ├── 📁 images/                    # Brand assets, project mockups & client showcases
 └── 📄 README.md                  # Master documentation with visual architecture diagrams
 ```
@@ -196,7 +208,12 @@ giga-digital-agency/
 ## 🏢 Project Specifications & Verified Identity
 
 * **Official Brand:** Giga Digital Agency (GDA) — Est. 2014
-* **Positioning:** Full-Service Corporate Web Design, UI/UX Prototyping, E-Commerce Engineering & Performance Marketing (Facebook & YouTube Ad Boosting, SEO).
+* **Brand Tagline:** "Your Growth. Our Digital Strategy."
+* **Positioning:** A professional, results-driven digital marketing and creative solutions agency helping businesses establish a strong online presence, reach their target audiences, generate qualified leads, and achieve sustainable growth.
+* **11 Core Specialized Disciplines:**
+  * **Growth & Advertising:** LinkedIn Ads Management, Google Ads Management, Facebook Boosting Service, Search Engine Optimization (SEO), Digital Marketing.
+  * **Creative & Content:** Company Profile & Business Profile Design, Banner & Poster Design, Content Marketing, Branding & Design, Professional Video Editing.
+  * **Web & Technology:** Web Design & Development, Custom Enterprise Solutions.
 * **Headquarters:** House # 6/14, Block # A, Lalmatia, Dhaka-1207, Bangladesh *(additional operations: Mirpur / Shewrapara, Dhaka)*.
 * **Office Hours:** Saturday – Thursday, 9:30 AM – 7:00 PM (GMT+6)
 * **Direct Hotlines:** `+880 1860-422185`, `+880 1778-741894`

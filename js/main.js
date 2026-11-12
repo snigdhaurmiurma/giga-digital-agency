@@ -632,4 +632,55 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.disabled = false;
   });
 
+  // =========================================================================
+  // 12. FAQ ACCORDION INTERACTIVITY
+  // =========================================================================
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      if (!item) return;
+      const isOpen = item.classList.contains('active');
+
+      // Close other open items for clean single-expand behavior
+      document.querySelectorAll('.faq-item.active').forEach(openItem => {
+        if (openItem !== item) {
+          openItem.classList.remove('active');
+          const q = openItem.querySelector('.faq-question');
+          if (q) q.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Toggle current item
+      if (isOpen) {
+        item.classList.remove('active');
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        item.classList.add('active');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // =========================================================================
+  // 13. PRICING CATEGORY DECK SWITCHER
+  // =========================================================================
+  const pricingCatBtns = document.querySelectorAll('.pricing-cat-btn');
+  const pricingDecks = document.querySelectorAll('.pricing-category-deck');
+  pricingCatBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetDeck = btn.getAttribute('data-deck');
+      pricingCatBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      pricingDecks.forEach(deck => {
+        if (deck.getAttribute('data-deck') === targetDeck) {
+          deck.classList.add('active');
+        } else {
+          deck.classList.remove('active');
+        }
+      });
+    });
+  });
+
 });

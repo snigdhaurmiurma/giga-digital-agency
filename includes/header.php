@@ -68,65 +68,77 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
           </a>
           <div class="nav-dropdown">
             
-            <!-- Category 1: Creative -->
+            <!-- Category 1: Growth & Advertising -->
             <div>
-              <div class="dropdown-col-title">
-                <span>Creative Division</span>
+              <div class="dropdown-col-title" style="color:var(--accent-green);">
+                <span>Growth &amp; Advertising</span>
               </div>
               <div class="dropdown-items-group">
-                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
-                  <span class="title">Graphic Design</span>
-                  <span class="desc">Vector logos, brand identity & marketing toolkits</span>
+                <a href="<?php echo $asset_prefix; ?>services/linkedin-ads.html" class="dropdown-work-item">
+                  <span class="title">LinkedIn Ads</span>
+                  <span class="desc">B2B lead generation &amp; corporate targeting</span>
                 </a>
-                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
-                  <span class="title">UI/UX Design</span>
-                  <span class="desc">Interactive Figma mobile app & web interfaces</span>
+                <a href="<?php echo $asset_prefix; ?>services/google-ads.html" class="dropdown-work-item">
+                  <span class="title">Google Ads</span>
+                  <span class="desc">Search, Display, Shopping &amp; YouTube ads</span>
                 </a>
-                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
-                  <span class="title">YouTube Services</span>
-                  <span class="desc">High-CTR thumbnails & video retention editing</span>
+                <a href="<?php echo $asset_prefix; ?>services/facebook-boosting.html" class="dropdown-work-item">
+                  <span class="title">Facebook Boosting</span>
+                  <span class="desc">Audience targeting &amp; engagement expansion</span>
+                </a>
+                <a href="<?php echo $asset_prefix; ?>services/seo.html" class="dropdown-work-item">
+                  <span class="title">Search Engine Optimization</span>
+                  <span class="desc">Improve organic search visibility &amp; reach</span>
+                </a>
+                <a href="<?php echo $asset_prefix; ?>services/digital-marketing.html" class="dropdown-work-item">
+                  <span class="title">Digital Marketing</span>
+                  <span class="desc">Integrated multi-channel growth strategies</span>
                 </a>
               </div>
             </div>
 
-            <!-- Category 2: Growth -->
+            <!-- Category 2: Creative & Content -->
             <div>
               <div class="dropdown-col-title" style="color:var(--accent-violet);">
-                <span>Growth Division</span>
+                <span>Creative &amp; Content</span>
               </div>
               <div class="dropdown-items-group">
-                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
-                  <span class="title">Facebook Ad Boosting</span>
-                  <span class="desc">Meta CAPI pixel setup & high-ROAS sales funnels</span>
+                <a href="<?php echo $asset_prefix; ?>services/company-profile-design.html" class="dropdown-work-item">
+                  <span class="title">Company Profile Design</span>
+                  <span class="desc">Corporate brochures &amp; digital presentations</span>
                 </a>
-                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
-                  <span class="title">YouTube Ad Boosting</span>
-                  <span class="desc">Targeted in-stream ads & video subscriber growth</span>
+                <a href="<?php echo $asset_prefix; ?>services/banner-poster-design.html" class="dropdown-work-item">
+                  <span class="title">Banner &amp; Poster Design</span>
+                  <span class="desc">High-impact advertising &amp; promotional creatives</span>
                 </a>
-                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
-                  <span class="title">Google Search SEO</span>
-                  <span class="desc">Rank #1 organically on Google & Google Maps</span>
+                <a href="<?php echo $asset_prefix; ?>services/content-marketing.html" class="dropdown-work-item">
+                  <span class="title">Content Marketing</span>
+                  <span class="desc">Strategic storytelling &amp; audience engagement</span>
+                </a>
+                <a href="<?php echo $asset_prefix; ?>services/branding-design.html" class="dropdown-work-item">
+                  <span class="title">Branding &amp; Design</span>
+                  <span class="desc">Distinctive logos, color systems &amp; brand guides</span>
+                </a>
+                <a href="<?php echo $asset_prefix; ?>services/video-editing.html" class="dropdown-work-item">
+                  <span class="title">Professional Video Editing</span>
+                  <span class="desc">Reels, Shorts, YouTube &amp; corporate videos</span>
                 </a>
               </div>
             </div>
 
-            <!-- Category 3: Tech -->
+            <!-- Category 3: Web & Technology -->
             <div>
-              <div class="dropdown-col-title" style="color:var(--accent-cyan);">
-                <span>Tech Division</span>
+              <div class="dropdown-col-title" style="color:var(--accent-primary);">
+                <span>Web &amp; Technology</span>
               </div>
               <div class="dropdown-items-group">
-                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
-                  <span class="title">Corporate Web Design</span>
-                  <span class="desc">Ultra-fast responsive websites with custom CMS</span>
+                <a href="<?php echo $asset_prefix; ?>services/web-design-development.html" class="dropdown-work-item">
+                  <span class="title">Web Design &amp; Development</span>
+                  <span class="desc">Modern, responsive, user-friendly websites</span>
                 </a>
-                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
-                  <span class="title">E-Commerce (bKash)</span>
-                  <span class="desc">Cart checkout with bKash, Nagad & Pathao API</span>
-                </a>
-                <a href="<?php echo $asset_prefix; ?>index.php#services" class="dropdown-work-item">
-                  <span class="title">Custom POS & ERP</span>
-                  <span class="desc">Multi-branch inventory, billing & CRM software</span>
+                <a href="<?php echo $asset_prefix; ?>index.php#pricing" class="dropdown-work-item">
+                  <span class="title">Custom Solutions &amp; Packages</span>
+                  <span class="desc">Tailored service packages for business scale</span>
                 </a>
               </div>
             </div>
@@ -147,7 +159,7 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
           <a href="<?php echo $asset_prefix; ?>index.php#team" class="nav-menu-link" style="white-space:nowrap;">Team</a>
         </div>
         <div class="nav-menu-item">
-          <a href="<?php echo $asset_prefix; ?>index.php#reviews" class="nav-menu-link" style="white-space:nowrap;">Reviews</a>
+          <a href="<?php echo $asset_prefix; ?>index.php#faq" class="nav-menu-link" style="white-space:nowrap;">FAQ</a>
         </div>
         <div class="nav-menu-item">
           <a href="<?php echo $asset_prefix; ?>index.php#blog" class="nav-menu-link" style="white-space:nowrap;">Blog</a>

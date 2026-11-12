@@ -1,51 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Pages -->
   <url>
-    <loc>https://www.gigadigitalagency.com/</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://giga-digital-agency.vercel.app/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.gigadigitalagency.com/pages/about.php</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.gigadigitalagency.com/pages/services.php</loc>
-    <lastmod>2026-11-09</lastmod>
+    <loc>https://giga-digital-agency.vercel.app/#about</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.gigadigitalagency.com/pages/portfolio.php</loc>
-    <lastmod>2026-11-09</lastmod>
+    <loc>https://giga-digital-agency.vercel.app/#services</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://giga-digital-agency.vercel.app/#process</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://giga-digital-agency.vercel.app/#case-study</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://giga-digital-agency.vercel.app/#pricing</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.gigadigitalagency.com/pages/case-studies.php</loc>
-    <lastmod>2026-11-09</lastmod>
+    <loc>https://giga-digital-agency.vercel.app/#faq</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.gigadigitalagency.com/pages/pricing.php</loc>
-    <lastmod>2026-11-09</lastmod>
+    <loc>https://giga-digital-agency.vercel.app/#contact</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
+
+  <!-- Dedicated Service Pages (11 Disciplines) -->
   <url>
-    <loc>https://www.gigadigitalagency.com/pages/blog.php</loc>
-    <lastmod>2026-11-09</lastmod>
+    <loc>https://giga-digital-agency.vercel.app/services/linkedin-ads</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.gigadigitalagency.com/pages/contact.php</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://giga-digital-agency.vercel.app/services/google-ads</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://giga-digital-agency.vercel.app/services/facebook-boosting</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://giga-digital-agency.vercel.app/services/seo</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://giga-digital-agency.vercel.app/services/digital-marketing</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://giga-digital-agency.vercel.app/services/company-profile-design</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://giga-digital-agency.vercel.app/services/banner-poster-design</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://giga-digital-agency.vercel.app/services/content-marketing</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://giga-digital-agency.vercel.app/services/branding-design</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://giga-digital-agency.vercel.app/services/video-editing</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://giga-digital-agency.vercel.app/services/web-design-development</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>
