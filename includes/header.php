@@ -36,8 +36,8 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="<?php echo $asset_prefix; ?>css/style.css?v=2.5">
-  <link rel="stylesheet" href="<?php echo $asset_prefix; ?>css/responsive.css?v=2.5">
+  <link rel="stylesheet" href="<?php echo $asset_prefix; ?>css/style.css?v=2.6">
+  <link rel="stylesheet" href="<?php echo $asset_prefix; ?>css/responsive.css?v=2.6">
 </head>
 <body>
 
