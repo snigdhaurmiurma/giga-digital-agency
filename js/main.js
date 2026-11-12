@@ -684,54 +684,54 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
-  // 14. HERO AUTOMATIC DIGITAL MARKETING CAROUSEL (6 Slides)
+  // 14. HERO FULL-CANVAS ADVERTISING POSTER CAROUSEL (6 Campaigns)
   // =========================================================================
-  const heroCarouselSection = document.querySelector('.hero-carousel-section');
-  const heroCarouselViewport = document.querySelector('.hero-carousel-viewport');
-  const heroSlides = document.querySelectorAll('.hero-carousel-slide');
-  const heroDots = document.querySelectorAll('#heroCarouselPagination .hero-dot');
-  const heroPrevBtn = document.getElementById('heroCarouselPrev');
-  const heroNextBtn = document.getElementById('heroCarouselNext');
-  const heroCounterCurrent = document.querySelector('.carousel-counter .current-slide');
-  const heroProgressBar = document.getElementById('carouselProgressBar');
+  const posterSection = document.querySelector('.hero-poster-carousel-section');
+  const posterViewport = document.getElementById('posterCarouselViewport');
+  const posterSlides = document.querySelectorAll('.hero-poster-slide');
+  const posterIndicators = document.querySelectorAll('.poster-indicators .p-indicator');
+  const posterPrevBtn = document.getElementById('posterNavPrev');
+  const posterNextBtn = document.getElementById('posterNavNext');
+  const posterCounterCurrent = document.querySelector('.poster-counter-pill .p-count-curr');
+  const posterProgressBar = document.getElementById('posterProgressBar');
 
-  if (heroSlides.length > 0) {
+  if (posterSlides.length > 0) {
     let currentSlide = 0;
-    const totalSlides = heroSlides.length;
-    const slideDuration = 4500; // 4.5s automatic rotation interval
+    const totalSlides = posterSlides.length;
+    const posterInterval = 4600; // 4.6s automatic rotation interval
     let autoplayTimer = null;
     let isHovered = false;
 
     const resetProgressBar = () => {
-      if (!heroProgressBar) return;
-      heroProgressBar.style.transition = 'none';
-      heroProgressBar.style.width = '0%';
-      void heroProgressBar.offsetWidth; // Force DOM reflow
+      if (!posterProgressBar) return;
+      posterProgressBar.style.transition = 'none';
+      posterProgressBar.style.width = '0%';
+      void posterProgressBar.offsetWidth; // Force DOM reflow
       if (!isHovered) {
-        heroProgressBar.style.transition = `width ${slideDuration}ms linear`;
-        heroProgressBar.style.width = '100%';
+        posterProgressBar.style.transition = `width ${posterInterval}ms linear`;
+        posterProgressBar.style.width = '100%';
       }
     };
 
     const updateCounter = (index) => {
-      if (heroCounterCurrent) {
-        heroCounterCurrent.textContent = String(index + 1).padStart(2, '0');
+      if (posterCounterCurrent) {
+        posterCounterCurrent.textContent = String(index + 1).padStart(2, '0');
       }
     };
 
     const goToSlide = (index) => {
       currentSlide = (index + totalSlides) % totalSlides;
 
-      heroSlides.forEach((slide, idx) => {
+      posterSlides.forEach((slide, idx) => {
         const isActive = idx === currentSlide;
         slide.classList.toggle('active', isActive);
         slide.setAttribute('aria-hidden', !isActive);
       });
 
-      heroDots.forEach((dot, idx) => {
+      posterIndicators.forEach((ind, idx) => {
         const isActive = idx === currentSlide;
-        dot.classList.toggle('active', isActive);
-        dot.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        ind.classList.toggle('active', isActive);
+        ind.setAttribute('aria-selected', isActive ? 'true' : 'false');
       });
 
       updateCounter(currentSlide);
@@ -748,7 +748,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isHovered) {
           nextSlide();
         }
-      }, slideDuration);
+      }, posterInterval);
     };
 
     const stopAutoplay = () => {
@@ -756,35 +756,35 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(autoplayTimer);
         autoplayTimer = null;
       }
-      if (heroProgressBar) {
-        const computedWidth = window.getComputedStyle(heroProgressBar).width;
-        heroProgressBar.style.transition = 'none';
-        heroProgressBar.style.width = computedWidth;
+      if (posterProgressBar) {
+        const computedWidth = window.getComputedStyle(posterProgressBar).width;
+        posterProgressBar.style.transition = 'none';
+        posterProgressBar.style.width = computedWidth;
       }
     };
 
     // Manual Navigation: Arrow Buttons
-    if (heroNextBtn) {
-      heroNextBtn.addEventListener('click', (e) => {
+    if (posterNextBtn) {
+      posterNextBtn.addEventListener('click', (e) => {
         e.preventDefault();
         nextSlide();
         startAutoplay();
       });
     }
 
-    if (heroPrevBtn) {
-      heroPrevBtn.addEventListener('click', (e) => {
+    if (posterPrevBtn) {
+      posterPrevBtn.addEventListener('click', (e) => {
         e.preventDefault();
         prevSlide();
         startAutoplay();
       });
     }
 
-    // Manual Navigation: Pagination Dots
-    heroDots.forEach(dot => {
-      dot.addEventListener('click', (e) => {
+    // Manual Navigation: Indicator Tabs
+    posterIndicators.forEach(ind => {
+      ind.addEventListener('click', (e) => {
         e.preventDefault();
-        const target = parseInt(dot.getAttribute('data-slide'), 10);
+        const target = parseInt(ind.getAttribute('data-poster'), 10);
         if (!isNaN(target)) {
           goToSlide(target);
           startAutoplay();
@@ -793,27 +793,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Pause on Hover (Desktop)
-    if (heroCarouselSection) {
-      heroCarouselSection.addEventListener('mouseenter', () => {
+    if (posterSection) {
+      posterSection.addEventListener('mouseenter', () => {
         isHovered = true;
         stopAutoplay();
       });
-      heroCarouselSection.addEventListener('mouseleave', () => {
+      posterSection.addEventListener('mouseleave', () => {
         isHovered = false;
         startAutoplay();
       });
     }
 
     // Touch Swipe Gesture Support (Mobile & Tablet)
-    if (heroCarouselViewport) {
+    if (posterViewport) {
       let touchStartX = 0;
       let touchEndX = 0;
 
-      heroCarouselViewport.addEventListener('touchstart', (e) => {
+      posterViewport.addEventListener('touchstart', (e) => {
         touchStartX = e.changedTouches[0].screenX;
       }, { passive: true });
 
-      heroCarouselViewport.addEventListener('touchend', (e) => {
+      posterViewport.addEventListener('touchend', (e) => {
         touchEndX = e.changedTouches[0].screenX;
         const diffX = touchEndX - touchStartX;
         if (Math.abs(diffX) > 42) {
@@ -830,7 +830,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Accessible Keyboard Navigation (Arrow Keys)
     document.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
-        const rect = heroCarouselSection?.getBoundingClientRect();
+        const rect = posterSection?.getBoundingClientRect();
         if (rect && rect.top < window.innerHeight && rect.bottom > 0) {
           if (e.key === 'ArrowRight') {
             nextSlide();
