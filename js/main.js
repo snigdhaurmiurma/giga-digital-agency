@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateCarousel = () => {
       track.style.transform = `translateX(-${activeSlide * 100}%)`;
-      document.querySelectorAll('.carousel-dot').forEach((dot, idx) => {
+      dotsContainer.querySelectorAll('.carousel-dot').forEach((dot, idx) => {
         dot.classList.toggle('active', idx === activeSlide);
       });
     };
@@ -682,5 +682,168 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // =========================================================================
+  // 14. HERO AUTOMATIC DIGITAL MARKETING CAROUSEL (6 Slides)
+  // =========================================================================
+  const heroCarouselSection = document.querySelector('.hero-carousel-section');
+  const heroCarouselViewport = document.querySelector('.hero-carousel-viewport');
+  const heroSlides = document.querySelectorAll('.hero-carousel-slide');
+  const heroDots = document.querySelectorAll('#heroCarouselPagination .hero-dot');
+  const heroPrevBtn = document.getElementById('heroCarouselPrev');
+  const heroNextBtn = document.getElementById('heroCarouselNext');
+  const heroCounterCurrent = document.querySelector('.carousel-counter .current-slide');
+  const heroProgressBar = document.getElementById('carouselProgressBar');
+
+  if (heroSlides.length > 0) {
+    let currentSlide = 0;
+    const totalSlides = heroSlides.length;
+    const slideDuration = 4500; // 4.5s automatic rotation interval
+    let autoplayTimer = null;
+    let isHovered = false;
+
+    const resetProgressBar = () => {
+      if (!heroProgressBar) return;
+      heroProgressBar.style.transition = 'none';
+      heroProgressBar.style.width = '0%';
+      void heroProgressBar.offsetWidth; // Force DOM reflow
+      if (!isHovered) {
+        heroProgressBar.style.transition = `width ${slideDuration}ms linear`;
+        heroProgressBar.style.width = '100%';
+      }
+    };
+
+    const updateCounter = (index) => {
+      if (heroCounterCurrent) {
+        heroCounterCurrent.textContent = String(index + 1).padStart(2, '0');
+      }
+    };
+
+    const goToSlide = (index) => {
+      currentSlide = (index + totalSlides) % totalSlides;
+
+      heroSlides.forEach((slide, idx) => {
+        const isActive = idx === currentSlide;
+        slide.classList.toggle('active', isActive);
+        slide.setAttribute('aria-hidden', !isActive);
+      });
+
+      heroDots.forEach((dot, idx) => {
+        const isActive = idx === currentSlide;
+        dot.classList.toggle('active', isActive);
+        dot.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+
+      updateCounter(currentSlide);
+      resetProgressBar();
+    };
+
+    const nextSlide = () => goToSlide(currentSlide + 1);
+    const prevSlide = () => goToSlide(currentSlide - 1);
+
+    const startAutoplay = () => {
+      stopAutoplay();
+      resetProgressBar();
+      autoplayTimer = setInterval(() => {
+        if (!isHovered) {
+          nextSlide();
+        }
+      }, slideDuration);
+    };
+
+    const stopAutoplay = () => {
+      if (autoplayTimer) {
+        clearInterval(autoplayTimer);
+        autoplayTimer = null;
+      }
+      if (heroProgressBar) {
+        const computedWidth = window.getComputedStyle(heroProgressBar).width;
+        heroProgressBar.style.transition = 'none';
+        heroProgressBar.style.width = computedWidth;
+      }
+    };
+
+    // Manual Navigation: Arrow Buttons
+    if (heroNextBtn) {
+      heroNextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        nextSlide();
+        startAutoplay();
+      });
+    }
+
+    if (heroPrevBtn) {
+      heroPrevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        prevSlide();
+        startAutoplay();
+      });
+    }
+
+    // Manual Navigation: Pagination Dots
+    heroDots.forEach(dot => {
+      dot.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = parseInt(dot.getAttribute('data-slide'), 10);
+        if (!isNaN(target)) {
+          goToSlide(target);
+          startAutoplay();
+        }
+      });
+    });
+
+    // Pause on Hover (Desktop)
+    if (heroCarouselSection) {
+      heroCarouselSection.addEventListener('mouseenter', () => {
+        isHovered = true;
+        stopAutoplay();
+      });
+      heroCarouselSection.addEventListener('mouseleave', () => {
+        isHovered = false;
+        startAutoplay();
+      });
+    }
+
+    // Touch Swipe Gesture Support (Mobile & Tablet)
+    if (heroCarouselViewport) {
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      heroCarouselViewport.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      heroCarouselViewport.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diffX = touchEndX - touchStartX;
+        if (Math.abs(diffX) > 42) {
+          if (diffX < 0) {
+            nextSlide();
+          } else {
+            prevSlide();
+          }
+          startAutoplay();
+        }
+      }, { passive: true });
+    }
+
+    // Accessible Keyboard Navigation (Arrow Keys)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        const rect = heroCarouselSection?.getBoundingClientRect();
+        if (rect && rect.top < window.innerHeight && rect.bottom > 0) {
+          if (e.key === 'ArrowRight') {
+            nextSlide();
+          } else {
+            prevSlide();
+          }
+          startAutoplay();
+        }
+      }
+    });
+
+    // Initialize Autoplay on page load
+    startAutoplay();
+  }
 
 });

@@ -9,137 +9,752 @@ $current_page = 'home';
 $is_subpage = false;
 require_once __DIR__ . '/includes/header.php';
 ?>
-<section class="hero-banner" id="home">
-    <div class="container">
-      <div class="hero-grid">
-        
-        <!-- Left: Copy & Value Proposition (Zaman IT exact layout) -->
-        <div>
-          <!-- Brand Tagline Pill -->
-          <div class="hero-partner-pill">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
-            <span>Your Growth. Our Digital Strategy.</span>
-          </div>
+<section class="hero-banner hero-carousel-section" id="home" aria-label="Giga Digital Agency Promotional Carousel" aria-roledescription="carousel">
+    
+    <!-- Ambient Tech Glow Behind Carousel -->
+    <div class="carousel-ambient-glow" aria-hidden="true"></div>
 
-          <!-- Main Headline -->
-          <h1 class="hero-title">
-            <span class="hero-accent-green">Empowering Businesses</span> Through Digital Innovation &amp; Strategic Growth.
-          </h1>
+    <!-- Automatic Slide Progress Indicator (Freezes on Hover) -->
+    <div class="carousel-progress-track" aria-hidden="true">
+      <div class="carousel-progress-bar" id="carouselProgressBar"></div>
+    </div>
 
-          <p class="hero-subtitle">
-            From performance-driven advertising and creative branding to website development and digital marketing, we deliver customized solutions that help businesses grow, connect, and compete in the digital world.
-          </p>
+    <!-- Carousel Viewport & Slides Track -->
+    <div class="hero-carousel-viewport">
+      <div class="hero-carousel-track" id="heroCarouselTrack">
 
-          <!-- Buttons Row -->
-          <div class="hero-cta-group">
-            <a href="#services" class="btn-whatsapp-pill" style="background:var(--accent-primary); border-color:var(--accent-primary); color:#ffffff;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
-              <span>Explore Our Services</span>
-            </a>
-            <a href="#contact" class="btn-dark-pill">
-              <span class="play-arrow-circle">▶</span>
-              <span>Let's Discuss Your Project</span>
-            </a>
-          </div>
+        <!-- ===================================================================
+             SLIDE 01: MAIN BRAND INTRODUCTION
+             =================================================================== -->
+        <article class="hero-carousel-slide active" data-slide-index="0" role="group" aria-roledescription="slide" aria-label="1 of 6: Main Brand Introduction">
+          <div class="container hero-slide-container">
+            <div class="hero-slide-grid">
+              
+              <!-- Left Copy & Brand Value Proposition -->
+              <div class="hero-slide-content">
+                <div class="hero-partner-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+                  <span>Your Growth. Our Digital Strategy.</span>
+                </div>
 
-          <!-- Small Pricing Subtext with Links -->
-          <p class="hero-price-subtext">
-            Results-driven digital solutions. <a href="#services">Explore our 11 services</a> &bull; <a href="#pricing">Custom service packages</a> &bull; <a href="#contact">Free consultation</a>
-          </p>
-        </div>
+                <div class="hero-supporting-kicker">Empowering Businesses Through Digital Innovation &amp; Strategic Growth.</div>
 
-        <!-- Right: 3D Angled Devices Showcase + Cursive Tag -->
-        <div style="position:relative;">
-          <!-- Handwritten Cursive Text (Top Right) -->
-          <div class="handwritten-script-wrap">
-            <div class="handwritten-script">
-              Your Growth.<br>Our Strategy. <span class="handwritten-doodle">⤵</span>
-            </div>
-          </div>
+                <h1 class="hero-carousel-title">
+                  Your Growth.<br>
+                  <span class="hero-accent-text">Our Digital Strategy.</span>
+                </h1>
 
-          <!-- Devices Stage -->
-          <div class="zaman-devices-stage">
-            <div class="zaman-stage-backdrop"></div>
-            
-            <!-- Laptop Frame -->
-            <div class="mockup-laptop">
-              <div class="laptop-screen-frame">
-                <div class="laptop-notch"></div>
-                <div class="laptop-screen-display">
-                  <img src="images/resource/why-choose-one-img.jpg" alt="Agency Portal Preview">
-                  <div class="laptop-screen-overlay">
-                    <div class="screen-mini-header">
-                      <img src="images/resource/logo-1.png" alt="Giga Logo" style="height:18px; width:auto;">
-                      <div class="screen-mini-nav">
-                        <span>Home</span>
-                        <span>Services</span>
-                        <span>Portfolio</span>
-                        <span>Pricing</span>
-                      </div>
+                <p class="hero-carousel-desc">
+                  We help businesses grow through strategic digital marketing, targeted advertising, creative branding, and innovative digital solutions. From building brand awareness to generating qualified leads, we're here to turn your business goals into measurable opportunities.
+                </p>
+
+                <div class="hero-service-chips">
+                  <span class="service-chip">Strategic Digital Marketing</span>
+                  <span class="service-chip">Targeted Advertising</span>
+                  <span class="service-chip">Creative Branding</span>
+                  <span class="service-chip">Web Engineering</span>
+                </div>
+
+                <div class="hero-carousel-ctas">
+                  <a href="#services" class="btn btn-primary">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                    <span>Explore Our Services</span>
+                  </a>
+                  <a href="#contact" class="btn btn-dark-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <span>Let's Discuss Your Project</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right: Art-Directed Digital Growth Command Center -->
+              <div class="hero-slide-visual">
+                <div class="visual-art-canvas visual-canvas-brand">
+                  <div class="canvas-ambient-backdrop"></div>
+
+                  <!-- Agency Growth Hub Display Card -->
+                  <div class="canvas-laptop-card">
+                    <div class="card-browser-bar">
+                      <span class="bar-dot red"></span>
+                      <span class="bar-dot yellow"></span>
+                      <span class="bar-dot green"></span>
+                      <span class="bar-url">gigadigitalagency.com/growth-suite</span>
                     </div>
-                    <div class="screen-mini-hero">
-                      <div class="screen-mini-tag">Official Digital Agency</div>
-                      <div class="screen-mini-title">Build Your<br>Digital Future</div>
-                      <div class="screen-mini-desc">Modern Websites, Real Results. High-impact engineering & marketing.</div>
-                      <div class="screen-mini-btn-group">
-                        <span class="mini-btn-blue">Get Started</span>
-                        <span class="mini-btn-ghost">View Our Work</span>
+                    <div class="card-screen-content">
+                      <div class="screen-brand-header">
+                        <img src="images/resource/logo-1.png" alt="Giga Digital Agency" class="screen-logo-img">
+                        <span class="screen-badge-live">● Live Performance</span>
+                      </div>
+                      <div class="screen-kpi-row">
+                        <div class="screen-kpi-box">
+                          <span class="kpi-label">Average Campaign ROI</span>
+                          <span class="kpi-val">+148%</span>
+                          <span class="kpi-sub">Data-Driven Optimization</span>
+                        </div>
+                        <div class="screen-kpi-box">
+                          <span class="kpi-label">Qualified Leads</span>
+                          <span class="kpi-val">24.5K+</span>
+                          <span class="kpi-sub">Verified B2B &amp; B2C Inquiries</span>
+                        </div>
+                      </div>
+                      <div class="screen-mini-chart">
+                        <svg viewBox="0 0 320 60" class="sparkline-svg" fill="none" preserveAspectRatio="none">
+                          <path d="M0,50 Q40,32 80,40 T160,22 T240,14 T320,6" stroke="var(--accent-primary)" stroke-width="3" stroke-linecap="round"/>
+                          <path d="M0,50 Q40,32 80,40 T160,22 T240,14 T320,6 L320,60 L0,60 Z" fill="var(--accent-primary)" fill-opacity="0.14"/>
+                        </svg>
                       </div>
                     </div>
                   </div>
+
+                  <!-- Floating Trust Pill Top -->
+                  <div class="canvas-float-card float-badge-top">
+                    <span class="badge-icon-wrap" style="color:var(--accent-green); background:rgba(62,182,73,0.16);">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    </span>
+                    <div>
+                      <div class="float-title">99.4% Client CSAT</div>
+                      <div class="float-sub">Long-Term Growth Partner</div>
+                    </div>
+                  </div>
+
+                  <!-- Floating Strategic Pill Bottom -->
+                  <div class="canvas-float-card float-badge-bottom">
+                    <span class="badge-icon-wrap" style="color:var(--accent-cyan); background:rgba(6,182,212,0.16);">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                    </span>
+                    <div>
+                      <div class="float-title">Measurable Opportunities</div>
+                      <div class="float-sub">Full-Funnel Campaign Execution</div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
-              <div class="laptop-base">
-                <div class="laptop-trackpad-notch"></div>
-              </div>
-            </div>
 
-            <!-- Overlapping Smartphone Mockup -->
-            <div class="mockup-smartphone">
-              <div class="phone-screen">
-                <div class="phone-island"></div>
-                <div class="phone-content">
-                  <img src="images/resource/logo-1.png" alt="Giga Logo" class="phone-logo">
-                  <div class="phone-hero-title">Build Your Digital Future</div>
-                  <div class="phone-hero-desc">Modern Websites, Real Results.</div>
-                  <span class="phone-mini-btn">Get Started</span>
-                </div>
-              </div>
             </div>
-
           </div>
+        </article>
+
+        <!-- ===================================================================
+             SLIDE 02: GOOGLE ADS & LINKEDIN ADS
+             =================================================================== -->
+        <article class="hero-carousel-slide" data-slide-index="1" role="group" aria-roledescription="slide" aria-label="2 of 6: Google Ads & LinkedIn Ads">
+          <div class="container hero-slide-container">
+            <div class="hero-slide-grid">
+              
+              <!-- Left Copy -->
+              <div class="hero-slide-content">
+                <div class="hero-partner-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+                  <span>Growth &amp; High-Intent Advertising</span>
+                </div>
+
+                <div class="hero-supporting-kicker">Performance Search &amp; Enterprise B2B Lead Generation</div>
+
+                <h2 class="hero-carousel-title">
+                  Reach the Right Audience.<br>
+                  <span class="hero-accent-text">Generate Real Opportunities.</span>
+                </h2>
+
+                <p class="hero-carousel-desc">
+                  Connect with potential customers and business decision-makers through strategic advertising campaigns designed to increase visibility, generate quality leads, and support business growth.
+                </p>
+
+                <div class="hero-service-chips">
+                  <a href="services/google-ads.html" class="service-chip">Google Ads Management</a>
+                  <a href="services/linkedin-ads.html" class="service-chip">LinkedIn Ads Management</a>
+                  <span class="service-chip">B2B Lead Generation</span>
+                  <span class="service-chip">Targeted Digital Advertising</span>
+                </div>
+
+                <div class="hero-carousel-ctas">
+                  <a href="services/google-ads.html" class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    <span>Explore Advertising Solutions</span>
+                  </a>
+                  <a href="services/linkedin-ads.html" class="btn btn-dark-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    <span>LinkedIn Ads Details</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right: Dual Advertising Mockup Matrix -->
+              <div class="hero-slide-visual">
+                <div class="visual-art-canvas visual-canvas-ads">
+                  <div class="canvas-ambient-backdrop"></div>
+
+                  <!-- Google Search Ad Preview Card -->
+                  <div class="ad-mockup-card google-ad-card">
+                    <div class="ad-card-badge-row">
+                      <span class="ad-pill-label">Sponsored Search Campaign</span>
+                      <span class="ad-quality-badge">Quality Score: 10/10</span>
+                    </div>
+                    <div class="ad-url-preview">
+                      <span class="ad-tag">Ad</span>
+                      <span class="ad-display-url">https://gigadigitalagency.com/scale-revenue</span>
+                    </div>
+                    <div class="ad-headline-preview">High-Performance Google Ads Management | Qualified Leads &amp; Sales</div>
+                    <p class="ad-body-preview">Connect with buyers actively searching for your solutions. Targeted keywords, lower CPC &amp; verified conversion tracking.</p>
+                    <div class="ad-sitelinks-row">
+                      <span class="sitelink-pill">B2B Lead Generation</span>
+                      <span class="sitelink-pill">E-Commerce ROAS 4.8x</span>
+                      <span class="sitelink-pill">Free Account Audit</span>
+                    </div>
+                  </div>
+
+                  <!-- LinkedIn B2B Sponsored Ad Mockup Card -->
+                  <div class="ad-mockup-card linkedin-ad-card">
+                    <div class="li-ad-header">
+                      <div class="li-avatar">
+                        <img src="images/resource/logo-1.png" alt="Giga">
+                      </div>
+                      <div>
+                        <div class="li-company-name">Giga Digital Agency &bull; Promoted</div>
+                        <div class="li-target-scope">Targeting: C-Level Executives &bull; VP of Growth &bull; Tech Founders</div>
+                      </div>
+                    </div>
+                    <div class="li-ad-caption">
+                      Reach decision-makers in targeted industries with precision B2B LinkedIn campaigns. Turn executive engagement into verified enterprise pipelines.
+                    </div>
+                    <div class="li-ad-cta-box">
+                      <div>
+                        <div class="li-cta-title">B2B Enterprise Growth Blueprint 2026</div>
+                        <div class="li-cta-sub">High-Value Lead Generation Form</div>
+                      </div>
+                      <span class="li-btn-download">Download Guide</span>
+                    </div>
+                  </div>
+
+                  <!-- Floating B2B Metric Badge -->
+                  <div class="canvas-float-card float-badge-metric">
+                    <span class="badge-icon-wrap" style="color:var(--accent-primary); background:rgba(30,58,138,0.16);">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
+                    </span>
+                    <div>
+                      <div class="float-title">1.2M+ Decision Makers</div>
+                      <div class="float-sub">Targeted B2B Industry Reach</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================================================================
+             SLIDE 03: FACEBOOK & SOCIAL MEDIA MARKETING
+             =================================================================== -->
+        <article class="hero-carousel-slide" data-slide-index="2" role="group" aria-roledescription="slide" aria-label="3 of 6: Facebook & Social Media Marketing">
+          <div class="container hero-slide-container">
+            <div class="hero-slide-grid">
+              
+              <!-- Left Copy -->
+              <div class="hero-slide-content">
+                <div class="hero-partner-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                  <span>Social Media Advertising &amp; Audience Reach</span>
+                </div>
+
+                <div class="hero-supporting-kicker">Viral Brand Creative &amp; Dynamic Audience Engagement</div>
+
+                <h2 class="hero-carousel-title">
+                  Make Your Brand<br>
+                  <span class="hero-accent-text">Impossible to Ignore.</span>
+                </h2>
+
+                <p class="hero-carousel-desc">
+                  Build meaningful audience connections through strategic social media advertising, creative campaigns, and targeted Facebook promotions that help your business reach more potential customers.
+                </p>
+
+                <div class="hero-service-chips">
+                  <a href="services/facebook-boosting.html" class="service-chip">Facebook Boosting</a>
+                  <span class="service-chip">Social Media Advertising</span>
+                  <span class="service-chip">Campaign Creative Design</span>
+                  <span class="service-chip">Audience Engagement</span>
+                </div>
+
+                <div class="hero-carousel-ctas">
+                  <a href="services/facebook-boosting.html" class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    <span>Grow Your Social Presence</span>
+                  </a>
+                  <a href="#pricing" class="btn btn-dark-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    <span>View Custom Packages</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right: Smartphone Social Creative Frame & Engagement Analytics -->
+              <div class="hero-slide-visual">
+                <div class="visual-art-canvas visual-canvas-social">
+                  <div class="canvas-ambient-backdrop"></div>
+
+                  <!-- Smartphone Device Mockup with Social Post -->
+                  <div class="social-phone-frame">
+                    <div class="phone-dynamic-island"></div>
+                    <div class="phone-social-feed">
+                      <div class="feed-author-row">
+                        <img src="images/resource/logo-1.png" alt="Giga" class="feed-author-avatar">
+                        <div class="feed-author-meta">
+                          <div class="author-name">Giga Digital Agency <span class="verified-blue">✓</span></div>
+                          <div class="author-sub">Sponsored &bull; High-Impact Campaign</div>
+                        </div>
+                        <span class="feed-more">•••</span>
+                      </div>
+                      <div class="feed-creative-image">
+                        <img src="images/resource/why-choose-one-img-2.jpg" alt="Campaign Post Visual">
+                        <div class="feed-creative-overlay">
+                          <span class="promo-tag">Featured Promotion</span>
+                          <div class="promo-headline">Accelerate Your Market Reach</div>
+                        </div>
+                      </div>
+                      <div class="feed-action-bar">
+                        <div class="feed-actions-left">
+                          <span class="action-icon heart">♥ 18.4K</span>
+                          <span class="action-icon comment">💬 1,280</span>
+                          <span class="action-icon share">↗ 480</span>
+                        </div>
+                        <span class="feed-cta-pill">Learn More</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Floating Social Analytics Metric Card -->
+                  <div class="canvas-float-card float-badge-social-kpi">
+                    <div class="kpi-ring-stat">
+                      <div class="kpi-radial-text">+320%</div>
+                      <div>
+                        <div class="float-title">Engagement Surge</div>
+                        <div class="float-sub">840K+ Monthly Reach</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="canvas-float-card float-badge-virality">
+                    <span class="badge-icon-wrap" style="color:var(--accent-violet); background:rgba(124,58,237,0.16);">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    </span>
+                    <div>
+                      <div class="float-title">High-Converting Creatives</div>
+                      <div class="float-sub">Dynamic Copy &amp; Visual Testing</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================================================================
+             SLIDE 04: BRANDING & CREATIVE DESIGN
+             =================================================================== -->
+        <article class="hero-carousel-slide" data-slide-index="3" role="group" aria-roledescription="slide" aria-label="4 of 6: Branding & Creative Design">
+          <div class="container hero-slide-container">
+            <div class="hero-slide-grid">
+              
+              <!-- Left Copy -->
+              <div class="hero-slide-content">
+                <div class="hero-partner-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  <span>Brand Identity &amp; Creative Studio</span>
+                </div>
+
+                <div class="hero-supporting-kicker">Distinctive Visual Architecture &amp; Corporate Communication</div>
+
+                <h2 class="hero-carousel-title">
+                  Turn Your Ideas Into<br>
+                  <span class="hero-accent-text">Powerful Brand Experiences.</span>
+                </h2>
+
+                <p class="hero-carousel-desc">
+                  Create a distinctive brand identity through professional design, engaging promotional visuals, and creative content that makes your business memorable.
+                </p>
+
+                <div class="hero-service-chips">
+                  <a href="services/branding-design.html" class="service-chip">Branding &amp; Design</a>
+                  <a href="services/company-profile-design.html" class="service-chip">Company Profile Design</a>
+                  <a href="services/banner-poster-design.html" class="service-chip">Banner &amp; Poster Design</a>
+                  <span class="service-chip">Creative Content</span>
+                </div>
+
+                <div class="hero-carousel-ctas">
+                  <a href="services/branding-design.html" class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    <span>Explore Creative Services</span>
+                  </a>
+                  <a href="services/company-profile-design.html" class="btn btn-dark-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    <span>Company Profile Design</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right: Editorial Brand System Studio Artboard -->
+              <div class="hero-slide-visual">
+                <div class="visual-art-canvas visual-canvas-brandstudio">
+                  <div class="canvas-ambient-backdrop"></div>
+
+                  <!-- Company Profile Presentation Mockup -->
+                  <div class="profile-book-mockup">
+                    <div class="book-spine"></div>
+                    <div class="book-cover">
+                      <div class="book-cover-header">
+                        <span class="brand-book-tag">Brand Identity Guidelines</span>
+                        <span class="brand-book-ver">Vol. 2026</span>
+                      </div>
+                      <div class="book-logo-display">
+                        <img src="images/resource/logo-1.png" alt="Brand Logo Mockup">
+                      </div>
+                      <div class="book-brand-name">GIGA DIGITAL AGENCY</div>
+                      <p class="book-brand-sub">Design Systems, Typography &amp; Identity Architecture</p>
+                      <div class="book-color-palette">
+                        <span class="swatch-pill" style="background:#3eb649;" title="Emerald"></span>
+                        <span class="swatch-pill" style="background:#1d4ed8;" title="Royal Blue"></span>
+                        <span class="swatch-pill" style="background:#0b172a;" title="Midnight"></span>
+                        <span class="swatch-pill" style="background:#f59e0b;" title="Amber"></span>
+                        <span class="swatch-pill" style="background:#7c3aed;" title="Purple"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Typography Specimen Card -->
+                  <div class="canvas-float-card float-badge-type">
+                    <div class="type-specimen">
+                      <span class="type-letter">Aa</span>
+                      <div>
+                        <div class="float-title">Plus Jakarta Sans</div>
+                        <div class="float-sub">Editorial &bull; Modern &bull; Geometric</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="canvas-float-card float-badge-creative-kpi">
+                    <span class="badge-icon-wrap" style="color:var(--accent-amber); background:rgba(245,158,11,0.16);">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                    </span>
+                    <div>
+                      <div class="float-title">300+ Brand Systems</div>
+                      <div class="float-sub">Print &amp; Digital Ready Files</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================================================================
+             SLIDE 05: WEB DESIGN & DEVELOPMENT
+             =================================================================== -->
+        <article class="hero-carousel-slide" data-slide-index="4" role="group" aria-roledescription="slide" aria-label="5 of 6: Web Design & Development">
+          <div class="container hero-slide-container">
+            <div class="hero-slide-grid">
+              
+              <!-- Left Copy -->
+              <div class="hero-slide-content">
+                <div class="hero-partner-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                  <span>Modern Web Engineering &amp; Architecture</span>
+                </div>
+
+                <div class="hero-supporting-kicker">High-Performance User Experience &amp; Mobile-First Code</div>
+
+                <h2 class="hero-carousel-title">
+                  Build a Digital Presence<br>
+                  <span class="hero-accent-text">That Works for You.</span>
+                </h2>
+
+                <p class="hero-carousel-desc">
+                  Transform your business vision into a professional online experience with modern, responsive, user-friendly website design and development.
+                </p>
+
+                <div class="hero-service-chips">
+                  <a href="services/web-design-development.html" class="service-chip">Website Design</a>
+                  <span class="service-chip">Website Development</span>
+                  <span class="service-chip">Responsive Layouts</span>
+                  <span class="service-chip">Business Websites</span>
+                </div>
+
+                <div class="hero-carousel-ctas">
+                  <a href="services/web-design-development.html" class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    <span>Explore Web Solutions</span>
+                  </a>
+                  <a href="#process" class="btn btn-dark-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    <span>Explore Our Process</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right: Desktop Glass Browser + Performance Badges -->
+              <div class="hero-slide-visual">
+                <div class="visual-art-canvas visual-canvas-web">
+                  <div class="canvas-ambient-backdrop"></div>
+
+                  <!-- Desktop Glass Browser Window -->
+                  <div class="web-browser-window">
+                    <div class="browser-header-row">
+                      <div class="browser-dots">
+                        <span class="b-dot b-red"></span>
+                        <span class="b-dot b-yellow"></span>
+                        <span class="b-dot b-green"></span>
+                      </div>
+                      <div class="browser-address-bar">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        <span>https://gigadigitalagency.com</span>
+                      </div>
+                      <span class="browser-refresh">↻</span>
+                    </div>
+                    <div class="browser-viewport-display">
+                      <img src="images/resource/why-choose-one-img-3.jpg" alt="Responsive Website Preview">
+                      <div class="browser-overlay-content">
+                        <div class="mini-agency-header">
+                          <img src="images/resource/logo-1.png" alt="Giga Logo" style="height:16px;">
+                          <span class="tech-pill-live">Fast SSR &bull; 99.9% Uptime</span>
+                        </div>
+                        <div class="mini-agency-hero-text">
+                          <h3>High-Performance Web Platforms</h3>
+                          <p>Lightning-fast load speed, clean semantic code, and conversion-focused UX architecture.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PageSpeed Score Circle Badge -->
+                  <div class="canvas-float-card float-badge-pagespeed">
+                    <div class="pagespeed-score-circle">100</div>
+                    <div>
+                      <div class="float-title">100/100 Core Web Vitals</div>
+                      <div class="float-sub">Optimized Speed &amp; SEO</div>
+                    </div>
+                  </div>
+
+                  <div class="canvas-float-card float-badge-responsive">
+                    <span class="badge-icon-wrap" style="color:var(--accent-primary); background:rgba(62,182,73,0.16);">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                    </span>
+                    <div>
+                      <div class="float-title">Mobile-First Design</div>
+                      <div class="float-sub">Fluid Across All Devices</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================================================================
+             SLIDE 06: VIDEO EDITING & CONTENT MARKETING
+             =================================================================== -->
+        <article class="hero-carousel-slide" data-slide-index="5" role="group" aria-roledescription="slide" aria-label="6 of 6: Video Editing & Content Marketing">
+          <div class="container hero-slide-container">
+            <div class="hero-slide-grid">
+              
+              <!-- Left Copy -->
+              <div class="hero-slide-content">
+                <div class="hero-partner-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                  <span>Cinematic Motion &amp; Content Marketing</span>
+                </div>
+
+                <div class="hero-supporting-kicker">Multi-Platform Video Storytelling &amp; Audience Retention</div>
+
+                <h2 class="hero-carousel-title">
+                  Create Content That<br>
+                  <span class="hero-accent-text">Captures Attention.</span>
+                </h2>
+
+                <p class="hero-carousel-desc">
+                  Bring your brand stories to life through engaging video editing and strategic content marketing designed to inform, connect, and inspire your audience.
+                </p>
+
+                <div class="hero-service-chips">
+                  <a href="services/video-editing.html" class="service-chip">Professional Video Editing</a>
+                  <span class="service-chip">Promotional Videos</span>
+                  <span class="service-chip">Social Media Content</span>
+                  <a href="services/content-marketing.html" class="service-chip">Content Marketing</a>
+                </div>
+
+                <div class="hero-carousel-ctas">
+                  <a href="services/content-marketing.html" class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    <span>Explore Content Solutions</span>
+                  </a>
+                  <a href="services/video-editing.html" class="btn btn-dark-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    <span>Video Editing Services</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right: Video Editing Studio Timeline & Visual Monitor -->
+              <div class="hero-slide-visual">
+                <div class="visual-art-canvas visual-canvas-video">
+                  <div class="canvas-ambient-backdrop"></div>
+
+                  <!-- Video Studio Monitor & Multi-Track Timeline -->
+                  <div class="video-studio-card">
+                    <div class="studio-header">
+                      <span class="studio-badge-rec">● 4K PRORES 60FPS</span>
+                      <span class="studio-timecode">00:02:48:15</span>
+                    </div>
+                    <!-- Video Monitor Screen -->
+                    <div class="studio-screen-preview">
+                      <img src="images/resource/mint-vortex.jpg" alt="Video Monitor Preview">
+                      <div class="studio-play-circle">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      </div>
+                      <div class="studio-color-grade-pill">Color Grade: Film LUT 04</div>
+                    </div>
+                    <!-- Timeline Tracks -->
+                    <div class="studio-timeline-tracks">
+                      <div class="timeline-track-row v-track">
+                        <span class="t-label">V1</span>
+                        <div class="t-clip c-blue" style="width:34%;">Intro Hook</div>
+                        <div class="t-clip c-purple" style="width:42%;">Brand Story</div>
+                        <div class="t-clip c-green" style="width:20%;">CTA Outro</div>
+                      </div>
+                      <div class="timeline-track-row a-track">
+                        <span class="t-label">A1</span>
+                        <div class="t-audio-wave" style="width:100%;">
+                          <svg viewBox="0 0 300 16" width="100%" height="16" fill="var(--accent-primary)" opacity="0.85">
+                            <rect x="0" y="4" width="3" height="8" rx="1"/>
+                            <rect x="6" y="2" width="3" height="12" rx="1"/>
+                            <rect x="12" y="5" width="3" height="6" rx="1"/>
+                            <rect x="18" y="1" width="3" height="14" rx="1"/>
+                            <rect x="24" y="3" width="3" height="10" rx="1"/>
+                            <rect x="30" y="6" width="3" height="4" rx="1"/>
+                            <rect x="36" y="2" width="3" height="12" rx="1"/>
+                            <rect x="42" y="1" width="3" height="14" rx="1"/>
+                            <rect x="48" y="4" width="3" height="8" rx="1"/>
+                            <rect x="54" y="2" width="3" height="12" rx="1"/>
+                            <rect x="60" y="0" width="3" height="16" rx="1"/>
+                            <rect x="66" y="3" width="3" height="10" rx="1"/>
+                            <rect x="72" y="5" width="3" height="6" rx="1"/>
+                            <rect x="78" y="2" width="3" height="12" rx="1"/>
+                            <rect x="84" y="4" width="3" height="8" rx="1"/>
+                            <rect x="90" y="1" width="3" height="14" rx="1"/>
+                            <rect x="96" y="2" width="3" height="12" rx="1"/>
+                            <rect x="102" y="6" width="3" height="4" rx="1"/>
+                            <rect x="108" y="3" width="3" height="10" rx="1"/>
+                            <rect x="114" y="1" width="3" height="14" rx="1"/>
+                            <rect x="120" y="4" width="3" height="8" rx="1"/>
+                            <rect x="126" y="2" width="3" height="12" rx="1"/>
+                            <rect x="132" y="5" width="3" height="6" rx="1"/>
+                            <rect x="138" y="0" width="3" height="16" rx="1"/>
+                            <rect x="144" y="2" width="3" height="12" rx="1"/>
+                            <rect x="150" y="4" width="3" height="8" rx="1"/>
+                            <rect x="156" y="1" width="3" height="14" rx="1"/>
+                            <rect x="162" y="3" width="3" height="10" rx="1"/>
+                            <rect x="168" y="5" width="3" height="6" rx="1"/>
+                            <rect x="174" y="2" width="3" height="12" rx="1"/>
+                            <rect x="180" y="4" width="3" height="8" rx="1"/>
+                            <rect x="186" y="0" width="3" height="16" rx="1"/>
+                            <rect x="192" y="2" width="3" height="12" rx="1"/>
+                            <rect x="198" y="5" width="3" height="6" rx="1"/>
+                            <rect x="204" y="3" width="3" height="10" rx="1"/>
+                            <rect x="210" y="1" width="3" height="14" rx="1"/>
+                            <rect x="216" y="4" width="3" height="8" rx="1"/>
+                            <rect x="222" y="2" width="3" height="12" rx="1"/>
+                            <rect x="228" y="6" width="3" height="4" rx="1"/>
+                            <rect x="234" y="1" width="3" height="14" rx="1"/>
+                            <rect x="240" y="3" width="3" height="10" rx="1"/>
+                            <rect x="246" y="5" width="3" height="6" rx="1"/>
+                            <rect x="252" y="2" width="3" height="12" rx="1"/>
+                            <rect x="258" y="0" width="3" height="16" rx="1"/>
+                            <rect x="264" y="4" width="3" height="8" rx="1"/>
+                            <rect x="270" y="2" width="3" height="12" rx="1"/>
+                            <rect x="276" y="5" width="3" height="6" rx="1"/>
+                            <rect x="282" y="3" width="3" height="10" rx="1"/>
+                            <rect x="288" y="1" width="3" height="14" rx="1"/>
+                            <rect x="294" y="4" width="3" height="8" rx="1"/>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Floating Retention Metric Badge -->
+                  <div class="canvas-float-card float-badge-retention">
+                    <span class="badge-icon-wrap" style="color:var(--accent-cyan); background:rgba(6,182,212,0.16);">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    </span>
+                    <div>
+                      <div class="float-title">+450% Retention Surge</div>
+                      <div class="float-sub">Short-Form Reels &amp; Corporate 4K</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Carousel Controls Bar (Docked Below Slides) -->
+    <div class="container carousel-controls-container">
+      <div class="carousel-controls-bar">
+        
+        <!-- Previous Arrow -->
+        <button class="carousel-nav-btn prev-btn" id="heroCarouselPrev" aria-label="Previous Slide" title="Previous Slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        <!-- Pagination Indicators with Mini Labels & Progress Pill -->
+        <div class="carousel-pagination" id="heroCarouselPagination" role="tablist" aria-label="Slide Selector">
+          <button class="hero-dot active" data-slide="0" role="tab" aria-selected="true" aria-label="Slide 1: Agency Overview">
+            <span class="dot-num">01</span>
+            <span class="dot-title">Agency Overview</span>
+          </button>
+          <button class="hero-dot" data-slide="1" role="tab" aria-selected="false" aria-label="Slide 2: Search & B2B Ads">
+            <span class="dot-num">02</span>
+            <span class="dot-title">Search &amp; B2B Ads</span>
+          </button>
+          <button class="hero-dot" data-slide="2" role="tab" aria-selected="false" aria-label="Slide 3: Social Marketing">
+            <span class="dot-num">03</span>
+            <span class="dot-title">Social Marketing</span>
+          </button>
+          <button class="hero-dot" data-slide="3" role="tab" aria-selected="false" aria-label="Slide 4: Branding & Design">
+            <span class="dot-num">04</span>
+            <span class="dot-title">Branding &amp; Design</span>
+          </button>
+          <button class="hero-dot" data-slide="4" role="tab" aria-selected="false" aria-label="Slide 5: Web Engineering">
+            <span class="dot-num">05</span>
+            <span class="dot-title">Web &amp; Engineering</span>
+          </button>
+          <button class="hero-dot" data-slide="5" role="tab" aria-selected="false" aria-label="Slide 6: Video & Content">
+            <span class="dot-num">06</span>
+            <span class="dot-title">Video &amp; Content</span>
+          </button>
+        </div>
+
+        <!-- Next Arrow -->
+        <button class="carousel-nav-btn next-btn" id="heroCarouselNext" aria-label="Next Slide" title="Next Slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+
+        <!-- Slide Numeric Counter -->
+        <div class="carousel-counter" id="heroCarouselCounter" aria-live="polite">
+          <span class="current-slide">01</span><span class="counter-sep">/</span><span class="total-slides">06</span>
         </div>
 
       </div>
-
-      <!-- Floating Glass Feature Dock (The 4 Tabs from Zaman IT) -->
-      <div class="hero-feature-dock" aria-label="Key Agency Capabilities">
-        <a href="#services" class="dock-feature-item">
-          <span class="dock-icon-box">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-          </span>
-          <span>Web & Ecommerce</span>
-        </a>
-        <a href="#services" class="dock-feature-item">
-          <span class="dock-icon-box">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-          </span>
-          <span>Custom Software</span>
-        </a>
-        <a href="#services" class="dock-feature-item">
-          <span class="dock-icon-box">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-          </span>
-          <span>Digital Marketing</span>
-        </a>
-        <a href="#contact" class="dock-feature-item">
-          <span class="dock-icon-box">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
-          </span>
-          <span>Dedicated Support</span>
-        </a>
-      </div>
-
     </div>
 
     <!-- 6-Metric Stats Ticker Bar (Zaman IT Bottom Bar) -->
@@ -188,7 +803,7 @@ require_once __DIR__ . '/includes/header.php';
             </div>
             <div>
               <div class="zaman-stat-number">75+</div>
-              <div class="zaman-stat-title">Awards & Honors</div>
+              <div class="zaman-stat-title">Awards &amp; Honors</div>
             </div>
           </div>
           <div class="zaman-stat-card">
@@ -203,6 +818,7 @@ require_once __DIR__ . '/includes/header.php';
         </div>
       </div>
     </div>
+
   </section>
 
   <!-- =========================================================================
