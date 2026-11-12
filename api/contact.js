@@ -179,9 +179,44 @@ ${message}
 Delivered to: ${destinationEmail}
 `;
 
-    // 1. Send via Resend API if RESEND_API_KEY is configured
+    // 1. Direct Webmail / cPanel SMTP Transport (via Nodemailer)
+    // Connects directly to Namecheap / cPanel mail server with zero spam filter interception
     let deliveredVia = 'logged';
-    if (process.env.RESEND_API_KEY) {
+    const smtpPass = process.env.SMTP_PASS || process.env.EMAIL_PASSWORD || '';
+    if (smtpPass) {
+      try {
+        const nodemailer = require('nodemailer');
+        const transporter = nodemailer.createTransport({
+          host: process.env.SMTP_HOST || 'mail.gigadigitalagency.com',
+          port: parseInt(process.env.SMTP_PORT || '465', 10),
+          secure: (process.env.SMTP_SECURE === 'true' || parseInt(process.env.SMTP_PORT || '465', 10) === 465),
+          auth: {
+            user: process.env.SMTP_USER || destinationEmail,
+            pass: smtpPass
+          },
+          tls: {
+            rejectUnauthorized: false
+          }
+        });
+
+        await transporter.sendMail({
+          from: `"Giga Digital Agency Portal" <${process.env.SMTP_USER || destinationEmail}>`,
+          to: destinationEmail,
+          replyTo: `"${name}" <${email}>`,
+          subject: subject,
+          text: textContent,
+          html: htmlContent
+        });
+
+        deliveredVia = 'smtp';
+        console.log(`[SMTP] Successfully dispatched lead #${referenceId} to ${destinationEmail}`);
+      } catch (smtpErr) {
+        console.error('SMTP direct webmail dispatch error:', smtpErr);
+      }
+    }
+
+    // 2. Send via Resend API if RESEND_API_KEY is configured
+    if (process.env.RESEND_API_KEY && deliveredVia !== 'smtp') {
       try {
         const resendResponse = await fetch('https://api.resend.com/emails', {
           method: 'POST',
@@ -200,41 +235,72 @@ Delivered to: ${destinationEmail}
         });
         if (resendResponse.ok) {
           deliveredVia = 'resend';
+          console.log(`[Resend] Successfully dispatched lead #${referenceId}`);
         }
       } catch (err) {
         console.error('Resend dispatch error:', err);
       }
     }
 
-    // 2. Automated inbox dispatch to info@gigadigitalagency.com via FormSubmit
-    try {
-      const fsRes = await fetch(`https://formsubmit.co/ajax/${destinationEmail}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-          'Origin': 'https://giga-digital-agency.vercel.app',
-          'Referer': 'https://giga-digital-agency.vercel.app/'
-        },
-        body: JSON.stringify({
-          _subject: subject,
-          _replyto: email,
-          _captcha: 'false',
-          reference_id: referenceId,
-          client_name: name,
-          client_email: email,
-          client_phone: phone,
-          service_required: service,
-          budget_tier: budget,
-          project_scope: message,
-          timestamp: submittedAt
-        })
-      });
-      if (fsRes.ok) {
-        deliveredVia = 'formsubmit';
+    // 3. Web3Forms API if WEB3FORMS_KEY is configured
+    if (process.env.WEB3FORMS_KEY && deliveredVia === 'logged') {
+      try {
+        const w3Res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            access_key: process.env.WEB3FORMS_KEY,
+            subject: subject,
+            from_name: name,
+            email: email,
+            phone: phone,
+            service: service,
+            budget: budget,
+            message: message
+          })
+        });
+        if (w3Res.ok) {
+          deliveredVia = 'web3forms';
+        }
+      } catch (w3Err) {
+        console.error('Web3Forms dispatch error:', w3Err);
       }
-    } catch (err) {
-      console.error('FormSubmit dispatch error:', err);
+    }
+
+    // 4. Automated webhook dispatch via FormSubmit (Requires one-time inbox activation click)
+    if (deliveredVia === 'logged') {
+      try {
+        const fsRes = await fetch(`https://formsubmit.co/ajax/${destinationEmail}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'Origin': 'https://giga-digital-agency.vercel.app',
+            'Referer': 'https://giga-digital-agency.vercel.app/'
+          },
+          body: JSON.stringify({
+            _subject: subject,
+            _replyto: email,
+            _captcha: 'false',
+            reference_id: referenceId,
+            client_name: name,
+            client_email: email,
+            client_phone: phone,
+            service_required: service,
+            budget_tier: budget,
+            project_scope: message,
+            timestamp: submittedAt
+          })
+        });
+        if (fsRes.ok) {
+          deliveredVia = 'formsubmit';
+        }
+      } catch (err) {
+        console.error('FormSubmit dispatch error:', err);
+      }
     }
 
     // 3. Complete and confirmed delivery response
