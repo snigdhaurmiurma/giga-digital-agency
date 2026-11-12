@@ -698,7 +698,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (posterSlides.length > 0) {
     let currentSlide = 0;
     const totalSlides = posterSlides.length;
-    const posterInterval = 4600; // 4.6s automatic rotation interval
+    const posterInterval = 3200; // 3.2s continuous automatic rotation (within 2-4 seconds)
     let autoplayTimer = null;
     let isHovered = false;
 

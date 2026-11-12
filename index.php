@@ -30,21 +30,12 @@ require_once __DIR__ . '/includes/header.php';
           <div class="poster-backdrop">
             <img src="images/resource/about-one-img-1.jpg" alt="Giga Digital Agency Strategy" class="poster-bg-img">
             <div class="poster-scrim poster-scrim-brand"></div>
-            <div class="poster-ambient-glow glow-emerald"></div>
           </div>
           <div class="container poster-inner-container">
             <div class="poster-creative-card">
               
-              <div class="poster-badge-row">
-                <div class="poster-brand-tag">
-                  <img src="images/resource/logo-1.png" alt="Giga Digital Agency" class="poster-tag-logo">
-                  <span>GIGA DIGITAL AGENCY &bull; CAMPAIGN 01</span>
-                </div>
-                <span class="poster-edition-pill">DIGITAL GROWTH PARTNER</span>
-              </div>
 
               <div class="poster-headline-group">
-                <div class="poster-eyebrow">STRATEGIC DIGITAL MARKETING &amp; CREATIVE SOLUTIONS</div>
                 <h1 class="poster-headline">
                   YOUR GROWTH.<br>
                   <span class="poster-headline-accent">OUR DIGITAL STRATEGY.</span>
@@ -82,21 +73,12 @@ require_once __DIR__ . '/includes/header.php';
           <div class="poster-backdrop">
             <img src="images/resource/banner-one-img-1.jpg" alt="Targeted Digital Advertising" class="poster-bg-img">
             <div class="poster-scrim poster-scrim-ads"></div>
-            <div class="poster-ambient-glow glow-blue"></div>
           </div>
           <div class="container poster-inner-container">
             <div class="poster-creative-card">
               
-              <div class="poster-badge-row">
-                <div class="poster-brand-tag">
-                  <img src="images/resource/logo-1.png" alt="Giga Digital Agency" class="poster-tag-logo">
-                  <span>GIGA DIGITAL AGENCY &bull; CAMPAIGN 02</span>
-                </div>
-                <span class="poster-edition-pill">SEARCH &amp; B2B ADVERTISING</span>
-              </div>
 
               <div class="poster-headline-group">
-                <div class="poster-eyebrow">PRECISION TARGETING &bull; HIGH-INTENT BUYER ACQUISITION</div>
                 <h2 class="poster-headline">
                   REACH THE RIGHT AUDIENCE.<br>
                   <span class="poster-headline-accent">GENERATE REAL OPPORTUNITIES.</span>
@@ -134,21 +116,12 @@ require_once __DIR__ . '/includes/header.php';
           <div class="poster-backdrop">
             <img src="images/resource/why-choose-one-img-2.jpg" alt="Social Media Marketing" class="poster-bg-img">
             <div class="poster-scrim poster-scrim-social"></div>
-            <div class="poster-ambient-glow glow-violet"></div>
           </div>
           <div class="container poster-inner-container">
             <div class="poster-creative-card">
               
-              <div class="poster-badge-row">
-                <div class="poster-brand-tag">
-                  <img src="images/resource/logo-1.png" alt="Giga Digital Agency" class="poster-tag-logo">
-                  <span>GIGA DIGITAL AGENCY &bull; CAMPAIGN 03</span>
-                </div>
-                <span class="poster-edition-pill">SOCIAL MEDIA VIRALITY</span>
-              </div>
 
               <div class="poster-headline-group">
-                <div class="poster-eyebrow">AUDIENCE EXPANSION &bull; BRAND ENGAGEMENT &bull; SOCIAL ROI</div>
                 <h2 class="poster-headline">
                   MAKE YOUR BRAND<br>
                   <span class="poster-headline-accent">IMPOSSIBLE TO IGNORE.</span>
@@ -186,21 +159,12 @@ require_once __DIR__ . '/includes/header.php';
           <div class="poster-backdrop">
             <img src="images/services/services-3-1.jpg" alt="Branding & Creative Design" class="poster-bg-img">
             <div class="poster-scrim poster-scrim-branding"></div>
-            <div class="poster-ambient-glow glow-amber"></div>
           </div>
           <div class="container poster-inner-container">
             <div class="poster-creative-card">
               
-              <div class="poster-badge-row">
-                <div class="poster-brand-tag">
-                  <img src="images/resource/logo-1.png" alt="Giga Digital Agency" class="poster-tag-logo">
-                  <span>GIGA DIGITAL AGENCY &bull; CAMPAIGN 04</span>
-                </div>
-                <span class="poster-edition-pill">VISUAL IDENTITY STUDIO</span>
-              </div>
 
               <div class="poster-headline-group">
-                <div class="poster-eyebrow">DISTINCTIVE BRANDING &bull; CORPORATE PROFILES &bull; CREATIVE ART</div>
                 <h2 class="poster-headline">
                   MAKE YOUR BRAND<br>
                   <span class="poster-headline-accent">STAND OUT.</span>
@@ -238,21 +202,12 @@ require_once __DIR__ . '/includes/header.php';
           <div class="poster-backdrop">
             <img src="images/resource/why-choose-one-img-3.jpg" alt="Web Design & Development" class="poster-bg-img">
             <div class="poster-scrim poster-scrim-web"></div>
-            <div class="poster-ambient-glow glow-cyan"></div>
           </div>
           <div class="container poster-inner-container">
             <div class="poster-creative-card">
               
-              <div class="poster-badge-row">
-                <div class="poster-brand-tag">
-                  <img src="images/resource/logo-1.png" alt="Giga Digital Agency" class="poster-tag-logo">
-                  <span>GIGA DIGITAL AGENCY &bull; CAMPAIGN 05</span>
-                </div>
-                <span class="poster-edition-pill">WEB &amp; DIGITAL ENGINEERING</span>
-              </div>
 
               <div class="poster-headline-group">
-                <div class="poster-eyebrow">FAST &bull; MODERN &bull; RESPONSIVE &bull; CONVERSION-FOCUSED</div>
                 <h2 class="poster-headline">
                   YOUR BUSINESS DESERVES A<br>
                   <span class="poster-headline-accent">POWERFUL ONLINE PRESENCE.</span>
@@ -290,21 +245,12 @@ require_once __DIR__ . '/includes/header.php';
           <div class="poster-backdrop">
             <img src="images/background/video-one-bg.jpg" alt="Video Editing & Content Marketing" class="poster-bg-img">
             <div class="poster-scrim poster-scrim-video"></div>
-            <div class="poster-ambient-glow glow-cinema"></div>
           </div>
           <div class="container poster-inner-container">
             <div class="poster-creative-card">
               
-              <div class="poster-badge-row">
-                <div class="poster-brand-tag">
-                  <img src="images/resource/logo-1.png" alt="Giga Digital Agency" class="poster-tag-logo">
-                  <span>GIGA DIGITAL AGENCY &bull; CAMPAIGN 06</span>
-                </div>
-                <span class="poster-edition-pill">CINEMATIC STORYTELLING</span>
-              </div>
 
               <div class="poster-headline-group">
-                <div class="poster-eyebrow">HIGH-IMPACT VIDEO &bull; SHORT-FORM REELS &bull; STRATEGIC CONTENT</div>
                 <h2 class="poster-headline">
                   CREATE CONTENT THAT<br>
                   <span class="poster-headline-accent">CAPTURES ATTENTION.</span>
@@ -334,52 +280,6 @@ require_once __DIR__ . '/includes/header.php';
             </div>
           </div>
         </article>
-
-      </div>
-    </div>
-
-    <!-- Minimalist Subtle Poster Controls (Docked cleanly at bottom without obstructing artwork) -->
-    <div class="poster-controls-wrap container">
-      <div class="poster-controls-bar">
-        
-        <button class="poster-nav-btn prev" id="posterNavPrev" aria-label="Previous Poster" title="Previous Poster">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </button>
-
-        <div class="poster-indicators" id="posterIndicators" role="tablist" aria-label="Poster Campaigns">
-          <button class="p-indicator active" data-poster="0" role="tab" aria-selected="true" aria-label="Campaign 01: Agency Overview">
-            <span class="p-ind-num">01</span>
-            <span class="p-ind-label">Agency</span>
-          </button>
-          <button class="p-indicator" data-poster="1" role="tab" aria-selected="false" aria-label="Campaign 02: Google & LinkedIn Ads">
-            <span class="p-ind-num">02</span>
-            <span class="p-ind-label">Paid Ads</span>
-          </button>
-          <button class="p-indicator" data-poster="2" role="tab" aria-selected="false" aria-label="Campaign 03: Social Media Marketing">
-            <span class="p-ind-num">03</span>
-            <span class="p-ind-label">Social</span>
-          </button>
-          <button class="p-indicator" data-poster="3" role="tab" aria-selected="false" aria-label="Campaign 04: Branding & Design">
-            <span class="p-ind-num">04</span>
-            <span class="p-ind-label">Branding</span>
-          </button>
-          <button class="p-indicator" data-poster="4" role="tab" aria-selected="false" aria-label="Campaign 05: Web Design & Development">
-            <span class="p-ind-num">05</span>
-            <span class="p-ind-label">Web Dev</span>
-          </button>
-          <button class="p-indicator" data-poster="5" role="tab" aria-selected="false" aria-label="Campaign 06: Video & Content">
-            <span class="p-ind-num">06</span>
-            <span class="p-ind-label">Video</span>
-          </button>
-        </div>
-
-        <button class="poster-nav-btn next" id="posterNavNext" aria-label="Next Poster" title="Next Poster">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </button>
-
-        <div class="poster-counter-pill" id="posterCounter" aria-live="polite">
-          <span class="p-count-curr">01</span><span class="p-count-sep">/</span><span class="p-count-total">06</span>
-        </div>
 
       </div>
     </div>
