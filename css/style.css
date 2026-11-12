@@ -553,7 +553,8 @@ ul, ol {
 }
 
 /* Navigation Links (strictly one-line, balanced spacing to prevent any overlap) */
-.nav-menu {
+.nav-menu,
+.desktop-nav {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -615,7 +616,8 @@ ul, ol {
 }
 
 /* Services Mega Dropdown Menu (3 Categories with Work Explanations) */
-.nav-dropdown {
+.nav-dropdown,
+.services-mega-dropdown {
   position: absolute;
   top: 100%;
   left: -140px;
@@ -634,7 +636,10 @@ ul, ol {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.nav-menu-item:hover .nav-dropdown {
+.nav-menu-item:hover .nav-dropdown,
+.nav-menu-item:hover .services-mega-dropdown,
+.mega-dropdown-parent:hover .nav-dropdown,
+.mega-dropdown-parent:hover .services-mega-dropdown {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -889,14 +894,20 @@ ul, ol {
   display: none;
   flex-direction: column;
   gap: 5px;
-  width: 28px;
-  height: 20px;
+  width: 32px;
+  height: 24px;
   justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1002;
 }
 .mobile-toggle span {
   display: block;
   width: 100%;
-  height: 2px;
+  height: 2.2px;
   background-color: var(--text-heading);
   transition: var(--transition);
   border-radius: 2px;
@@ -948,6 +959,68 @@ ul, ol {
   font-weight: 700;
   color: var(--text-heading);
   padding: 6px 0;
+}
+
+/* ==========================================================================
+   MOBILE & TABLET HEADER & NAVIGATION RULES
+   ========================================================================== */
+@media (max-width: 992px) {
+  /* Strictly hide all desktop navigation menus and dropdowns on mobile/tablet */
+  .nav-menu,
+  .desktop-nav,
+  .nav-dropdown,
+  .services-mega-dropdown,
+  .header-cta {
+    display: none !important;
+  }
+
+  /* Reveal the hamburger toggle button */
+  .mobile-toggle {
+    display: flex !important;
+  }
+
+  .nav-container {
+    height: 72px;
+  }
+
+  .site-logo {
+    height: 48px;
+    max-width: 180px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-container {
+    height: 66px;
+  }
+
+  .site-logo {
+    height: 42px;
+    max-width: 140px;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+
+  .palette-picker-btn {
+    height: 36px;
+    padding: 0 8px;
+  }
+
+  .theme-toggle-switch {
+    width: 36px;
+    height: 36px;
+  }
+
+  .switch-ball {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 /* 6. HERO SECTION (Exact Zaman IT Architecture & Devices Showcase) */
