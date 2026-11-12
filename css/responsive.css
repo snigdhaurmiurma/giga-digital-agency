@@ -26,20 +26,30 @@
   }
 }
 
-/* Below 1120px: Smoothly activate mobile drawer so links never overlap the big logo */
-@media screen and (max-width: 1120px) {
-  .nav-menu, .header-cta {
+/* Below 1140px: Smoothly activate mobile drawer so links never overlap the big logo */
+@media screen and (max-width: 1140px) {
+  .nav-menu,
+  .desktop-nav,
+  .nav-dropdown,
+  .services-mega-dropdown,
+  .mega-dropdown-parent,
+  .header-cta {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    overflow: hidden !important;
   }
   .mobile-toggle {
     display: flex !important;
   }
   .site-logo {
-    height: 54px;
-    max-width: 220px;
+    height: 50px;
+    max-width: 200px;
   }
   .nav-container {
-    height: 80px;
+    height: 74px;
   }
 }
 

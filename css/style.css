@@ -1034,17 +1034,20 @@ ul, ol {
 /* ==========================================================================
    MOBILE & TABLET HEADER & NAVIGATION RULES
    ========================================================================== */
-@media (max-width: 1080px) {
+@media (max-width: 1140px) {
   /* Strictly hide all desktop navigation menus and dropdowns on mobile/tablet */
   .nav-menu,
   .desktop-nav,
   .nav-dropdown,
   .services-mega-dropdown,
+  .mega-dropdown-parent,
   .header-cta {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
     pointer-events: none !important;
+    height: 0 !important;
+    overflow: hidden !important;
   }
 
   /* Reveal the hamburger toggle button */
@@ -1405,138 +1408,29 @@ ul, ol {
 }
 
 /* ==========================================================================
-   MINIMALIST SUBTLE POSTER CONTROLS BAR (DODGED AT BOTTOM OF POSTER)
+   CAROUSEL CONTROLS & BADGES (STRICTLY SUPPRESSED PER USER DIRECTIVE)
+   Continuous, automatic clean transition — no floating arrow pills or manual buttons
    ========================================================================== */
-.poster-controls-wrap {
-  position: relative;
-  z-index: 20;
-  margin-top: -30px;
-  padding-bottom: 24px;
+.poster-controls-wrap,
+.poster-controls-bar,
+.poster-nav-btn,
+.poster-indicators,
+.p-indicator,
+.poster-counter-pill,
+.poster-ambient-glow,
+.poster-badge-row,
+.poster-brand-tag,
+.poster-edition-pill,
+.poster-eyebrow {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
 }
-.poster-controls-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 8px 18px;
-  background: rgba(6, 12, 22, 0.82);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: var(--radius-full);
-  backdrop-filter: blur(18px);
-  margin: 0 auto;
-  max-width: 900px;
-  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.45);
-  transition: all var(--transition);
-}
-[data-theme="light"] .poster-controls-bar {
-  background: rgba(255, 255, 255, 0.94);
-  border-color: rgba(15, 23, 42, 0.12);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
-}
-.poster-nav-btn {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all var(--transition);
-  flex-shrink: 0;
-}
-[data-theme="light"] .poster-nav-btn {
-  background: #f1f5f9;
-  border-color: #cbd5e1;
-  color: #0f172a;
-}
-.poster-nav-btn:hover {
-  background: var(--accent-primary);
-  border-color: var(--accent-primary);
-  color: #ffffff !important;
-  transform: scale(1.08);
-}
-
-.poster-indicators {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.poster-indicators::-webkit-scrollbar { display: none; }
-
-.p-indicator {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
-  border-radius: var(--radius-full);
-  background: transparent;
-  border: 1px solid transparent;
-  color: rgba(255, 255, 255, 0.65);
-  cursor: pointer;
-  font-size: 0.80rem;
-  font-weight: 700;
-  transition: all 0.25s ease;
-  white-space: nowrap;
-}
-[data-theme="light"] .p-indicator {
-  color: var(--text-muted);
-}
-.p-indicator .p-ind-num {
-  font-size: 0.72rem;
-  font-weight: 800;
-  color: var(--accent-primary);
-  opacity: 0.75;
-}
-.p-indicator:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.08);
-}
-[data-theme="light"] .p-indicator:hover {
-  color: #0f172a;
-  background: rgba(15, 23, 42, 0.06);
-}
-.p-indicator.active {
-  background: rgba(255, 255, 255, 0.14);
-  color: #ffffff;
-  border-color: var(--accent-primary);
-  box-shadow: none !important;
-}
-[data-theme="light"] .p-indicator.active {
-  background: #ffffff;
-  color: #0f172a;
-  border-color: var(--accent-primary);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-}
-.p-indicator.active .p-ind-num {
-  opacity: 1;
-}
-
-.poster-counter-pill {
-  font-size: 0.84rem;
-  font-weight: 800;
-  color: #ffffff;
-  letter-spacing: 0.06em;
-  padding: 5px 12px;
-  border-radius: var(--radius-full);
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  flex-shrink: 0;
-}
-[data-theme="light"] .poster-counter-pill {
-  background: #f1f5f9;
-  border-color: #cbd5e1;
-  color: #0f172a;
-}
-.p-count-sep { opacity: 0.6; }
-.p-count-total { opacity: 0.65; }
 
 /* ==========================================================================
    RESPONSIVE POSTER CAROUSEL (TABLET & MOBILE)
@@ -1617,28 +1511,6 @@ ul, ol {
     justify-content: center;
     padding: 12px 20px;
     font-size: 0.92rem;
-  }
-  .poster-controls-wrap {
-    margin-top: -15px;
-    padding-bottom: 18px;
-  }
-  .poster-controls-bar {
-    padding: 6px 12px;
-    gap: 8px;
-  }
-  .p-indicator {
-    padding: 4px 8px;
-  }
-  .p-indicator .p-ind-num {
-    font-size: 0.68rem;
-  }
-  .poster-nav-btn {
-    width: 30px;
-    height: 30px;
-  }
-  .poster-counter-pill {
-    padding: 3px 8px;
-    font-size: 0.74rem;
   }
 }
 
