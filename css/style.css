@@ -321,6 +321,7 @@ html {
   background-attachment: fixed;
   color: var(--text-main);
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -331,6 +332,7 @@ body {
   background-color: transparent;
   color: var(--text-main);
   overflow-x: hidden;
+  padding-top: 86px;
 }
 
 img, svg {
@@ -505,11 +507,11 @@ ul, ol {
 
 /* 5. CLEAN DIRECT HEADER (NO Topbar Hotlines clutter) */
 .main-header {
-  position: sticky;
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(10, 20, 36, 0.75);
+  background: rgba(8, 16, 30, 0.72);
   backdrop-filter: blur(24px) saturate(190%);
   -webkit-backdrop-filter: blur(24px) saturate(190%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -527,27 +529,31 @@ ul, ol {
   z-index: 1001;
   transition: background var(--transition);
 }
-.main-header.scrolled {
-  background: rgba(8, 16, 30, 0.78);
+.main-header.scrolled,
+.main-header.fixed-header {
+  background: rgba(8, 16, 30, 0.85);
   backdrop-filter: blur(28px) saturate(200%);
   -webkit-backdrop-filter: blur(28px) saturate(200%);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   border-bottom: 1px solid var(--border-glow);
 }
-.main-header.scrolled .nav-container {
+.main-header.scrolled .nav-container,
+.main-header.fixed-header .nav-container {
   height: 76px;
 }
-.main-header.scrolled .site-logo {
+.main-header.scrolled .site-logo,
+.main-header.fixed-header .site-logo {
   height: 54px;
 }
 [data-theme="light"] .main-header {
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(24px) saturate(190%);
   -webkit-backdrop-filter: blur(24px) saturate(190%);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
-[data-theme="light"] .main-header.scrolled {
-  background: rgba(255, 255, 255, 0.85);
+[data-theme="light"] .main-header.scrolled,
+[data-theme="light"] .main-header.fixed-header {
+  background: rgba(255, 255, 255, 0.88);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }

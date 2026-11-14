@@ -891,15 +891,13 @@
 			var siteHeader = $('.main-header');
 			var scrollLink = $('.scroll-to-top');
 
-			var HeaderHight = $('.main-header').height();
-			if (windowpos >= HeaderHight) {
-				siteHeader.addClass('fixed-header');
+			if (windowpos >= 20) {
+				siteHeader.addClass('scrolled fixed-header');
 				scrollLink.fadeIn(300);
 			} else {
-				siteHeader.removeClass('fixed-header');
+				siteHeader.removeClass('scrolled fixed-header');
 				scrollLink.fadeOut(300);
 			}
-
 		}
 	}
 

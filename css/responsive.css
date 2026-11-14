@@ -5,6 +5,9 @@
    ========================================================================== */
 
 /* Universal Viewport Boundary Guard: Zero Horizontal Scroll Blowout */
+html {
+  scroll-padding-top: 72px !important;
+}
 html, body {
   overflow-x: hidden !important;
   width: 100% !important;
@@ -75,6 +78,9 @@ html, body {
    3. TABLETS & LANDSCAPE SCREENS (<= 992px)
    ========================================================================== */
 @media screen and (max-width: 992px) {
+  body {
+    padding-top: 72px !important;
+  }
   .section {
     padding: 55px 0;
   }
@@ -279,6 +285,9 @@ html, body {
   }
 
   /* Header Bar */
+  body {
+    padding-top: 68px !important;
+  }
   .nav-container {
     height: 68px;
     padding: 0 14px;
@@ -760,6 +769,9 @@ html, body {
    ========================================================================== */
 @media screen and (max-width: 480px) {
   /* Navigation Bar Compactness */
+  body {
+    padding-top: 64px !important;
+  }
   .nav-container {
     height: 64px;
     padding: 0 12px;
@@ -879,6 +891,9 @@ html, body {
    e.g. Galaxy Z Flip folded, iPhone SE, ultra-narrow viewports
    ========================================================================== */
 @media screen and (max-width: 360px) {
+  body {
+    padding-top: 60px !important;
+  }
   .nav-container {
     height: 60px;
     padding: 0 8px;
