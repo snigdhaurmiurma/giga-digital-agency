@@ -231,17 +231,17 @@ html, body {
 
   /* Brands Scroller on Mobile Phones */
   .brands-marquee-wrap {
-    padding: 6px 0 !important;
+    padding: 8px 0 !important;
   }
   .brands-marquee-track .brand-item-box {
-    padding: 8px 16px !important;
-    height: 54px !important;
-    min-width: 110px !important;
+    padding: 6px 14px !important;
+    height: 60px !important;
+    min-width: 125px !important;
     border-radius: 10px !important;
   }
   .brands-marquee-track .brand-item-box img {
-    max-height: 34px !important;
-    max-width: 95px !important;
+    max-height: 44px !important;
+    max-width: 110px !important;
   }
 
   /* Service Hero Dual Slider on Phone View */
@@ -430,14 +430,16 @@ html, body {
   .about-subnav-tabs,
   .about-nav-tabs {
     margin-top: 24px !important;
-    margin-bottom: 28px !important;
+    margin-bottom: 34px !important;
     gap: 8px !important;
   }
   .about-panel {
-    padding-top: 8px !important;
+    padding-top: 16px !important;
+    margin-top: 8px !important;
   }
   .about-panel .section-tag {
-    margin-bottom: 12px !important;
+    margin-top: 4px !important;
+    margin-bottom: 16px !important;
   }
   .about-tab-btn {
     flex-shrink: 0 !important;
