@@ -2122,18 +2122,24 @@ ul, ol {
 }
 
 /* 14. REAL TEAM MEMBERS SECTION (Verified Names & Photos) */
-/* 14. ENHANCED EXECUTIVE TEAM CARDS */
+/* 14. ENHANCED EXECUTIVE TEAM CARDS (4 Per Row Architecture) */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 28px;
-  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1100px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 
 .team-card {
   background: var(--bg-card, #0f172a);
   border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
-  border-radius: 20px;
+  border-radius: 18px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -2153,7 +2159,7 @@ ul, ol {
 
 .team-img-wrap {
   width: 100%;
-  height: 310px;
+  height: 290px;
   overflow: hidden;
   position: relative;
   background: radial-gradient(circle at 50% 25%, #1e293b 0%, #090e17 100%);
@@ -2175,13 +2181,13 @@ ul, ol {
 
 .team-badge {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 12px;
+  right: 12px;
   background: rgba(10, 15, 26, 0.88);
   backdrop-filter: blur(10px);
   border: 1px solid var(--border-glow, rgba(34, 197, 94, 0.45));
   color: var(--accent-primary, #22c55e);
-  font-size: 0.70rem;
+  font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -2192,14 +2198,14 @@ ul, ol {
 }
 
 .team-info {
-  padding: 22px 20px;
+  padding: 18px 16px 20px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
 .team-dept {
-  font-size: 0.72rem;
+  font-size: 0.70rem;
   font-weight: 700;
   color: var(--accent-primary, #22c55e);
   text-transform: uppercase;
@@ -2221,7 +2227,7 @@ ul, ol {
 }
 
 .team-name {
-  font-size: 1.15rem;
+  font-size: 1.10rem;
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 4px;
@@ -2229,38 +2235,10 @@ ul, ol {
 }
 
 .team-role {
-  font-size: 0.86rem;
+  font-size: 0.84rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.65);
-  margin-bottom: 16px;
-}
-
-.team-socials {
-  display: flex;
-  gap: 10px;
-  margin-top: auto;
-  align-items: center;
-}
-
-.team-social-btn {
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.7);
-  transition: all 0.25s ease;
-}
-
-.team-social-btn:hover {
-  background: var(--accent-primary, #22c55e);
-  border-color: var(--accent-primary, #22c55e);
-  color: #050b14;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.35);
+  margin-bottom: 0;
 }
 
 /* 15. SLIDING TESTIMONIAL CAROUSEL */
