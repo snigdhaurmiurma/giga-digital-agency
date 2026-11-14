@@ -3935,3 +3935,179 @@ textarea.form-input {
   background: var(--accent-primary, #22c55e);
   box-shadow: 0 0 10px var(--accent-primary, #22c55e);
 }
+
+/* =========================================================================
+   SERVICE LANDING CAROUSEL - STRICT ZERO-CROP FULL-CANVAS LAYOUT
+   ========================================================================= */
+.service-landing-carousel {
+  position: relative;
+  width: 100%;
+  min-height: clamp(680px, 88vh, 840px);
+  overflow: hidden;
+  background: #060b13;
+}
+
+.service-landing-carousel .hero-poster-viewport {
+  position: relative;
+  width: 100%;
+  min-height: clamp(680px, 88vh, 840px);
+}
+
+.service-landing-carousel .hero-poster-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-landing-carousel .hero-poster-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.service-landing-carousel .poster-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.service-landing-carousel .poster-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  transition: filter 0.5s ease;
+}
+
+.service-landing-carousel .poster-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(6, 11, 19, 0.95) 0%, rgba(6, 11, 19, 0.82) 48%, rgba(6, 11, 19, 0.4) 100%);
+  pointer-events: none;
+}
+
+.service-landing-carousel .poster-inner-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding-top: calc(var(--header-height, 80px) + 36px);
+  padding-bottom: 50px;
+}
+
+.service-landing-carousel .poster-creative-card {
+  max-width: 760px;
+}
+
+.service-landing-carousel .poster-headline {
+  font-size: clamp(1.9rem, 3.8vw, 3.2rem);
+  font-weight: 900;
+  line-height: 1.16;
+  color: #ffffff;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.service-landing-carousel .poster-headline-accent {
+  color: var(--accent-primary, #22c55e);
+}
+
+.service-landing-carousel .poster-subtext {
+  font-size: clamp(0.96rem, 1.25vw, 1.1rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 22px;
+  max-width: 660px;
+}
+
+.service-landing-carousel .poster-features-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.service-landing-carousel .poster-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.service-landing-carousel .poster-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 26px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.service-landing-carousel .poster-progress-track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 50;
+}
+
+.service-landing-carousel .service-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--accent-primary, #22c55e);
+  box-shadow: 0 0 10px var(--accent-primary, #22c55e);
+  animation: serviceProgress 3.5s linear infinite;
+}
+
+@keyframes serviceProgress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* Dynamic Graphic Color Adaptation for Themes across all devices */
+.service-poster-bg,
+.poster-bg-img,
+.service-hero-img,
+.service-slider-img,
+.service-img-card img,
+.capability-img-wrap img {
+  transition: filter 0.4s ease;
+}
+
+[data-accent="emerald"] .service-poster-bg,
+[data-accent="emerald"] .poster-bg-img {
+  filter: hue-rotate(0deg) saturate(1.15) brightness(1.02);
+}
+
+[data-accent="violet"] .service-poster-bg,
+[data-accent="violet"] .poster-bg-img {
+  filter: hue-rotate(120deg) saturate(1.25) brightness(1.05);
+}
+
+[data-accent="magenta"] .service-poster-bg,
+[data-accent="magenta"] .poster-bg-img,
+[data-accent="cyan"] .service-poster-bg,
+[data-accent="cyan"] .poster-bg-img {
+  filter: hue-rotate(190deg) saturate(1.3) brightness(1.05);
+}
+
+[data-accent="amber"] .service-poster-bg,
+[data-accent="amber"] .poster-bg-img {
+  filter: hue-rotate(-85deg) saturate(1.35) brightness(1.03);
+}
+
+[data-accent="blue"] .service-poster-bg,
+[data-accent="blue"] .poster-bg-img {
+  filter: hue-rotate(65deg) saturate(1.25) brightness(1.04);
+}

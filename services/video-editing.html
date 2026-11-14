@@ -18,8 +18,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../css/style.css?v=2.9">
-  <link rel="stylesheet" href="../css/responsive.css?v=2.9">
+  <link rel="stylesheet" href="../css/style.css?v=3.1">
+  <link rel="stylesheet" href="../css/responsive.css?v=3.1">
 </head>
 <body>
 
@@ -234,48 +234,130 @@
   <!-- =========================================================================
        HERO BANNER
        ========================================================================= -->
-  <section class="service-page-hero">
-    <div class="container">
-      <div class="service-breadcrumbs">
-        <a href="../index.html">Home</a>
-        <span>/</span>
-        <a href="../index.html#services">Services</a>
-        <span>/</span>
-        <span style="color:var(--text-heading); font-weight:700;">Professional Video Editing</span>
-      </div>
-      <div class="service-hero-grid">
-        <div class="service-hero-content">
-          <div class="service-hero-badge">Creative & Content</div>
-      <h1 class="service-hero-title">Professional Video Editing</h1>
-      <div class="service-hero-headline">Turn Your Footage Into Powerful Visual Stories.</div>
-      <p class="service-hero-shortdesc">Transform raw footage into polished, engaging, and professionally edited videos that capture attention, communicate your message, and strengthen your brand's digital presence.</p>
+  <!-- =========================================================================
+       HERO BANNER: FULL-CANVAS INTERACTIVE SERVICE LANDING CAROUSEL (2 SLIDES)
+       ========================================================================= -->
+  <section class="hero-banner hero-poster-carousel-section service-landing-carousel" aria-label="Video Editing & Motion Graphics Presentation" aria-roledescription="carousel">
+    
+    <!-- Top Animated Slide Progress Bar -->
+    <div class="poster-progress-track" aria-hidden="true">
+      <div class="poster-progress-bar service-progress-bar"></div>
+    </div>
 
-      <div class="service-hero-ctas">
-        <a href="../index.html#contact" class="btn btn-primary">
-          Bring Your Story to Life.
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-        <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-          Discuss on WhatsApp
-        </a>
-      </div>
-        </div>
-        <div class="service-hero-media">
-          <div class="service-slider-card">
-            <div class="service-slide active" data-index="0">
-              <img src="../images/services/hero/hero-video-editing.jpg" alt="Video Editing Concept Overview" class="service-slider-img" loading="eager">
+    <!-- Carousel Viewport -->
+    <div class="hero-poster-viewport">
+      <div class="hero-poster-track">
+
+        <!-- SLIDE 1 -->
+        <article class="hero-poster-slide active" data-slide-index="0" role="group" aria-roledescription="slide" aria-label="Slide 1: Cinematic Motion Production">
+          <div class="poster-backdrop">
+            <img src="../images/services/hero/hero-video-editing.jpg?v=3.1" alt="Video Editing & Motion Graphics Visual 1" class="poster-bg-img service-poster-bg" loading="eager">
+            <div class="poster-scrim poster-scrim-service"></div>
+          </div>
+          <div class="container poster-inner-container">
+            <div class="service-breadcrumbs" style="margin-bottom:18px;">
+              <a href="../index.html">Home</a>
+              <span>/</span>
+              <a href="../index.html#services">Services</a>
+              <span>/</span>
+              <span style="color:var(--text-heading); font-weight:700;">Video Editing & Motion Graphics</span>
             </div>
-            <div class="service-slide" data-index="1">
-              <img src="../images/services/hero/hero-video-editing-2.jpg" alt="Video Editing Campaign Architecture" class="service-slider-img" loading="lazy">
-            </div>
-            <div class="service-slider-dots">
-              <span class="service-dot active" data-slide="0"></span>
-              <span class="service-dot" data-slide="1"></span>
+            <div class="poster-creative-card">
+              <div class="poster-badge-row">
+                <span class="poster-brand-tag">Creative & Content</span>
+                <span class="poster-campaign-pill"><span class="pulse-dot"></span> Cinematic Motion Production</span>
+              </div>
+
+              <div class="poster-headline-group">
+                <h1 class="poster-headline">
+                  VIDEO EDITING & MOTION GRAPHICS.<br>
+                  <span class="poster-headline-accent">STORIES THAT STOP THE SCROLL.</span>
+                </h1>
+                <p class="poster-subtext">
+                  Engage your audience and elevate your brand with professionally edited videos, high-impact motion graphics, and dynamic visual storytelling.
+                </p>
+              </div>
+
+              <div class="poster-features-bar">
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> 4K Video Editing & Color Grading</span>
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> Motion Graphics & Title Animations</span>
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> Short-Form Reels & Long-Form Docs</span>
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> Professional Sound Design</span>
+              </div>
+
+              <div class="poster-cta-row">
+                <a href="../index.html#contact" class="poster-btn poster-btn-primary">
+                  <span>Start Video Project</span>
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20Video%20Editing%20%26%20Motion%20Graphics." target="_blank" rel="noopener noreferrer" class="poster-btn poster-btn-ghost">
+                  <span>Discuss on WhatsApp</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        </article>
+
+        <!-- SLIDE 2 -->
+        <article class="hero-poster-slide " data-slide-index="1" role="group" aria-roledescription="slide" aria-label="Slide 2: Multi-Platform Video">
+          <div class="poster-backdrop">
+            <img src="../images/services/hero/hero-video-editing-2.jpg?v=3.1" alt="Video Editing & Motion Graphics Visual 2" class="poster-bg-img service-poster-bg" loading="lazy">
+            <div class="poster-scrim poster-scrim-service"></div>
+          </div>
+          <div class="container poster-inner-container">
+            <div class="service-breadcrumbs" style="margin-bottom:18px;">
+              <a href="../index.html">Home</a>
+              <span>/</span>
+              <a href="../index.html#services">Services</a>
+              <span>/</span>
+              <span style="color:var(--text-heading); font-weight:700;">Video Editing & Motion Graphics</span>
+            </div>
+            <div class="poster-creative-card">
+              <div class="poster-badge-row">
+                <span class="poster-brand-tag">Creative & Content</span>
+                <span class="poster-campaign-pill"><span class="pulse-dot"></span> Multi-Platform Video</span>
+              </div>
+
+              <div class="poster-headline-group">
+                <h1 class="poster-headline">
+                  POWERFUL VISUAL PRODUCTION.<br>
+                  <span class="poster-headline-accent">CAPTIVATE ACROSS EVERY SCREEN.</span>
+                </h1>
+                <p class="poster-subtext">
+                  From brand commercials to viral TikToks and YouTube deep-dives, deliver studio-grade video content crafted to drive engagement and retention.
+                </p>
+              </div>
+
+              <div class="poster-features-bar">
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> Cinematic Visual Effects (VFX)</span>
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> Platform-Specific Aspect Ratios</span>
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> Custom Typography & Lower Thirds</span>
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> Fast Turnaround & Revisions</span>
+              </div>
+
+              <div class="poster-cta-row">
+                <a href="../index.html#contact" class="poster-btn poster-btn-primary">
+                  <span>Get Video Production Quote</span>
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20Video%20Editing%20%26%20Motion%20Graphics." target="_blank" rel="noopener noreferrer" class="poster-btn poster-btn-ghost">
+                  <span>Direct Hotline: +8801870-699677</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
+
+    <!-- Carousel Navigation Dots -->
+    <div class="service-carousel-controls">
+      <div class="service-carousel-dots" role="tablist" aria-label="Slide Selector">
+        <button class="service-carousel-dot active" data-slide-to="0" aria-label="Slide 1" role="tab" aria-selected="true"></button>
+        <button class="service-carousel-dot" data-slide-to="1" aria-label="Slide 2" role="tab" aria-selected="false"></button>
+      </div>
+    </div>
+
   </section>
 
   <!-- =========================================================================
@@ -517,10 +599,10 @@
             <div class="impact-pillar-title">Long-Term Growth Focus</div>
             <div class="impact-pillar-sub">Sustainable partnerships and measurable ROI</div>
           </div>
-        </div>
       </div>
     </div>
-  </section>
+    </div>
+    </section>
 
   <!-- =========================================================================
        CORPORATE FOOTER
@@ -594,6 +676,6 @@
     </div>
   </footer>
 
-  <script src="../js/main.js?v=2.9"></script>
+  <script src="../js/main.js?v=3.1"></script>
 </body>
 </html>

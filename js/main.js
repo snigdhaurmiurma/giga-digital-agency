@@ -995,4 +995,51 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+
+  // =========================================================================
+  // SERVICE LANDING CAROUSEL AUTO-SLIDER (Both Desktop & Phone View)
+  // =========================================================================
+  const serviceLanding = document.querySelector('.service-landing-carousel');
+  if (serviceLanding) {
+    const slides = serviceLanding.querySelectorAll('.hero-poster-slide');
+    const progressBar = serviceLanding.querySelector('.service-progress-bar');
+    let currentIdx = 0;
+    let timer = null;
+
+    function activateSlide(idx) {
+      currentIdx = (idx + slides.length) % slides.length;
+      slides.forEach((s, i) => s.classList.toggle('active', i === currentIdx));
+      if (progressBar) {
+        progressBar.style.animation = 'none';
+        void progressBar.offsetWidth; // trigger reflow
+        progressBar.style.animation = 'serviceProgress 3.5s linear infinite';
+      }
+    }
+
+    if (slides.length > 1) {
+      timer = setInterval(() => {
+        activateSlide(currentIdx + 1);
+      }, 3500);
+
+      // Touch swipe on mobile
+      let touchStartX = 0;
+      let touchEndX = 0;
+      serviceLanding.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+      serviceLanding.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        if (touchStartX - touchEndX > 45) {
+          clearInterval(timer);
+          activateSlide(currentIdx + 1);
+          timer = setInterval(() => activateSlide(currentIdx + 1), 3500);
+        } else if (touchEndX - touchStartX > 45) {
+          clearInterval(timer);
+          activateSlide(currentIdx - 1);
+          timer = setInterval(() => activateSlide(currentIdx - 1), 3500);
+        }
+      }, { passive: true });
+    }
+  }
+
 });

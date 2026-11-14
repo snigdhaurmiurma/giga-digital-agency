@@ -18,8 +18,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../css/style.css?v=2.9">
-  <link rel="stylesheet" href="../css/responsive.css?v=2.9">
+  <link rel="stylesheet" href="../css/style.css?v=3.1">
+  <link rel="stylesheet" href="../css/responsive.css?v=3.1">
 </head>
 <body>
 
@@ -234,48 +234,130 @@
   <!-- =========================================================================
        HERO BANNER
        ========================================================================= -->
-  <section class="service-page-hero">
-    <div class="container">
-      <div class="service-breadcrumbs">
-        <a href="../index.html">Home</a>
-        <span>/</span>
-        <a href="../index.html#services">Services</a>
-        <span>/</span>
-        <span style="color:var(--text-heading); font-weight:700;">Web Design & Development</span>
-      </div>
-      <div class="service-hero-grid">
-        <div class="service-hero-content">
-          <div class="service-hero-badge">Web & Technology</div>
-      <h1 class="service-hero-title">Web Design & Development</h1>
-      <div class="service-hero-headline">Websites Designed to Impress. Developed to Perform.</div>
-      <p class="service-hero-shortdesc">Build a powerful online presence with modern, responsive, user-friendly, and search-engine-friendly websites designed to support your business objectives and deliver better digital experiences.</p>
+  <!-- =========================================================================
+       HERO BANNER: FULL-CANVAS INTERACTIVE SERVICE LANDING CAROUSEL (2 SLIDES)
+       ========================================================================= -->
+  <section class="hero-banner hero-poster-carousel-section service-landing-carousel" aria-label="Web Design & Development Presentation" aria-roledescription="carousel">
+    
+    <!-- Top Animated Slide Progress Bar -->
+    <div class="poster-progress-track" aria-hidden="true">
+      <div class="poster-progress-bar service-progress-bar"></div>
+    </div>
 
-      <div class="service-hero-ctas">
-        <a href="../index.html#contact" class="btn btn-primary">
-          Let's Build Your Digital Presence.
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-        <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-          Discuss on WhatsApp
-        </a>
-      </div>
-        </div>
-        <div class="service-hero-media">
-          <div class="service-slider-card">
-            <div class="service-slide active" data-index="0">
-              <img src="../images/services/hero/hero-web-development.jpg" alt="Web Development Concept Overview" class="service-slider-img" loading="eager">
+    <!-- Carousel Viewport -->
+    <div class="hero-poster-viewport">
+      <div class="hero-poster-track">
+
+        <!-- SLIDE 1 -->
+        <article class="hero-poster-slide active" data-slide-index="0" role="group" aria-roledescription="slide" aria-label="Slide 1: High-Performance Engineering">
+          <div class="poster-backdrop">
+            <img src="../images/services/hero/hero-web-development.jpg?v=3.1" alt="Web Design & Development Visual 1" class="poster-bg-img service-poster-bg" loading="eager">
+            <div class="poster-scrim poster-scrim-service"></div>
+          </div>
+          <div class="container poster-inner-container">
+            <div class="service-breadcrumbs" style="margin-bottom:18px;">
+              <a href="../index.html">Home</a>
+              <span>/</span>
+              <a href="../index.html#services">Services</a>
+              <span>/</span>
+              <span style="color:var(--text-heading); font-weight:700;">Web Design & Development</span>
             </div>
-            <div class="service-slide" data-index="1">
-              <img src="../images/services/hero/hero-web-development-2.jpg" alt="Web Development Campaign Architecture" class="service-slider-img" loading="lazy">
-            </div>
-            <div class="service-slider-dots">
-              <span class="service-dot active" data-slide="0"></span>
-              <span class="service-dot" data-slide="1"></span>
+            <div class="poster-creative-card">
+              <div class="poster-badge-row">
+                <span class="poster-brand-tag">Web & Technology</span>
+                <span class="poster-campaign-pill"><span class="pulse-dot"></span> High-Performance Engineering</span>
+              </div>
+
+              <div class="poster-headline-group">
+                <h1 class="poster-headline">
+                  WEB DESIGN & DEVELOPMENT.<br>
+                  <span class="poster-headline-accent">DESIGNED TO IMPRESS & PERFORM.</span>
+                </h1>
+                <p class="poster-subtext">
+                  Build a powerful online presence with modern, fast, responsive websites engineered for superior user experience and high search visibility.
+                </p>
+              </div>
+
+              <div class="poster-features-bar">
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> Mobile-First Responsive Design</span>
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> Clean & Semantic Codebase</span>
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> Conversion-Focused UI/UX</span>
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> Speed & Core Web Vitals</span>
+              </div>
+
+              <div class="poster-cta-row">
+                <a href="../index.html#contact" class="poster-btn poster-btn-primary">
+                  <span>Build Your Website</span>
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20Web%20Design%20%26%20Development." target="_blank" rel="noopener noreferrer" class="poster-btn poster-btn-ghost">
+                  <span>Discuss on WhatsApp</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        </article>
+
+        <!-- SLIDE 2 -->
+        <article class="hero-poster-slide " data-slide-index="1" role="group" aria-roledescription="slide" aria-label="Slide 2: Cloud Architecture & Stack">
+          <div class="poster-backdrop">
+            <img src="../images/services/hero/hero-web-development-2.jpg?v=3.1" alt="Web Design & Development Visual 2" class="poster-bg-img service-poster-bg" loading="lazy">
+            <div class="poster-scrim poster-scrim-service"></div>
+          </div>
+          <div class="container poster-inner-container">
+            <div class="service-breadcrumbs" style="margin-bottom:18px;">
+              <a href="../index.html">Home</a>
+              <span>/</span>
+              <a href="../index.html#services">Services</a>
+              <span>/</span>
+              <span style="color:var(--text-heading); font-weight:700;">Web Design & Development</span>
+            </div>
+            <div class="poster-creative-card">
+              <div class="poster-badge-row">
+                <span class="poster-brand-tag">Web & Technology</span>
+                <span class="poster-campaign-pill"><span class="pulse-dot"></span> Cloud Architecture & Stack</span>
+              </div>
+
+              <div class="poster-headline-group">
+                <h1 class="poster-headline">
+                  FAST, SECURE & SCALABLE.<br>
+                  <span class="poster-headline-accent">BUILT FOR MODERN BUSINESS.</span>
+                </h1>
+                <p class="poster-subtext">
+                  Custom websites and web applications built with cutting-edge front-end technologies, robust security standards, and seamless CMS integration.
+                </p>
+              </div>
+
+              <div class="poster-features-bar">
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> Interactive Modern Components</span>
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> E-Commerce & Payment Setup</span>
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> SEO-Ready Architecture</span>
+                <span class="p-feat-tag"><span class="p-feat-dot"></span> Ongoing Support & Maintenance</span>
+              </div>
+
+              <div class="poster-cta-row">
+                <a href="../index.html#contact" class="poster-btn poster-btn-primary">
+                  <span>Request Web Proposal</span>
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20Web%20Design%20%26%20Development." target="_blank" rel="noopener noreferrer" class="poster-btn poster-btn-ghost">
+                  <span>Direct Hotline: +8801870-699677</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
+
+    <!-- Carousel Navigation Dots -->
+    <div class="service-carousel-controls">
+      <div class="service-carousel-dots" role="tablist" aria-label="Slide Selector">
+        <button class="service-carousel-dot active" data-slide-to="0" aria-label="Slide 1" role="tab" aria-selected="true"></button>
+        <button class="service-carousel-dot" data-slide-to="1" aria-label="Slide 2" role="tab" aria-selected="false"></button>
+      </div>
+    </div>
+
   </section>
 
   <!-- =========================================================================
@@ -509,10 +591,10 @@
             <div class="impact-pillar-title">Long-Term Growth Focus</div>
             <div class="impact-pillar-sub">Sustainable partnerships and measurable ROI</div>
           </div>
-        </div>
       </div>
     </div>
-  </section>
+    </div>
+    </section>
 
   <!-- =========================================================================
        CORPORATE FOOTER
@@ -586,6 +668,6 @@
     </div>
   </footer>
 
-  <script src="../js/main.js?v=2.9"></script>
+  <script src="../js/main.js?v=3.1"></script>
 </body>
 </html>

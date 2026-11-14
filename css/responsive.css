@@ -143,6 +143,78 @@ html, body {
    ========================================================================== */
 @media screen and (max-width: 768px) {
 
+  /* ZERO-CROP SERVICE LANDING CAROUSEL ON PHONES */
+  .service-landing-carousel {
+    min-height: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding-top: 86px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .service-landing-carousel .hero-poster-viewport {
+    min-height: auto !important;
+    height: auto !important;
+    position: relative !important;
+  }
+
+  .service-landing-carousel .hero-poster-slide {
+    position: relative !important;
+    inset: auto !important;
+    min-height: auto !important;
+    height: auto !important;
+    display: none !important;
+  }
+
+  .service-landing-carousel .hero-poster-slide.active {
+    display: block !important;
+    opacity: 1 !important;
+  }
+
+  .service-landing-carousel .poster-backdrop {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0.30 !important;
+  }
+
+  .service-landing-carousel .poster-inner-container {
+    padding-top: 14px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .service-landing-carousel .poster-headline {
+    font-size: clamp(1.6rem, 6.5vw, 2.1rem) !important;
+    line-height: 1.22 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .service-landing-carousel .poster-subtext {
+    font-size: 0.92rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .service-landing-carousel .poster-features-bar {
+    gap: 8px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .service-landing-carousel .poster-cta-row {
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .service-landing-carousel .poster-btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 13px 20px !important;
+    font-size: 0.92rem !important;
+  }
+
+
   /* Brands Scroller on Mobile Phones */
   .brands-marquee-wrap {
     padding: 6px 0 !important;
