@@ -103,7 +103,7 @@ require_once __DIR__ . '/../includes/header.php';
         <p class="section-desc">Proven digital veterans directing our creative, growth, and technology divisions.</p>
       </div>
 
-                        <div class="team-grid gda-reveal">
+                              <div class="team-grid gda-reveal">
         <div class="team-card">
           <div class="team-img-wrap"><img src="../images/team/team-ashikur-rahman.jpg" alt="Engr. Md. Ashikur Rahman, Digital Marketing Specialist"></div>
           <div class="team-info">
@@ -137,11 +137,11 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
         </div>
         <div class="team-card">
-          <div class="team-img-wrap"><img src="../images/team/team-shahriyar-ahmed.jpg" alt="Md. Shahriyar Ahmed, HR & Admin"></div>
+          <div class="team-img-wrap"><img src="../images/team/team-urmi-urma-snigdha.jpg" alt="Urmi Urma Snigdha, UI/UX Designer / Graphic Designer"></div>
           <div class="team-info">
-            <h4 class="team-name">Md. Shahriyar Ahmed</h4>
-            <div class="team-role">HR & Admin</div>
-            <p class="team-bio">Managing talent operations, workplace administration, and organizational culture.</p>
+            <h4 class="team-name">Urmi Urma Snigdha</h4>
+            <div class="team-role">UI/UX Designer / Graphic Designer</div>
+            <p class="team-bio">Crafting human-centered UI/UX design systems, high-converting interfaces, and brand visual assets.</p>
           </div>
         </div>
         <div class="team-card">
@@ -161,11 +161,11 @@ require_once __DIR__ . '/../includes/header.php';
           </div>
         </div>
         <div class="team-card">
-          <div class="team-img-wrap"><img src="../images/team/team-urmi-urma-snigdha.jpg" alt="Urmi Urma Snigdha, UI/UX Designer / Graphic Designer"></div>
+          <div class="team-img-wrap"><img src="../images/team/team-shahriyar-ahmed.jpg" alt="Md. Shahriyar Ahmed, HR & Admin"></div>
           <div class="team-info">
-            <h4 class="team-name">Urmi Urma Snigdha</h4>
-            <div class="team-role">UI/UX Designer / Graphic Designer</div>
-            <p class="team-bio">Crafting human-centered UI/UX design systems, high-converting interfaces, and brand visual assets.</p>
+            <h4 class="team-name">Md. Shahriyar Ahmed</h4>
+            <div class="team-role">HR & Admin</div>
+            <p class="team-bio">Managing talent operations, workplace administration, and organizational culture.</p>
           </div>
         </div>
       </div>

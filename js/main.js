@@ -937,4 +937,62 @@ document.addEventListener('DOMContentLoaded', () => {
     startAutoplay();
   }
 
+
+  // =========================================================================
+  // SERVICE HERO DUAL-PICTURE CROSSFADE SLIDER (Desktop & Phone View)
+  // =========================================================================
+  const serviceCards = document.querySelectorAll('.service-slider-card');
+  serviceCards.forEach(card => {
+    const slides = card.querySelectorAll('.service-slide');
+    const dots = card.querySelectorAll('.service-dot');
+    let currentIndex = 0;
+    let timer = null;
+
+    if (slides.length > 1) {
+      function showServiceSlide(idx) {
+        currentIndex = (idx + slides.length) % slides.length;
+        slides.forEach((s, i) => s.classList.toggle('active', i === currentIndex));
+        dots.forEach((d, i) => d.classList.toggle('active', i === currentIndex));
+      }
+
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', (e) => {
+          e.stopPropagation();
+          showServiceSlide(i);
+          resetServiceTimer();
+        });
+      });
+
+      function startServiceTimer() {
+        timer = setInterval(() => {
+          showServiceSlide(currentIndex + 1);
+        }, 3500);
+      }
+
+      function resetServiceTimer() {
+        clearInterval(timer);
+        startServiceTimer();
+      }
+
+      // Touch swipe support on phone view
+      let touchStartX = 0;
+      let touchEndX = 0;
+      card.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+      card.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        if (touchStartX - touchEndX > 40) {
+          showServiceSlide(currentIndex + 1);
+          resetServiceTimer();
+        } else if (touchEndX - touchStartX > 40) {
+          showServiceSlide(currentIndex - 1);
+          resetServiceTimer();
+        }
+      }, { passive: true });
+
+      startServiceTimer();
+    }
+  });
+
 });

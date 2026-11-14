@@ -3794,3 +3794,144 @@ textarea.form-input {
 [data-accent="blue"] .capability-img-wrap img {
   filter: hue-rotate(65deg) saturate(1.2) brightness(1.04);
 }
+
+/* =========================================================================
+   SEAMLESS NEWS-TICKER BRANDS MARQUEE SCROLLER
+   ========================================================================= */
+.brands-section {
+  padding: 36px 0;
+  position: relative;
+  overflow: hidden;
+  background: rgba(10, 15, 26, 0.6);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.brands-marquee-wrap {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.brands-marquee-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 28px;
+  animation: brandsTicker 32s linear infinite;
+  will-change: transform;
+}
+
+.brands-marquee-wrap:hover .brands-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes brandsTicker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.brands-marquee-track .brand-item-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 12px 26px;
+  border-radius: 14px;
+  height: 68px;
+  min-width: 150px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.brands-marquee-track .brand-item-box:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+}
+
+.brands-marquee-track .brand-item-box img {
+  max-height: 44px;
+  max-width: 130px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* =========================================================================
+   SERVICE HERO DUAL-PICTURE CROSSFADE SLIDER (Desktop & Phone View)
+   ========================================================================= */
+.service-slider-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 20px;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 30%, #1e293b 0%, #08101d 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.6), 0 0 25px rgba(34, 197, 94, 0.15);
+  margin: 0 auto;
+}
+
+.service-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(0.97);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.service-slide.active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.service-slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.service-slider-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+  background: rgba(8, 16, 29, 0.75);
+  backdrop-filter: blur(8px);
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.service-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-dot.active {
+  width: 22px;
+  border-radius: 10px;
+  background: var(--accent-primary, #22c55e);
+  box-shadow: 0 0 10px var(--accent-primary, #22c55e);
+}

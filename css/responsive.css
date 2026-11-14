@@ -142,6 +142,31 @@ html, body {
    Mobile App-like Touch Experience
    ========================================================================== */
 @media screen and (max-width: 768px) {
+
+  /* Brands Scroller on Mobile Phones */
+  .brands-marquee-wrap {
+    padding: 6px 0 !important;
+  }
+  .brands-marquee-track .brand-item-box {
+    padding: 8px 16px !important;
+    height: 54px !important;
+    min-width: 110px !important;
+    border-radius: 10px !important;
+  }
+  .brands-marquee-track .brand-item-box img {
+    max-height: 34px !important;
+    max-width: 95px !important;
+  }
+
+  /* Service Hero Dual Slider on Phone View */
+  .service-slider-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+    border-radius: 14px !important;
+    margin-top: 10px !important;
+  }
+
   /* Container Padding for Phones */
   .container {
     padding-left: 16px !important;
