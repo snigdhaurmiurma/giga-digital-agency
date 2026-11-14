@@ -509,12 +509,12 @@ ul, ol {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--bg-glass);
-  backdrop-filter: blur(20px) saturate(190%);
-  -webkit-backdrop-filter: blur(20px) saturate(190%);
-  border-bottom: 1px solid var(--border-subtle);
+  background: rgba(10, 20, 36, 0.75);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   z-index: 1000;
-  transition: all var(--transition);
+  transition: all 0.35s ease;
 }
 .main-header::after {
   content: '';
@@ -528,14 +528,28 @@ ul, ol {
   transition: background var(--transition);
 }
 .main-header.scrolled {
-  box-shadow: var(--shadow-md);
-  border-bottom-color: var(--border-medium);
+  background: rgba(8, 16, 30, 0.78);
+  backdrop-filter: blur(28px) saturate(200%);
+  -webkit-backdrop-filter: blur(28px) saturate(200%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid var(--border-glow);
 }
 .main-header.scrolled .nav-container {
   height: 76px;
 }
 .main-header.scrolled .site-logo {
   height: 54px;
+}
+[data-theme="light"] .main-header {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+[data-theme="light"] .main-header.scrolled {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .nav-container {
@@ -1700,12 +1714,23 @@ ul, ol {
 }
 
 /* 8. STRUCTURED ABOUT US (Story, Profile, CEO, Team, Galleries, Clients) */
-.about-subnav-tabs {
+.about-subnav-tabs,
+.about-nav-tabs {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  margin-bottom: 40px;
+  gap: 12px;
+  margin-top: 48px;
+  margin-bottom: 48px;
   flex-wrap: wrap;
+}
+.about-panel {
+  display: none;
+  padding-top: 14px;
+  animation: fadeIn 0.35s ease forwards;
+}
+.about-panel .section-tag {
+  display: inline-block;
+  margin-bottom: 14px;
 }
 .about-tab-btn {
   padding: 10px 20px;
@@ -3069,9 +3094,29 @@ textarea.form-input {
    ========================================================================== */
 .why-choose-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
   margin-top: 40px;
+}
+@media (max-width: 1200px) and (min-width: 769px) {
+  .why-choose-cards-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .why-choose-cards-grid .why-feature-card:nth-child(1),
+  .why-choose-cards-grid .why-feature-card:nth-child(2),
+  .why-choose-cards-grid .why-feature-card:nth-child(3) {
+    grid-column: span 2;
+  }
+  .why-choose-cards-grid .why-feature-card:nth-child(4),
+  .why-choose-cards-grid .why-feature-card:nth-child(5) {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 768px) {
+  .why-choose-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }
 .why-feature-card {
   background: var(--bg-surface);
@@ -3802,13 +3847,16 @@ textarea.form-input {
   padding: 38px 0 42px;
   position: relative;
   overflow: hidden;
-  background: #f8fafc !important;
-  border-top: 1px solid #e2e8f0;
-  border-bottom: 1px solid #e2e8f0;
+  background: var(--bg-surface-elevated, #0d1829);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 
-[data-theme="dark"] .brands-section {
-  background: #f8fafc !important; /* Keep light background so brand partners are focused & sharp */
+[data-theme="light"] .brands-section {
+  background: #f1f5f9;
+  border-top-color: #e2e8f0;
+  border-bottom-color: #e2e8f0;
 }
 
 .brands-title-tag {
@@ -3817,8 +3865,12 @@ textarea.form-input {
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #1e293b !important;
+  color: var(--text-muted);
   margin-bottom: 24px;
+}
+
+[data-theme="light"] .brands-title-tag {
+  color: #334155;
 }
 
 .brands-marquee-wrap {
@@ -3855,10 +3907,10 @@ textarea.form-input {
   background: #ffffff;
   padding: 12px 26px;
   border-radius: 14px;
-  height: 68px;
-  min-width: 150px;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
-  border: 1px solid #e2e8f0;
+  height: 74px;
+  min-width: 170px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  border: 2px solid rgba(255, 255, 255, 0.25);
   flex-shrink: 0;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }

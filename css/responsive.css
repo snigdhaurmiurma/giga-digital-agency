@@ -427,6 +427,18 @@ html, body {
   .about-subnav-tabs::-webkit-scrollbar {
     display: none;
   }
+  .about-subnav-tabs,
+  .about-nav-tabs {
+    margin-top: 24px !important;
+    margin-bottom: 28px !important;
+    gap: 8px !important;
+  }
+  .about-panel {
+    padding-top: 8px !important;
+  }
+  .about-panel .section-tag {
+    margin-bottom: 12px !important;
+  }
   .about-tab-btn {
     flex-shrink: 0 !important;
     white-space: nowrap !important;
