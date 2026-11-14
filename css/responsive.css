@@ -443,18 +443,22 @@ html, body {
     gap: 14px !important;
   }
 
-  /* Real Team Members Single Column */
+  /* Real Team Members on Mobile */
   .team-grid {
     grid-template-columns: 1fr !important;
-    gap: 20px !important;
+    gap: 22px !important;
+    max-width: 420px;
+    margin: 0 auto;
   }
   .team-card {
-    padding: 20px 18px !important;
+    padding: 0 !important;
+    border-radius: 20px !important;
   }
-  .team-photo-wrap img {
-    height: 280px;
-    width: 100%;
-    object-fit: cover;
+  .team-img-wrap {
+    height: 300px !important;
+  }
+  .team-info {
+    padding: 20px 18px !important;
   }
 
   /* Testimonials on Phones */
@@ -737,8 +741,7 @@ html, body {
   .pricing-card,
   .case-study-hero,
   .contact-form-card,
-  .customizer-box,
-  .team-card {
+  .customizer-box {
     padding: 18px 14px !important;
   }
   .hero-float-chip {

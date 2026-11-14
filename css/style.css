@@ -2122,77 +2122,145 @@ ul, ol {
 }
 
 /* 14. REAL TEAM MEMBERS SECTION (Verified Names & Photos) */
+/* 14. ENHANCED EXECUTIVE TEAM CARDS */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 26px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+  justify-content: center;
 }
+
 .team-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
+  background: var(--bg-card, #0f172a);
+  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+  border-radius: 20px;
   overflow: hidden;
-  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.35s ease, 
+              box-shadow 0.35s ease;
+  position: relative;
+  box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.5);
 }
+
 .team-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--border-glow);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+  border-color: var(--accent-primary, #22c55e);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.7), 
+              0 0 25px rgba(34, 197, 94, 0.18);
 }
+
 .team-img-wrap {
   width: 100%;
-  height: 270px;
+  height: 310px;
   overflow: hidden;
   position: relative;
-  background: var(--bg-surface-elevated);
+  background: radial-gradient(circle at 50% 25%, #1e293b 0%, #090e17 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
+
 .team-img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  object-position: center top;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
 }
+
 .team-card:hover .team-img-wrap img {
   transform: scale(1.05);
 }
-.team-info {
-  padding: 20px;
+
+.team-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(10, 15, 26, 0.88);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-glow, rgba(34, 197, 94, 0.45));
+  color: var(--accent-primary, #22c55e);
+  font-size: 0.70rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 30px;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
+
+.team-info {
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.team-dept {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-primary, #22c55e);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.team-dept::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+}
+
 .team-name {
   font-size: 1.15rem;
   font-weight: 800;
-  color: var(--text-heading);
+  color: #ffffff;
   margin-bottom: 4px;
+  line-height: 1.3;
 }
+
 .team-role {
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--accent-cyan);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin-bottom: 12px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 16px;
 }
+
 .team-socials {
   display: flex;
-  gap: 8px;
+  gap: 10px;
+  margin-top: auto;
+  align-items: center;
 }
+
 .team-social-btn {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-subtle);
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-muted);
-  font-size: 0.80rem;
-  font-weight: 700;
-  transition: all var(--transition);
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.25s ease;
 }
+
 .team-social-btn:hover {
-  background: var(--accent-primary);
-  color: #ffffff;
+  background: var(--accent-primary, #22c55e);
+  border-color: var(--accent-primary, #22c55e);
+  color: #050b14;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.35);
 }
 
 /* 15. SLIDING TESTIMONIAL CAROUSEL */

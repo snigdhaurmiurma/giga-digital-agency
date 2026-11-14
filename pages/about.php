@@ -103,37 +103,61 @@ require_once __DIR__ . '/../includes/header.php';
         <p class="section-desc">Proven digital veterans directing our creative, growth, and technology divisions.</p>
       </div>
 
-      <div class="team-grid gda-reveal">
+            <div class="team-grid gda-reveal">
         <div class="team-card">
-          <div class="team-img-wrap"><img src="../images/team/team-1-1.jpg" alt="Engr. Md. Ashikur Rahman, Founder & CEO"></div>
+          <div class="team-img-wrap"><img src="../images/team/team-ashikur-rahman.jpg" alt="Engr. Md. Ashikur Rahman, Digital Marketing Specialist"></div>
           <div class="team-info">
             <h4 class="team-name">Engr. Md. Ashikur Rahman</h4>
-            <div class="team-role">Founder & CEO</div>
-            <p class="team-bio">Providing strategic vision and enterprise client partnership direction.</p>
-          </div>
-        </div>
-        <div class="team-card">
-          <div class="team-img-wrap"><img src="../images/team/team-1-2.jpg" alt="Engr. Md. Hasinur Rahman, CTO"></div>
-          <div class="team-info">
-            <h4 class="team-name">Engr. Md. Hasinur Rahman</h4>
-            <div class="team-role">CTO (Chief Technology Officer)</div>
-            <p class="team-bio">Spearheading software engineering, cloud architecture, and technical quality.</p>
-          </div>
-        </div>
-        <div class="team-card">
-          <div class="team-img-wrap"><img src="../images/team/team-1-3.jpg" alt="Engr. Md. Al Amin, Senior Software Engineer"></div>
-          <div class="team-info">
-            <h4 class="team-name">Engr. Md. Al Amin</h4>
-            <div class="team-role">Senior Software Engineer</div>
-            <p class="team-bio">Architecting full-stack web platforms, payment gateways, and custom ERP systems.</p>
-          </div>
-        </div>
-        <div class="team-card">
-          <div class="team-img-wrap"><img src="../images/team/team-1-4.jpg" alt="Jannatul Nayem, Digital Marketing Specialist"></div>
-          <div class="team-info">
-            <h4 class="team-name">Jannatul Nayem</h4>
             <div class="team-role">Digital Marketing Specialist</div>
+            <p class="team-bio">Providing strategic growth vision, enterprise ad funnels, and digital marketing direction.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img-wrap"><img src="../images/team/team-hasinur-rahman.jpg" alt="Md. Hasinur Rahman, General Manager (GM)"></div>
+          <div class="team-info">
+            <h4 class="team-name">Md. Hasinur Rahman</h4>
+            <div class="team-role">General Manager (GM)</div>
+            <p class="team-bio">Overseeing company-wide executive operations, project delivery, and agency management.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img-wrap"><img src="../images/team/team-mehedi-hasan.jpg" alt="Engr. Md. Mehedi Hasan, Team Lead"></div>
+          <div class="team-info">
+            <h4 class="team-name">Engr. Md. Mehedi Hasan</h4>
+            <div class="team-role">Team Lead</div>
+            <p class="team-bio">Directing engineering sprints, design workflows, and cross-functional team execution.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img-wrap"><img src="../images/team/team-kobir-hossen.jpg" alt="Md. Kobir Hossen, Senior Software Engineer"></div>
+          <div class="team-info">
+            <h4 class="team-name">Md. Kobir Hossen</h4>
+            <div class="team-role">Senior Software Engineer</div>
+            <p class="team-bio">Architecting full-stack web platforms, payment gateways, and custom applications.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img-wrap"><img src="../images/team/team-risul-islam.jpg" alt="Md. Risul Islam, Senior Video Editor"></div>
+          <div class="team-info">
+            <h4 class="team-name">Md. Risul Islam</h4>
+            <div class="team-role">Senior Video Editor</div>
+            <p class="team-bio">Leading 4K motion graphics, video post-production, and commercial brand storytelling.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img-wrap"><img src="../images/team/team-nazmus-sakib.jpg" alt="Md. Nazmus Sakib, Executive, Digital Marketing"></div>
+          <div class="team-info">
+            <h4 class="team-name">Md. Nazmus Sakib</h4>
+            <div class="team-role">Executive, Digital Marketing</div>
             <p class="team-bio">Managing high-ROAS Meta and Google ad boosting campaigns and audience retargeting.</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img-wrap"><img src="../images/team/team-shahriyar-ahmed.jpg" alt="Md. Shahriyar Ahmed, HR & Admin"></div>
+          <div class="team-info">
+            <h4 class="team-name">Md. Shahriyar Ahmed</h4>
+            <div class="team-role">HR & Admin</div>
+            <p class="team-bio">Managing talent operations, workplace administration, and organizational culture.</p>
           </div>
         </div>
       </div>
