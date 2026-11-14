@@ -113,13 +113,12 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
             <img src="<?php echo $asset_prefix; ?>images/resource/footer-logo.png" alt="Giga Digital Agency" style="height:44px; width:auto;" onerror="this.src='<?php echo $asset_prefix; ?>images/resource/logo-1.png';">
           </div>
           <p>
-            Giga Digital Agency is an established web design, UI/UX, software development, and digital marketing firm in Dhaka, Bangladesh, delivering commercial digital solutions since 2014.
+            Giga Digital Agency is a digital marketing agency that specializes in Social Media Marketing, Facebook Ads, YouTube Marketing, Web Analytics & Tracking, Branding & Design, SEO, Content Marketing, and being your strategic business partner for ultimate success.
           </p>
           <div style="margin-top:16px; display:flex; flex-direction:column; gap:8px;">
-            <p style="font-size:0.85rem; color:#94a3b8;"><strong>Trade Registry:</strong> GDA-ICT-BD-2016</p>
-            <a href="https://www.facebook.com/gigadigitalagency" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:8px; color:#ffffff; font-size:0.86rem; font-weight:700; text-decoration:none; margin-top:4px;" title="Giga Digital Agency Facebook Page">
+            <a href="https://www.facebook.com/gigadigitalagency" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:8px; color:#ffffff; font-size:0.86rem; font-weight:700; text-decoration:none; margin-top:4px;" title="gigadigitalagency">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-              <span>facebook.com/gigadigitalagency</span>
+              <span>gigadigitalagency</span>
             </a>
           </div>
         </div>
@@ -129,15 +128,14 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
           <h4 class="footer-col-title">Navigation</h4>
           <ul class="footer-links-list">
             <li><a href="<?php echo $asset_prefix; ?>index.php#home">Home</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#about">About Our Agency</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#services">Services Portfolio</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#process">Our 6-Step Process</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#case-study">Meta Case Study</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#pricing">Pricing & Packages</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#team">Leadership Team</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#reviews">Client Reviews</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#blog">Blog Articles</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#contact">Contact Us</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>index.php#about">About Us</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>index.php#services">Services</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>index.php#process">Process</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>index.php#case-study">Case Study</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>index.php#pricing">Pricing</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>index.php#team">Team</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>index.php#faq">FAQ</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>index.php#contact">Contact</a></li>
           </ul>
         </div>
 
@@ -145,19 +143,23 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
         <div>
           <h4 class="footer-col-title">Core Services</h4>
           <ul class="footer-links-list">
-            <li><a href="<?php echo $asset_prefix; ?>index.php#services">Corporate Web Development</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#services">E-Commerce with bKash/Nagad</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#services">UI/UX Design in Figma</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#services">Facebook Ad Boosting</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#services">YouTube Video Ad Boosting</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#services">Search Engine Optimization (SEO)</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>index.php#services">Custom POS & Software</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/linkedin-ads.html">LinkedIn Ads Management</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/google-ads.html">Google Ads Management</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/facebook-boosting.html">Facebook Boosting & Ads</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/seo.html">Search Engine Optimization (SEO)</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/digital-marketing.html">Digital Marketing Solutions</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/company-profile-design.html">Company Profile Design</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/banner-poster-design.html">Banner & Poster Design</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/content-marketing.html">Content Marketing</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/branding-design.html">Branding & Identity Design</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/video-editing.html">Professional Video Editing</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/web-design-development.html">Web Design & Development</a></li>
           </ul>
         </div>
 
         <!-- Col 4: Contact & Location -->
         <div>
-          <h4 class="footer-col-title">Headquarters</h4>
+          <h4 class="footer-col-title">Our Location</h4>
           <p style="font-size:0.88rem; color:#94a3b8; line-height:1.6; margin-bottom:12px;">
             House # 6/14, Block # A, Lalmatia,<br>
             Dhaka-1207, Bangladesh
@@ -177,7 +179,7 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
 
       <div class="footer-bottom-bar">
         <div>
-          &copy; <?php echo date('Y'); ?> Giga Digital Agency. All rights reserved. Recognized Digital Partner.
+          &copy; <?php echo date('Y'); ?> Giga Digital Agency. All rights reserved.
         </div>
         <div style="display:flex; gap:16px;">
           <a href="<?php echo $asset_prefix; ?>index.php#home" style="color:#64748b;">Privacy Policy</a>

@@ -153,22 +153,30 @@ html, body {
   }
 
   .service-landing-carousel .hero-poster-viewport {
+    display: grid !important;
+    position: relative !important;
+    width: 100% !important;
     min-height: auto !important;
     height: auto !important;
-    position: relative !important;
   }
 
   .service-landing-carousel .hero-poster-slide {
-    position: relative !important;
-    inset: auto !important;
-    min-height: auto !important;
-    height: auto !important;
-    display: none !important;
+    grid-area: 1 / 1 !important;
+    width: 100% !important;
+    min-height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.8s ease !important;
   }
 
   .service-landing-carousel .hero-poster-slide.active {
-    display: block !important;
     opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    position: relative !important;
   }
 
   .service-landing-carousel .poster-backdrop {
@@ -176,7 +184,13 @@ html, body {
     inset: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    opacity: 0.30 !important;
+    opacity: 0.65 !important;
+  }
+
+  .service-landing-carousel .poster-scrim {
+    position: absolute !important;
+    inset: 0 !important;
+    background: linear-gradient(180deg, rgba(6, 11, 19, 0.85) 0%, rgba(6, 11, 19, 0.62) 50%, rgba(6, 11, 19, 0.95) 100%) !important;
   }
 
   .service-landing-carousel .poster-inner-container {
