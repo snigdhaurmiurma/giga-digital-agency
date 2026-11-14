@@ -3744,3 +3744,53 @@ textarea.form-input {
 
 /* Ensure removal of poster controls */
 .poster-controls-wrap { display: none !important; }
+
+/* =========================================================================
+   DYNAMIC GRAPHIC COLOR ADAPTATION (Synchronized with Palette on All Devices)
+   ========================================================================= */
+.service-hero-img,
+.service-hero-img-card img,
+.service-img-card img,
+.service-box-img img,
+.capability-img-wrap img {
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+[data-accent="emerald"] .service-hero-img,
+[data-accent="emerald"] .service-hero-img-card img,
+[data-accent="emerald"] .service-box-img img,
+[data-accent="emerald"] .capability-img-wrap img {
+  filter: hue-rotate(0deg) saturate(1.1) brightness(1.02);
+}
+
+[data-accent="violet"] .service-hero-img,
+[data-accent="violet"] .service-hero-img-card img,
+[data-accent="violet"] .service-box-img img,
+[data-accent="violet"] .capability-img-wrap img {
+  filter: hue-rotate(120deg) saturate(1.2) brightness(1.05);
+}
+
+[data-accent="magenta"] .service-hero-img,
+[data-accent="magenta"] .service-hero-img-card img,
+[data-accent="magenta"] .service-box-img img,
+[data-accent="magenta"] .capability-img-wrap img,
+[data-accent="cyan"] .service-hero-img,
+[data-accent="cyan"] .service-hero-img-card img,
+[data-accent="cyan"] .service-box-img img,
+[data-accent="cyan"] .capability-img-wrap img {
+  filter: hue-rotate(190deg) saturate(1.25) brightness(1.05);
+}
+
+[data-accent="amber"] .service-hero-img,
+[data-accent="amber"] .service-hero-img-card img,
+[data-accent="amber"] .service-box-img img,
+[data-accent="amber"] .capability-img-wrap img {
+  filter: hue-rotate(-85deg) saturate(1.3) brightness(1.03);
+}
+
+[data-accent="blue"] .service-hero-img,
+[data-accent="blue"] .service-hero-img-card img,
+[data-accent="blue"] .service-box-img img,
+[data-accent="blue"] .capability-img-wrap img {
+  filter: hue-rotate(65deg) saturate(1.2) brightness(1.04);
+}
