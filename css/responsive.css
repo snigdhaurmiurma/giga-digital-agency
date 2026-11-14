@@ -799,3 +799,24 @@ html, body {
     padding: 16px 12px !important;
   }
 }
+
+/* Service Hero Visual - Strict Zero-Crop Containment */
+.service-hero-img-card {
+  aspect-ratio: auto !important;
+  height: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #08101d !important;
+}
+.service-hero-img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
+  transform: none !important;
+}
+.service-hero-img-badge {
+  display: none !important;
+}

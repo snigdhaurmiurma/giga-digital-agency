@@ -236,6 +236,6 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
     </div>
   </div>
 
-  <script src="<?php echo $asset_prefix; ?>js/main.js?v=2.8"></script>
+  <script src="<?php echo $asset_prefix; ?>js/main.js?v=2.9"></script>
 </body>
 </html>

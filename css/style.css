@@ -3488,18 +3488,20 @@ textarea.form-input {
   overflow: hidden;
   border: 1px solid var(--border-medium);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
-  background: var(--bg-surface-elevated);
-  aspect-ratio: 16 / 11;
+  background: #08101d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .service-hero-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
   display: block;
-  transition: transform 0.5s ease;
 }
 .service-hero-img-card:hover .service-hero-img {
-  transform: scale(1.03);
+  transform: none;
 }
 .service-hero-img-badge {
   display: none !important;
