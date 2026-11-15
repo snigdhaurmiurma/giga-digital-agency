@@ -2151,14 +2151,14 @@ ul, ol {
 }
 
 /* 14. REAL TEAM MEMBERS SECTION (Verified Names & Photos) */
-/* 14. ENHANCED EXECUTIVE TEAM CARDS (4 Per Row Architecture) */
+/* 14. ENHANCED EXECUTIVE TEAM CARDS (3x3 Balanced Executive Grid) */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 992px) {
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
