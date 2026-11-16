@@ -2231,9 +2231,6 @@ ul, ol {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 
 .team-dept {
@@ -2245,9 +2242,9 @@ ul, ol {
   margin-bottom: 6px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 6px;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
