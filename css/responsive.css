@@ -577,22 +577,25 @@ html, body {
     gap: 14px !important;
   }
 
-  /* Real Team Members on Mobile */
+  /* Real Team Members on Mobile (Slender Portrait Cards) */
   .team-grid {
-    grid-template-columns: 1fr !important;
-    gap: 22px !important;
-    max-width: 420px;
-    margin: 0 auto;
+    grid-template-columns: minmax(0, 260px) !important;
+    gap: 18px !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+    justify-content: center !important;
   }
   .team-card {
     padding: 0 !important;
     border-radius: 16px !important;
+    max-width: 260px !important;
+    margin: 0 auto !important;
   }
   .team-img-wrap {
-    height: 240px !important;
+    height: 235px !important;
   }
   .team-info {
-    padding: 20px 18px !important;
+    padding: 12px 14px 14px !important;
   }
 
   /* Testimonials on Phones */
