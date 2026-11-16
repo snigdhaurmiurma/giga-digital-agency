@@ -2150,25 +2150,33 @@ ul, ol {
   text-transform: uppercase;
 }
 
-/* 14. REAL TEAM MEMBERS SECTION (Verified Names & Photos) */
-/* 14. ENHANCED EXECUTIVE TEAM CARDS (3x3 Balanced Executive Grid) */
+/* 14. REAL TEAM MEMBERS SECTION (Compact 4-Column Modern Grid) */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 18px !important;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
   .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
   }
 }
 
 .team-card {
   background: var(--bg-card, #0f172a);
   border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
-  border-radius: 18px;
+  border-radius: 16px !important;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -2176,19 +2184,19 @@ ul, ol {
               border-color 0.35s ease, 
               box-shadow 0.35s ease;
   position: relative;
-  box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.45);
 }
 
 .team-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   border-color: var(--accent-primary, #22c55e);
-  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.7), 
-              0 0 25px rgba(34, 197, 94, 0.18);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.6), 
+              0 0 20px rgba(34, 197, 94, 0.22);
 }
 
 .team-img-wrap {
   width: 100%;
-  height: 290px;
+  height: 230px !important;
   overflow: hidden;
   position: relative;
   background: radial-gradient(circle at 50% 25%, #1e293b 0%, #090e17 100%);
@@ -2210,45 +2218,45 @@ ul, ol {
 
 .team-badge {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 10px;
+  right: 10px;
   background: rgba(10, 15, 26, 0.88);
   backdrop-filter: blur(10px);
   border: 1px solid var(--border-glow, rgba(34, 197, 94, 0.45));
   color: var(--accent-primary, #22c55e);
-  font-size: 0.68rem;
+  font-size: 0.64rem !important;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   padding: 4px 10px;
-  border-radius: 30px;
+  border-radius: 9999px !important;
   z-index: 2;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .team-info {
-  padding: 18px 16px 20px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  padding: 14px 14px 16px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+  text-align: left !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
 }
 
 .team-dept {
-  font-size: 0.70rem;
-  font-weight: 700;
-  color: var(--accent-primary, #22c55e);
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  margin-bottom: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  text-align: center;
-  width: 100%;
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  color: var(--accent-primary, #22c55e) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.07em !important;
+  margin-bottom: 5px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 6px !important;
+  text-align: left !important;
+  width: 100% !important;
 }
 
 .team-dept::before {
@@ -2262,22 +2270,20 @@ ul, ol {
 }
 
 .team-name {
-  font-size: 1.10rem;
-  font-weight: 800;
-  color: #ffffff;
-  margin-bottom: 4px;
-  line-height: 1.3;
-  text-align: center;
-  width: 100%;
+  font-size: 1.02rem !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin-bottom: 3px !important;
+  line-height: 1.25 !important;
+  text-align: left !important;
 }
 
 .team-role {
-  font-size: 0.84rem;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.65);
-  margin-bottom: 0;
-  text-align: center;
-  width: 100%;
+  font-size: 0.82rem !important;
+  color: var(--text-muted, #94a3b8) !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+  text-align: left !important;
 }
 
 /* 15. SLIDING TESTIMONIAL CAROUSEL */
