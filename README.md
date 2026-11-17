@@ -15,7 +15,7 @@ Designed with an international digital creative & growth agency aesthetic, this 
 
 ## 📸 Website Visual Showcase & Interactive Transitions
 
-Visitors experience smooth, dynamic visual transitions across color palettes and light/dark modes as they interact with the platform:
+Visitors experience smooth, dynamic visual transitions across color palettes, light/dark modes, and dedicated service engineering suites as they interact with the live platform at [https://giga-digital-agency.vercel.app/](https://giga-digital-agency.vercel.app/):
 
 ### 1. Dynamic Atmosphere & Palette Transitions
 
@@ -29,10 +29,17 @@ Visitors experience smooth, dynamic visual transitions across color palettes and
 | ![Crisp Light Mode Interface](images/preview-light-mode.png) | ![Admin Operations Portal](images/preview-admin.png) |
 | *Instant light mode transition with soft pastel contrasts* | *Live lead review, search filter & status management* |
 
-### 2. Categorized Services & Engineering Deck
+### 2. Specialized Engineering & Service Showcase
 
-![Categorized Services Deck](images/preview-services.png)
-*Interactive multi-division service showcase covering Creative Design, Performance Marketing & E-Commerce Engineering.*
+| Web Design & Development Engineering | Corporate Branding & Visual Identity |
+| :---: | :---: |
+| ![Web Design and Development](images/preview-services.png) | ![Corporate Branding and Visual Identity](images/preview-branding.png) |
+| *High-conversion web platforms, responsive design & e-commerce architecture* | *Complete corporate identity, brand books & visual design* |
+
+### 3. Data-Driven Growth & Search Engine Optimization (SEO)
+
+![Search Engine Optimization & Growth](images/preview-seo.png)
+*Technical on-page & off-page SEO, algorithmic ranking strategies, and organic lead acquisition.*
 
 ---
 
