@@ -3066,15 +3066,11 @@ textarea.form-input {
   border-top-color: var(--border-subtle);
   border-bottom-color: var(--border-subtle);
 }
-#reviews .testimonial-slide {
-  background: var(--bg-surface);
-  border-color: var(--border-subtle);
-  transition: all 0.35s ease;
-}
+#reviews .testimonial-slide,
 [data-theme="light"] #reviews .testimonial-slide {
-  background: var(--bg-surface);
-  border-color: var(--border-subtle);
-  box-shadow: none;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* 10. BLOG */
