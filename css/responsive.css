@@ -240,14 +240,14 @@ html, body {
     padding: 8px 0 !important;
   }
   .brands-marquee-track .brand-item-box {
-    padding: 6px 14px !important;
-    height: 60px !important;
-    min-width: 125px !important;
-    border-radius: 10px !important;
+    padding: 8px 16px !important;
+    height: 76px !important;
+    min-width: 155px !important;
+    border-radius: 12px !important;
   }
   .brands-marquee-track .brand-item-box img {
-    max-height: 44px !important;
-    max-width: 110px !important;
+    max-height: 54px !important;
+    max-width: 135px !important;
   }
 
   /* Service Hero Dual Slider on Phone View */

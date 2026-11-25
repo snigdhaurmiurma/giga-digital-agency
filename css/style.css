@@ -4033,10 +4033,10 @@ textarea.form-input {
   align-items: center;
   justify-content: center;
   background: var(--bg-surface);
-  padding: 10px 20px;
-  border-radius: 12px;
-  height: 74px;
-  min-width: 170px;
+  padding: 12px 24px;
+  border-radius: 14px;
+  height: 92px;
+  min-width: 205px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
   border: 1px solid var(--border-subtle);
   flex-shrink: 0;
@@ -4056,8 +4056,8 @@ textarea.form-input {
 }
 
 .brands-marquee-track .brand-item-box img {
-  max-height: 48px;
-  max-width: 140px;
+  max-height: 64px;
+  max-width: 175px;
   width: auto;
   height: auto;
   object-fit: contain;
