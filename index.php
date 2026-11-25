@@ -387,10 +387,10 @@ require_once __DIR__ . '/includes/header.php';
         <h2 class="section-title">
           YOUR GROWTH. <span class="gradient-text">OUR DIGITAL STRATEGY</span>.
         </h2>
-        <p class="section-desc" style="max-width:880px; margin:0 auto 20px;">
+        <p class="section-desc" style="max-width:880px; margin:0 auto 20px; text-align:justify; text-justify:inter-word;">
           Giga Digital Agency is a professional, results-driven digital marketing and creative solutions agency dedicated to helping businesses establish a powerful online presence, connect with their target audiences, and achieve sustainable growth.
         </p>
-        <p style="max-width:880px; margin:0 auto; color:var(--text-main); font-size:0.96rem; line-height:1.7;">
+        <p style="max-width:880px; margin:0 auto; color:var(--text-main); font-size:0.96rem; line-height:1.7; text-align:justify; text-justify:inter-word;">
           We work with startups, small businesses, growing enterprises, and established brands to deliver customized digital solutions aligned with their unique goals. By combining strategic thinking, creative execution, and data-driven marketing, we help businesses strengthen their brand identity, generate qualified leads, improve customer engagement, and increase sales.
         </p>
       </div>
@@ -402,34 +402,29 @@ require_once __DIR__ . '/includes/header.php';
           <h3 style="font-size:clamp(1.6rem, 3vw, 2.2rem); font-weight:900; color:var(--text-heading); margin-top:10px;">
             Why Businesses Choose Giga Digital Agency
           </h3>
-          <p style="color:var(--text-muted); max-width:720px; margin:8px auto 0; font-size:0.95rem; line-height:1.6;">
+          <p style="color:var(--text-muted); max-width:720px; margin:8px auto 0; font-size:0.95rem; line-height:1.6; text-align:justify; text-justify:inter-word;">
             We believe successful digital growth begins with understanding your business. Our approach combines strategic planning, creative execution, and continuous improvement to deliver solutions that align with your goals.
           </p>
         </div>
 
         <div class="why-choose-cards-grid">
           <div class="why-feature-card">
-            <span class="why-feature-num">01</span>
             <h4 class="why-feature-title">Data-Driven Strategies</h4>
             <p class="why-feature-desc">We use research, audience insights, and performance data to guide marketing decisions and develop strategies aligned with business objectives.</p>
           </div>
           <div class="why-feature-card">
-            <span class="why-feature-num">02</span>
             <h4 class="why-feature-title">Dedicated Expertise</h4>
             <p class="why-feature-desc">Our team brings together creative and technical capabilities to support different aspects of your digital presence.</p>
           </div>
           <div class="why-feature-card">
-            <span class="why-feature-num">03</span>
             <h4 class="why-feature-title">Client-Centered Approach</h4>
             <p class="why-feature-desc">Every business has unique challenges. We focus on understanding your requirements and developing solutions tailored to your specific needs.</p>
           </div>
           <div class="why-feature-card">
-            <span class="why-feature-num">04</span>
             <h4 class="why-feature-title">Transparent Communication</h4>
             <p class="why-feature-desc">We value clear communication, progress updates, and performance reporting so clients can better understand their projects and campaigns.</p>
           </div>
           <div class="why-feature-card">
-            <span class="why-feature-num">05</span>
             <h4 class="why-feature-title">Long-Term Growth Focus</h4>
             <p class="why-feature-desc">We aim to build lasting partnerships by continuously identifying opportunities to strengthen brand visibility, improve performance, and support sustainable growth.</p>
           </div>

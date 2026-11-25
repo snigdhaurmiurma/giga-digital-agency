@@ -3184,6 +3184,8 @@ textarea.form-input {
   color: var(--text-main);
   line-height: 1.65;
   margin: 0;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* ==========================================================================
