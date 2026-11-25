@@ -3410,6 +3410,8 @@ textarea.form-input {
   color: var(--text-muted);
   margin-bottom: 22px;
   line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .pkg-price-row {
   margin: 18px 0 24px;
