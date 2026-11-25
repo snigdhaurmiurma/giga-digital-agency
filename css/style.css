@@ -2150,30 +2150,30 @@ ul, ol {
   text-transform: uppercase;
 }
 
-/* 14. REAL TEAM MEMBERS SECTION (Compact Portrait Grid - 4 Columns) */
+/* 14. REAL TEAM MEMBERS SECTION (Compact Portrait Grid - 3 Columns) */
 .team-grid {
   display: grid !important;
-  grid-template-columns: repeat(4, minmax(0, 245px)) !important;
-  gap: 18px !important;
-  max-width: 1040px !important;
+  grid-template-columns: repeat(3, minmax(0, 280px)) !important;
+  gap: 24px !important;
+  max-width: 900px !important;
   margin: 0 auto !important;
   justify-content: center !important;
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 900px) {
   .team-grid {
-    grid-template-columns: repeat(2, minmax(0, 250px)) !important;
-    gap: 16px !important;
-    max-width: 540px !important;
+    grid-template-columns: repeat(2, minmax(0, 270px)) !important;
+    gap: 18px !important;
+    max-width: 580px !important;
     margin: 0 auto !important;
   }
 }
 
 @media (max-width: 580px) {
   .team-grid {
-    grid-template-columns: minmax(0, 260px) !important;
+    grid-template-columns: minmax(0, 280px) !important;
     gap: 16px !important;
-    max-width: 280px !important;
+    max-width: 300px !important;
     margin: 0 auto !important;
   }
 }
@@ -2186,7 +2186,7 @@ ul, ol {
   display: flex !important;
   flex-direction: column !important;
   width: 100% !important;
-  max-width: 250px !important;
+  max-width: 280px !important;
   box-shadow: 0 10px 25px -6px rgba(0, 0, 0, 0.5) !important;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
               border-color 0.3s ease, 
@@ -2203,7 +2203,7 @@ ul, ol {
 
 .team-img-wrap {
   width: 100% !important;
-  height: 235px !important;
+  height: 260px !important;
   overflow: hidden !important;
   position: relative !important;
   background: radial-gradient(circle at 50% 25%, #1e293b 0%, #08101d 100%) !important;
