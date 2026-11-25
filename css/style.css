@@ -504,6 +504,73 @@ ul, ol {
   transform: translateY(-2px);
   box-shadow: none !important;
 }
+.btn-whatsapp-universal {
+  width: 260px;
+  max-width: 100%;
+  min-height: 46px;
+  padding: 11px 18px !important;
+  font-size: 0.90rem !important;
+  border-radius: 10px !important;
+  white-space: nowrap;
+}
+
+.social-icons-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.social-icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-medium);
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  text-decoration: none;
+}
+.social-icon-btn:hover {
+  transform: translateY(-2px);
+}
+.social-icon-btn.social-fb {
+  color: #1877F2;
+  background: rgba(24, 119, 242, 0.14);
+  border-color: rgba(24, 119, 242, 0.35);
+}
+.social-icon-btn.social-fb:hover {
+  background: rgba(24, 119, 242, 0.24);
+  border-color: #1877F2;
+}
+.social-icon-btn.social-ig {
+  color: #E4405F;
+  background: rgba(228, 64, 95, 0.14);
+  border-color: rgba(228, 64, 95, 0.35);
+}
+.social-icon-btn.social-ig:hover {
+  background: rgba(228, 64, 95, 0.24);
+  border-color: #E4405F;
+}
+.social-icon-btn.social-li {
+  color: #0A66C2;
+  background: rgba(10, 102, 194, 0.14);
+  border-color: rgba(10, 102, 194, 0.35);
+}
+.social-icon-btn.social-li:hover {
+  background: rgba(10, 102, 194, 0.24);
+  border-color: #0A66C2;
+}
+.social-icon-btn.social-tw {
+  color: #1DA1F2;
+  background: rgba(29, 161, 242, 0.14);
+  border-color: rgba(29, 161, 242, 0.35);
+}
+.social-icon-btn.social-tw:hover {
+  background: rgba(29, 161, 242, 0.24);
+  border-color: #1DA1F2;
+}
 
 /* 5. CLEAN DIRECT HEADER (NO Topbar Hotlines clutter) */
 .main-header {
