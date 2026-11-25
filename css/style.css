@@ -2142,6 +2142,14 @@ ul, ol {
   color: var(--accent-cyan);
   line-height: 1;
   margin-bottom: 6px;
+  font-variant-numeric: tabular-nums;
+}
+.zaman-stat-number,
+.metric-val,
+.metric-value,
+.award-stat-card .num,
+[data-live-count] {
+  font-variant-numeric: tabular-nums;
 }
 .counter-label {
   font-size: 0.88rem;

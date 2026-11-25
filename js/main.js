@@ -1042,4 +1042,94 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // =========================================================================
+  // LIVE COUNT-UP ANIMATION FOR ALL STATS & METRIC COUNTERS
+  // =========================================================================
+  const liveCounterEls = document.querySelectorAll(
+    '.counter-number, .zaman-stat-number, .metric-val, .metric-value, .award-stat-card .num, [data-live-count]'
+  );
+
+  if (liveCounterEls.length > 0) {
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function parseCounterText(rawText) {
+      const trimmed = rawText.trim();
+      const match = trimmed.match(/^([^\d]*)([\d,]+(?:\.\d+)?)(.*)$/);
+      if (!match) return null;
+      const prefix = match[1];
+      const numStr = match[2];
+      const suffix = match[3];
+      const target = parseFloat(numStr.replace(/,/g, ''));
+      if (Number.isNaN(target)) return null;
+      const dotIdx = numStr.indexOf('.');
+      const decimals = dotIdx === -1 ? 0 : numStr.length - dotIdx - 1;
+      const useCommas = numStr.includes(',');
+      return { prefix, target, decimals, useCommas, suffix, finalText: trimmed };
+    }
+
+    function formatCounterValue(val, cfg) {
+      let formatted = cfg.decimals > 0 ? val.toFixed(cfg.decimals) : Math.round(val).toString();
+      if (cfg.useCommas) {
+        const parts = formatted.split('.');
+        parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        formatted = parts.join('.');
+      }
+      return cfg.prefix + formatted + cfg.suffix;
+    }
+
+    function animateCounter(el) {
+      if (el.dataset.countAnimated === 'true') return;
+      const raw = el.dataset.countOriginal || el.textContent;
+      const cfg = parseCounterText(raw);
+      if (!cfg) return;
+      el.dataset.countOriginal = cfg.finalText;
+      el.dataset.countAnimated = 'true';
+
+      if (prefersReducedMotion) {
+        el.textContent = cfg.finalText;
+        return;
+      }
+
+      const duration = cfg.target <= 30 && cfg.decimals === 0 ? 1000 : 1600;
+      const startTime = performance.now();
+
+      function tick(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = cfg.target * eased;
+        if (progress < 1) {
+          el.textContent = formatCounterValue(current, cfg);
+          requestAnimationFrame(tick);
+        } else {
+          el.textContent = cfg.finalText;
+        }
+      }
+
+      el.textContent = formatCounterValue(0, cfg);
+      requestAnimationFrame(tick);
+    }
+
+    if ('IntersectionObserver' in window) {
+      const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+
+      liveCounterEls.forEach((el) => {
+        const parsed = parseCounterText(el.textContent);
+        if (parsed) {
+          el.dataset.countOriginal = parsed.finalText;
+          counterObserver.observe(el);
+        }
+      });
+    } else {
+      liveCounterEls.forEach((el) => animateCounter(el));
+    }
+  }
+
 });

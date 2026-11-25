@@ -457,11 +457,11 @@ require_once __DIR__ . '/includes/header.php';
             </p>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
               <div style="background:var(--bg-card); border:1px solid var(--border-subtle); padding:16px; border-radius:var(--radius-sm);">
-                <div style="font-size:1.25rem; font-weight:900; color:var(--accent-green); margin-bottom:4px;">7,000+</div>
+                <div data-live-count style="font-size:1.25rem; font-weight:900; color:var(--accent-green); margin-bottom:4px;">7,000+</div>
                 <div style="font-size:0.82rem; color:var(--text-muted);">Completed Client Deliverables</div>
               </div>
               <div style="background:var(--bg-card); border:1px solid var(--border-subtle); padding:16px; border-radius:var(--radius-sm);">
-                <div style="font-size:1.25rem; font-weight:900; color:var(--accent-primary); margin-bottom:4px;">10+ Years</div>
+                <div data-live-count style="font-size:1.25rem; font-weight:900; color:var(--accent-primary); margin-bottom:4px;">10+ Years</div>
                 <div style="font-size:0.82rem; color:var(--text-muted);">Proven Industry Longevity</div>
               </div>
             </div>
@@ -1350,20 +1350,20 @@ require_once __DIR__ . '/includes/header.php';
       <div class="achievements-box">
         <div class="counters-grid">
           <div class="counter-item">
-            <div class="counter-number">7,000+</div>
-            <div class="counter-label">Deliverables Completed</div>
+            <div class="counter-number">5+</div>
+            <div class="counter-label">Years of Innovation</div>
           </div>
           <div class="counter-item">
-            <div class="counter-number">80+</div>
-            <div class="counter-label">Industry Recognitions</div>
+            <div class="counter-number">500+</div>
+            <div class="counter-label">Delivered Projects</div>
           </div>
           <div class="counter-item">
-            <div class="counter-number">98.4%</div>
-            <div class="counter-label">Client Retention Rate</div>
+            <div class="counter-number">99%</div>
+            <div class="counter-label">Client Satisfaction</div>
           </div>
           <div class="counter-item">
-            <div class="counter-number">10+</div>
-            <div class="counter-label">Years of Craftsmanship</div>
+            <div class="counter-number">24/7</div>
+            <div class="counter-label">Engineering Support</div>
           </div>
         </div>
       </div>
