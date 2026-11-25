@@ -4350,3 +4350,28 @@ textarea.form-input {
 [data-accent="blue"] .service-slider-img {
   filter: hue-rotate(0deg) saturate(1.15) brightness(1.02);
 }
+
+/* ==========================================================================
+   28. SITE-WIDE BODY PARAGRAPH JUSTIFICATION (Excludes bullet lists & points)
+   ========================================================================== */
+.service-hero-shortdesc,
+.service-main-text p,
+.benefit-card p,
+.service-cta-box p,
+.service-sidebar-card p,
+.about-grid-two p,
+.service-desc,
+.faq-answer p,
+.review-quote,
+.pillar-desc,
+.contact-info-card > p,
+.service-card p,
+.portfolio-card p,
+.case-narrative p,
+.case-study-card p,
+.team-bio,
+.package-target {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
