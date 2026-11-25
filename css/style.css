@@ -505,10 +505,10 @@ ul, ol {
   box-shadow: none !important;
 }
 .btn-whatsapp-universal {
-  width: 260px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 272px;
   min-height: 46px;
-  padding: 11px 18px !important;
+  padding: 12px 20px !important;
   font-size: 0.90rem !important;
   border-radius: 10px !important;
   white-space: nowrap;
@@ -2657,10 +2657,20 @@ textarea.form-input {
   gap: 38px;
   margin-bottom: 45px;
 }
+.footer-brand-logo {
+  height: 50px;
+  width: auto;
+  max-width: 260px;
+  display: block;
+  margin-bottom: 18px;
+  object-fit: contain;
+}
 .footer-about p {
   font-size: 0.88rem;
   line-height: 1.65;
   color: #8fa2b8;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .footer-col-title {
   font-size: 1.02rem;

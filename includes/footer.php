@@ -109,11 +109,11 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
         
         <!-- Col 1: About & Logo -->
         <div class="footer-about">
-          <div class="site-logo-wrap" style="display:inline-flex; padding:6px 14px; margin-bottom:14px;">
-            <img src="<?php echo $asset_prefix; ?>images/resource/footer-logo.png" alt="Giga Digital Agency" style="height:44px; width:auto;" onerror="this.src='<?php echo $asset_prefix; ?>images/resource/logo-1.png';">
-          </div>
+          <a href="<?php echo $asset_prefix; ?>index.php#home" aria-label="Giga Digital Agency Home" style="display:inline-block;">
+            <img src="<?php echo $asset_prefix; ?>images/resource/footer-logo.png?v=2" alt="Giga Digital Agency" class="footer-brand-logo" onerror="this.src='<?php echo $asset_prefix; ?>images/resource/logo-1.png';">
+          </a>
           <p>
-            Giga Digital Agency is a digital marketing agency that specializes in Social Media Marketing, Facebook Ads, YouTube Marketing, Web Analytics & Tracking, Branding & Design, SEO, Content Marketing, and being your strategic business partner for ultimate success.
+            Giga Digital Agency is a digital marketing agency that specializes in Social Media Marketing, Facebook Ads, YouTube Marketing, Web Analytics &amp; Tracking, Branding &amp; Design, SEO, Content Marketing, and being your strategic business partner for ultimate success.
           </p>
           <div style="margin-top:16px;">
             <div style="font-size:0.78rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:8px;">Follow Us:</div>
@@ -136,7 +136,7 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
 
         <!-- Col 2: Quick Links -->
         <div>
-          <h4 class="footer-col-title">Navigation</h4>
+          <h4 class="footer-col-title">Quick Links</h4>
           <ul class="footer-links-list">
             <li><a href="<?php echo $asset_prefix; ?>index.php#home">Home</a></li>
             <li><a href="<?php echo $asset_prefix; ?>index.php#about">About Us</a></li>
@@ -150,39 +150,39 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
           </ul>
         </div>
 
-        <!-- Col 3: Services -->
+        <!-- Col 3: Our Services -->
         <div>
-          <h4 class="footer-col-title">Core Services</h4>
+          <h4 class="footer-col-title">Our Services</h4>
           <ul class="footer-links-list">
             <li><a href="<?php echo $asset_prefix; ?>services/linkedin-ads.html">LinkedIn Ads Management</a></li>
             <li><a href="<?php echo $asset_prefix; ?>services/google-ads.html">Google Ads Management</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>services/facebook-boosting.html">Facebook Boosting & Ads</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/facebook-boosting.html">Facebook Boosting &amp; Ads</a></li>
             <li><a href="<?php echo $asset_prefix; ?>services/seo.html">Search Engine Optimization (SEO)</a></li>
             <li><a href="<?php echo $asset_prefix; ?>services/digital-marketing.html">Digital Marketing Solutions</a></li>
             <li><a href="<?php echo $asset_prefix; ?>services/company-profile-design.html">Company Profile Design</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>services/banner-poster-design.html">Banner & Poster Design</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/banner-poster-design.html">Banner &amp; Poster Design</a></li>
             <li><a href="<?php echo $asset_prefix; ?>services/content-marketing.html">Content Marketing</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>services/branding-design.html">Branding & Identity Design</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/branding-design.html">Branding &amp; Identity Design</a></li>
             <li><a href="<?php echo $asset_prefix; ?>services/video-editing.html">Professional Video Editing</a></li>
-            <li><a href="<?php echo $asset_prefix; ?>services/web-design-development.html">Web Design & Development</a></li>
+            <li><a href="<?php echo $asset_prefix; ?>services/web-design-development.html">Web Design &amp; Development</a></li>
           </ul>
         </div>
 
-        <!-- Col 4: Contact & Location -->
+        <!-- Col 4: Contact Us -->
         <div>
-          <h4 class="footer-col-title">Our Location</h4>
+          <h4 class="footer-col-title">Contact Us</h4>
           <p style="font-size:0.88rem; color:#94a3b8; line-height:1.6; margin-bottom:12px;">
             House # 6/14, Block # A, Lalmatia,<br>
             Dhaka-1207, Bangladesh
           </p>
           <p style="font-size:0.88rem; margin-bottom:6px;">
-            <strong style="color:#ffffff;">Call Us:</strong> <a href="tel:+8801870699677" style="color:var(--accent-primary);">+8801870-699677</a></p>
+            <strong style="color:#ffffff;">Call Us:</strong> <a href="tel:+8801870699677" style="color:var(--accent-primary);">+880 1870-699677</a></p>
           <p style="font-size:0.88rem; margin-bottom:16px;">
             <strong style="color:#ffffff;">Email:</strong> <a href="mailto:info@gigadigitalagency.com" style="color:var(--accent-primary);">info@gigadigitalagency.com</a>
           </p>
           <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-whatsapp-universal">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle; flex-shrink:0;"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.154.57 4.175 1.564 5.918l-1.564 5.71 5.86-1.536c1.678.914 3.603 1.408 5.64 1.408 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
-            WhatsApp: +8801870-699677
+            WhatsApp: +880 1870-699677
           </a>
         </div>
 
@@ -203,7 +203,7 @@ $asset_prefix = isset($is_subpage) && $is_subpage ? '../' : '';
   </footer>
 
   <!-- Floating WhatsApp Quick Button -->
-  <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Chat with Giga Digital Agency on WhatsApp" title="Chat on WhatsApp (+8801870-699677)">
+  <a href="https://wa.me/8801870699677?text=Hello%20Giga%20Digital%20Agency,%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Chat with Giga Digital Agency on WhatsApp" title="Chat on WhatsApp (+880 1870-699677)">
     <svg viewBox="0 0 24 24" fill="currentColor">
       <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.154.57 4.175 1.564 5.918l-1.564 5.71 5.86-1.536c1.678.914 3.603 1.408 5.64 1.408 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
     </svg>
