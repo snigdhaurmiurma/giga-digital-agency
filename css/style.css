@@ -2456,6 +2456,8 @@ ul, ol {
   color: var(--text-muted);
   line-height: 1.58;
   margin-bottom: 18px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .blog-read-btn {
   font-size: 0.88rem;
@@ -2712,6 +2714,11 @@ textarea.form-input {
 }
 .gda-modal-close:hover {
   color: var(--text-heading);
+}
+#modalArticleBody,
+#modalArticleBody p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* ==========================================================================
@@ -3412,7 +3419,7 @@ textarea.form-input {
   color: var(--text-muted);
   margin-bottom: 22px;
   line-height: 1.5;
-  text-align: justify;
+  text-align: justify !important;
   text-justify: inter-word;
 }
 .pkg-price-row {
