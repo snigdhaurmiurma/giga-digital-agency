@@ -1693,12 +1693,12 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Blog 4 -->
         <article class="blog-card">
           <div class="blog-img-wrap">
-            <img src="images/blog/blog-3-1.jpg" alt="Custom Software and POS Systems">
+            <img src="images/blog/blog-3-1.jpg" alt="Custom Software and POS Systems" loading="lazy">
           </div>
           <div class="blog-content">
             <div>
-              <div style="font-size:0.75rem; color:var(--accent-cyan); font-weight:800; text-transform:uppercase; margin-bottom:8px;">Tech & Code &bull; Aug 2026</div>
-              <h3 class="blog-title">Why Custom Software & ERP Outperforms Off-the-Shelf Templates for Growing Businesses</h3>
+              <div style="font-size:0.75rem; color:var(--accent-cyan); font-weight:800; text-transform:uppercase; margin-bottom:8px;">Tech &amp; Code &bull; <time datetime="2026-08">Aug 2026</time></div>
+              <h3 class="blog-title">Why Custom Software &amp; ERP Outperforms Off-the-Shelf Templates for Growing Businesses</h3>
               <p class="blog-excerpt">
                 Avoid recurring SaaS tax: how custom multi-branch inventory systems protect margin and streamline operations.
               </p>
@@ -1709,7 +1709,125 @@ require_once __DIR__ . '/includes/header.php';
           </div>
         </article>
 
+        <!-- Blog 5 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="images/blog/blog-technical-seo.jpg" alt="Technical SEO and Core Web Vitals Optimization Dashboard for Google Rankings in Bangladesh" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div>
+              <div style="font-size:0.75rem; color:var(--accent-green); font-weight:800; text-transform:uppercase; margin-bottom:8px;">Technical SEO &bull; <time datetime="2026-11">Nov 2026</time></div>
+              <h3 class="blog-title">Technical SEO &amp; Core Web Vitals Checklist: How Fast Websites Rank Higher on Google</h3>
+              <p class="blog-excerpt">
+                Learn how Core Web Vitals (LCP, INP, CLS), structured JSON-LD schema markup, mobile-first indexing, and internal linking boost organic Google rankings.
+              </p>
+            </div>
+            <a href="#" class="blog-read-btn" data-article="blog-5">
+              Read Article &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog 6 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="images/blog/blog-b2b-lead-gen.jpg" alt="B2B Lead Generation Funnel Combining Google Ads, LinkedIn Ads, and Content Marketing ROI" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div>
+              <div style="font-size:0.75rem; color:var(--accent-primary); font-weight:800; text-transform:uppercase; margin-bottom:8px;">Digital Growth &bull; <time datetime="2026-11">Nov 2026</time></div>
+              <h3 class="blog-title">B2B Lead Generation Playbook: Combining Google Ads, LinkedIn Ads &amp; Content Marketing</h3>
+              <p class="blog-excerpt">
+                Discover how full-funnel Google Search Ads, LinkedIn decision-maker targeting, and SEO content marketing work together to lower acquisition costs and scale ROI.
+              </p>
+            </div>
+            <a href="#" class="blog-read-btn" data-article="blog-6">
+              Read Article &rarr;
+            </a>
+          </div>
+        </article>
+
       </div>
+
+      <!-- SEO Internal Topic Hub -->
+      <nav class="blog-seo-topics" aria-label="Explore Related Digital Growth Topics">
+        <span class="blog-seo-topics-label">Explore Related Solutions:</span>
+        <a href="services/seo.html" class="blog-seo-topic-link">SEO Services Bangladesh</a>
+        <a href="services/google-ads.html" class="blog-seo-topic-link">Google Ads Management</a>
+        <a href="services/linkedin-ads.html" class="blog-seo-topic-link">LinkedIn B2B Advertising</a>
+        <a href="services/facebook-boosting.html" class="blog-seo-topic-link">Facebook Boosting &amp; Ads</a>
+        <a href="services/content-marketing.html" class="blog-seo-topic-link">Content Marketing</a>
+        <a href="services/web-design-development.html" class="blog-seo-topic-link">Web Design &amp; Development</a>
+      </nav>
+
+      <!-- Structured Data (JSON-LD Blog & BlogPosting Schema for Search Engine SEO) -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Giga Digital Agency Industry Perspectives & SEO Growth Insights",
+        "url": "https://giga-digital-agency.vercel.app/#blog",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Giga Digital Agency",
+          "url": "https://giga-digital-agency.vercel.app/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://giga-digital-agency.vercel.app/images/resource/footer-logo.png"
+          }
+        },
+        "blogPost": [
+          {
+            "@type": "BlogPosting",
+            "headline": "How to Scale Your Business with Facebook & YouTube Ad Boosting in 2026",
+            "datePublished": "2026-11-01",
+            "image": "https://giga-digital-agency.vercel.app/images/services/hero/hero-facebook-boosting.jpg",
+            "description": "Mastering Meta Conversions API, short-form video hooks, and retargeting funnels to achieve consistent 4.0x+ ROAS.",
+            "author": { "@type": "Organization", "name": "Giga Digital Agency" }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "The Science of High-Converting UI/UX Design for E-Commerce Platforms",
+            "datePublished": "2026-10-01",
+            "image": "https://giga-digital-agency.vercel.app/images/services/hero/hero-branding-design.jpg",
+            "description": "Why 70% of shoppers abandon carts in South Asia and how one-click mobile checkout designs slash drop-off rates.",
+            "author": { "@type": "Organization", "name": "Giga Digital Agency" }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Local SEO Strategies: How to Rank #1 on Google Search and Maps in Bangladesh",
+            "datePublished": "2026-09-01",
+            "image": "https://giga-digital-agency.vercel.app/images/services/hero/hero-seo.jpg",
+            "description": "Proven blueprint for dominating Google's Local 3-Pack and ranking commercial intent keywords organically.",
+            "author": { "@type": "Organization", "name": "Giga Digital Agency" }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Why Custom Software & ERP Outperforms Off-the-Shelf Templates for Growing Businesses",
+            "datePublished": "2026-08-01",
+            "image": "https://giga-digital-agency.vercel.app/images/services/hero/hero-web-development.jpg",
+            "description": "Avoid recurring SaaS tax: how custom multi-branch inventory systems protect margin and streamline operations.",
+            "author": { "@type": "Organization", "name": "Giga Digital Agency" }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Technical SEO & Core Web Vitals Checklist: How Fast Websites Rank Higher on Google",
+            "datePublished": "2026-11-25",
+            "image": "https://giga-digital-agency.vercel.app/images/blog/blog-technical-seo.jpg",
+            "description": "Learn how Core Web Vitals (LCP, INP, CLS), structured JSON-LD schema markup, mobile-first indexing, and internal linking boost organic Google rankings.",
+            "author": { "@type": "Organization", "name": "Giga Digital Agency" }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "B2B Lead Generation Playbook: Combining Google Ads, LinkedIn Ads & Content Marketing",
+            "datePublished": "2026-11-25",
+            "image": "https://giga-digital-agency.vercel.app/images/blog/blog-b2b-lead-gen.jpg",
+            "description": "Discover how full-funnel Google Search Ads, LinkedIn decision-maker targeting, and SEO content marketing work together to lower acquisition costs and scale ROI.",
+            "author": { "@type": "Organization", "name": "Giga Digital Agency" }
+          }
+        ]
+      }
+      </script>
 
     </div>
   </section>

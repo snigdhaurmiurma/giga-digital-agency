@@ -2480,8 +2480,56 @@ ul, ol {
 /* 16. BLOG & PERSPECTIVES */
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 26px;
+}
+@media (max-width: 992px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+.blog-seo-topics {
+  margin-top: 34px;
+  padding: 20px 24px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.blog-seo-topics-label {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+.blog-seo-topic-link {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-main);
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  transition: all 0.2s ease;
+}
+.blog-seo-topic-link:hover {
+  color: #ffffff;
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
 }
 .blog-card {
   background: var(--bg-card);

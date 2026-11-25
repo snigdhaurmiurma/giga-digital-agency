@@ -455,6 +455,36 @@ document.addEventListener('DOMContentLoaded', () => {
         <h4 style="margin: 16px 0 8px; color:var(--text-heading);">2. Zero Recurring Subscription Tax</h4>
         <p>Build once, own forever. Custom software scales with your organization without increasing software fees.</p>
       `
+    },
+    'blog-5': {
+      title: 'Technical SEO & Core Web Vitals Checklist: How Fast Websites Rank Higher on Google',
+      cat: 'Technical SEO',
+      date: 'Updated November 2026',
+      img: 'images/blog/blog-technical-seo.jpg',
+      content: `
+        <p>Great content alone is not enough if search engines struggle to crawl, index, or render your website quickly. Google rewards fast, technically sound websites with higher organic rankings and lower bounce rates across both mobile and desktop searches.</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">1. Core Web Vitals Optimization (LCP, INP &amp; CLS)</h4>
+        <p>Compress hero visuals into next-gen formats, defer non-critical JavaScript, and reserve explicit media dimensions so your Largest Contentful Paint stays under 2.5 seconds and layout shift stays near zero.</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">2. Structured Data (JSON-LD Schema) &amp; Crawl Hygiene</h4>
+        <p>Implementing clean Organization, Service, FAQ, and BlogPosting JSON-LD schema alongside an updated XML sitemap and canonical tags helps Google surface rich results and recognize your topical authority in Bangladesh and global markets.</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">3. Strategic Internal Linking Architecture</h4>
+        <p>Connecting educational insights directly to core service pages such as <a href="services/seo.html" style="color:var(--accent-primary); font-weight:700;">Search Engine Optimization (SEO)</a> and <a href="services/web-design-development.html" style="color:var(--accent-primary); font-weight:700;">Web Design &amp; Development</a> passes link equity and guides high-intent visitors toward conversion.</p>
+      `
+    },
+    'blog-6': {
+      title: 'B2B Lead Generation Playbook: Combining Google Ads, LinkedIn Ads & Content Marketing',
+      cat: 'Digital Growth',
+      date: 'Updated November 2026',
+      img: 'images/blog/blog-b2b-lead-gen.jpg',
+      content: `
+        <p>Relying on a single acquisition channel creates volatile lead pipelines. High-growth B2B and enterprise brands build predictable revenue by uniting search intent, executive targeting, and authoritative SEO content into one measurable funnel.</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">1. Capture High-Intent Demand With Google Search Ads</h4>
+        <p>Bid on bottom-of-funnel commercial keywords with tightly grouped ad copy and conversion-focused landing pages through our <a href="services/google-ads.html" style="color:var(--accent-primary); font-weight:700;">Google Ads Management</a> framework to capture buyers actively searching for your solution.</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">2. Reach Decision-Makers With LinkedIn Ads</h4>
+        <p>Target C-level executives, directors, and procurement heads by job title, industry, and company size using <a href="services/linkedin-ads.html" style="color:var(--accent-primary); font-weight:700;">LinkedIn Ads Management</a> and frictionless native Lead Gen Forms.</p>
+        <h4 style="margin: 16px 0 8px; color:var(--text-heading);">3. Compound Organic Trust With Content Marketing</h4>
+        <p>Publish problem-solving guides, case studies, and comparison resources via <a href="services/content-marketing.html" style="color:var(--accent-primary); font-weight:700;">Content Marketing</a> to nurture prospects, improve organic search visibility, and reduce long-term Cost Per Acquisition (CPA).</p>
+      `
     }
   };
 
