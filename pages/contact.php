@@ -44,7 +44,7 @@ require_once __DIR__ . '/../includes/header.php';
               <div class="contact-icon-box">ðŸ“ž</div>
               <div class="contact-detail-text">
                 <h5>Phone / Direct Inquiries</h5>
-                <p><a href="tel:+8801870699677">+8801870-699677</a> &bull; <a href="tel:+8801870699677">+8801870-699677</a></p>
+                <p><a href="tel:+8801870699677">+880 1870-699677</a> &bull; <a href="tel:+8801870699677">+880 1870-699677</a></p>
               </div>
             </div>
 
