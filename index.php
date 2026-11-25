@@ -1054,13 +1054,13 @@ require_once __DIR__ . '/includes/header.php';
               Scaling From High Ad Waste to 4.8x ROAS
             </h3>
             
-            <p style="font-size:0.95rem; color:var(--text-main); line-height:1.7; margin-bottom:14px;">
+            <p style="font-size:0.95rem; color:var(--text-main); line-height:1.7; margin-bottom:14px; text-align:justify; text-justify:inter-word;">
               <strong>The Challenge:</strong> The client suffered from high Cost Per Click (CPC) and high cart abandonment (over 74%), with generic boosted posts failing to convert followers into paying customers.
             </p>
-            <p style="font-size:0.95rem; color:var(--text-main); line-height:1.7; margin-bottom:14px;">
+            <p style="font-size:0.95rem; color:var(--text-main); line-height:1.7; margin-bottom:14px; text-align:justify; text-justify:inter-word;">
               <strong>Our Strategy:</strong> We restructured the brand's Meta ad account from scratch. We integrated Meta Conversions API (CAPI), produced 45+ dynamic video reels highlighting product features, and introduced automated retargeting discounts for abandoned checkouts.
             </p>
-            <p style="font-size:0.95rem; color:var(--text-main); line-height:1.7; margin-bottom:24px;">
+            <p style="font-size:0.95rem; color:var(--text-main); line-height:1.7; margin-bottom:24px; text-align:justify; text-justify:inter-word;">
               <strong>The Execution:</strong> Over a 90-day execution period, our media buyers continuously tested 4 audience segments across Dhaka, Chittagong, Sylhet, and overseas Bangladeshi expats, deploying one-click bKash payment landing pages.
             </p>
 
