@@ -986,7 +986,7 @@ require_once __DIR__ . '/includes/header.php';
           A CLEAR PROCESS. <span class="gradient-text">A SMARTER PATH TO GROWTH</span>.
         </h2>
         <p class="section-desc">
-          Our disciplined six-step framework ensures strategic clarity, creative excellence, and measurable results across every client project.
+          Our disciplined step-by-step framework ensures strategic clarity, creative excellence, and measurable results across every client project.
         </p>
       </div>
 
