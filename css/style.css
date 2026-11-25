@@ -3095,6 +3095,8 @@ textarea.form-input {
   max-width: 760px;
   margin: 0 auto;
   line-height: 1.7;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* 13. 4-PILLAR BANNER */
