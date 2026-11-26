@@ -382,15 +382,15 @@ require_once __DIR__ . '/includes/header.php';
   <section class="section" id="about">
     <div class="container">
       
-      <div class="section-header text-center">
+      <div class="section-header text-center" style="max-width:100%;">
         <span class="section-tag">Brand Positioning</span>
         <h2 class="section-title">
           YOUR GROWTH. <span class="gradient-text">OUR DIGITAL STRATEGY</span>.
         </h2>
-        <p class="section-desc" style="max-width:880px; margin:0 auto 20px; text-align:justify; text-justify:inter-word;">
+        <p class="section-desc" style="max-width:100%; margin:0 auto 20px; text-align:justify; text-justify:inter-word; text-align-last:center;">
           Giga Digital Agency is a professional, results-driven digital marketing and creative solutions agency dedicated to helping businesses establish a powerful online presence, connect with their target audiences, and achieve sustainable growth.
         </p>
-        <p style="max-width:880px; margin:0 auto; color:var(--text-main); font-size:0.96rem; line-height:1.7; text-align:justify; text-justify:inter-word;">
+        <p style="max-width:100%; margin:0 auto; color:var(--text-main); font-size:0.96rem; line-height:1.7; text-align:justify; text-justify:inter-word; text-align-last:center;">
           We work with startups, small businesses, growing enterprises, and established brands to deliver customized digital solutions aligned with their unique goals. By combining strategic thinking, creative execution, and data-driven marketing, we help businesses strengthen their brand identity, generate qualified leads, improve customer engagement, and increase sales.
         </p>
       </div>
@@ -402,7 +402,7 @@ require_once __DIR__ . '/includes/header.php';
           <h3 style="font-size:clamp(1.6rem, 3vw, 2.2rem); font-weight:900; color:var(--text-heading); margin-top:10px;">
             Why Businesses Choose Giga Digital Agency
           </h3>
-          <p style="color:var(--text-muted); max-width:720px; margin:8px auto 0; font-size:0.95rem; line-height:1.6; text-align:justify; text-justify:inter-word;">
+          <p style="color:var(--text-muted); max-width:100%; margin:8px auto 0; font-size:0.95rem; line-height:1.6; text-align:justify; text-justify:inter-word; text-align-last:center;">
             We believe successful digital growth begins with understanding your business. Our approach combines strategic planning, creative execution, and continuous improvement to deliver solutions that align with your goals.
           </p>
         </div>

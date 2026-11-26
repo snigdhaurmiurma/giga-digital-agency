@@ -2249,11 +2249,20 @@ ul, ol {
 /* 14. REAL TEAM MEMBERS SECTION (Compact Portrait Grid - 3 Columns) */
 .team-grid {
   display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 280px)) !important;
+  grid-template-columns: repeat(4, minmax(0, 280px)) !important;
   gap: 24px !important;
-  max-width: 900px !important;
+  max-width: 1200px !important;
   margin: 0 auto !important;
   justify-content: center !important;
+}
+
+@media (max-width: 1180px) {
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 280px)) !important;
+    gap: 22px !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+  }
 }
 
 @media (max-width: 900px) {
