@@ -1984,7 +1984,7 @@ require_once __DIR__ . '/includes/header.php';
           </div>
 
           <div style="margin-bottom:20px;">
-            <div style="font-size:0.82rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:4px;">Call Us:</div>
+            <div style="font-size:0.82rem; color:var(--text-muted); text-transform:uppercase; font-weight:800; margin-bottom:4px;">Contact:</div>
             <p style="font-size:1.05rem; font-weight:800; color:var(--accent-primary); line-height:1.6;">
               <a href="tel:+8801870699677">+880 1870-699677</a> (Direct Hotline &amp; WhatsApp)
             </p>
