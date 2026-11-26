@@ -4123,6 +4123,19 @@ textarea.form-input {
   filter: none !important;
 }
 
+.brand-item-box img.brand-logo-light {
+  display: none !important;
+}
+.brand-item-box img.brand-logo-dark {
+  display: block !important;
+}
+[data-theme="light"] .brand-item-box img.brand-logo-dark {
+  display: none !important;
+}
+[data-theme="light"] .brand-item-box img.brand-logo-light {
+  display: block !important;
+}
+
 /* =========================================================================
    SERVICE HERO DUAL-PICTURE CROSSFADE SLIDER (Desktop & Phone View)
    ========================================================================= */
