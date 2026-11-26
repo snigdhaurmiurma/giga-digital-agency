@@ -3937,21 +3937,31 @@ textarea.form-input {
 .service-sidebar {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 24px;
 }
 .service-sidebar-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 30px 26px;
+  padding: 24px 22px;
 }
 .service-sidebar-card h3 {
-  font-size: 1.2rem;
-  font-weight: 800;
+  font-size: 1.05rem;
+  font-weight: 700;
   color: var(--text-heading);
-  margin-bottom: 16px;
-  padding-bottom: 12px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--border-subtle);
+}
+.service-sidebar-card p {
+  font-size: 0.875rem !important;
+  line-height: 1.6 !important;
+  text-align: left !important;
+}
+.service-sidebar-card .btn {
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 11px 18px;
 }
 .sidebar-service-links {
   list-style: none;
@@ -3959,17 +3969,17 @@ textarea.form-input {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 .sidebar-service-links a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 14px;
+  padding: 9px 13px;
   border-radius: var(--radius-sm);
   background: var(--bg-surface-elevated);
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 500;
   color: var(--text-main);
   transition: all 0.2s ease;
 }
@@ -4473,7 +4483,6 @@ textarea.form-input {
 .service-main-text p,
 .benefit-card p,
 .service-cta-box p,
-.service-sidebar-card p,
 .about-grid-two p,
 .service-desc,
 .faq-answer p,
