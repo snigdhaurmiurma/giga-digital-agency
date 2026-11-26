@@ -564,21 +564,33 @@ ul, ol {
 }
 .social-icon-btn.social-tw {
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.48);
 }
 .social-icon-btn.social-tw:hover {
-  background: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.30);
   border-color: #ffffff;
 }
 [data-theme="light"] .social-icon-btn.social-tw {
   color: #0f172a;
-  background: rgba(15, 23, 42, 0.08);
-  border-color: rgba(15, 23, 42, 0.22);
+  background: rgba(15, 23, 42, 0.12);
+  border-color: rgba(15, 23, 42, 0.38);
 }
 [data-theme="light"] .social-icon-btn.social-tw:hover {
-  background: rgba(15, 23, 42, 0.16);
+  background: rgba(15, 23, 42, 0.22);
   border-color: #0f172a;
+}
+/* Footer is always dark navy across dark & light themes — keep X icon crisp white */
+.corporate-footer .social-icon-btn.social-tw,
+[data-theme="light"] .corporate-footer .social-icon-btn.social-tw {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.20) !important;
+  border-color: rgba(255, 255, 255, 0.55) !important;
+}
+.corporate-footer .social-icon-btn.social-tw:hover,
+[data-theme="light"] .corporate-footer .social-icon-btn.social-tw:hover {
+  background: rgba(255, 255, 255, 0.34) !important;
+  border-color: #ffffff !important;
 }
 
 /* 5. CLEAN DIRECT HEADER (NO Topbar Hotlines clutter) */
