@@ -400,7 +400,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="text-center" style="margin-bottom:30px;">
           <span class="section-tag" style="background:var(--badge-bg); color:var(--accent-primary); border-color:var(--border-glow);">Agency Values & Execution</span>
           <h3 style="font-size:clamp(1.6rem, 3vw, 2.2rem); font-weight:900; color:var(--text-heading); margin-top:10px;">
-            Why Businesses Choose Giga Digital Agency
+            Why Choose Giga Digital Agency?
           </h3>
           <p style="color:var(--text-muted); max-width:100%; margin:8px auto 0; font-size:0.95rem; line-height:1.6; text-align:justify; text-justify:inter-word; text-align-last:center;">
             We believe successful digital growth begins with understanding your business. Our approach combines strategic planning, creative execution, and continuous improvement to deliver solutions that align with your goals.
