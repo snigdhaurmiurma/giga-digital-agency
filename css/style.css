@@ -4476,6 +4476,11 @@ textarea.form-input {
   filter: hue-rotate(0deg) saturate(1.15) brightness(1.02);
 }
 
+/* Keep Founder & CEO portrait photo in natural original colors across all theme accents */
+[data-panel="founder"] .about-photo-wrap img {
+  filter: none !important;
+}
+
 /* ==========================================================================
    28. SITE-WIDE BODY PARAGRAPH JUSTIFICATION (Excludes bullet lists & points)
    ========================================================================== */
