@@ -592,6 +592,42 @@ ul, ol {
   background: rgba(255, 255, 255, 0.34) !important;
   border-color: #ffffff !important;
 }
+.social-icon-btn.social-yt {
+  color: #FF2E2E;
+  background: rgba(255, 0, 0, 0.15);
+  border-color: rgba(255, 0, 0, 0.38);
+}
+.social-icon-btn.social-yt:hover {
+  background: rgba(255, 0, 0, 0.28);
+  border-color: #FF2E2E;
+}
+.social-icon-btn.social-pi {
+  color: #FF3B5C;
+  background: rgba(230, 0, 35, 0.15);
+  border-color: rgba(230, 0, 35, 0.38);
+}
+.social-icon-btn.social-pi:hover {
+  background: rgba(230, 0, 35, 0.28);
+  border-color: #FF3B5C;
+}
+.social-icon-btn.social-wa {
+  color: #25D366;
+  background: rgba(37, 211, 102, 0.15);
+  border-color: rgba(37, 211, 102, 0.38);
+}
+.social-icon-btn.social-wa:hover {
+  background: rgba(37, 211, 102, 0.28);
+  border-color: #25D366;
+}
+.social-icon-btn.social-be {
+  color: #3B82F6;
+  background: rgba(23, 105, 255, 0.16);
+  border-color: rgba(59, 130, 246, 0.42);
+}
+.social-icon-btn.social-be:hover {
+  background: rgba(23, 105, 255, 0.28);
+  border-color: #3B82F6;
+}
 
 /* 5. CLEAN DIRECT HEADER (NO Topbar Hotlines clutter) */
 .main-header {
